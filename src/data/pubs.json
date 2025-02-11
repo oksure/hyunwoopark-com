@@ -1,5 +1,5 @@
 {
-  "title": "Journal Publications",
+  "title": "Publications",
   "items": [
     {
       "type": "journal",
@@ -19,7 +19,7 @@
       "journal": "Production and Operations Management",
       "year": "2024",
       "link": "https://journals.sagepub.com/doi/abs/10.1177/10591478241256644",
-      "top": ["utd24"]
+      "top": ["utd24", "ft50", "abs4"]
     },
     {
       "type": "journal",
@@ -29,7 +29,8 @@
       "volume": "178",
       "pages": "114133",
       "year": "2024",
-      "link": "https://www.sciencedirect.com/science/article/pii/S0167923623002087"
+      "link": "https://www.sciencedirect.com/science/article/pii/S0167923623002087",
+      "top": ["abs3"]
     },
     {
       "type": "journal",
@@ -37,21 +38,23 @@
       "authors": "Lee J, Jung HJ, Park H",
       "journal": "Production and Operations Management",
       "year": "2022",
-      "top": ["utd24"]
+      "top": ["utd24", "abs4"]
     },
     {
       "type": "journal",
       "title": "[Book Review] A History of Data Visualization and Graphic Communication",
       "authors": "Park H",
       "journal": "Journal of the American Statistical Association",
-      "year": "2022"
+      "year": "2022",
+      "top": ["abs4"]
     },
     {
       "type": "journal",
       "title": "When to Signal? Contingencies for Career-Motivated Contributions in Online Collaboration Communities",
       "authors": "Lee J, Park H, Zaggl M",
       "journal": "Journal of the Association for Information Systems",
-      "year": "2022"
+      "year": "2022",
+      "top": ["abs4*"]
     },
     {
       "type": "journal",
@@ -59,7 +62,7 @@
       "authors": "Park H, Blanco C, Bendoly E",
       "journal": "Production and Operations Management",
       "year": "2022",
-      "top": ["utd24"]
+      "top": ["utd24", "ft50", "abs4"]
     },
     {
       "type": "journal",
@@ -67,7 +70,8 @@
       "authors": "Chopra S, Park H, Shim S",
       "journal": "INFORMS Journal on Computing",
       "year": "2022",
-      "link": "https://pubsonline.informs.org/doi/abs/10.1287/ijoc.2021.1148"
+      "link": "https://pubsonline.informs.org/doi/abs/10.1287/ijoc.2021.1148",
+      "top": ["utd24", "abs3"]
     },
     {
       "type": "journal",
@@ -78,7 +82,8 @@
       "number": "4",
       "pages": "568-582",
       "year": "2019",
-      "link": "https://ieeexplore.ieee.org/document/8424065/"
+      "link": "https://ieeexplore.ieee.org/document/8424065/",
+      "top": ["abs3"]
     },
     {
       "type": "journal",
@@ -89,7 +94,8 @@
       "number": "3",
       "pages": "368-380",
       "year": "2019",
-      "link": "https://ieeexplore.ieee.org/document/8425782/"
+      "link": "https://ieeexplore.ieee.org/document/8425782/",
+      "top": ["abs3"]
     },
     {
       "type": "journal",
@@ -100,7 +106,7 @@
       "pages": "79-96",
       "year": "2018",
       "link": "https://www.sciencedirect.com/science/article/pii/S0272696318300664",
-      "top": ["utd24", "ft50"]
+      "top": ["utd24", "ft50", "abs4*"]
     },
     {
       "type": "journal",
@@ -112,7 +118,7 @@
       "pages": "792-811",
       "year": "2018",
       "link": "https://journals.aom.org/doi/10.5465/amr.2016.0305",
-      "top": ["utd24", "ft50"]
+      "top": ["utd24", "ft50", "abs4*"]
     },
     {
       "type": "journal",
@@ -143,7 +149,8 @@
       "number": "1",
       "pages": "226-235",
       "year": "2018",
-      "link": "http://ieeexplore.ieee.org/document/8019835/"
+      "link": "http://ieeexplore.ieee.org/document/8019835/",
+      "top": ["top cs"]
     },
     {
       "type": "journal",
@@ -164,7 +171,8 @@
       "number": "2",
       "pages": "288-306",
       "year": "2017",
-      "link": "http://onlinelibrary.wiley.com/doi/10.1111/deci.12213/abstract"
+      "link": "http://onlinelibrary.wiley.com/doi/10.1111/deci.12213/abstract",
+      "top": ["abs3"]
     },
     {
       "type": "journal",
@@ -174,7 +182,8 @@
       "volume": "91",
       "pages": "89-102",
       "year": "2016",
-      "link": "http://www.sciencedirect.com/science/article/pii/S0167923616301397"
+      "link": "http://www.sciencedirect.com/science/article/pii/S0167923616301397",
+      "top": ["abs3"]
     },
     {
       "type": "journal",
@@ -184,7 +193,8 @@
       "volume": "84",
       "pages": "64-77",
       "year": "2016",
-      "link": "http://www.sciencedirect.com/science/article/pii/S016792361630001X"
+      "link": "http://www.sciencedirect.com/science/article/pii/S016792361630001X",
+      "top": ["abs3"]
     },
     {
       "type": "journal",
@@ -207,7 +217,7 @@
       "pages": "1145-1159",
       "year": "2015",
       "link": "http://www.sciencedirect.com/science/article/pii/S0048733315000396",
-      "top": ["utd24", "ft50"]
+      "top": ["ft50", "abs4*"]
     },
     {
       "type": "journal",

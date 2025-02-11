@@ -10,7 +10,7 @@ const Footer = () => {
             <Text>
               &copy; {new Date().getFullYear()} Hyunwoo Park
             </Text>
-            <Text fontSize="sm">Made with <Link href="https://nextjs.org/" target="_blank">Next.js</Link>, <Link href="https://chakra-ui.com/" target="_blank">chakra-ui</Link>, <Link href="https://react-icons.github.io/react-icons/" target="_blank">react-icons</Link>, and <Link href="https://vercel.com/" target="_blank">Vercel</Link>.</Text>
+            <Text>Built with <Link href="https://nextjs.org/" target="_blank">Next.js</Link>, <Link href="https://chakra-ui.com/" target="_blank">chakra-ui</Link>, <Link href="https://react-icons.github.io/react-icons/" target="_blank">react-icons</Link>, and <Link href="https://vercel.com/" target="_blank">Vercel</Link>.</Text>
           </Stack>
           <Spacer minH={6} /> {/* Add Spacer to push links to the right */}
           <Stack direction="row" gap={12}>
@@ -22,9 +22,9 @@ const Footer = () => {
               </For>
             </Stack> */}
             <Stack direction="column" gap={4} width={48}>
-              <Link href="https://snu.ac.kr" target="_blank">Seoul National University ↗</Link>
-              <Link href="https://gsds.snu.ac.kr" target="_blank">SNU Graduate School of Data Science (GSDS) ↗</Link>
-              <Link href="https://vibalab.org" target="_blank">Visualization and Business Analytics Lab (ViBA Lab) ↗</Link>
+              <Link href="https://snu.ac.kr" target="_blank">Seoul National University &#8599;</Link>
+              <Link href="https://gsds.snu.ac.kr" target="_blank">SNU Graduate School of Data Science (GSDS) &#8599;</Link>
+              <Link href="https://vibalab.org" target="_blank">Visualization and Business Analytics Lab (ViBA Lab) &#8599;</Link>
             </Stack>
           </Stack>
         </Flex>

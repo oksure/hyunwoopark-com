@@ -3,6 +3,7 @@
   "items": [
     {
       "institution": "Georgia Institute of Technology, Atlanta, GA, USA",
+      "instshort": "Georgia Tech, Atlanta, GA, USA",
       "details": [
         "Ph.D. in Industrial Engineering (Minor in Economics), 2015",
         "Dissertation: Computational Analysis for Technological Innovation in Complex Enterprise Systems",
@@ -12,12 +13,14 @@
     },
     {
       "institution": "University of California, Berkeley, CA, USA",
+      "instshort": "UC Berkeley, CA, USA",
       "details": [
         "Master of Information Management and Systems (Management of Technology Certificate), 2010"
       ]
     },
     {
       "institution": "Seoul National University, Seoul, South Korea",
+      "instshort": "Seoul National University, South Korea",
       "details": [
         "B.S. in Electrical Engineering (summa cum laude), 2008"
       ]

@@ -1,11 +1,12 @@
 interface EduExpItem {
   institution: string;
-  details: string; // Array of details (can be multiple lines)
+  instshort?: string;
+  details: string;
 }
 
 interface EduExpData {
   title: string;
-  items: EduExpItem; // Array of experience items
+  items: EduExpItem;
 }
 
 interface PubItem {
@@ -20,7 +21,7 @@ interface PubItem {
   link?: string;
   proceedings?: string;
   notes?: string;
-  top?: ("utd24" | "ft50" | "abs" | "cs");
+  top?: ("utd24" | "ft50" | "abs" | "abs4*" | "abs4" | "abs3" | "top cs");
 }
 
 interface PubData {
@@ -34,7 +35,7 @@ interface AwardItem {
   awarder: string;
   year: string;
   special?: boolean;
-  notes?: string; // For additional notes like amount or description
+  notes?: string;
 }
 
 interface AwardData {

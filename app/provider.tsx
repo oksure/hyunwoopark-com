@@ -9,7 +9,7 @@ import Footer from "./components/Footer"
 const system = createSystem(defaultConfig, {
   globalCss: {
     body: {
-      colorPalette: 'cyan',
+      colorPalette: '',
     },
   },
 })

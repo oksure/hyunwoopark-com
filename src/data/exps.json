@@ -3,12 +3,14 @@
   "items": [
     {
       "institution": "Seoul National University, Seoul, South Korea",
+      "instshort": "Seoul National University, South Korea",
       "details": [
         "Associate Professor, Graduate School of Data Science, 2021 – Present"
       ]
     },
     {
       "institution": "The Ohio State University, Columbus, OH, USA",
+      "instshort": "Ohio State University, Columbus, OH, USA",
       "details": [
         "Assistant Professor in Management Sciences, Fisher College of Business, 2017 – 2021",
         "Core Faculty, Translational Data Analytics Institute, 2017 – 2021"
@@ -16,6 +18,7 @@
     },
     {
       "institution": "Georgia Institute of Technology, Atlanta, GA, USA",
+      "instshort": "Georgia Tech, Atlanta, GA, USA",
       "details": [
         "Postdoctoral Fellow, Tennenbaum Institute, 2015 – 2017"
       ]

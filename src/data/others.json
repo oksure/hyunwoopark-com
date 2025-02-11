@@ -1,0 +1,61 @@
+{
+  "title": "Other Research and Professional Experience",
+  "items": [
+    {
+      "institution": "Vanderbilt University Medical Center",
+      "location": "Nashville, TN",
+      "period": "Summer 2012",
+      "role": "Visiting Researcher",
+      "details": [
+        "Conducted field interviews and organized findings for a patient-centered medical home project"
+      ]
+    },
+    {
+      "institution": "IBM Research",
+      "location": "Bangalore, India",
+      "period": "Summer 2010",
+      "role": "Summer Intern",
+      "details": [
+        "Developed service modeling framework for public services using the service blueprinting method"
+      ]
+    },
+    {
+      "institution": "UC Berkeley",
+      "location": "Berkeley, CA",
+      "period": "Spring 2010",
+      "role": "Graduate Student Researcher",
+      "details": [
+        "Computed financial performance metrics for global CEO rankings project"
+      ]
+    },
+    {
+      "institution": "UC Berkeley",
+      "location": "Berkeley, CA",
+      "period": "2009",
+      "role": "Graduate Student Researcher",
+      "details": [
+        "Participated in developing a new course “Information System & Service Design”"
+      ]
+    },
+    {
+      "institution": "Samsung Electronics",
+      "location": "Seoul, Korea",
+      "period": "2005-2008",
+      "role": "Summer Intern and Part-time Student Research Assistant",
+      "details": [
+        "Compared handset development strategy of Nokia, Motorola, and Samsung",
+        "Created mobile handset and service roadmap projections for 2007-2010",
+        "Conducted user studies for developing representative user profiles for camera and mobile phone"
+      ]
+    },
+    {
+      "institution": "United States Forces Korea",
+      "location": "Seoul, Korea",
+      "period": "2003-2005",
+      "role": "Web Developer",
+      "details": [
+        "Maintained decision support and procurement systems within security domain"
+      ]
+    }
+  ]
+}

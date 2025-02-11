@@ -1,0 +1,153 @@
+{
+  "title": "Awards, Grants, and Honors",
+  "items": [
+    {
+      "type": "award",
+      "title": "Best Paper Award Finalist",
+      "awarder": "Academy of Management Operations & Supply Chain Management (OSCM) Division",
+      "year": "2020"
+    },
+    {
+      "type": "award",
+      "title": "Best Dissertation Award Runner-up",
+      "awarder": "INFORMS Technology, Innovation Management and Entrepreneurship Section (TIMES)",
+      "year": "2017"
+    },
+    {
+      "type": "award",
+      "title": "Best Paper Award Winner",
+      "awarder": "Academy of Management Organizational Communication & Information Systems (OCIS) Division",
+      "year": "2017"
+    },
+    {
+      "type": "award",
+      "title": "Honorable Mention",
+      "awarder": "13th Places & Spaces: Mapping Science",
+      "year": "2017"
+    },
+    {
+      "type": "award",
+      "title": "Best Student Paper Award Winner",
+      "awarder": "Academy of Management Technology & Innovation Management (TIM) Division",
+      "year": "2015"
+    },
+    {
+      "type": "award",
+      "title": "Dr. James R. Chen Award (Best Master’s project in one of three tracks)",
+      "awarder": "School of Information, UC Berkeley",
+      "year": "2010"
+    },
+    {
+      "type": "award",
+      "title": "Excellence Award (1st place), Idea Competition",
+      "awarder": "CEO of Samsung Electronics",
+      "year": "2005"
+    },
+    {
+      "type": "award",
+      "title": "Army Commendation Medal",
+      "awarder": "Department of the United States Army",
+      "year": "2005"
+    },
+    {
+      "type": "award",
+      "title": "Presidential Scholar",
+      "awarder": "President of the Republic of Korea",
+      "year": "2002"
+    },
+    {
+      "type": "award",
+      "title": "Gold Medalist",
+      "awarder": "33rd International Chemistry Olympiad",
+      "year": "2001"
+    },
+    {
+      "type": "fellowship",
+      "title": "Tennenbaum Institute Fellow",
+      "awarder": "Georgia Institute of Technology",
+      "year": "2010-2017"
+    },
+    {
+      "type": "fellowship",
+      "title": "McLean Fellowship",
+      "awarder": "Georgia Institute of Technology",
+      "year": "2013-2015"
+    },
+    {
+      "type": "fellowship",
+      "title": "Doctoral Fellow",
+      "awarder": "Systems Engineering Research Center",
+      "year": "2014"
+    },
+    {
+      "type": "fellowship",
+      "title": "George Fellowship, Health Systems Institute",
+      "awarder": "Georgia Institute of Technology",
+      "year": "2012"
+    },
+    {
+      "type": "fellowship",
+      "title": "John Morris Fellowship",
+      "awarder": "School of Industrial and Systems Engineering, Georgia Institute of Technology",
+      "year": "2010-2012"
+    },
+    {
+      "type": "fellowship",
+      "title": "Doctoral Fellowship",
+      "awarder": "Korea Foundation for Advanced Studies",
+      "year": "2010-2015"
+    },
+    {
+      "type": "fellowship",
+      "title": "Overseas Study Scholarship",
+      "awarder": "Samsung Foundation",
+      "year": "2008-2010"
+    },
+    {
+      "type": "fellowship",
+      "title": "Undergraduate Fellowship",
+      "awarder": "Korea Foundation for Advanced Studies",
+      "year": "2002-2008"
+    },
+    {
+      "type": "grant",
+      "title": "Korea NRF Emerging Scholar Program (Equivalent to NSF Career)",
+      "awarder": "PI",
+      "year": "2022-2027"
+    },
+    {
+      "type": "grant",
+      "title": "SNU New Faculty Startup Fund",
+      "awarder": "PI",
+      "year": "2021-2024"
+    },
+    {
+      "type": "grant",
+      "title": "FDA Broad Agency Announcement (BAA) “FDA Quality Management and Pharmaceutical Firm Learning to Reduce Drug Quality Risks” (Total: $1.7M)",
+      "awarder": "Co-investigator",
+      "year": "2019-2021"
+    },
+    {
+      "type": "grant",
+      "title": "U01 Grant from FDA to NIPTE “Manufacturing Sector Research Initiative” (Total: $2.5M)",
+      "awarder": "Co-investigator",
+      "year": "2018–2019"
+    },
+    {
+      "type": "grant",
+      "title": "Honorarium from Conference on Internet Search and Innovation",
+      "awarder": "Northwestern University",
+      "year": "2013"
+    },
+    {
+      "type": "grant",
+      "title": "NET Institute (Networks, Electronic Commerce, and Telecommunications) Grants for Summer 2012"
+    },
+    {
+      "type": "grant",
+      "title": "Research Promotion Grant",
+      "awarder": "Korea Science and Engineering Foundation",
+      "year": "2002-2008"
+    }
+  ]
+}

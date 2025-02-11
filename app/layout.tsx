@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google"
 import Provider from "./provider"
+import Head from "./head"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -13,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html className={inter.className} suppressHydrationWarning>
-      <head />
+      <Head />
       <body>
         <Provider>{children}</Provider>
       </body>

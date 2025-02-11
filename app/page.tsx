@@ -1,77 +1,54 @@
-import {
-  Box,
-  Button,
-  Checkbox,
-  ClientOnly,
-  HStack,
-  Heading,
-  Progress,
-  RadioGroup,
-  Skeleton,
-  VStack,
-} from "@chakra-ui/react"
-import Image from "next/image"
-import { ColorModeToggle } from "../components/color-mode-toggle"
+import { For, Box, Container, Flex, Image, IconButton, Heading, Text, Link, Separator, Stack, HStack } from "@chakra-ui/react";
+import Sidebar from "./components/Sidebar";
+import expsData from "../src/data/exps.json";
+import edusData from "../src/data/edus.json";
 
-export default async function Page() {
+export default function Page() {
   return (
-    <Box textAlign="center" fontSize="xl" pt="30vh">
-      <VStack gap="8">
-        <Image
-          alt="chakra logo"
-          src="/static/logo.svg"
-          width="80"
-          height="80"
-        />
-        <Heading size="2xl" letterSpacing="tight">
-          Welcome to Chakra UI v3 + Next.js 안녕하세요 (App)
-        </Heading>
+    <Container maxW="container.xl" py={8}>
+      <Flex direction={{ base: "column", md: "row" }} gap={8}>
+        <Sidebar />
 
-        <HStack gap="10">
-          <Checkbox.Root defaultChecked>
-            <Checkbox.HiddenInput />
-            <Checkbox.Control>
-              <Checkbox.Indicator />
-            </Checkbox.Control>
-            <Checkbox.Label>Checkbox</Checkbox.Label>
-          </Checkbox.Root>
-
-          <RadioGroup.Root display="inline-flex" defaultValue="1">
-            <RadioGroup.Item value="1" mr="2">
-              <RadioGroup.ItemHiddenInput />
-              <RadioGroup.ItemControl>
-                <RadioGroup.ItemIndicator />
-              </RadioGroup.ItemControl>
-              <RadioGroup.ItemText lineHeight="1">Radio</RadioGroup.ItemText>
-            </RadioGroup.Item>
-
-            <RadioGroup.Item value="2">
-              <RadioGroup.ItemHiddenInput />
-              <RadioGroup.ItemControl>
-                <RadioGroup.ItemIndicator />
-              </RadioGroup.ItemControl>
-              <RadioGroup.ItemText lineHeight="1">Radio</RadioGroup.ItemText>
-            </RadioGroup.Item>
-          </RadioGroup.Root>
-        </HStack>
-
-        <Progress.Root width="300px" value={65} striped>
-          <Progress.Track>
-            <Progress.Range />
-          </Progress.Track>
-        </Progress.Root>
-
-        <HStack>
-          <Button>Let's go!</Button>
-          <Button variant="outline">bun install @chakra-ui/react</Button>
-        </HStack>
-      </VStack>
-
-      <Box pos="absolute" top="4" right="4">
-        <ClientOnly fallback={<Skeleton w="10" h="10" rounded="md" />}>
-          <ColorModeToggle />
-        </ClientOnly>
-      </Box>
-    </Box>
-  )
+        <Box w={{ base: "full", md: "3/4" }}>
+          {/* Main Content */}
+          <For each={["exps", "edus"]}>
+            {(stub) => {
+              const data = stub === "exps" ? expsData : edusData;
+              return <><Section data={data} /></>;
+            }}
+          </For>
+        </Box>
+      </Flex>
+    </Container>
+  );
 }
+
+
+// Reusable Section Component
+const Section = ({ data }: { data: any }) => {
+  const baseMx = 4;
+  return (
+    <Box py={8} fontSize="sm" lineHeight={1.2}>
+      <Heading as="h3" size="xl" fontWeight="bold" ml={baseMx}>
+        {data.title}
+      </Heading>
+        <Separator mb={4} mt={2} width={64} />
+      <For each={data.items}>
+        {(item: any, idx: number) => (
+          <Box key={idx} mb={4}>
+            <Heading as="h4" size="lg" mb={1} ml={2*baseMx}>
+              {item.institution}
+            </Heading>
+            <For each={item.details}>
+              {(detail: any, i: number) => (
+                <Text key={i} mb={1} ml={3*baseMx}>
+                  {detail}
+                </Text>
+              )}
+            </For>
+          </Box>
+        )}
+      </For>
+    </Box>
+  );
+};

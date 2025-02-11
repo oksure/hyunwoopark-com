@@ -1,0 +1,26 @@
+{
+  "title": "Education",
+  "items": [
+    {
+      "institution": "Georgia Institute of Technology, Atlanta, GA, USA",
+      "details": [
+        "Ph.D. in Industrial Engineering (Minor in Economics), 2015",
+        "Dissertation: Computational Analysis for Technological Innovation in Complex Enterprise Systems",
+        "- Co-chairs: William B. Rouse, Rahul C. Basole",
+        "- Committee Members: Leon F. McGinnis, Nicoleta Serban, Raul O. Chao (external; UVA Darden)"
+      ]
+    },
+    {
+      "institution": "University of California, Berkeley, CA, USA",
+      "details": [
+        "Master of Information Management and Systems (Management of Technology Certificate), 2010"
+      ]
+    },
+    {
+      "institution": "Seoul National University, Seoul, South Korea",
+      "details": [
+        "B.S. in Electrical Engineering (summa cum laude), 2008"
+      ]
+    }
+  ]
+}

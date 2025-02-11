@@ -1,0 +1,76 @@
+{
+  "title": "Conference Presentations",
+  "items": [
+    {
+      "title": "Supply Network Reconfiguration in Industry Transition: A Study of Electric Vehicles in the Automotive Industry",
+      "conferences": [
+        {
+          "name": "DSI Annual Meeting, Virtual Conference",
+          "year": "2020"
+        }
+      ]
+    },
+    {
+      "title": "Rare is Beautiful? Rare Technological Resources and Value Implications",
+      "conferences": [
+        {
+          "name": "INFORMS Annual Meeting, Virtual Conference",
+          "year": "2020"
+        },
+        {
+          "name": "AOM Annual Meeting, Virtual Conference",
+          "year": "2020"
+        },
+        {
+          "name": "DRUID Conference",
+          "location": "New York, NY",
+          "year": "2017"
+        }
+      ]
+    },
+    {
+      "title": "Dealing with Messy Data (Workshop)",
+      "conferences": [
+        {
+          "name": "DSI Annual Meeting, Virtual Conference",
+          "year": "2020"
+        },
+        {
+          "name": "DSI Annual Meeting",
+          "location": "New Orleans, LA",
+          "year": "2019"
+        }
+      ]
+    },
+    {
+      "title": "User-Generated Web Data Predicts Quality Risk: Evidence from the Pharmaceutical Industry",
+      "conferences": [
+        {
+          "name": "PDA/FDA Joint Regulatory Conference",
+          "location": "Washington, DC",
+          "year": "2019"
+        }
+      ]
+    },
+    {
+      "title": "Workplace Environment Transparency, Employee Satisfaction, and Firm Innovation Performance",
+      "conferences": [
+        {
+          "name": "DSI Annual Meeting",
+          "location": "New Orleans, LA",
+          "year": "2019"
+        },
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Seattle, WA",
+          "year": "2019"
+        },
+        {
+          "name": "POMS Annual Meeting",
+          "location": "Washington, DC",
+          "year": "2019"
+        }
+      ]
+    }
+  ]
+}

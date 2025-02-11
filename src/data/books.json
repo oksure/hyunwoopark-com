@@ -1,0 +1,25 @@
+{
+  "title": "Book Chapters and Technical Reports",
+  "items": [
+    {
+      "type": "book",
+      "title": "DHL Global Connectedness Index 2014",
+      "authors": "Ghemawat P, Altman SA",
+      "notes": "Chapter II: Visualizing Global Connectedness",
+      "year": "2014"
+    },
+    {
+      "type": "book",
+      "title": "Discipline of Organizing",
+      "authors": "Glushko RJ",
+      "notes": "Chapter 9: Interactions with Resources",
+      "year": "2013"
+    },
+    {
+      "type": "book",
+      "title": "Stochastic Manufacturing and Service Systems",
+      "authors": "Dai JG, Park H",
+      "notes": "Unpublished lecture notes"
+    }
+  ]
+}

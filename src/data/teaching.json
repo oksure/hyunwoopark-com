@@ -1,0 +1,61 @@
+{
+  "title": "Teaching Experience",
+  "items": [
+    {
+      "institution": "The Ohio State University, Fisher College of Business",
+      "courses": [
+        {
+          "role": "Advising & Committee",
+          "details": [
+            "In Joon Noh (Fisher), Committee Member, SP20 (Placement: Penn State University)",
+            "Rahul Pandey (Fisher), Committee Member, SP20 (Placement: University of Memphis)",
+            "Junpeng Wang (Computer Science), Committee Member, SP19 (Placement: VISA Research)",
+            "Yingchao Lan (Fisher), Committee Member, SP18 (Placement: University of Nebraska–Lincoln)"
+          ]
+        },
+        {
+          "role": "Instructor",
+          "details": [
+            "BM7331 Descriptive Analytics and Visualization; SP19, SP20",
+            "BM2320 Business Statistics; SP18, SP19, SP20"
+          ]
+        },
+        {
+          "role": "Course Development",
+          "details": [
+            "BM7331 Descriptive Analytics and Visualization; AU17–AU18"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Georgia Institute of Technology, School of Industrial and Systems Engineering",
+      "courses": [
+        {
+          "role": "Instructor",
+          "details": [
+            "ISyE 3232 Stochastic Manufacturing and Service Systems (Undergraduate Core Stochastic Course), SU11, Average course evaluation rating: 4.4/5.0"
+          ]
+        },
+        {
+          "role": "TA",
+          "details": [
+            "TA for Prof. Jim Dai, ISyE 3232, SP11"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "UC Berkeley, School of Information",
+      "courses": [
+        {
+          "role": "TA",
+          "details": [
+            "TA for Prof. Robert Glushko, INFO 290-1 Information and Service System Design, SP09",
+            "TA for Prof. John Chuang, INFO 206 Distributed Computing Applications and Infrastructure, AU09"
+          ]
+        }
+      ]
+    }
+  ]
+}

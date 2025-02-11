@@ -1,0 +1,21 @@
+{
+  "title": "Software",
+  "items": [
+    {
+      "name": "Simple Network Viewer",
+      "link": "https://hyunwoopark.com/netview/"
+    },
+    {
+      "name": "Bicentric Diagrams",
+      "link": "http://bicentric.herokuapp.com/"
+    },
+    {
+      "name": "Visual Supply Chain Management",
+      "link": "http://visualscm.herokuapp.com/"
+    },
+    {
+      "name": "ecoxight (Business Ecosystem Intelligence System)",
+      "link": "https://ecoxight.com/"
+    }
+  ]
+}

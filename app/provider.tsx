@@ -1,13 +1,30 @@
 "use client"
 
-import { ChakraProvider, defaultSystem } from "@chakra-ui/react"
+// import { ChakraProvider, defaultSystem } from "@chakra-ui/react"
+import { ChakraProvider, createSystem, defaultConfig, Flex, Box } from "@chakra-ui/react"
 import { ThemeProvider } from "next-themes"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
+
+const system = createSystem(defaultConfig, {
+  globalCss: {
+    body: {
+      colorPalette: 'cyan',
+    },
+  },
+})
 
 export default function RootLayout(props: { children: React.ReactNode }) {
   return (
-    <ChakraProvider value={defaultSystem}>
+    <ChakraProvider value={system}>
       <ThemeProvider attribute="class" disableTransitionOnChange>
-        {props.children}
+        <Flex direction="column" minH="100vh" letterSpacing="tight">
+          <Navbar />
+          <Box as="main" flex="1">
+            {props.children}
+          </Box>
+          <Footer />
+        </Flex>
       </ThemeProvider>
     </ChakraProvider>
   )

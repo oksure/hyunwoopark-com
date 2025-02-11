@@ -1,0 +1,26 @@
+{
+  "title": "Referred Conference Proceedings",
+  "items": [
+    {
+      "type": "conference",
+      "title": "Rare is Beautiful? Rare Technological Resources and Value Implications",
+      "authors": "Lee J, Jung HJ, Park H",
+      "proceedings": "Academy of Management Best Paper Proceedings",
+      "year": "2020"
+    },
+    {
+      "type": "conference",
+      "title": "Product Innovation Contest on Service Network: Competitive Spillover from Exclusive Dealing",
+      "authors": "Park H, Basole RC",
+      "proceedings": "Academy of Management Best Paper Proceedings",
+      "year": "2015"
+    },
+    {
+      "type": "conference",
+      "title": "An (Almost) Free Lunch? Social Recognition and Knowledge Sharing Behavior in a Virtual Community",
+      "authors": "Park H, Lee J",
+      "proceedings": "Academy of Management Best Paper Proceedings",
+      "year": "2015"
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "title": "Journal Publications",
+  "items": [
+    {
+      "type": "journal",
+      "title": "Visualization system to identify structurally vulnerable links in OHT railway network in semiconductor FAB using betweenness centrality",
+      "authors": "Choi J, Park Y, Choi Y, Kim S, Lee H, Park H",
+      "journal": "PLoS ONE",
+      "volume": "19",
+      "number": "7",
+      "pages": "e0307059",
+      "year": "2024",
+      "link": "https://doi.org/10.1371/journal.pone.0307059"
+    },
+    {
+      "type": "journal",
+      "title": "Gender and Serious Drug Recalls: A Textual Sentiment Analysis of Drug Reviews on WebMD",
+      "authors": "Ball GP, Bavafa H, Blanco C, Park H, Wowak KD",
+      "journal": "Production and Operations Management",
+      "year": "2024",
+      "link": "https://journals.sagepub.com/doi/abs/10.1177/10591478241256644",
+      "top": ["utd24"]
+    },
+    {
+      "type": "journal",
+      "title": "Complex Business Ecosystem Intelligence Using AI-Powered Visual Analytics",
+      "authors": "Basole RC, Park H, Seuss CD",
+      "journal": "Decision Support Systems",
+      "volume": "178",
+      "pages": "114133",
+      "year": "2024",
+      "link": "https://www.sciencedirect.com/science/article/pii/S0167923623002087"
+    },
+    {
+      "type": "journal",
+      "title": "Rare is Beautiful? The Interplay Between Rareness, Technology Search, and Technology Value",
+      "authors": "Lee J, Jung HJ, Park H",
+      "journal": "Production and Operations Management",
+      "year": "2022",
+      "top": ["utd24"]
+    },
+    {
+      "type": "journal",
+      "title": "[Book Review] A History of Data Visualization and Graphic Communication",
+      "authors": "Park H",
+      "journal": "Journal of the American Statistical Association",
+      "year": "2022"
+    },
+    {
+      "type": "journal",
+      "title": "When to Signal? Contingencies for Career-Motivated Contributions in Online Collaboration Communities",
+      "authors": "Lee J, Park H, Zaggl M",
+      "journal": "Journal of the Association for Information Systems",
+      "year": "2022"
+    },
+    {
+      "type": "journal",
+      "title": "Vessel Sharing and its Impact on Maritime Operations and Carbon Emissions",
+      "authors": "Park H, Blanco C, Bendoly E",
+      "journal": "Production and Operations Management",
+      "year": "2022",
+      "top": ["utd24"]
+    },
+    {
+      "type": "journal",
+      "title": "Extended Graph Formulation for the Inequity Aversion Pricing Problem on Social Networks",
+      "authors": "Chopra S, Park H, Shim S",
+      "journal": "INFORMS Journal on Computing",
+      "year": "2022",
+      "link": "https://pubsonline.informs.org/doi/abs/10.1287/ijoc.2021.1148"
+    },
+    {
+      "type": "journal",
+      "title": "Interfirm Collaboration and Firm Value in Software Ecosystems: Evidence from Cloud Computing",
+      "authors": "Basole RC, Park H",
+      "journal": "IEEE Transactions on Engineering Management",
+      "volume": "66",
+      "number": "4",
+      "pages": "568-582",
+      "year": "2019",
+      "link": "https://ieeexplore.ieee.org/document/8424065/"
+    },
+    {
+      "type": "journal",
+      "title": "Visual Analysis of Venture Similarity in Entrepreneurial Ecosystems",
+      "authors": "Basole RC, Park H, Chao RO",
+      "journal": "IEEE Transactions on Engineering Management",
+      "volume": "66",
+      "number": "3",
+      "pages": "368-380",
+      "year": "2019",
+      "link": "https://ieeexplore.ieee.org/document/8425782/"
+    },
+    {
+      "type": "journal",
+      "title": "Structural Anatomy and Evolution of Supply Chain Alliance Networks: A Multi-Method Approach",
+      "authors": "Park H, Bellamy MA, Basole RC",
+      "journal": "Journal of Operations Management",
+      "volume": "63",
+      "pages": "79-96",
+      "year": "2018",
+      "link": "https://www.sciencedirect.com/science/article/pii/S0272696318300664",
+      "top": ["utd24", "ft50"]
+    },
+    {
+      "type": "journal",
+      "title": "Tua Culpa: When an Organization Blames its Partner for Failure in a Shared Task",
+      "authors": "Park BS, Park H, Ramanujam R",
+      "journal": "Academy of Management Review",
+      "volume": "43",
+      "number": "4",
+      "pages": "792-811",
+      "year": "2018",
+      "link": "https://journals.aom.org/doi/10.5465/amr.2016.0305",
+      "top": ["utd24", "ft50"]
+    },
+    {
+      "type": "journal",
+      "title": "ecoxight: Discovery, Exploration and Analysis of Business Ecosystems using Interactive Visualization",
+      "authors": "Basole RC, Srinivasan A, Park H, Patel S",
+      "journal": "ACM Transactions on Management Information Systems",
+      "volume": "9",
+      "number": "2",
+      "year": "2018",
+      "link": "https://dl.acm.org/citation.cfm?id=3185047"
+    },
+    {
+      "type": "journal",
+      "title": "Revealing Community Structures by Ensemble Clustering using Group Diffusion",
+      "authors": "Ivannikova E, Park H, Hämäläinen T, Lee K",
+      "journal": "Information Fusion",
+      "volume": "42",
+      "pages": "24-36",
+      "year": "2018",
+      "link": "http://www.sciencedirect.com/science/article/pii/S1566253517305535"
+    },
+    {
+      "type": "journal",
+      "title": "Graphiti: Interactive Specification of Attribute-based Edges for Network Modeling and Visualization",
+      "authors": "Srinivasan A, Park H, Endert A, Basole RC",
+      "journal": "IEEE Transactions on Visualization and Computer Graphics",
+      "volume": "24",
+      "number": "1",
+      "pages": "226-235",
+      "year": "2018",
+      "link": "http://ieeexplore.ieee.org/document/8019835/"
+    },
+    {
+      "type": "journal",
+      "title": "Two-Sided Platform Competition with Multihoming Agents: An Empirical Study on the Daily Deals Market",
+      "authors": "Kim B-C, Lee J, Park H",
+      "journal": "Information Economics and Policy",
+      "volume": "41",
+      "pages": "36-53",
+      "year": "2017",
+      "link": "http://www.sciencedirect.com/science/article/pii/S0167624516300907"
+    },
+    {
+      "type": "journal",
+      "title": "Visualization of Innovation in Global Supply Chain Networks",
+      "authors": "Basole RC*, Bellamy MA*, Park H*",
+      "journal": "Decision Sciences",
+      "volume": "48",
+      "number": "2",
+      "pages": "288-306",
+      "year": "2017",
+      "link": "http://onlinelibrary.wiley.com/doi/10.1111/deci.12213/abstract"
+    },
+    {
+      "type": "journal",
+      "title": "Visual Analytics for Supply Network Management: System Design and Evaluation",
+      "authors": "Park H, Bellamy MA, Basole RC",
+      "journal": "Decision Support Systems",
+      "volume": "91",
+      "pages": "89-102",
+      "year": "2016",
+      "link": "http://www.sciencedirect.com/science/article/pii/S0167923616301397"
+    },
+    {
+      "type": "journal",
+      "title": "Bicentric Diagrams: Design and Applications of a Graph-Based Relational Set Visualization Technique",
+      "authors": "Park H*, Basole RC*",
+      "journal": "Decision Support Systems",
+      "volume": "84",
+      "pages": "64-77",
+      "year": "2016",
+      "link": "http://www.sciencedirect.com/science/article/pii/S016792361630001X"
+    },
+    {
+      "type": "journal",
+      "title": "Computational Analysis and Visualization of Global Supply Network Risks",
+      "authors": "Basole RC, Bellamy MA, Park H, Putrevu J",
+      "journal": "IEEE Transactions on Industrial Informatics",
+      "volume": "12",
+      "number": "3",
+      "pages": "1206-1213",
+      "year": "2016",
+      "link": "https://ieeexplore.ieee.org/document/7445240/"
+    },
+    {
+      "type": "journal",
+      "title": "Project Selection in NIH: A Natural Experiment from ARRA",
+      "authors": "Park H, Lee J, Kim BC",
+      "journal": "Research Policy",
+      "volume": "44",
+      "number": "6",
+      "pages": "1145-1159",
+      "year": "2015",
+      "link": "http://www.sciencedirect.com/science/article/pii/S0048733315000396",
+      "top": ["utd24", "ft50"]
+    },
+    {
+      "type": "journal",
+      "title": "Understanding Variations in Pediatric Asthma Care Processes in the Emergency Department using Visual Analytics",
+      "authors": "Basole RC, Braunstein M, Kumar V, Park H, Kahng M, Chau DHP, Tamersoy A, Hirsh DA, Serban N, Bost J, Lesnick B, Schissel BL, Thompson M",
+      "journal": "Journal of the American Medical Informatics Association (JAMIA)",
+      "volume": "22",
+      "number": "2",
+      "pages": "318-323",
+      "year": "2015",
+      "link": "http://jamia.oxfordjournals.org/content/22/2/318.abstract"
+    },
+    {
+      "type": "journal",
+      "title": "Understanding Business Ecosystem Dynamics: A Data-Driven Approach",
+      "authors": "Basole RC, Russell MG, Hutamaki J, Rubens N, Still K, Park H",
+      "journal": "ACM Transactions on Management Information Systems",
+      "volume": "6",
+      "number": "2",
+      "year": "2015",
+      "link": "http://dl.acm.org/citation.cfm?id=2724730"
+    },
+    {
+      "type": "journal",
+      "title": "Visual Analytics for Early-Phase Complex Engineered System Design Support",
+      "authors": "Basole RC, Qamar A, Park H, Paredis C, McGinnis LF",
+      "journal": "IEEE Computer Graphics and Applications",
+      "volume": "35",
+      "number": "2",
+      "pages": "41-51",
+      "year": "2015",
+      "link": "https://ieeexplore.ieee.org/document/7006349/"
+    },
+    {
+      "type": "journal",
+      "title": "Coopetition and Convergence in the ICT Ecosystem",
+      "authors": "Basole RC, Park H, Barnett BC",
+      "journal": "Telecommunications Policy",
+      "volume": "39",
+      "number": "7",
+      "pages": "537-552",
+      "year": "2015",
+      "link": "http://www.sciencedirect.com/science/article/pii/S0308596114000627"
+    },
+    {
+      "type": "journal",
+      "title": "Dependence Clustering, a Method Revealing Community Structure with Group Dependence",
+      "authors": "Park H, Lee K",
+      "journal": "Knowledge-Based Systems",
+      "volume": "60",
+      "pages": "58-72",
+      "year": "2014",
+      "link": "http://www.sciencedirect.com/science/article/pii/S095070511400015X"
+    },
+    {
+      "type": "journal",
+      "title": "Challenges and Opportunities for Enterprise Transformation Research",
+      "authors": "Basole RC, Bellamy MA, Clear T, Dabkowski M, Monreal J, Park H, Valerdi R, Van Aken EM",
+      "journal": "Journal of Enterprise Transformation",
+      "volume": "3",
+      "number": "4",
+      "pages": "330-352",
+      "year": "2013",
+      "link": "http://www.tandfonline.com/doi/abs/10.1080/19488289.2013.861704#.VAc4x2RN45w"
+    },
+    {
+      "type": "journal",
+      "title": "Multi-Level Simulations of Health Delivery Enterprises Flight Simulators for Policy, Strategy, Planning, and Management",
+      "authors": "Park H, Clear T, Rouse WB, Basole RC, Braunstein M, Brigham KL, Cunningham L",
+      "journal": "Service Science",
+      "volume": "4",
+      "number": "3",
+      "pages": "253-268",
+      "year": "2012",
+      "link": "http://pubsonline.informs.org/doi/abs/10.1287/serv.1120.0022"
+    }
+  ]
+}

@@ -6,7 +6,7 @@ export default function Sidebar() {
     <Box
       w={{ base: "full", md: "1/4" }}
       position={{ md: "sticky" }}
-      top="80px"  // Adjust top value as needed to avoid overlap with navbar
+      top="110px"  // Adjust top value as needed to avoid overlap with navbar
       h="fit-content" // Important so it does not take up the entire viewport height
     >
       <VStack gap="0">

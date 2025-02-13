@@ -5,19 +5,22 @@
       "type": "award",
       "title": "Best Paper Award Finalist",
       "awarder": "Academy of Management Operations & Supply Chain Management (OSCM) Division",
-      "year": "2020"
+      "year": "2020",
+      "special": true
     },
     {
       "type": "award",
       "title": "Best Dissertation Award Runner-up",
       "awarder": "INFORMS Technology, Innovation Management and Entrepreneurship Section (TIMES)",
-      "year": "2017"
+      "year": "2017",
+      "special": true
     },
     {
       "type": "award",
       "title": "Best Paper Award Winner",
       "awarder": "Academy of Management Organizational Communication & Information Systems (OCIS) Division",
-      "year": "2017"
+      "year": "2017",
+      "special": true
     },
     {
       "type": "award",
@@ -29,7 +32,8 @@
       "type": "award",
       "title": "Best Student Paper Award Winner",
       "awarder": "Academy of Management Technology & Innovation Management (TIM) Division",
-      "year": "2015"
+      "year": "2015",
+      "special": true
     },
     {
       "type": "award",
@@ -53,13 +57,15 @@
       "type": "award",
       "title": "Presidential Scholar",
       "awarder": "President of the Republic of Korea",
-      "year": "2002"
+      "year": "2002",
+      "special": true
     },
     {
       "type": "award",
       "title": "Gold Medalist",
       "awarder": "33rd International Chemistry Olympiad",
-      "year": "2001"
+      "year": "2001",
+      "special": true
     },
     {
       "type": "fellowship",
@@ -95,7 +101,8 @@
       "type": "fellowship",
       "title": "Doctoral Fellowship",
       "awarder": "Korea Foundation for Advanced Studies",
-      "year": "2010-2015"
+      "year": "2010-2015",
+      "special": true
     },
     {
       "type": "fellowship",
@@ -107,13 +114,15 @@
       "type": "fellowship",
       "title": "Undergraduate Fellowship",
       "awarder": "Korea Foundation for Advanced Studies",
-      "year": "2002-2008"
+      "year": "2002-2008",
+      "special": true
     },
     {
       "type": "grant",
       "title": "Korea NRF Emerging Scholar Program (Equivalent to NSF Career)",
       "awarder": "PI",
-      "year": "2022-2027"
+      "year": "2022-2027",
+      "special": true
     },
     {
       "type": "grant",
@@ -125,13 +134,15 @@
       "type": "grant",
       "title": "FDA Broad Agency Announcement (BAA) “FDA Quality Management and Pharmaceutical Firm Learning to Reduce Drug Quality Risks” (Total: $1.7M)",
       "awarder": "Co-investigator",
-      "year": "2019-2021"
+      "year": "2019-2021",
+      "special": true
     },
     {
       "type": "grant",
       "title": "U01 Grant from FDA to NIPTE “Manufacturing Sector Research Initiative” (Total: $2.5M)",
       "awarder": "Co-investigator",
-      "year": "2018–2019"
+      "year": "2018–2019",
+      "special": true
     },
     {
       "type": "grant",

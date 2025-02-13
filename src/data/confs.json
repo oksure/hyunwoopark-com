@@ -5,7 +5,8 @@
       "title": "Supply Network Reconfiguration in Industry Transition: A Study of Electric Vehicles in the Automotive Industry",
       "conferences": [
         {
-          "name": "DSI Annual Meeting, Virtual Conference",
+          "name": "DSI Annual Meeting",
+          "location": "Virtual Conference",
           "year": "2020"
         }
       ]
@@ -14,11 +15,13 @@
       "title": "Rare is Beautiful? Rare Technological Resources and Value Implications",
       "conferences": [
         {
-          "name": "INFORMS Annual Meeting, Virtual Conference",
+          "name": "INFORMS Annual Meeting",
+          "location": "Virtual Conference",
           "year": "2020"
         },
         {
-          "name": "AOM Annual Meeting, Virtual Conference",
+          "name": "AOM Annual Meeting",
+          "location": "Virtual Conference",
           "year": "2020"
         },
         {
@@ -32,7 +35,8 @@
       "title": "Dealing with Messy Data (Workshop)",
       "conferences": [
         {
-          "name": "DSI Annual Meeting, Virtual Conference",
+          "name": "DSI Annual Meeting",
+          "location": "Virtual Conference",
           "year": "2020"
         },
         {
@@ -69,6 +73,376 @@
           "name": "POMS Annual Meeting",
           "location": "Washington, DC",
           "year": "2019"
+        }
+      ]
+    },
+    {
+      "title": "Disruption Warning Signal Attributes' Effect on Firm Performance: Evidence from National Hurricane Center and Airlines",
+      "conferences": [
+        {
+          "name": "DSI Annual Meeting",
+          "location": "New Orleans, LA",
+          "year": "2019"
+        },
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Seattle, WA",
+          "year": "2019"
+        },
+        {
+          "name": "POMS Annual Meeting",
+          "location": "Washington, DC",
+          "year": "2019"
+        }
+      ]
+    },
+    {
+      "title": "The Resilience of Airline Networks to Severe Weather",
+      "conferences": [
+        {
+          "name": "DSI Annual Meeting",
+          "location": "New Orleans, LA",
+          "year": "2019"
+        },
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Seattle, WA",
+          "year": "2019"
+        },
+        {
+          "name": "POMS Annual Meeting",
+          "location": "Washington, DC",
+          "year": "2019"
+        }
+      ]
+    },
+    {
+      "title": "A Comparative Study of Supply Network Robustness: Topological Sensitivity Analysis for Random and Targeted Disruptions",
+      "conferences": [
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Seattle, WA",
+          "year": "2019"
+        },
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Phoenix, AZ",
+          "year": "2018"
+        }
+      ]
+    },
+    {
+      "title": "Predicting Drug Recalls using Social Media Data",
+      "conferences": [
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Phoenix, AZ",
+          "year": "2018"
+        }
+      ]
+    },
+    {
+      "title": "Technological Innovation Spillovers in Supply Networks",
+      "conferences": [
+        {
+          "name": "POMS Annual Meeting",
+          "location": "Houston, TX",
+          "year": "2018"
+        }
+      ]
+    },
+    {
+      "title": "Structural Redundancy for Managing Supply Chain Disruption Risks: An Empirically Informed Investigation of Real-World Multi-Echelon Supply Networks",
+      "conferences": [
+        {
+          "name": "DSI Annual Meeting",
+          "location": "Washington, DC",
+          "year": "2017"
+        }
+      ]
+    },
+    {
+      "title": "A Bicentric Diagram Approach to Manage Interdependencies when Designing Complex Systems",
+      "conferences": [
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Houston, TX",
+          "year": "2017"
+        }
+      ]
+    },
+    {
+      "title": "Archetypes of Entrepreneurship: From Ideas to Products to Funding",
+      "conferences": [
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Houston, TX",
+          "year": "2017"
+        }
+      ]
+    },
+    {
+      "title": "Structural Anatomy and Evolution of Supply Networks: A Multi-Method Approach",
+      "conferences": [
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Houston, TX",
+          "year": "2017"
+        }
+      ]
+    },
+    {
+      "title": "I'm Doing This for You (And Me!): Career Concern as Motivation in Online Collaboration Communities",
+      "conferences": [
+        {
+          "name": "AOM Annual Meeting",
+          "location": "Atlanta, GA",
+          "year": "2017"
+        }
+      ]
+    },
+    {
+      "title": "Strategic Positioning in Global Entrepreneurship Ecosystems",
+      "conferences": [
+        {
+          "name": "POMS Annual Meeting",
+          "location": "Seattle, WA",
+          "year": "2017"
+        },
+        {
+          "name": "Product and Service Innovation (PSI)",
+          "location": "Midway, UT",
+          "year": "2017"
+        },
+        {
+          "name": "DSI Annual Meeting",
+          "location": "Austin, TX",
+          "year": "2016"
+        },
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Nashville, TN",
+          "year": "2016"
+        }
+      ]
+    },
+    {
+      "title": "Product Innovation Contest on Service Network: Competitive Spillover from Exclusive Dealing",
+      "conferences": [
+        {
+          "name": "INFORMS Annual Meeting (TIMES Best Dissertation Session)",
+          "location": "Houston, TX",
+          "year": "2017"
+        },
+        {
+          "name": "POMS Annual Meeting",
+          "location": "Seattle, WA",
+          "year": "2017"
+        },
+        {
+          "name": "DSI Annual Meeting",
+          "location": "Austin, TX",
+          "year": "2016"
+        },
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Nashville, TN",
+          "year": "2016"
+        },
+        {
+          "name": "AOM Annual Meeting",
+          "location": "Vancouver, BC, Canada",
+          "year": "2015"
+        },
+        {
+          "name": "Atlanta Competitive Advantage Conference (ACAC)",
+          "location": "Atlanta, GA",
+          "year": "2015"
+        },
+        {
+          "name": "Industry Studies Association (ISA)",
+          "location": "Kansas City, MO",
+          "year": "2015"
+        }
+      ]
+    },
+    {
+      "title": "An (Almost) Free Lunch? Social Recognition and Knowledge Sharing Behavior in a Virtual Community",
+      "conferences": [
+        {
+          "name": "Wharton People and Organizations Conference",
+          "location": "Philadelphia, PA",
+          "year": "2019"
+        },
+        {
+          "name": "Open and User Innovation (OUI) Conference",
+          "location": "Boston, MA",
+          "year": "2016"
+        },
+        {
+          "name": "AOM Annual Meeting",
+          "location": "Vancouver, BC, Canada",
+          "year": "2015"
+        }
+      ]
+    },
+    {
+      "title": "Dynamic Co-evolution of Supply Network Structure: Accessibility and Interconnectedness",
+      "conferences": [
+        {
+          "name": "POMS Annual Meeting",
+          "location": "Orlando, FL",
+          "year": "2016"
+        }
+      ]
+    },
+    {
+      "title": "Integrated Analytics Framework for Business Ecosystem Dynamics",
+      "conferences": [
+        {
+          "name": "POMS Annual Meeting",
+          "location": "Orlando, FL",
+          "year": "2016"
+        },
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Philadelphia, PA",
+          "year": "2015"
+        }
+      ]
+    },
+    {
+      "title": "Integrated Interactive Visual Analytics Framework for Supply Chain Network Management",
+      "conferences": [
+        {
+          "name": "IEEE VIS Workshop",
+          "location": "Chicago, IL",
+          "year": "2015"
+        }
+      ]
+    },
+    {
+      "title": "Project Selection in NIH: A Natural Experiment from ARRA",
+      "conferences": [
+        {
+          "name": "ISA",
+          "location": "Kansas City, MO",
+          "year": "2015"
+        },
+        {
+          "name": "DRUID Conference",
+          "location": "Rome, Italy",
+          "year": "2015"
+        }
+      ]
+    },
+    {
+      "title": "Firm Value of Product Innovation in Service Ecosystem: A Study of Smartphones",
+      "conferences": [
+        {
+          "name": "ISA",
+          "location": "Kansas City, MO",
+          "year": "2015"
+        },
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "San Francisco, CA",
+          "year": "2014"
+        }
+      ]
+    },
+    {
+      "title": "Bicentric Diagrams: Design and Applications of a Graph-Based Relational Set Visualization Technique",
+      "conferences": [
+        {
+          "name": "ACM SIGCHI Conference",
+          "location": "Seoul, Korea",
+          "year": "2015"
+        }
+      ]
+    },
+    {
+      "title": "Simulation of Business Ecosystem Dynamics using Big Data: Framework Formulation and Validation",
+      "conferences": [
+        {
+          "name": "Systems Engineering Research Center (SERC)",
+          "location": "Washington, DC",
+          "year": "2014"
+        }
+      ]
+    },
+    {
+      "title": "Product Innovation and Platform Strategy: A Technology Evolution Perspective",
+      "conferences": [
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "San Francisco, CA",
+          "year": "2014"
+        },
+        {
+          "name": "POMS Annual Meeting",
+          "location": "Atlanta, GA",
+          "year": "2014"
+        },
+        {
+          "name": "Georgia Tech Research & Innovation Conference",
+          "location": "Georgia Tech, Atlanta, GA",
+          "year": "2013"
+        }
+      ]
+    },
+    {
+      "title": "Product-Service Network and Interfirm Alliance in the Mobile Ecosystem: Network Visualization and Dyadic Analysis",
+      "conferences": [
+        {
+          "name": "POMS Annual Meeting",
+          "location": "Atlanta, GA",
+          "year": "2014"
+        },
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Minneapolis, MN",
+          "year": "2013"
+        }
+      ]
+    },
+    {
+      "title": "Useful Descriptive and Prescriptive Computational Tools for Social Science",
+      "conferences": [
+        {
+          "name": "Computational Social Science Workshop",
+          "location": "Emory University, Atlanta, GA",
+          "year": "2013"
+        }
+      ]
+    },
+    {
+      "title": "Dynamic Platform Competition in a Two-Sided Market: Evidence from the Online Daily Deals Promotion Industry",
+      "conferences": [
+        {
+          "name": "Atlanta Competitive Advantage Conference (ACAC)",
+          "location": "Atlanta, GA",
+          "year": "2013"
+        },
+        {
+          "name": "NET Institute Conference",
+          "location": "Berkeley, CA",
+          "year": "2013"
+        },
+        {
+          "name": "Annual Conference on Internet Search and Innovation, Northwestern University",
+          "location": "Chicago, IL",
+          "year": "2013"
+        },
+        {
+          "name": "Strategic Management Society Conference",
+          "location": "Atlanta, GA",
+          "year": "2013"
+        },
+        {
+          "name": "Southern Economic Association Conference",
+          "location": "Tampa, FL",
+          "year": "2013"
         }
       ]
     }

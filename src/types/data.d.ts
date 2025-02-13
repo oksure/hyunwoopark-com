@@ -46,8 +46,8 @@ interface AwardData {
 interface TeachingItem {
   institution: string;
   courses: {
-    role: string; // e.g., "Instructor", "TA", "Advising & Committee", "Course Development"
-    details: string; // List of courses or roles
+    role: string;
+    details: string;
   };
 }
 
@@ -56,15 +56,20 @@ interface TeachingData {
   items: TeachingItem;
 }
 
-interface ServiceItem {
-  type: "membership" | "officer" | "chair" | "reviewer";
-  title: string;
-  details?: string; // Optional details for some types
+interface ServCategoryDetail {
+  category: string;
+  subdetails: string[];
 }
 
-interface ServiceData {
+interface ServItem {
+  type: string;
   title: string;
-  items: ServiceItem;
+  details: Array<string | ServCategoryDetail>;
+}
+
+interface ServData {
+  title: string;
+  items: ServItem[];
 }
 
 interface TalkItem {
@@ -77,24 +82,24 @@ interface TalkData {
   items: TalkItem;
 }
 
-interface PresentationItem {
+interface ConfItem {
   title: string;
   conferences: {
     name: string;
-    location?: string; // Some conferences might not have a location
+    location?: string;
     year: string;
   };
 }
 
-interface PresentationData {
+interface ConfData {
   title: string;
-  items: PresentationItem;
+  items: ConfItem;
 }
 
 interface OtherItem {
   institution: string;
   location: string;
-  period: string; // Can be a single year or a range
+  period: string;
   role: string;
   details: string;
 }

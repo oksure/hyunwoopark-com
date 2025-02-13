@@ -3,77 +3,142 @@
   "items": [
     {
       "type": "membership",
-      "title": "Institute of Operations Research and Management Science (INFORMS)"
-    },
-    {
-      "type": "membership",
-      "title": "Production and Operations Management Society (POMS)"
-    },
-    {
-      "type": "membership",
-      "title": "Decision Sciences Institute (DSI)"
-    },
-    {
-      "type": "membership",
-      "title": "Academy of Management (AOM)"
-    },
-    {
-      "type": "membership",
-      "title": "Industry Studies Association (ISA)"
-    },
-    {
-      "type": "officer",
-      "title": "VP of Programs for INFORMS TIMES Section 2022"
-    },
-    {
-      "type": "officer",
-      "title": "VP of Membership & Communication for INFORMS TIMES Section 2021"
-    },
-    {
-      "type": "chair",
-      "title": "Track Chair",
+      "title": "Membership",
       "details": [
-        "TIME/NPD Track for INFORMS Annual Meeting 2022",
-        "NPD Track for INFORMS Annual Meeting 2021"
+        {
+          "category": "International",
+          "subdetails": [
+            "Institute of Operations Research and Management Science (INFORMS)",
+            "Production and Operations Management Society (POMS)",
+            "Decision Sciences Institute (DSI)",
+            "Academy of Management (AOM)",
+            "Industry Studies Association (ISA)"
+          ]
+        },
+        {
+          "category": "Korean",
+          "subdetails": [
+            "KIIE",
+            "KDMS",
+            "KOSIME",
+            "KrAIS",
+            "KMIS",
+            "KPOMS"
+          ]
+        }
       ]
     },
     {
-      "type": "chair",
-      "title": "Session Chair",
+      "type": "conference",
+      "title": "Conference",
       "details": [
-        "INFORMS Annual Meeting 2017, 2019, 2020",
-        "POMS Annual Meeting 2016, 2019"
+        {
+          "category": "Leadership",
+          "subdetails": [
+            "INFORMS TIMES Past President 2025",
+            "INFORMS TIMES President 2024",
+            "INFORMS TIMES President-Elect 2023",
+            "INFORMS TIMES VP of Programs 2022",
+            "INFORMS TIMES VP of Membership and Communications 2021"
+          ]
+        },
+        {
+          "category": "Track Chair",
+          "subdetails": [
+            "INFORMS Annual Meeting TIME/NPD 2022",
+            "INFORMS Annual Meeting NPD 2021"
+          ]
+        },
+        {
+          "category": "Session Chair",
+          "subdetails": [
+            "INFORMS Annual Meeting 2020",
+            "INFORMS Annual Meeting 2019",
+            "INFORMS Annual Meeting 2017",
+            "POMS Annual Meeting 2019",
+            "POMS Annual Meeting 2016"
+          ]
+        },
+        {
+          "category": "Program Committee",
+          "subdetails": [
+            "European Conference of Artifical Intelligence (ECAI) 2024-2025"
+          ]
+        }
       ]
     },
     {
-      "type": "chair",
+      "type": "service",
       "title": "Departmental Service",
       "details": [
-        "Seoul National University",
-        "  Samsung Research-SNU Project Committee 2022",
-        "  Graduate School of Data Science Scholarship Committee 2022",
-        "  AI-X Curriculum Committee 2021-2023",
-        "The Ohio State University",
-        "  Analytics Curriculum Committee 2020-2021",
-        "  Faculty Recruiting Committee 2018"
+        {
+          "category": "Seoul National University",
+          "subdetails": [
+            "Samsung Research-SNU Project Committee 2022",
+            "Graduate School of Data Science Scholarship Committee 2022",
+            "AI-X Curriculum Committee 2021-2023"
+          ]
+        },
+        {
+          "category": "The Ohio State University",
+          "subdetails": [
+            "Analytics Curriculum Committee 2020-2021",
+            "Faculty Recruiting Committee 2018"
+          ]
+        }
       ]
     },
     {
       "type": "reviewer",
       "title": "Editorial Review Board",
       "details": [
-        "Decision Sciences Journal (DSJ)",
-        "Journal of Operations Management (JOM)"
+        {
+          "category": "Journals",
+          "subdetails": [
+            "Decision Sciences Journal (DSJ) 2022-2025",
+            "Journal of Operations Management (JOM) 2022-2025"
+          ]
+        }
       ]
     },
     {
       "type": "reviewer",
       "title": "Ad-hoc Reviewer",
       "details": [
-        "Journals",
-        "  Decision Sciences Journal (DSJ), Decision Support Systems (DSS), European Journal of Operations Research (EJOR), IEEE Transactions on Visualization and Computer Graphics (TVCG), Information & Management, International Journal on Human-Computer Interaction (IJHCI), Journal of Business Logistics (JBL), Journal of International Business Studies (JIBS), Journal of Machine Learning Research (JMLR), Journal of Operations Management (JOM), Journal of Technology Transfer (JOTT), PLOS One, Production and Operations Management (POM), Research Policy (RP), Service Science",
-        "Conferences",
-        "  Academy of Management Conference (AOM), ACM SIGCHI Conference (CHI), Decision Sciences Institute (DSI), Hawaii International Conference on System Sciences (HICSS), IEEE Technology and Engineering Management Conference (TEMSCON), IEEE Visualization Conference (VIS), International Conference on Information Systems (ICIS)"
+        {
+          "category": "Journals",
+          "subdetails": [
+            "Decision Sciences Journal (DSJ)",
+            "Decision Support Systems (DSS)",
+            "European Journal of Operations Research (EJOR)",
+            "IEEE Transactions on Engineering Management (TEM)",
+            "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+            "Information & Management",
+            "INFORMS Journal on Computing (IJOC)",
+            "International Journal on Human-Computer Interaction (IJHCI)",
+            "Journal of Business Logistics (JBL)",
+            "Journal of International Business Studies (JIBS)",
+            "Journal of Machine Learning Research (JMLR)",
+            "Journal of Operations Management (JOM)",
+            "Journal of Technology Transfer (JOTT)",
+            "PLOS One",
+            "Production and Operations Management (POM)",
+            "Research Policy (RP)",
+            "Service Science"
+          ]
+        },
+        {
+          "category": "Conferences",
+          "subdetails": [
+            "Academy of Management Conference (AOM)",
+            "ACM SIGCHI Conference (CHI)",
+            "Decision Sciences Institute (DSI)",
+            "Hawaii International Conference on System Sciences (HICSS)",
+            "IEEE Technology and Engineering Management Conference (TEMSCON)",
+            "IEEE Visualization Conference (VIS)",
+            "International Conference on Information Systems (ICIS)"
+          ]
+        }
       ]
     }
   ]

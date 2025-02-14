@@ -1,6 +1,21 @@
 "use client";
 
-import { For, Badge, Box, Container, Flex, Image, IconButton, Heading, Text, Link, Separator, Stack, HStack, Collapsible } from "@chakra-ui/react";
+import {
+  For,
+  Badge,
+  Box,
+  Container,
+  Flex,
+  Image,
+  IconButton,
+  Heading,
+  Text,
+  Link,
+  Separator,
+  Stack,
+  HStack,
+  Collapsible,
+} from "@chakra-ui/react";
 import { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import { Checkbox } from "../components/ui/checkbox";
@@ -25,8 +40,23 @@ export default function Page() {
 
         <Box w={{ base: "full", md: "3/4" }}>
           {/* Main Content */}
-          <For each={["exps", "edus", "pubs", "procs", "books", "awards", "teaching", "servs", "talks", "confs", "others", "software"]}>
-            {(stub) => {
+          <For
+            each={[
+              "exps",
+              "edus",
+              "pubs",
+              "procs",
+              "books",
+              "awards",
+              "teaching",
+              "servs",
+              "talks",
+              "confs",
+              "others",
+              "software",
+            ]}
+          >
+            {(stub, index) => {
               const data = (() => {
                 switch (stub) {
                   case "exps":
@@ -58,7 +88,7 @@ export default function Page() {
                 }
               })();
               if (data) {
-                return <Section data={data} stub={stub} />;
+                return <Section key={stub} data={data} stub={stub} />;
               } else {
                 return <></>;
               }
@@ -82,12 +112,12 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
     "abs4*": "orange",
     abs4: "orange",
     abs3: "orange",
-    "top cs": "green"
+    "top cs": "green",
   };
   const badgeSrc = {
     utd24: "https://jsom.utdallas.edu/the-utd-top-100-business-school-research-rankings/",
     ft50: "https://www.ft.com/content/3405a512-5cbb-11e1-8f1f-00144feabdc0",
-    abs: "https://charteredabs.org/academic-journal-guide"
+    abs: "https://charteredabs.org/academic-journal-guide",
   };
 
   return (
@@ -112,7 +142,9 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
           <Checkbox
             variant="subtle"
             ml="auto"
-            onChange={(e) => setShowConfsDetails((e.target as HTMLInputElement).checked)}
+            onChange={(e) =>
+              setShowConfsDetails((e.target as HTMLInputElement).checked)
+            }
           >
             <Text mr={{ base: 0, md: 1 * baseMx }}>Show Details</Text>
           </Checkbox>
@@ -121,13 +153,15 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
           <Checkbox
             variant="subtle"
             ml="auto"
-            onChange={(e) => setShowOthersDetails((e.target as HTMLInputElement).checked)}
+            onChange={(e) =>
+              setShowOthersDetails((e.target as HTMLInputElement).checked)
+            }
           >
             <Text mr={{ base: 0, md: 1 * baseMx }}>Show Details</Text>
           </Checkbox>
         )}
         {stub === "pubs" && (
-          <HStack gap={2} ml="auto" mr={{base:0, md: baseMx}}>
+          <HStack gap={2} ml="auto" mr={{ base: 0, md: baseMx }}>
             {["utd24", "ft50", "abs"].map((topItem) => (
               <Badge
                 size="sm"
@@ -177,9 +211,7 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                           {i < segments.length - 1 && <strong>Park H</strong>}
                         </span>
                       ));
-                    })()}{" "}
-                    ({item.year}).{" "}
-                    <em style={{ fontStyle: "italic" }}>{item.journal}</em>
+                    })()} ({item.year}). <em style={{ fontStyle: "italic" }}>{item.journal}</em>
                     <em style={{ fontStyle: "italic" }}>{item.proceedings}</em>
                     <em style={{ fontStyle: "italic" }}>{item.notes}</em>
                     {item.volume ? `, ${item.volume}` : ""}
@@ -210,15 +242,25 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
       ) : stub === "awards" ? (
         <Box>
           {["award", "fellowship", "grant"].map((sectionType) => {
-            const filteredItems = data.items.filter((item: any) => item.type === sectionType);
+            const filteredItems = data.items.filter(
+              (item: any) => item.type === sectionType
+            );
             if (filteredItems.length === 0) return null;
 
             return (
-              <Box key={sectionType} mb={2 * baseMx} ml={{ base: baseMx, md: 2 * baseMx }}>
+              <Box
+                key={sectionType}
+                mb={2 * baseMx}
+                ml={{ base: baseMx, md: 2 * baseMx }}
+              >
                 <Heading as="h3" size="lg" mb={2}>
                   {sectionType.charAt(0).toUpperCase() + sectionType.slice(1)}s
                 </Heading>
-                <Box as="ul" listStyleType="disc" ml={{ base: 1 * baseMx, md: 2 * baseMx }}>
+                <Box
+                  as="ul"
+                  listStyleType="disc"
+                  ml={{ base: 1 * baseMx, md: 2 * baseMx }}
+                >
                   <For each={filteredItems}>
                     {(item: any, idx: number) => (
                       <Box as="li" key={idx} mb={2}>
@@ -239,7 +281,11 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
         <Box>
           <For each={data.items}>
             {(instItem: any, idx: number) => (
-              <Box key={idx} mb={2 * baseMx} ml={{ base: baseMx, md: 2 * baseMx }}>
+              <Box
+                key={idx}
+                mb={2 * baseMx}
+                ml={{ base: baseMx, md: 2 * baseMx }}
+              >
                 <Heading as="h3" size="lg" mb={2} lineHeight={1.05}>
                   {instItem.institution}
                 </Heading>
@@ -250,7 +296,12 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                         {course.role}
                       </Heading>
                       {course.details && (
-                        <Box as="ul" listStyleType="disc" mb={{ base: .5 * baseMx, md: .5 * baseMx }} ml={{ base: 1 * baseMx, md: 3 * baseMx }}>
+                        <Box
+                          as="ul"
+                          listStyleType="disc"
+                          mb={{ base: 0.5 * baseMx, md: 0.5 * baseMx }}
+                          ml={{ base: 1 * baseMx, md: 3 * baseMx }}
+                        >
                           <For each={course.details}>
                             {(detail: string, dIdx: number) => (
                               <Box as="li" key={dIdx} mb={1}>
@@ -271,7 +322,11 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
         <Box>
           <For each={data.items}>
             {(serviceItem: ServItem, sIdx: number) => (
-              <Box key={sIdx} mb={2 * baseMx} ml={{ base: baseMx, md: 2 * baseMx }}>
+              <Box
+                key={sIdx}
+                mb={2 * baseMx}
+                ml={{ base: baseMx, md: 2 * baseMx }}
+              >
                 <Heading as="h3" size="lg" mb={2}>
                   {serviceItem.title}
                 </Heading>
@@ -294,7 +349,8 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                     } else {
                       if (
                         serviceItem.title === "Ad-hoc Reviewer" &&
-                        (detail.category === "Journals" || detail.category === "Conferences")
+                        (detail.category === "Journals" ||
+                          detail.category === "Conferences")
                       ) {
                         return (
                           <Box key={dIdx} mb={2}>
@@ -319,7 +375,12 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                             >
                               <For each={detail.subdetails}>
                                 {(sub: string, subIdx: number) => (
-                                  <Box as="li" key={subIdx} mb={1} ml={{ base: 0, md: 1 * baseMx }}>
+                                  <Box
+                                    as="li"
+                                    key={subIdx}
+                                    mb={1}
+                                    ml={{ base: 0, md: 1 * baseMx }}
+                                  >
                                     <Text>{sub}</Text>
                                   </Box>
                                 )}
@@ -337,7 +398,11 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
         </Box>
       ) : stub === "software" ? (
         <Box>
-          <Box as="ul" listStyleType="disc" ml={{ base: 2 * baseMx, md: 3 * baseMx }}>
+          <Box
+            as="ul"
+            listStyleType="disc"
+            ml={{ base: 2 * baseMx, md: 3 * baseMx }}
+          >
             <For each={data.items}>
               {(item: any, idx: number) => (
                 <Box as="li" key={idx} mb={2}>
@@ -354,15 +419,20 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
         </Box>
       ) : stub === "others" ? (
         <Box>
-              <Box as="ul" listStyleType="disc" ml={{ base: 2 * baseMx, md: 3 * baseMx }}>
-                <For each={data.items}>
-                  {(item: any, idx: number) => (
-                    <Box as="li" key={idx} mb={2}>
-                      <Text>
-                        <strong>{item.institution}</strong>, {item.location}, {item.period}, {item.role}
-                      </Text>
-          <Collapsible.Root open={showOthersDetails}>
-            <Collapsible.Content>
+          <Box
+            as="ul"
+            listStyleType="disc"
+            ml={{ base: 2 * baseMx, md: 3 * baseMx }}
+          >
+            <For each={data.items}>
+              {(item: any, idx: number) => (
+                <Box as="li" key={idx} mb={2}>
+                  <Text>
+                    <strong>{item.institution}</strong>, {item.location},{" "}
+                    {item.period}, {item.role}
+                  </Text>
+                  <Collapsible.Root open={showOthersDetails}>
+                    <Collapsible.Content>
                       <Box
                         as="ul"
                         listStyleType="circle"
@@ -377,12 +447,12 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                           )}
                         </For>
                       </Box>
-                </Collapsible.Content>
-              </Collapsible.Root>
-                    </Box>
-                  )}
-                </For>
-              </Box>
+                    </Collapsible.Content>
+                  </Collapsible.Root>
+                </Box>
+              )}
+            </For>
+          </Box>
         </Box>
       ) : stub === "talks" ? (
         <Box>
@@ -391,7 +461,9 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
               (a: number, b: number) => b - a
             );
             return years.map((year: number) => {
-              const filteredItems = data.items.filter((item: any) => item.year === year);
+              const filteredItems = data.items.filter(
+                (item: any) => item.year === year
+              );
               return (
                 <Box key={year} mb={baseMx} ml={{ base: baseMx, md: 2 * baseMx }}>
                   <Heading as="h4" size="md" mb={0}>
@@ -533,4 +605,4 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
       )}
     </Box>
   );
-}
+};

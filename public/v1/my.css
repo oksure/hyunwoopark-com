@@ -1,0 +1,25 @@
+.school {
+  margin-left: 15px;
+}
+
+span.separator {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+div.name {
+  margin-bottom: 0px;
+}
+
+div.row.top {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+div.row.line {
+  margin-bottom: 10px;
+}
+
+div.dates {
+  padding-top: 3px;
+}

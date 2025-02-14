@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Data Analysis and Visualization (AU21)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/courses/dav-fall21/custom.min.css">
+    <script defer src="https://umami.hwpark.net/script.js" data-website-id="543f70de-f25c-443c-b307-ad595feea524"></script>
+  </head>
+  <body>
+    <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <div class="container">
+        <a href="./" class="navbar-brand">Data Analysis and Visualization</a>
+        <div class="bs-component">
+        <span class="badge rounded-pill bg-secondary">M3239.003100</span>
+        <span class="badge rounded-pill bg-secondary">Fall 2021</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+<!--       <div class="row">
+        <div class="col-lg-12">
+          <div class="alert alert-warning">
+            <h4 class="alert-heading">Updated 8/31/2021</h4>
+            <p class="mb-0">
+              <ul>
+                <li>Zoom link for first class meeting (Thu 9/2 12:30pm KST): <a href="https://snu-ac-kr.zoom.us/j/87417758931?pwd=TitIVEZHNWdWNzNqdUtHUlBDc0ZCZz09">HERE</a></li>
+                <li>My SNU email address is <a href="mailto:hyunwoopark@snu.ac.kr">hyunwoopark@snu.ac.kr</a>.</li>
+              </ul>
+            </p>
+          </div>
+          <div class="alert alert-warning">
+            <h4 class="alert-heading">Updated 8/18/2021</h4>
+            <p class="mb-0">
+              <ul>
+                <li>Once my SNU email is issued and eTL access is granted on 9/1, I will primarily use eTL for course delivery. Until then, I do not have a way to reach out to the enrolled students. Please regularly check this course homepage for updates.</li>
+                <li>The first class meeting will be on 9/2. I will try to use eTL announcement system on 9/1 for the first class meeting information. I will then send a zoom link if it has to be virtual. Please stay tuned for a notification on 9/1.</li>
+                <li>I understand this process is confusing as I am going through the on-boarding process as a new faculty. Thank you for your patience. I really look forward to seeing you all on 9/2.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+ -->
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card border-secondary mb-3">
+            <div class="card-header">Instructor</div>
+            <div class="card-body">
+              <h4 class="card-title">Hyunwoo Park</h4>
+              <p class="card-text">
+                <ul class="list-unstyled">
+                  <li><i class="fa fa-home"></i> Homepage: <a href="https://hyunwoopark.com" class="uri">https://hyunwoopark.com</a></li>
+                  <li><i class="fa fa-building"></i> Office: 942-417</li>
+                  <li><i class="fa fa-envelope"></i> Email: <a href="mailto:hyunwoopark@snu.ac.kr" class="email">hyunwoopark@snu.ac.kr</a></li>
+                  <li><i class="fa fa-phone"></i> Phone: 02-880-1139</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="card border-secondary mb-3">
+            <div class="card-header">Course Info</div>
+            <div class="card-body">
+              <h4 class="card-title">M3239.003100</h4>
+              <p class="card-text">
+                <ul class="list-unstyled">
+                  <li>Title: Data Analysis and Visualization</li>
+                  <li>과목명: 데이터 분석과 시각화</li>
+                  <li>Schedule: Tu/Th 12:30-13:45</li>
+                  <li>Classroom: 942-302 <span class="badge rounded-pill bg-danger">Zoom (likely)</span></li>
+                  <li>Office hours: By appointment</li>
+                  <li>Course Homepage: <a href="https://hyunwoopark.com/courses/dav-fall21/" class="uri">https://hyunwoopark.com/courses/dav-fall21/</a></li>
+                  <li>SNU eTL: <a href="http://etl.snu.ac.kr/course/view.php?id=206334" class="uri">http://etl.snu.ac.kr/course/view.php?id=206334</a></li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div id="overview" class="section level1">
+          <h3>Overview</h3>
+          <p>Businesses and organizations today collect and store unprecedented quantities of data. In order to make informed decisions with such a massive amount of the accumulated data, organizations seek to adopt and utilize data mining and machine learning techniques. Applying advanced techniques must be preceded by a careful examination of the raw data. This step becomes increasingly important and also easily overlooked as the amount of data increases because human examination is prone to fail without adequate tools to describe a large dataset. Another growing challenge is to communicate a large dataset and complicated models with human decision makers. Exploratory data analysis, and visualizations in particular, helps find patterns in the data and communicate the insights in an effective manner. This course aims to equip students with methods and techniques to summarize and communicate the underlying patterns of different types of data. In addition to creating high-quality static visualizations, this course teaches students how to build an interactive visual analysis system.</p>
+          </div>
+          <hr>
+
+          <div id="objectives" class="section level1">
+          <h3>Objectives</h3>
+          <p>By the end of this course, students should successfully be able to:</p>
+          <ul>
+          <li>Explain pros and cons of various visual representations depending on the context and form of data.</li>
+          <li>Choose appropriate visual representations for special forms of data such as geospatial and network data.</li>
+          <li>Compose a visual dashboard composed of interactive visual artifacts.</li>
+          <li>Create high-quality static visualizations.</li>
+          <li>Plan and implement a customized interactive visual analysis system.</li>
+          </ul>
+          </div>
+          <hr>
+
+          <div id="prerequisite" class="section level1">
+          <h3>Prerequisite</h3>
+          <ul>
+          <li>Prior experience with Python</li>
+          <li>While no experience in web programming (HTML, JavaScript, CSS) is assumed, students should be a self-learner to pick up the pace unless they have experience in web programming.</li>
+          <li>Or, permission of the instructor</li>
+          </ul>
+          </div>
+          <hr>
+
+          <div id="weekly-schedule" class="section level1">
+          <h3>Weekly Schedule</h3>
+          <p>Please note this schedule is subject to change.</p>
+          <img src="https://zzz.sfo3.cdn.digitaloceanspaces.com/y/dav-fall21-schedule.png" width="100%" class="mb-4">
+<!--           <ul>
+          <li>Week 1 (9/2): Course Overview</li>
+          <li>Week 2 (9/7, 9/9): Data Wrangling / Python and Jupyter Setup</li>
+          <li>Week 3 (9/14, 9/16): Data Collection and Cleaning</li>
+          <li>Week 4 (9/21, 9/23): Univariate and Bivariate Visualization</li>
+          <li>Week 5 (9/28, 9/30): Geospatial Visualization</li>
+          <li>Week 6 (10/5, 10/7): Graph Analytics and Network Visualization</li>
+          <li>Week 7 (10/12, 10/14): Interactivity / d3 Setup</li>
+          <li>Week 8 (10/19, 10/21): Visual Analysis System Planning</li>
+          <li>Week 9 (10/26, 10/28): Aesthetics (Color, Font, Layout)</li>
+          <li>Week 10 (11/2, 11/4): Dashboard Design</li>
+          <li>Week 11 (11/9, 11/11): Describing Textual Data</li>
+          <li>Week 12 (11/16, 11/18): Time-series Visualization</li>
+          <li>Week 13 (11/23, 11/25): Visualization Tools and Frameworks</li>
+          <li>Week 14 (11/30, 12/2): Project Discussion</li>
+          <li>Week 15 (12/7, 12/9): Final Project Demo</li>
+          </ul> -->
+          </div>
+          <hr>
+
+          <div id="grade-component-breakdown" class="section level1">
+          <h3>Grade Component Breakdown</h3>
+          <table class="table table-hover">
+          <thead>
+          <tr class="header">
+          <th>Category</th>
+          <th>Points</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="odd">
+          <td>Homework (Five homework assignments; 6% each)</td>
+          <td>30%</td>
+          </tr>
+          <tr class="even">
+          <td>Midterm</td>
+          <td>20%</td>
+          </tr>
+          <tr class="odd">
+          <td>Group Project (Proposal 10%; Output 10%; Presentation 10%)</td>
+          <td>30%</td>
+          </tr>
+          <tr class="even">
+          <td>Participation (Class Survey 5%; Attendance 8%; Online Q&A Activities 7%)</td>
+          <td>20%</td>
+          </tr>
+          <tr class="odd">
+          <td><strong>Total</strong></td>
+          <td><strong>100%</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <p>Late submissions will not be accepted.</p>
+          </div>
+          <hr>
+
+          <div id="grading-policy" class="section level1">
+          <h3>Grading Policy</h3>
+          <h4>Homework (30%; 6% each)</h4>
+          <ul>
+            <li>No late submission is accepted unless otherwise notified.</li>
+            <li>All submissions must be individual work.</li>
+            <li>Direct sharing of the code for homework is expressly and strictly prohibited and constitutes an academic misconduct.</li>
+            <li>A high-level discussion is permitted and encouraged.</li>
+          </ul>
+          <h4>Group Project (30%)</h4>
+          <ul>
+            <li>A team of people will work together to build an interactive visual analysis system using d3.js.</li>
+            <li>I will form groups based on Class Survey AND your requests.</li>
+            <li>Please send your group formation request separately. Your request for group formation may not be fully accommodated.</li>
+            <li>Your final output may be showcased online.</li>
+            <li>Free-riders will be punished by peer evaluation. A student with an extremely and consistently bad peer evaluation may receive a 0 for Group Project, even if the group score is high.</li>
+            <li>
+              <strong>Deliverables</strong>
+              <ul>
+                <li>Project proposal (a pdf document)</li>
+                <li>Working interactive visual analysis system</li>
+                <li>System demo video</li>
+                <li>4+ screenshots highlighting the features of your visual analysis system</li>
+                <li>Peer evaluation</li>
+              </ul>
+            </li>
+          </ul>
+          <h4>Participation (20%)</h4>
+          <ul>
+            <li>
+              <strong>Class Survey (5%; Due 9/14 before class 12:30pm KST)</strong>
+              <ul>
+                <li>You will answer survey questions about yourself and your interest.</li>
+                <li>It will be conducted using Google Forms.</li>
+                <li>Survey answers will be compiled into a dataset to be used for this class.</li>
+                <li>Survey link will be sent out by this week.</li>
+                <li>Completing this survey properly is 5% of the course grade. (Some deductions may be applied if instructions were not followed.)</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Attendance (8%)</strong>
+              <ul>
+                <li>Attendance will be checked using a combination of (1) Zoom attendance report, (2) Socrative participation, and (3) question sheet on Google Docs for each lecture.</li>
+                <li>(1) Zoom attendance report: You will be marked attended if the total length of stay is longer than 50 minutes.</li>
+                <li>(2) Socrative participation: If you answer at least one Socrative quiz question for the lecture, you will be marked attended.</li>
+                <li>(3) Question sheet on Google Docs: If you post a question on the question sheet for the lecture with your real name, you will be marked attended.</li>
+                <li>Each lecture attendance is worth 0.5% of the course grade. You will have to only attend 16 lectures to attain the maximum attendance score.</li>
+                <li>By implication, you may miss almost 10+ classes without penalty. This is to accommodate cases where you cannot come to lecture for some reason including ANY life events and technical issues. DO NOT send an email asking permission to miss classes.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Online Q&A Activities (7%)</strong>
+              <ul>
+                <li>Content-related questions should be first posted on the eTL Q&A board, so that other students can answer for you.</li>
+                <li>A private question or a question containing private information may be posted on the eTL Q&A board with "secret" option checked or you may send an email to me.</li>
+                <li>You earn 1% for each question or answer you post.</li>
+                <li>Only questions and answers posted with real name will be counted towards Online Q&A Activities grade.</li>
+                <li>An article posted on the eTL Discussion board will also be counted towards Online Q&A Activities grade.</li>
+                <li>You earn credit for maximum one question or answer per day.</li>
+                <li>Spammers and trollers may receive a 0, regardless of their past activities.</li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+          <hr>
+
+          <div id="course-policy" class="section level1">
+          <h3>Other Course Policy</h3>
+          <ul>
+            <li><strong>Email</strong>: Start your email subject with <code>[DAV]</code> or <code>[DAV-Fall21]</code> for my email filter to correctly label incoming emails.</li>
+            <li><strong>Grade appeal</strong>: You have total three grade appeal opportunities for a grade item. Final course grade is not negotiable for any reason. All grade appeal must be submitted in writing (i.e., email) within two weeks after the grade for the item is released.</li>
+            <li><strong>Office hours</strong>: By appointment only. No one-on-one hand-holding sessions. Briefly state your agenda in email to request an office hours session. An office hours session is 15 minutes by default.</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="../_vendor/jquery/dist/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- <script src="../_assets/js/custom.js"></script> -->
+  </body>
+</html>

@@ -11,7 +11,7 @@ export default function Sidebar() {
     >
       <VStack gap="0">
         <Image
-          src="https://zzz.sfo3.cdn.digitaloceanspaces.com/hyunwoopark-com/public/Profile_HP_20231115_Standing_Square_256.png"
+          src="https://zzz.sfo3.cdn.digitaloceanspaces.com/y/Profile_HP_20231115_Standing_Square_256.png"
           alt="Hyunwoo Park"
           width={48}
           rounded="full"

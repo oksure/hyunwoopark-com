@@ -11,7 +11,8 @@ import {
   IconButton,
   Container,
   VStack,
-  Heading
+  Heading,
+  Separator
 } from "@chakra-ui/react";
 import {
   // DrawerActionTrigger,
@@ -31,6 +32,7 @@ import { GrDocumentPdf } from "react-icons/gr";
 import { toCamelCase } from "../../src/utils/utils";
 
 const Navbar = () => {
+  // ["bio", "photos", "places", "personal", "contacts", "maps"]
 
   return (
     <Flex
@@ -62,10 +64,9 @@ const Navbar = () => {
             {/* <Link href="/research">Research</Link>
             <Link href="/teaching">Teaching</Link>
             <Link href="/contact">Contact</Link> */}
-            <Button asChild><Link href="https://zzz.sfo3.cdn.digitaloceanspaces.com/hyunwoopark-com/public/CV%20Hyunwoo%20Park.pdf" target="_blank">CV<GrDocumentPdf /></Link></Button>
-            {/* <Button variant="ghost"><RiMenuFill /></Button> */}
+            <Button asChild><Link href="https://zzz.sfo3.cdn.digitaloceanspaces.com/y/CV%20Hyunwoo%20Park.pdf" target="_blank">CV<GrDocumentPdf /></Link></Button>
 
-            {/* <DrawerRoot size="md">
+            <DrawerRoot size="md">
               <DrawerBackdrop />
               <DrawerTrigger asChild>
                   <IconButton aria-label="Menu" variant="ghost"><RiMenuFill /></IconButton>
@@ -77,23 +78,38 @@ const Navbar = () => {
                   </DrawerTitle>
                 </DrawerHeader>
                 <DrawerBody>
-                  <VStack gap="6">
-                    <For each={["bio", "photos", "places", "personal", "contacts", "maps"]}>
+                  <VStack gap={8} mt={8}>
+                    <For each={["v4", "v3", "v2", "v1"]}>
                       {(stub) => (
-                      <Heading as="h3"><Link href={"/"+stub}>{toCamelCase(stub)}</Link></Heading>
+                      <Heading as="h3"><Link href={"/"+stub}>Past Homepage {toCamelCase(stub)}</Link></Heading>
+                      )}
+                    </For>
+                  </VStack>
+                  <Spacer py={4} />
+                  <VStack gap={8} mt={8}>
+                    <For each={["netview"]}>
+                      {(stub) => (
+                      <Heading as="h3">
+                        <Link href={"/"+stub}>
+                          <VStack gap={0}>
+                          <Box>NetView</Box>
+                          <Box fontSize={"md"}>(Simple Network Viewer)</Box>
+                          </VStack>
+                        </Link>
+                      </Heading>
                       )}
                     </For>
                   </VStack>
                 </DrawerBody>
-                <DrawerFooter>
+                {/* <DrawerFooter>
                   <DrawerActionTrigger asChild>
                     <Button variant="outline">Cancel</Button>
                   </DrawerActionTrigger>
                   <Button>Save</Button>
-                </DrawerFooter>
+                </DrawerFooter> */}
                 <DrawerCloseTrigger />
               </DrawerContent>
-            </DrawerRoot> */}
+            </DrawerRoot>
 
           </ButtonGroup>
 

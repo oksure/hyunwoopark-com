@@ -1,4 +1,16 @@
-# TypeScript Next.js Chakra example
+# [Academic Homepage for Hyunwoo Park](https://hyunwoopark.com)
+
+## Roadmap
+
+1. Revise the README file to ensure others can easily understand and reuse it.
+2. Implement a publication filter by year to better organize and display research outputs.
+3. Implement a publication filter by category to help users find specific types of publications.
+4. Update the service items to display shorter items on a single line.
+5. Clean up the ad-hoc reviewer section so that long journal names can be shown in full only as requested.
+6. Investigate and resolve why the external link icon is rendered differently in the footer.
+7. Implement dedicated pages for "bio", "photos", "places", "personal", "contacts", and "maps".
+
+## TypeScript Next.js Chakra example (This is the source that I started from)
 
 This is a really simple project that shows the usage of Next.js with TypeScript.
 
@@ -52,14 +64,14 @@ This example shows how to integrate the TypeScript type system into Next.js.
 Since TypeScript is supported out of the box with Next.js, all we have to do is
 to install TypeScript.
 
-```
+```bash
 npm install --save-dev typescript
 ```
 
 To enable TypeScript's features, we install the type declarations for React and
 Node.
 
-```
+```bash
 npm install --save-dev @types/react @types/react-dom @types/node
 ```
 

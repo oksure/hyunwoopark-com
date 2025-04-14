@@ -9,6 +9,10 @@
 5. Clean up the ad-hoc reviewer section so that long journal names can be shown in full only as requested.
 6. Investigate and resolve why the external link icon is rendered differently in the footer.
 7. Implement dedicated pages for "bio", "photos", "places", "personal", "contacts", and "maps".
+8. Catch up on PDF generation process.
+9. Shut down the old server.
+10. Shut down the old object storage.
+11. Add animation.
 
 ## TypeScript Next.js Chakra example (This is the source that I started from)
 

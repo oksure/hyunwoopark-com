@@ -3,6 +3,34 @@
   "items": [
     {
       "type": "journal",
+      "title": "Obligatory responses to FDA inspection outcomes and future drug shortages",
+      "authors": "Wang Y, Ball G, Anand G, Park H",
+      "journal": "Manufacturing & Service Operations Management",
+      "year": "2025",
+      "link": "https://pubsonline.informs.org/doi/abs/10.1287/msom.2022.0322",
+      "top": ["utd24", "ft50", "abs4"]
+    },
+    {
+      "type": "journal",
+      "title": "Are All Generic Drugs Created Equal? An Empirical Analysis of Generic Drug Manufacturing Location and Serious Drug Adverse Events",
+      "authors": "Noh IJ, Gray J, Ball GP, Wright Z, Park H",
+      "journal": "Production and Operations Management",
+      "year": "2025",
+      "link": "https://journals.sagepub.com/doi/abs/10.1177/10591478251319691",
+      "top": ["utd24", "ft50", "abs4"]
+    },
+    {
+      "type": "journal",
+      "title": "HaluCheck: Explainable and verifiable automation for detecting hallucinations in LLM responses",
+      "authors": "Heo S, Son S, Park H",
+      "journal": "Expert Systems with Applications",
+      "volume": "272",
+      "number": "126712",
+      "year": "2025",
+      "link": "https://www.sciencedirect.com/science/article/pii/S0957417425003343"
+    },
+    {
+      "type": "journal",
       "title": "Visualization system to identify structurally vulnerable links in OHT railway network in semiconductor FAB using betweenness centrality",
       "authors": "Choi J, Park Y, Choi Y, Kim S, Lee H, Park H",
       "journal": "PLoS ONE",

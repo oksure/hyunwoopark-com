@@ -29,6 +29,7 @@ import {
 import { ColorModeToggle } from "../../components/color-mode-toggle"
 import { RiHome3Line, RiMenuFill } from "react-icons/ri";
 import { GrDocumentPdf } from "react-icons/gr";
+import { IoPeopleCircle } from "react-icons/io5";
 import { toCamelCase } from "../../src/utils/utils";
 
 const Navbar = () => {
@@ -65,6 +66,7 @@ const Navbar = () => {
             <Link href="/teaching">Teaching</Link>
             <Link href="/contact">Contact</Link> */}
             <Button asChild><Link href="https://zzz.sfo3.cdn.digitaloceanspaces.com/y/CV%20Hyunwoo%20Park.pdf" target="_blank">CV<GrDocumentPdf /></Link></Button>
+            <Button asChild variant="outline" colorScheme="gray"><Link href="https://viba.snu.ac.kr" target="_blank">Lab Homepage<IoPeopleCircle /></Link></Button>
 
             <DrawerRoot size="md">
               <DrawerBackdrop />

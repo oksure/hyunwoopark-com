@@ -8,7 +8,7 @@
       "journal": "Manufacturing & Service Operations Management",
       "year": "2025",
       "link": "https://pubsonline.informs.org/doi/abs/10.1287/msom.2022.0322",
-      "top": ["utd24", "ft50", "abs4"]
+      "top": ["utd24", "ft50", "abs3"]
     },
     {
       "type": "journal",
@@ -65,7 +65,10 @@
       "title": "Rare is Beautiful? The Interplay Between Rareness, Technology Search, and Technology Value",
       "authors": "Lee J, Jung HJ, Park H",
       "journal": "Production and Operations Management",
-      "year": "2022",
+      "volume": "32",
+      "number": "4",
+      "pages": "1019-1040",
+      "year": "2023",
       "top": ["utd24", "abs4"]
     },
     {
@@ -73,6 +76,9 @@
       "title": "[Book Review] A History of Data Visualization and Graphic Communication",
       "authors": "Park H",
       "journal": "Journal of the American Statistical Association",
+      "volume": "117",
+      "number": "539",
+      "pages": "1601-1603",
       "year": "2022",
       "top": ["abs4"]
     },
@@ -81,6 +87,9 @@
       "title": "When to Signal? Contingencies for Career-Motivated Contributions in Online Collaboration Communities",
       "authors": "Lee J, Park H, Zaggl M",
       "journal": "Journal of the Association for Information Systems",
+      "volume": "23",
+      "number": "6",
+      "pages": "1386-1419",
       "year": "2022",
       "top": ["abs4*"]
     },
@@ -89,6 +98,9 @@
       "title": "Vessel Sharing and its Impact on Maritime Operations and Carbon Emissions",
       "authors": "Park H, Blanco C, Bendoly E",
       "journal": "Production and Operations Management",
+      "volume": "31",
+      "number": "7",
+      "pages": "2925-2942",
       "year": "2022",
       "top": ["utd24", "ft50", "abs4"]
     },
@@ -97,6 +109,9 @@
       "title": "Extended Graph Formulation for the Inequity Aversion Pricing Problem on Social Networks",
       "authors": "Chopra S, Park H, Shim S",
       "journal": "INFORMS Journal on Computing",
+      "volume": "34",
+      "number": "3",
+      "pages": "1327-1344",
       "year": "2022",
       "link": "https://pubsonline.informs.org/doi/abs/10.1287/ijoc.2021.1148",
       "top": ["utd24", "abs3"]

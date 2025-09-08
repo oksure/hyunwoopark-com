@@ -1,5 +1,7 @@
 import { Box, VStack, Image, Heading, Link, Stack, IconButton, Spacer } from "@chakra-ui/react"
+import { Tooltip } from "../../components/ui/tooltip"
 import { FaGoogle, FaLinkedinIn, FaGithub, FaOrcid } from "react-icons/fa6"
+import { FaUniversity } from "react-icons/fa"
 
 export default function Sidebar() {
   return (
@@ -36,27 +38,42 @@ export default function Sidebar() {
         <Link href="mailto:hyunwoopark@snu.ac.kr">
           hyunwoopark@snu.ac.kr
         </Link>
-        <Stack mt={6} direction="row" gap={4}>
-          <Link href="https://scholar.google.com/citations?user=AbopKDkAAAAJ" target="_blank">
-            <IconButton variant="surface" aria-label="Google Scholar">
-              <FaGoogle />
-            </IconButton>
-          </Link>
-          <Link href="https://www.linkedin.com/in/hyunwoo-park-profile/" target="_blank">
-            <IconButton variant="surface" aria-label="LinkedIn">
-              <FaLinkedinIn />
-            </IconButton>
-          </Link>
-          <Link href="https://github.com/oksure" target="_blank">
-            <IconButton variant="surface" aria-label="GitHub">
-              <FaGithub />
-            </IconButton>
-          </Link>
-          <Link href="https://orcid.org/0000-0001-9818-217X" target="_blank">
-            <IconButton variant="surface" aria-label="ORCID">
-              <FaOrcid />
-            </IconButton>
-          </Link>
+        <Stack mt={6} direction="row" gap={4} flexWrap="wrap" justifyContent="center">
+          <Tooltip content="Google Scholar">
+            <Link href="https://scholar.google.com/citations?user=AbopKDkAAAAJ" target="_blank">
+              <IconButton variant="surface" aria-label="Google Scholar">
+                <FaGoogle />
+              </IconButton>
+            </Link>
+          </Tooltip>
+          <Tooltip content="LinkedIn">
+            <Link href="https://www.linkedin.com/in/hyunwoo-park-profile/" target="_blank">
+              <IconButton variant="surface" aria-label="LinkedIn">
+                <FaLinkedinIn />
+              </IconButton>
+            </Link>
+          </Tooltip>
+          <Tooltip content="GitHub">
+            <Link href="https://github.com/oksure" target="_blank">
+              <IconButton variant="surface" aria-label="GitHub">
+                <FaGithub />
+              </IconButton>
+            </Link>
+          </Tooltip>
+          <Tooltip content="ORCID">
+            <Link href="https://orcid.org/0000-0001-9818-217X" target="_blank">
+              <IconButton variant="surface" aria-label="ORCID">
+                <FaOrcid />
+              </IconButton>
+            </Link>
+          </Tooltip>
+          <Tooltip content="Official School Profile">
+            <Link href="https://gsds.snu.ac.kr/people-post/hyunwoo-park/" target="_blank">
+              <IconButton variant="surface" aria-label="Official School Profile">
+                <FaUniversity />
+              </IconButton>
+            </Link>
+          </Tooltip>
         </Stack>
       </VStack>
     </Box>

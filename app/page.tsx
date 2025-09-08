@@ -16,6 +16,8 @@ import {
   HStack,
   Collapsible,
 } from "@chakra-ui/react";
+import { RadioGroup as ChakraRadioGroup } from "@chakra-ui/react";
+import { Radio } from "../components/ui/radio";
 import { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import { Checkbox } from "../components/ui/checkbox";
@@ -104,6 +106,7 @@ export default function Page() {
 const Section = ({ data, stub }: { data: any; stub: string }) => {
   const [showConfsDetails, setShowConfsDetails] = useState(false);
   const [showOthersDetails, setShowOthersDetails] = useState(false);
+  const [pubFilter, setPubFilter] = useState("all");
   const baseMx = 4;
   const badgeColor = {
     utd24: "blue",
@@ -122,66 +125,154 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
 
   return (
     <Box py={8} fontSize={{ base: "sm", md: "md" }} lineHeight={1.2}>
-      <Heading
-        as="h3"
-        size="xl"
-        fontWeight="bold"
-        ml={{ base: 0, md: baseMx }}
-        display="flex"
-        alignItems="center"
-        gap={2}
-      >
-        {data.title
-          ? data.title
-          : stub === "confs"
-          ? "Conference Presentations"
-          : stub === "others"
-          ? "Others"
-          : ""}
-        {stub === "confs" && (
-          <Checkbox
-            variant="subtle"
-            ml="auto"
-            onChange={(e) =>
-              setShowConfsDetails((e.target as HTMLInputElement).checked)
-            }
-          >
-            <Text mr={{ base: 0, md: 1 * baseMx }}>Show Details</Text>
-          </Checkbox>
-        )}
-        {stub === "others" && (
-          <Checkbox
-            variant="subtle"
-            ml="auto"
-            onChange={(e) =>
-              setShowOthersDetails((e.target as HTMLInputElement).checked)
-            }
-          >
-            <Text mr={{ base: 0, md: 1 * baseMx }}>Show Details</Text>
-          </Checkbox>
-        )}
-        {stub === "pubs" && (
-          <HStack gap={2} ml="auto" mr={{ base: 0, md: baseMx }}>
-            {["utd24", "ft50", "abs"].map((topItem) => (
-              <Badge
-                size="sm"
-                variant="subtle"
-                colorPalette={badgeColor[topItem]}
-                key={topItem}
+      <Box>
+        <Heading
+          as="h3"
+          size="xl"
+          fontWeight="bold"
+          ml={{ base: 0, md: baseMx }}
+          display={{ base: stub === "pubs" ? "block" : "flex", md: "flex" }}
+          alignItems="center"
+          gap={2}
+        >
+          {data.title
+            ? data.title
+            : stub === "confs"
+            ? "Conference Presentations"
+            : stub === "others"
+            ? "Others"
+            : ""}
+          {stub === "confs" && (
+            <Checkbox
+              variant="subtle"
+              ml="auto"
+              onChange={(e) =>
+                setShowConfsDetails((e.target as HTMLInputElement).checked)
+              }
+            >
+              <Text mr={{ base: 0, md: 1 * baseMx }}>Show Details</Text>
+            </Checkbox>
+          )}
+          {stub === "others" && (
+            <Checkbox
+              variant="subtle"
+              ml="auto"
+              onChange={(e) =>
+                setShowOthersDetails((e.target as HTMLInputElement).checked)
+              }
+            >
+              <Text mr={{ base: 0, md: 1 * baseMx }}>Show Details</Text>
+            </Checkbox>
+          )}
+          {stub === "pubs" && (
+            <Stack 
+              direction={{ base: "column", md: "row" }} 
+              gap={{ base: 4, md: 6 }} 
+              ml={{ base: 0, md: "auto" }}
+              mr={{ base: 0, md: baseMx }}
+              align={{ base: "flex-start", md: "center" }}
+              display={{ base: "none", md: "flex" }}
+            >
+              <ChakraRadioGroup.Root
+                value={pubFilter}
+                onValueChange={(e) => setPubFilter(e.value)}
+                display="flex"
+                flexDirection="row"
+                gap={1}
               >
-                <Link href={badgeSrc[topItem]} target="_blank">
-                  {topItem.toUpperCase()} &#8599;
-                </Link>
-              </Badge>
-            ))}
-          </HStack>
+                {["all", "utd24", "ft50", "abs"].map((value, index) => (
+                  <ChakraRadioGroup.Item 
+                    key={value} 
+                    value={value} 
+                    display="flex" 
+                    alignItems="center"
+                    mr={4}
+                  >
+                    <ChakraRadioGroup.ItemHiddenInput />
+                    <ChakraRadioGroup.ItemIndicator />
+                    <ChakraRadioGroup.ItemText ml={-1} fontSize="sm">
+                      {value === "all" ? "All" : value.toUpperCase()}
+                    </ChakraRadioGroup.ItemText>
+                  </ChakraRadioGroup.Item>
+                ))}
+              </ChakraRadioGroup.Root>
+              <HStack gap={2}>
+                {["utd24", "ft50", "abs"].map((topItem) => (
+                  <Badge
+                    size="sm"
+                    variant="subtle"
+                    colorPalette={badgeColor[topItem]}
+                    key={topItem}
+                  >
+                    <Link href={badgeSrc[topItem]} target="_blank">
+                      {topItem.toUpperCase()} &#8599;
+                    </Link>
+                  </Badge>
+                ))}
+              </HStack>
+            </Stack>
+          )}
+        </Heading>
+        {stub === "pubs" && (
+          <Stack 
+            direction={{ base: "column", md: "row" }} 
+            gap={{ base: 4, md: 6 }} 
+            mt={{ base: 4, md: 0 }}
+            ml={{ base: 0, md: baseMx }}
+            align={{ base: "flex-start", md: "center" }}
+            display={{ base: "flex", md: "none" }}
+          >
+            <ChakraRadioGroup.Root
+              value={pubFilter}
+              onValueChange={(e) => setPubFilter(e.value)}
+              display="flex"
+              flexDirection="row"
+              gap={1}
+            >
+              {["all", "utd24", "ft50", "abs"].map((value, index) => (
+                <ChakraRadioGroup.Item 
+                  key={value} 
+                  value={value} 
+                  display="flex" 
+                  alignItems="center"
+                  mr={4}
+                >
+                  <ChakraRadioGroup.ItemHiddenInput />
+                  <ChakraRadioGroup.ItemIndicator />
+                  <ChakraRadioGroup.ItemText ml={-1} fontSize="sm">
+                    {value === "all" ? "All" : value.toUpperCase()}
+                  </ChakraRadioGroup.ItemText>
+                </ChakraRadioGroup.Item>
+              ))}
+            </ChakraRadioGroup.Root>
+            <HStack gap={2}>
+              {["utd24", "ft50", "abs"].map((topItem) => (
+                <Badge
+                  size="sm"
+                  variant="subtle"
+                  colorPalette={badgeColor[topItem]}
+                  key={topItem}
+                >
+                  <Link href={badgeSrc[topItem]} target="_blank">
+                    {topItem.toUpperCase()} &#8599;
+                  </Link>
+                </Badge>
+              ))}
+            </HStack>
+          </Stack>
         )}
-      </Heading>
+      </Box>
       <Separator mb={4} mt={2} />
 
       {stub === "pubs" || stub === "procs" || stub === "books" ? (
         <Box as="ul" listStyleType="none" pl={{ base: 0 * baseMx, md: 1 * baseMx }}>
-          <For each={data.items}>
+          <For each={stub === "pubs" ? data.items.filter((item: any) => {
+            if (pubFilter === "all") return true;
+            if (pubFilter === "abs") {
+              return item.top && (item.top.includes("abs") || item.top.includes("abs4*") || item.top.includes("abs4") || item.top.includes("abs3"));
+            }
+            return item.top && item.top.includes(pubFilter);
+          }) : data.items}>
             {(item: any, idx: number) => (
               <Flex as="li" key={idx} mb={4} alignItems="start">
                 <Box

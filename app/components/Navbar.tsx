@@ -65,8 +65,17 @@ const Navbar = () => {
             {/* <Link href="/research">Research</Link>
             <Link href="/teaching">Teaching</Link>
             <Link href="/contact">Contact</Link> */}
+            <Link href="/bio" mr={4}>
+              <Box display={{ base: "inline", md: "none" }}>Bio</Box>
+              <Box display={{ base: "none", md: "inline" }}>Bio and Photo</Box>
+            </Link>
             <Button asChild><Link href="https://zzz.sfo3.cdn.digitaloceanspaces.com/y/CV%20Hyunwoo%20Park.pdf" target="_blank">CV<GrDocumentPdf /></Link></Button>
-            <Button asChild variant="outline" colorScheme="gray"><Link href="https://viba.snu.ac.kr" target="_blank">Lab Homepage<IoPeopleCircle /></Link></Button>
+            <Button asChild variant="outline" colorScheme="gray">
+              <Link href="https://viba.snu.ac.kr" target="_blank">
+                <Box display={{ base: "flex", md: "none" }} alignItems="center" gap={1}>Lab<IoPeopleCircle /></Box>
+                <Box display={{ base: "none", md: "flex" }} alignItems="center" gap={1}>Lab Homepage<IoPeopleCircle /></Box>
+              </Link>
+            </Button>
 
             <DrawerRoot size="md">
               <DrawerBackdrop />

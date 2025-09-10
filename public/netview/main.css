@@ -10,10 +10,14 @@
   margin-left: 0.5em;
   font-size: 6pt;
 }
+:root { /* default navbar height to avoid first-paint jump */
+  --app-navbar-height: 56px;
+}
 body {
   margin-top: 0;
   padding: 0;
   overflow: hidden;
+  font-size: 0.9rem;
 }
 table {
   background: none;
@@ -21,21 +25,26 @@ table {
 #canvas,
 #spinner {
   position: fixed;
-  top: 0;
+  top: var(--app-navbar-height, 56px);
   bottom: 0;
   left: 0;
   right: 0;
 }
+/* Spinner should cover entire window and be on top of everything */
 #spinner {
+  top: 0; /* override to cover navbar too */
+  z-index: 20000; /* above all */
   background-color: rgba(255,255,255,0.5);
-  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #spinner span {
   font-size: 48pt;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: static;
+  top: auto;
+  left: auto;
+  transform: none;
 }
 #tooltip {
   position: absolute;
@@ -81,3 +90,42 @@ svg.main-canvas .text {
 svg.main-canvas .text.dim {
   fill-opacity: 0.1;
 }
+
+/* Offcanvas panels should appear beneath the top navbar but above the canvas */
+.offcanvas {
+  top: 0; /* let content padding offset the navbar */
+  bottom: 0; /* ensure it reaches the bottom of the viewport */
+  height: auto; /* let top + bottom determine height */
+  padding-top: var(--app-navbar-height, 56px); /* push header/content below fixed navbar */
+  z-index: 1020; /* below navbar (1030), above canvas */
+  overflow: visible; /* so attached handle can protrude */
+}
+
+/* External fixed Drawer toggle handles (visible even when offcanvas is hidden) */
+.drawer-handle {
+  position: fixed;
+  top: calc(var(--app-navbar-height, 56px) + (100vh - var(--app-navbar-height, 56px)) / 2);
+  transform: translateY(-50%);
+  z-index: 1040; /* above offcanvas (1020), below spinner */
+  width: 36px;
+  height: 120px;
+  padding: .25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  border: none;
+  border-radius: .25rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,.2);
+  cursor: pointer;
+  opacity: 0.95;
+  transition: left var(--bs-offcanvas-transition-duration, .3s) ease-in-out, right var(--bs-offcanvas-transition-duration, .3s) ease-in-out, opacity .15s ease-in-out;
+  will-change: left, right;
+}
+.drawer-handle:hover { opacity: 1; }
+.drawer-handle-left { left: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; }
+.drawer-handle-right { right: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; }
+
+/* Optional: legacy internal-handle styles no longer used */
+/* .offcanvas .drawer-handle { position: absolute; } */

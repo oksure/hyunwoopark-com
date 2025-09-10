@@ -69,8 +69,8 @@ init = function() {
   initUI();
   color = d3.scaleOrdinal().domain([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]).range(gc20);
   drag = d3.drag().on('start', dragstarted).on('drag', dragged).on('end', dragended);
-  zoom = d3.zoom().scaleExtent([.1, 10]).on('zoom', function(event) {
-    g.attr('transform', event.transform);
+  zoom = d3.zoom().scaleExtent([.1, 10]).on('zoom', function() {
+    g.attr('transform', d3.event.transform);
   });
   // render graph
   resetCanvas();
@@ -107,10 +107,10 @@ init = function() {
       } else {
         return 1;
       }
-    }).on('mouseover', function(event, d) {
+    }).on('mouseover', function(d) {
       // setHighlightByEdge d, true
       showDetails(d);
-    }).on('mouseout', function(event, d) {
+    }).on('mouseout', function(d) {
       // exitHighlight()
       hideDetails();
     });
@@ -132,15 +132,15 @@ init = function() {
       return nodeColor(d);
     // .style 'stroke-opacity', '.5'
     // .style 'stroke-width', '5'
-    }).call(drag).on('mouseover', function(event, d) {
+    }).call(drag).on('mouseover', function(d) {
       setHighlightByNode(d, true);
       showDetails(d);
-    }).on('mouseout', function(event, d) {
+    }).on('mouseout', function(d) {
       exitHighlight();
       hideDetails();
-    }).on('click', function(event, d) {
-      event.stopPropagation();
-      if (!event.defaultPrevented) { // distinguishing from click from dragging
+    }).on('click', function(d) {
+      d3.event.stopPropagation();
+      if (!d3.event.defaultPrevented) { // distinguishing from click from dragging
         // node gets selected
         return centerToXY(d.x, d.y, getTransform()[2], 750);
       }
@@ -163,15 +163,15 @@ init = function() {
       } else {
         return d.id;
       }
-    }).call(drag).on('mouseover', function(event, d) {
+    }).call(drag).on('mouseover', function(d) {
       setHighlightByNode(d, true);
       showDetails(d);
-    }).on('mouseout', function(event, d) {
+    }).on('mouseout', function(d) {
       exitHighlight();
       hideDetails();
-    }).on('click', function(event, d) {
-      event.stopPropagation();
-      if (!event.defaultPrevented) { // distinguishing from click from dragging
+    }).on('click', function(d) {
+      d3.event.stopPropagation();
+      if (!d3.event.defaultPrevented) { // distinguishing from click from dragging
         // node gets selected
         return centerToXY(d.x, d.y, getTransform()[2], 750);
       }
@@ -205,8 +205,8 @@ tick = function() {
 };
 
 // node-dragging-related functions
-dragstarted = function(event, d) {
-  if (!event.active) {
+dragstarted = function(d) {
+  if (!d3.event.active) {
     simulation.alphaTarget(0.3).restart();
   }
   d.fx = d.x;
@@ -214,13 +214,13 @@ dragstarted = function(event, d) {
   dragging = true;
 };
 
-dragged = function(event, d) {
-  d.fx = event.x;
-  d.fy = event.y;
+dragged = function(d) {
+  d.fx = d3.event.x;
+  d.fy = d3.event.y;
 };
 
-dragended = function(event, d) {
-  if (!event.active) {
+dragended = function(d) {
+  if (!d3.event.active) {
     simulation.alphaTarget(0.0001);
   }
   d.fx = null;
@@ -457,17 +457,6 @@ resetCanvas = function() {
   // .attr "viewBox", "0 0 " + width + " " + height
   // .attr 'cursor', 'move'
   svg = d3.select('#canvas').append('svg').attr('class', 'main-canvas').call(zoom);
-  // Close both sidebars when clicking on the empty SVG background (not during drag/zoom)
-  svg.on('click', function(event){
-    if (event && event.defaultPrevented) return; // ignore if drag/zoom consumed the event
-    if (event && event.target !== svg.node()) return; // only background, not nodes/text
-    var leftCanvas = document.getElementById('leftDrawer');
-    var rightCanvas = document.getElementById('rightDrawer');
-    var changed = false;
-    if(leftCanvas && leftCanvas.classList.contains('show')){ leftCanvas.classList.remove('show'); changed = true; }
-    if(rightCanvas && rightCanvas.classList.contains('show')){ rightCanvas.classList.remove('show'); changed = true; }
-    if(changed) positionExternalHandles();
-  });
   // .on 'click', (d) ->
   //   if not d3.event.defaultPrevented then resetSelected()
   //   return
@@ -477,179 +466,6 @@ resetCanvas = function() {
   svgNodes = g.append('g');
   svgTexts = g.append('g');
 };
-
-
-
-function setNavbarHeightVar(){
-  var nav = document.querySelector('.navbar.fixed-top');
-  var h = nav ? nav.offsetHeight : 56;
-  document.documentElement.style.setProperty('--app-navbar-height', h + 'px');
-}
-function positionExternalHandles(){
-  var leftCanvas = document.getElementById('leftDrawer');
-  var rightCanvas = document.getElementById('rightDrawer');
-  var leftHandle = document.querySelector('.drawer-handle-left');
-  var rightHandle = document.querySelector('.drawer-handle-right');
-  var edgeOffset = '0';
-  if(leftCanvas && leftHandle){
-    var leftOpen = leftCanvas.classList.contains('show');
-    if(leftOpen){
-      leftHandle.style.left = (leftCanvas.offsetWidth) + 'px';
-      leftHandle.textContent = '◀';
-    } else {
-      leftHandle.style.left = edgeOffset;
-      leftHandle.textContent = '▶';
-    }
-  }
-  if(rightCanvas && rightHandle){
-    var rightOpen = rightCanvas.classList.contains('show');
-    if(rightOpen){
-      rightHandle.style.right = (rightCanvas.offsetWidth) + 'px';
-      rightHandle.textContent = '▶';
-    } else {
-      rightHandle.style.right = edgeOffset;
-      rightHandle.textContent = '◀';
-    }
-  }
-}
-(function(){
-  var openingCanvasId = null; // track an offcanvas being opened to suppress auto-hiding others
-
-  function animateHandle(side, isOpen){
-    var canvas = document.getElementById(side === 'left' ? 'leftDrawer' : 'rightDrawer');
-    var handle = document.querySelector(side === 'left' ? '.drawer-handle-left' : '.drawer-handle-right');
-    if(!canvas || !handle) return;
-    var prop = side === 'left' ? 'left' : 'right';
-    var target = isOpen ? (canvas.offsetWidth + 'px') : '0';
-    // schedule on next frame to sync with Bootstrap applying classes for transition
-    requestAnimationFrame(function(){
-      handle.style[prop] = target;
-    });
-  }
-  function finalizeHandle(side, isOpen){
-    var canvas = document.getElementById(side === 'left' ? 'leftDrawer' : 'rightDrawer');
-    var handle = document.querySelector(side === 'left' ? '.drawer-handle-left' : '.drawer-handle-right');
-    if(!canvas || !handle) return;
-    var prop = side === 'left' ? 'left' : 'right';
-    var target = isOpen ? (canvas.offsetWidth + 'px') : '0';
-    handle.style[prop] = target;
-    // update arrow icons when final state is reached
-    if(side === 'left'){
-      handle.textContent = isOpen ? '◀' : '▶';
-    } else {
-      handle.textContent = isOpen ? '▶' : '◀';
-    }
-  }
-  function bindOffcanvasEvents(){
-    var leftCanvas = document.getElementById('leftDrawer');
-    var rightCanvas = document.getElementById('rightDrawer');
-
-    if(leftCanvas){
-      leftCanvas.addEventListener('show.bs.offcanvas', function(){ openingCanvasId = 'leftDrawer'; animateHandle('left', true); });
-      leftCanvas.addEventListener('shown.bs.offcanvas', function(){ openingCanvasId = null; finalizeHandle('left', true); });
-      leftCanvas.addEventListener('hide.bs.offcanvas', function(e){
-        // Prevent Bootstrap from auto-hiding when the other offcanvas opens
-        if(openingCanvasId && openingCanvasId !== 'leftDrawer') { e.preventDefault(); return; }
-        animateHandle('left', false);
-      });
-      leftCanvas.addEventListener('hidden.bs.offcanvas', function(){ finalizeHandle('left', false); });
-      leftCanvas.addEventListener('transitionend', function(){ positionExternalHandles(); }, true);
-    }
-    if(rightCanvas){
-      rightCanvas.addEventListener('show.bs.offcanvas', function(){ openingCanvasId = 'rightDrawer'; animateHandle('right', true); });
-      rightCanvas.addEventListener('shown.bs.offcanvas', function(){ openingCanvasId = null; finalizeHandle('right', true); });
-      rightCanvas.addEventListener('hide.bs.offcanvas', function(e){
-        if(openingCanvasId && openingCanvasId !== 'rightDrawer') { e.preventDefault(); return; }
-        animateHandle('right', false);
-      });
-      rightCanvas.addEventListener('hidden.bs.offcanvas', function(){ finalizeHandle('right', false); });
-      rightCanvas.addEventListener('transitionend', function(){ positionExternalHandles(); }, true);
-    }
-  }
-  // expose to outer scope replacing previous binder
-  window.__bindOffcanvasEvents = bindOffcanvasEvents;
-})();
-
-window.addEventListener('load', function(){
-  setNavbarHeightVar();
-  // replace old binder with new synced behavior
-  if(typeof window.__bindOffcanvasEvents === 'function') window.__bindOffcanvasEvents();
-  positionExternalHandles();
-});
-window.addEventListener('resize', function(){
-  setNavbarHeightVar();
-  positionExternalHandles();
-});
-(function(){
-  function drawerEl(side){ return document.getElementById(side === 'left' ? 'leftDrawer' : 'rightDrawer'); }
-  function handleEl(side){ return document.querySelector(side === 'left' ? '.drawer-handle-left' : '.drawer-handle-right'); }
-  function isOpen(side){ var el = drawerEl(side); return !!el && el.classList.contains('show'); }
-  function setIcon(side, open){ var h = handleEl(side); if(!h) return; h.textContent = side === 'left' ? (open ? '◀' : '▶') : (open ? '▶' : '◀'); }
-  function moveHandle(side, open){
-    var el = drawerEl(side), h = handleEl(side); if(!el || !h) return;
-    var prop = side === 'left' ? 'left' : 'right';
-    var target = open ? (el.offsetWidth + 'px') : '0';
-    requestAnimationFrame(function(){ h.style[prop] = target; });
-  }
-  function openDrawer(side){
-    var el = drawerEl(side); if(!el) return;
-    if(!el.classList.contains('show')){ el.classList.add('show'); }
-    moveHandle(side, true); setIcon(side, true);
-  }
-  function closeDrawer(side){
-    var el = drawerEl(side); if(!el) return;
-    if(el.classList.contains('show')){ el.classList.remove('show'); }
-    moveHandle(side, false); setIcon(side, false);
-  }
-  function toggleDrawer(side){ isOpen(side) ? closeDrawer(side) : openDrawer(side); }
-  function interceptClick(el, handler){ if(!el) return; el.addEventListener('click', function(e){ e.preventDefault(); e.stopImmediatePropagation(); e.stopPropagation(); handler(e); }, true); }
-  function stripBootstrapDataAPI(){
-    var lh = handleEl('left');
-    var rh = handleEl('right');
-    [lh, rh].forEach(function(h){
-      if(!h) return;
-      h.removeAttribute('data-bs-toggle');
-      h.removeAttribute('data-bs-target');
-      h.removeAttribute('aria-controls');
-    });
-    var leftClose = document.querySelector('#leftDrawer .btn-close, #leftDrawer [data-bs-dismiss="offcanvas"]');
-    var rightClose = document.querySelector('#rightDrawer .btn-close, #rightDrawer [data-bs-dismiss="offcanvas"]');
-    [leftClose, rightClose].forEach(function(btn){ if(btn){ btn.removeAttribute('data-bs-dismiss'); }});
-  }
-  function bindDualOffcanvas(){
-    stripBootstrapDataAPI();
-    // Intercept external handles (prevent Bootstrap Data API) and toggle independently
-    interceptClick(handleEl('left'), function(){ toggleDrawer('left'); });
-    interceptClick(handleEl('right'), function(){ toggleDrawer('right'); });
-    // Intercept internal close buttons
-    var leftClose = document.querySelector('#leftDrawer .btn-close');
-    var rightClose = document.querySelector('#rightDrawer .btn-close');
-    interceptClick(leftClose, function(){ closeDrawer('left'); });
-    interceptClick(rightClose, function(){ closeDrawer('right'); });
-    // Sync on transition end (in case of resize mid-animation)
-    var leftCanvas = drawerEl('left');
-    var rightCanvas = drawerEl('right');
-    if(leftCanvas){ leftCanvas.addEventListener('transitionend', function(){ moveHandle('left', isOpen('left')); }, true); }
-    if(rightCanvas){ rightCanvas.addEventListener('transitionend', function(){ moveHandle('right', isOpen('right')); }, true); }
-    // Initial state
-    moveHandle('left', false); setIcon('left', false);
-    moveHandle('right', false); setIcon('right', false);
-  }
-  window.__initDualOffcanvas = bindDualOffcanvas;
-})();
-
-window.addEventListener('load', function(){
-  setNavbarHeightVar();
-  // initialize custom dual offcanvas behavior (independent open/close)
-  if(typeof window.__initDualOffcanvas === 'function') window.__initDualOffcanvas();
-  positionExternalHandles();
-});
-window.addEventListener('resize', function(){
-  setNavbarHeightVar();
-  positionExternalHandles();
-});
-
-
 
 // initialization when document gets ready
 $(function() {

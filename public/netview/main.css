@@ -1,0 +1,83 @@
+.tooltip-arrow,
+.tooltip > .tooltip-inner {
+  background-color: #333;
+}
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #333;
+}
+.modal-body span.badge {
+  margin-left: 0.5em;
+  font-size: 6pt;
+}
+body {
+  margin-top: 0;
+  padding: 0;
+  overflow: hidden;
+}
+table {
+  background: none;
+}
+#canvas,
+#spinner {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#spinner {
+  background-color: rgba(255,255,255,0.5);
+  z-index: 10000;
+}
+#spinner span {
+  font-size: 48pt;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: #eee;
+  padding: 5px 10px 5px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+svg.main-canvas {
+  width: 100%;
+  height: 100%;
+}
+svg.main-canvas .node {
+  fill-opacity: 1;
+  stroke-width: 0;
+  stroke-opacity: 0.5;
+}
+svg.main-canvas .node.dim {
+  fill-opacity: 0.2;
+}
+svg.main-canvas .node.selected {
+  stroke-width: 10;
+}
+svg.main-canvas .link {
+  stroke: #666;
+  stroke-opacity: 0.5;
+}
+svg.main-canvas .link.dim {
+  stroke-opacity: 0.1;
+}
+svg.main-canvas .link.selected {
+  stroke-opacity: 1;
+}
+svg.main-canvas .text {
+  fill: #666;
+  fill-opacity: 0.8;
+}
+svg.main-canvas .text.dim {
+  fill-opacity: 0.1;
+}

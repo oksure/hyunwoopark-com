@@ -1,0 +1,111 @@
+// variables
+gs = #000
+for i in range(1,15)
+  push(gs, #111*i)
+
+// nav-height = 64px
+sidebar-width = 350px
+sidebar-padding = 10px
+sidebar-opacity = .3
+sidebar-docs-search-height = 24px
+
+
+// functions
+vendor(prop, args)
+  -webkit-{prop} args
+  -moz-{prop} args
+  {prop} args
+
+box-shadow()
+  vendor('box-shadow', arguments)
+
+border-radius()
+  vendor('border-radius', arguments)
+
+
+// @media screen and (min-width: 768px) 
+//   .modal:before
+//     display: inline-block
+//     vertical-align: middle
+//     content: " "
+//     height: 100%
+
+// .modal-dialog
+//   display: inline-block
+//   text-align: left
+//   vertical-align: middle
+
+.tooltip-arrow, .tooltip > .tooltip-inner {background-color: gs[3];}
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: gs[3];
+}
+
+.modal-body span.badge
+  margin-left: .5em
+  font-size: 6pt
+
+// // my app css
+body
+  margin-top: 0
+  padding: 0
+  overflow: hidden
+
+table
+  background: none
+
+// canvas & svg size
+#canvas, #spinner
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+
+#spinner
+  background-color: rgba(255,255,255,.5)
+  z-index: 10000
+
+#spinner span
+  font-size: 48pt
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+
+#tooltip
+  position: absolute
+  top: 0
+  left: 0
+  background-color: gs[3]
+  color: gs[14]
+  padding: 5px 10px 5px 10px
+  border-radius(5px)
+  opacity: .9
+
+svg.main-canvas
+  width: 100%
+  height: 100%
+  // network highlight
+  .node
+    fill-opacity: 1
+    stroke-width: 0
+    stroke-opacity: .5
+    &.dim
+      fill-opacity: .2
+    &.selected
+      stroke-width: 10
+  .link
+    stroke: gs[6]
+    stroke-opacity: .5
+    &.dim
+      stroke-opacity: .1
+    &.selected
+      stroke-opacity: 1
+  .text
+    fill: gs[6]
+    fill-opacity: .8
+    &.dim
+      fill-opacity: .1
+
+

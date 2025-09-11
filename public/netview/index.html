@@ -57,8 +57,18 @@
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <!-- Add controls/content here -->
-    <p class="text-muted">Add your left panel content here.</p>
+    <div id="group-filter-container">
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <h6 class="mb-0">Node groups</h6>
+        <div class="btn-group btn-group-sm" role="group" aria-label="Filter shortcuts">
+          <button class="btn btn-outline-primary" id="group-filter-all" type="button">All</button>
+          <button class="btn btn-outline-secondary" id="group-filter-none" type="button">None</button>
+        </div>
+      </div>
+      <div id="group-filter" class="list-unstyled small">
+        <div class="text-muted">Loading groups…</div>
+      </div>
+    </div>
   </div>
   <!-- optional internal handle removed -->
 </div>
@@ -70,8 +80,9 @@
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <!-- Add controls/content here -->
-    <p class="text-muted">Add your right panel content here.</p>
+    <div id="details-container" class="small">
+      <p class="text-muted mb-0">Click a node to see details here.</p>
+    </div>
   </div>
   <!-- optional internal handle removed -->
 </div>

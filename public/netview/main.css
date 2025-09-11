@@ -17,7 +17,7 @@ body {
   margin-top: 0;
   padding: 0;
   overflow: hidden;
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
 }
 table {
   background: none;
@@ -71,7 +71,9 @@ svg.main-canvas .node.dim {
   fill-opacity: 0.2;
 }
 svg.main-canvas .node.selected {
-  stroke-width: 10;
+  stroke-width: 20px;
+  /* stroke: #000; */
+  /* filter: drop-shadow(0 0 2px rgba(0,0,0,0.4)); */
 }
 svg.main-canvas .link {
   stroke: #666;
@@ -89,6 +91,20 @@ svg.main-canvas .text {
 }
 svg.main-canvas .text.dim {
   fill-opacity: 0.1;
+}
+
+/* Filtering: hide nodes/text/links by group selection */
+svg.main-canvas .node.hidden-by-filter,
+svg.main-canvas .text.hidden-by-filter {
+  display: none;
+}
+svg.main-canvas .link.hidden-by-filter {
+  display: none;
+}
+
+/* Left panel filter list */
+#group-filter .form-check {
+  margin-bottom: .25rem;
 }
 
 /* Offcanvas panels should appear beneath the top navbar but above the canvas */

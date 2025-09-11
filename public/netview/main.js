@@ -16,7 +16,7 @@
 
 // global variables
 // [svg, svgNodes, svgLinks, svgTexts, width, height, color, nodes, links, force, node, link, text, zoom, drag, graph] = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-var centerToXY, color, drag, dragended, dragged, dragging, dragstarted, exitHighlight, g, gc20, getTransform, graph, height, hideDetails, init, initUI, isEdgeOf, isEdgeSelected, isLinkOn, isNeighbor, isNodeSelected, isPartOf, isSameEdge, isSameNode, isTextOn, isTooltipOn, link, links, nborsdic, node, nodeColor, nodes, resetCanvas, resetSelected, resetSize, selected, setHighlightByNode, setHighlightByStr, showDetails, simulation, svg, svgLinks, svgNodes, svgTexts, text, tick, url, width, zoom;
+var centerToXY, color, drag, dragended, dragged, dragging, dragstarted, exitHighlight, g, gc20, getTransform, graph, height, hideDetails, init, initUI, isEdgeOf, isEdgeSelected, isLinkOn, isNeighbor, isNodeSelected, isPartOf, isSameEdge, isSameNode, isTextOn, isTooltipOn, link, links, nborsdic, node, nodeColor, nodes, resetCanvas, resetSelected, resetSize, selected, setHighlightByNode, setHighlightByStr, showDetails, showNodeDetailsInPanel, openRightPanel, buildGroupFilterUI, applyGroupFilter, currentGroupFilter, simulation, svg, svgLinks, svgNodes, svgTexts, text, tick, url, width, zoom, rawLinks, filteredNodes, filteredLinks, selectedNodeId, updateSelectedNodeClass, linkKey, clearSelection, clearDetailsPanel;
 
 svg = null;
 
@@ -62,6 +62,18 @@ gc20 = '#3366cc #dc3912 #ff9900 #109618 #990099 #0099c6 #dd4477 #66aa00 #b82e2e 
 
 url = location.search.substr(1, 24) === "https://www.dropbox.com/" ? location.search.substr(1).replace('www.dropbox.com', 'dl.dropboxusercontent.com') : "https://dl.dropboxusercontent.com/s/vn98nq1g5fn6dkk/miserable.json?dl=0";
 
+// active group filter set (values are group keys converted to string for uniformity)
+currentGroupFilter = null;
+rawLinks = null;
+filteredNodes = null;
+filteredLinks = null;
+selectedNodeId = null;
+linkKey = function(d){
+  var s = (d && d.source && d.source.id != null) ? d.source.id : (d && d.source != null ? d.source : d.s);
+  var t = (d && d.target && d.target.id != null) ? d.target.id : (d && d.target != null ? d.target : d.t);
+  return String(s) + '-' + String(t);
+};
+
 // initialize ui
 init = function() {
   $('#last-updated').text(document.lastModified);
@@ -92,94 +104,27 @@ init = function() {
       nborsdic[e.source].push(e.target);
       nborsdic[e.target].push(e.source);
     });
-    // simulation
-    // .force 'charge', d3.forceManyBody()
-    simulation = d3.forceSimulation(graph.nodes).force('charge', d3.forceManyBody().strength(-100)).force('collide', d3.forceCollide()).force('link', d3.forceLink(graph.links).id(function(d) {
-      return d.id;
-    })).force('center', d3.forceCenter(width / 2, height / 2)).on('tick', tick);
-    // link line
-    link = svgLinks.selectAll('.link');
-    link = link.data(graph.links, function(d) {
-      return d.source.id + '-' + d.target.id;
-    }).enter().append('line').attr('class', 'link').style('stroke-width', function(d) {
-      if (d.hasOwnProperty('value')) {
-        return d.value;
-      } else {
-        return 1;
-      }
-    }).on('mouseover', function(event, d) {
-      // setHighlightByEdge d, true
-      showDetails(d);
-    }).on('mouseout', function(event, d) {
-      // exitHighlight()
-      hideDetails();
+    // keep a stable, id-based copy of links for filtering
+    rawLinks = graph.links.map(function(e){
+      var sid = (e && e.source && e.source.id != null) ? e.source.id : e.source;
+      var tid = (e && e.target && e.target.id != null) ? e.target.id : e.target;
+      var out = { s: sid, t: tid };
+      if (e.hasOwnProperty('value')) out.value = e.value;
+      return out;
     });
-    link.exit().remove();
-    // node circle
-    node = svgNodes.selectAll('.node');
-    node = node.data(graph.nodes, function(d) {
-      return d.id;
-    }).enter().append('circle').attr('class', 'node').attr('r', function(d) {
-      if (d.hasOwnProperty('size')) {
-        return d.size;
-      } else {
-        return 6;
-      }
-    }).style('fill', function(d) {
-      return nodeColor(d);
-    // .style 'fill-opacity', '.8'
-    }).style('stroke', function(d) {
-      return nodeColor(d);
-    // .style 'stroke-opacity', '.5'
-    // .style 'stroke-width', '5'
-    }).call(drag).on('mouseover', function(event, d) {
-      setHighlightByNode(d, true);
-      showDetails(d);
-    }).on('mouseout', function(event, d) {
-      exitHighlight();
-      hideDetails();
-    }).on('click', function(event, d) {
-      event.stopPropagation();
-      if (!event.defaultPrevented) { // distinguishing from click from dragging
-        // node gets selected
-        return centerToXY(d.x, d.y, getTransform()[2], 750);
-      }
-    });
-    node.exit().remove();
-    // node label
-    text = svgTexts.selectAll('.text');
-    text = text.data(graph.nodes, function(d) {
-      return d.id;
-    // .attr 'dx', (d) -> labelOffset + nodeSize d
-    }).enter().append('text').attr('class', 'text').attr('dx', function(d) {
-      if (d.hasOwnProperty('size')) {
-        return d.size + 4;
-      } else {
-        return 10;
-      }
-    }).attr('dy', '.35em').attr('font-size', '9pt').text(function(d) {
-      if (d.hasOwnProperty('label')) {
-        return d.label;
-      } else {
-        return d.id;
-      }
-    }).call(drag).on('mouseover', function(event, d) {
-      setHighlightByNode(d, true);
-      showDetails(d);
-    }).on('mouseout', function(event, d) {
-      exitHighlight();
-      hideDetails();
-    }).on('click', function(event, d) {
-      event.stopPropagation();
-      if (!event.defaultPrevented) { // distinguishing from click from dragging
-        // node gets selected
-        return centerToXY(d.x, d.y, getTransform()[2], 750);
-      }
-    });
-    text.exit().remove();
+    // initialize simulation
+    simulation = d3.forceSimulation(graph.nodes)
+      .force('charge', d3.forceManyBody().strength(-100))
+      .force('collide', d3.forceCollide())
+      .force('link', d3.forceLink(graph.links).id(function(d) { return d.id; }))
+      .force('center', d3.forceCenter(width / 2, height / 2))
+      .on('tick', tick);
+    // build filters now that we have data
+    buildGroupFilterUI(graph.nodes);
+    // apply initial filter (all on): binds selections and restarts sim
+    applyGroupFilter();
     svg.call(zoom.transform, d3.zoomIdentity);
-    // drawGraph()
-    return $('#spinner').hide();
+    $('#spinner').hide();
   });
 };
 
@@ -271,6 +216,188 @@ showDetails = function(d) {
 
 hideDetails = function(d) {
   $('#tooltip').addClass('d-none');
+};
+
+updateSelectedNodeClass = function() {
+  if (!node) return;
+  node.classed('selected', function(p){ return selectedNodeId != null && p.id === selectedNodeId; });
+  // bring selected to front for visibility
+  try {
+    node.filter(function(p){ return selectedNodeId != null && p.id === selectedNodeId; }).each(function(){ this.parentNode.appendChild(this); });
+  } catch(e) {}
+};
+
+// Right panel details rendering
+showNodeDetailsInPanel = function(d) {
+  var container = document.getElementById('details-container');
+  if (!container) return;
+  var safeEntries = [];
+  // Show core fields prominently, then the rest sorted
+  var coreOrder = ['id','label','group','size','color'];
+  var seen = {};
+  coreOrder.forEach(function(k){ if(d && Object.prototype.hasOwnProperty.call(d,k)){ seen[k]=true; safeEntries.push([k,d[k]]); }});
+  Object.keys(d || {}).sort().forEach(function(k){ if(!seen[k]){ safeEntries.push([k,d[k]]); }});
+  var html = '<div class="mb-2">' +
+    '<div class="fw-bold">' + (d.label || d.id) + '</div>' +
+    (d.group != null ? '<div class="text-muted">Group: ' + d.group + '</div>' : '') +
+    '</div>';
+  html += '<dl class="row mb-0">';
+  safeEntries.forEach(function(pair){
+    html += '<dt class="col-4">' + String(pair[0]) + '</dt>' +
+            '<dd class="col-8" style="word-break: break-word;">' + String(pair[1]) + '</dd>';
+  });
+  html += '</dl>';
+  container.innerHTML = html;
+};
+
+openRightPanel = function() {
+  var right = document.getElementById('rightDrawer');
+  if (!right) return;
+  if (!right.classList.contains('show')) {
+    right.classList.add('show');
+  }
+  // ensure handle slides out
+  if (typeof window.__initDualOffcanvas === 'function') {
+    // handles are already bound; just reposition
+    setTimeout(function(){
+      try { positionExternalHandles(); } catch(e){}
+    }, 0);
+  }
+};
+
+// Build left-panel group filter checkboxes from node data
+buildGroupFilterUI = function(nodesArr) {
+  var container = document.getElementById('group-filter');
+  if (!container) return;
+  var groups = {};
+  (nodesArr || []).forEach(function(n){
+    var g = (n.hasOwnProperty('group') ? n.group : 1);
+    var key = String(g);
+    groups[key] = (groups[key] || 0) + 1;
+  });
+  var keys = Object.keys(groups).sort(function(a,b){
+    var na = +a, nb = +b;
+    if(!isNaN(na) && !isNaN(nb)) return na - nb;
+    return a.localeCompare(b);
+  });
+  // initial filter = all groups checked
+  currentGroupFilter = new Set(keys);
+  // render checkboxes
+  var html = '';
+  keys.forEach(function(k){
+    var id = 'chk-group-' + k.replace(/[^a-zA-Z0-9_-]/g,'_');
+    html += '\n<div class="form-check">\
+      <input class="form-check-input" type="checkbox" value="' + k + '" id="' + id + '" checked>\
+      <label class="form-check-label" for="' + id + '">Group ' + k + ' <span class="text-muted">(' + groups[k] + ')</span></label>\
+    </div>';
+  });
+  container.innerHTML = html || '<div class="text-muted">No groups</div>';
+  // attach listeners
+  container.querySelectorAll('input[type="checkbox"]').forEach(function(cb){
+    cb.addEventListener('change', function(){
+      var val = this.value;
+      if (this.checked) currentGroupFilter.add(val); else currentGroupFilter.delete(val);
+      applyGroupFilter();
+    });
+  });
+  var btnAll = document.getElementById('group-filter-all');
+  var btnNone = document.getElementById('group-filter-none');
+  if (btnAll) btnAll.addEventListener('click', function(){
+    currentGroupFilter = new Set(keys);
+    container.querySelectorAll('input[type="checkbox"]').forEach(function(cb){ cb.checked = true; });
+    applyGroupFilter();
+  });
+  if (btnNone) btnNone.addEventListener('click', function(){
+    currentGroupFilter = new Set();
+    container.querySelectorAll('input[type="checkbox"]').forEach(function(cb){ cb.checked = false; });
+    applyGroupFilter();
+  });
+};
+
+// Apply filtering by rebinding data and restarting the simulation
+applyGroupFilter = function() {
+  if (!currentGroupFilter) return;
+  // compute allowed nodes
+  var isAllowedNode = function(n){
+    var gval = n.hasOwnProperty('group') ? n.group : 1;
+    return currentGroupFilter.has(String(gval));
+  };
+  var allowedIds = new Set();
+  filteredNodes = graph.nodes.filter(function(n){
+    var allowed = isAllowedNode(n);
+    if (allowed) allowedIds.add(n.id);
+    return allowed;
+  });
+  // if selected node not allowed anymore, clear selection and details
+  if (selectedNodeId != null && !allowedIds.has(selectedNodeId)) {
+    selectedNodeId = null;
+    selected = null;
+    clearDetailsPanel();
+  }
+  // filter links using raw link ids; create objects with both id references and force fields
+  filteredLinks = rawLinks.filter(function(l){ return allowedIds.has(l.s) && allowedIds.has(l.t); })
+    .map(function(l){ return { s: l.s, t: l.t, value: l.value, source: l.s, target: l.t }; });
+
+  // rebind selections
+  link = svgLinks.selectAll('.link')
+    .data(filteredLinks, linkKey)
+    .join('line')
+    .attr('class', 'link')
+    .style('stroke-width', function(d) { return d.hasOwnProperty('value') ? d.value : 1; })
+    .on('mouseover', function(event, d) { showDetails(d); })
+    .on('mouseout', function(event, d) { hideDetails(); });
+
+  node = svgNodes.selectAll('.node')
+    .data(filteredNodes, function(d){ return d.id; })
+    .join('circle')
+    .attr('class', 'node')
+    .attr('r', function(d){ return d.hasOwnProperty('size') ? d.size : 6; })
+    .style('fill', function(d){ return nodeColor(d); })
+    .style('stroke', function(d){ return nodeColor(d); })
+    .call(drag)
+    .on('mouseover', function(event, d){ setHighlightByNode(d, true); showDetails(d); })
+    .on('mouseout', function(event, d){ exitHighlight(); hideDetails(); })
+    .on('click', function(event, d){
+      event.stopPropagation();
+      if (!event.defaultPrevented){
+        selected = d;
+        selectedNodeId = d.id;
+        updateSelectedNodeClass();
+        showNodeDetailsInPanel(d);
+        openRightPanel();
+        return centerToXY(d.x, d.y, getTransform()[2], 750);
+      }
+    });
+
+  text = svgTexts.selectAll('.text')
+    .data(filteredNodes, function(d){ return d.id; })
+    .join('text')
+    .attr('class', 'text')
+    .attr('dx', function(d){ return d.hasOwnProperty('size') ? d.size + 4 : 10; })
+    .attr('dy', '.35em')
+    .attr('font-size', '9pt')
+    .text(function(d){ return d.hasOwnProperty('label') ? d.label : d.id; })
+    .call(drag)
+    .on('mouseover', function(event, d){ setHighlightByNode(d, true); showDetails(d); })
+    .on('mouseout', function(event, d){ exitHighlight(); hideDetails(); })
+    .on('click', function(event, d){
+      event.stopPropagation();
+      if (!event.defaultPrevented){
+        selected = d;
+        selectedNodeId = d.id;
+        updateSelectedNodeClass();
+        showNodeDetailsInPanel(d);
+        openRightPanel();
+        return centerToXY(d.x, d.y, getTransform()[2], 750);
+      }
+    });
+
+  updateSelectedNodeClass();
+
+  // restart the simulation with filtered data
+  simulation.nodes(filteredNodes);
+  simulation.force('link').links(filteredLinks);
+  simulation.alpha(1).restart();
 };
 
 // init all tooltips
@@ -442,6 +569,21 @@ resetSelected = function() {
   }
 };
 
+clearDetailsPanel = function(){
+  var container = document.getElementById('details-container');
+  if (!container) return;
+  container.innerHTML = '<p class="text-muted mb-0">Click a node to see details here.</p>';
+};
+
+clearSelection = function(){
+  selected = null;
+  selectedNodeId = null;
+  updateSelectedNodeClass();
+  clearDetailsPanel();
+  exitHighlight();
+  hideDetails();
+};
+
 resetSize = function() {
   width = $('#canvas').width();
   height = $('#canvas').height();
@@ -464,9 +606,11 @@ resetCanvas = function() {
     var leftCanvas = document.getElementById('leftDrawer');
     var rightCanvas = document.getElementById('rightDrawer');
     var changed = false;
-    if(leftCanvas && leftCanvas.classList.contains('show')){ leftCanvas.classList.remove('show'); changed = true; }
-    if(rightCanvas && rightCanvas.classList.contains('show')){ rightCanvas.classList.remove('show'); changed = true; }
+  if(leftCanvas && leftCanvas.classList.contains('show')){ leftCanvas.classList.remove('show'); changed = true; }
+  if(rightCanvas && rightCanvas.classList.contains('show')){ rightCanvas.classList.remove('show'); changed = true; }
     if(changed) positionExternalHandles();
+  // also clear any selection and details
+  clearSelection();
   });
   // .on 'click', (d) ->
   //   if not d3.event.defaultPrevented then resetSelected()
@@ -593,12 +737,26 @@ window.addEventListener('resize', function(){
   }
   function openDrawer(side){
     var el = drawerEl(side); if(!el) return;
+    // ensure visibility during slide-in
+    el.style.display = 'block';
+    // force reflow to enable transition
+    void el.offsetWidth;
     if(!el.classList.contains('show')){ el.classList.add('show'); }
     moveHandle(side, true); setIcon(side, true);
   }
   function closeDrawer(side){
     var el = drawerEl(side); if(!el) return;
-    if(el.classList.contains('show')){ el.classList.remove('show'); }
+    if(el.classList.contains('show')){
+      // keep visible during slide-out
+      el.style.display = 'block';
+      el.classList.remove('show');
+      var onEnd = function(ev){
+        if(ev && ev.target !== el) return;
+        el.style.display = 'none';
+        el.removeEventListener('transitionend', onEnd, true);
+      };
+      el.addEventListener('transitionend', onEnd, true);
+    }
     moveHandle(side, false); setIcon(side, false);
   }
   function toggleDrawer(side){ isOpen(side) ? closeDrawer(side) : openDrawer(side); }
@@ -636,6 +794,10 @@ window.addEventListener('resize', function(){
     moveHandle('right', false); setIcon('right', false);
   }
   window.__initDualOffcanvas = bindDualOffcanvas;
+  // expose helpers for external calls
+  window.__offcanvasOpenDrawer = openDrawer;
+  window.__offcanvasCloseDrawer = closeDrawer;
+  window.__offcanvasToggleDrawer = toggleDrawer;
 })();
 
 window.addEventListener('load', function(){

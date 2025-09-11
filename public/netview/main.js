@@ -16,7 +16,7 @@
 
 // global variables
 // [svg, svgNodes, svgLinks, svgTexts, width, height, color, nodes, links, force, node, link, text, zoom, drag, graph] = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-var centerToXY, color, drag, dragended, dragged, dragging, dragstarted, exitHighlight, g, gc20, getTransform, graph, height, hideDetails, init, initUI, isEdgeOf, isEdgeSelected, isLinkOn, isNeighbor, isNodeSelected, isPartOf, isSameEdge, isSameNode, isTextOn, isTooltipOn, link, links, nborsdic, node, nodeColor, nodes, resetCanvas, resetSelected, resetSize, selected, setHighlightByNode, setHighlightByStr, showDetails, showNodeDetailsInPanel, openRightPanel, buildGroupFilterUI, applyGroupFilter, currentGroupFilter, simulation, svg, svgLinks, svgNodes, svgTexts, text, tick, url, width, zoom, rawLinks, filteredNodes, filteredLinks, selectedNodeId, updateSelectedNodeClass, linkKey, clearSelection, clearDetailsPanel;
+var centerToXY, color, drag, dragended, dragged, dragging, dragstarted, exitHighlight, g, gc20, getTransform, graph, height, hideDetails, init, initUI, isEdgeOf, isEdgeSelected, isLinkOn, isNeighbor, isNodeSelected, isPartOf, isSameEdge, isSameNode, isTextOn, isTooltipOn, link, links, nborsdic, node, nodeColor, nodes, resetCanvas, resetSelected, resetSize, selected, setHighlightByNode, setHighlightByStr, showDetails, showNodeDetailsInPanel, openRightPanel, buildGroupFilterUI, applyGroupFilter, currentGroupFilter, simulation, svg, svgLinks, svgNodes, svgTexts, text, tick, url, width, zoom, rawLinks, filteredNodes, filteredLinks, selectedNodeId, updateSelectedNodeClass, linkKey, clearSelection, clearDetailsPanel, gravityStrength;
 
 svg = null;
 
@@ -118,6 +118,9 @@ init = function() {
       .force('collide', d3.forceCollide())
       .force('link', d3.forceLink(graph.links).id(function(d) { return d.id; }))
       .force('center', d3.forceCenter(width / 2, height / 2))
+      // Add gentle gravity towards center so components stay nearby
+      .force('x', d3.forceX(width / 2).strength(gravityStrength))
+      .force('y', d3.forceY(height / 2).strength(gravityStrength))
       .on('tick', tick);
     // build filters now that we have data
     buildGroupFilterUI(graph.nodes);
@@ -429,6 +432,29 @@ initUI = function() {
       exitHighlight();
     }
   });
+  // Gravity strength slider
+  (function(){
+    var $slider = $('#gravity-strength');
+    var $label = $('#gravity-strength-value');
+    function applyStrength(val){
+      var s = Math.max(0, Math.min(0.1, +val || 0));
+      gravityStrength = s;
+      if ($label && $label.length) { $label.text(s.toFixed(3)); }
+      if (simulation) {
+        var fx = simulation.force('x');
+        var fy = simulation.force('y');
+        if (fx && typeof fx.strength === 'function') fx.strength(s);
+        if (fy && typeof fy.strength === 'function') fy.strength(s);
+        simulation.alphaTarget(0.2).restart();
+        setTimeout(function(){ try { simulation.alphaTarget(0); } catch(e){} }, 400);
+      }
+    }
+    if ($slider && $slider.length) {
+      // initialize display and state
+      applyStrength($slider.val());
+      $slider.on('input change', function(){ applyStrength(this.value); });
+    }
+  })();
   $('.modal').on('shown.bs.modal', function(e) {
     $('.nav-link').one('focus', function(e) {
       return $(this).blur();
@@ -606,6 +632,13 @@ resetCanvas = function() {
     var leftCanvas = document.getElementById('leftDrawer');
     var rightCanvas = document.getElementById('rightDrawer');
     var changed = false;
+    // Additionally, reset the quick search textbox when background is clicked
+    var $qs = $('#quick-search');
+    if ($qs && $qs.length) {
+      $qs.val('');
+      // trigger built-in search handler to clear highlights
+      $qs.trigger('search');
+    }
   if(leftCanvas && leftCanvas.classList.contains('show')){ leftCanvas.classList.remove('show'); changed = true; }
   if(rightCanvas && rightCanvas.classList.contains('show')){ rightCanvas.classList.remove('show'); changed = true; }
     if(changed) positionExternalHandles();

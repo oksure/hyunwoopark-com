@@ -25,7 +25,7 @@ export default function BioPage() {
 
 His research interests include business and data analytics with an emphasis on visualization, supply chain management from the network perspective, and technology and innovation management in the presence of digital platforms.
 
-His research has been published in leading journals including Academy of Management Review, Decision Sciences, Decision Support Systems, IEEE Transactions on Engineering Management (TEM), IEEE Transactions on Visualization and Computer Graphics (TVCG), Journal of Operations Management, and Research Policy.
+His research has been published in leading journals including Academy of Management Review, Decision Sciences, Decision Support Systems, IEEE Transactions on Engineering Management (TEM), IEEE Transactions on Visualization and Computer Graphics (TVCG), Journal of the Association of Information Systems, Journal of Operations Management, Production and Operations Management, and Research Policy.
 
 He won the TIM (Technology and Innovation Management) Division Best Student Paper Award at the Academy of Management in 2015 and the OCIS (Organizational Communication and Information Systems) Division Best Paper Award at the Academy of Management in 2017. His paper was a finalist for the Chan Hahn Best Paper Award in the OSCM (Operations and Supply Chain Management) Division at the Academy of Management in 2020. His dissertation was awarded a Runner-up for the INFORMS TIMES (Technology, Innovation Management and Entrepreneurship Section) Best Dissertation Award in 2017. He served the INFORMS TIMES community in leadership roles in 2021-2025 and he was the President of the INFORMS TIMES in 2024.`;
 

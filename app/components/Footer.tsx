@@ -41,7 +41,7 @@ const Footer = () => {
             <Stack direction="column" gap={4} width={48}>
               <Link href="https://snu.ac.kr" target="_blank">Seoul National University &#8599;</Link>
               <Link href="https://gsds.snu.ac.kr" target="_blank">SNU Graduate School of Data Science (GSDS) &#8599;</Link>
-              <Link href="https://vibalab.org" target="_blank">Visualization and Business Analytics Lab (ViBA Lab) &#8599;</Link>
+              <Link href="https://dial.snu.ac.kr" target="_blank">Data Intelligence and Analytics Lab (DIAL) &#8599;</Link>
             </Stack>
           </Stack>
         </Flex>

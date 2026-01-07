@@ -1,4 +1,6 @@
 import Provider from "./provider"
+import Script from "next/script"
+import type { Metadata, Viewport } from "next"
 
 import { Inter } from "next/font/google"
 
@@ -31,6 +33,24 @@ const lato = Lato({
   display: "swap",
 });
 
+export const metadata: Metadata = {
+  title: "Hyunwoo Park - Seoul National University",
+  manifest: "/site.webmanifest",
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
+}
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -38,32 +58,17 @@ export default function RootLayout({
 }) {
   return (
     <html className={roboto.className} suppressHydrationWarning>
-      <Head />
       <body>
         <Provider>{children}</Provider>
+        <Script 
+          src="https://umami.hwpark.net/script.js" 
+          data-website-id="543f70de-f25c-443c-b307-ad595feea524"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
 }
-
-function Head() {
-  return (
-    <>
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
-        <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <title>Hyunwoo Park - Seoul National University</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script defer src="https://umami.hwpark.net/script.js" data-website-id="543f70de-f25c-443c-b307-ad595feea524"></script>
-      </head>
-    </>
-  )
-}
-
-
 
 // import Provider from "./provider"
 

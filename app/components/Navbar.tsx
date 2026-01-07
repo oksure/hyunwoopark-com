@@ -71,7 +71,7 @@ const Navbar = () => {
             </Link>
             <Button asChild><Link href="https://zzz.sfo3.cdn.digitaloceanspaces.com/y/CV%20Hyunwoo%20Park.pdf" target="_blank">CV<GrDocumentPdf /></Link></Button>
             <Button asChild variant="outline" colorScheme="gray">
-              <Link href="https://viba.snu.ac.kr" target="_blank">
+              <Link href="https://dial.snu.ac.kr" target="_blank">
                 <Box display={{ base: "flex", md: "none" }} alignItems="center" gap={1}>Lab<IoPeopleCircle /></Box>
                 <Box display={{ base: "none", md: "flex" }} alignItems="center" gap={1}>Lab Homepage<IoPeopleCircle /></Box>
               </Link>

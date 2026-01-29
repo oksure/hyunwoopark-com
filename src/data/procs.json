@@ -6,21 +6,49 @@
       "title": "Rare is Beautiful? Rare Technological Resources and Value Implications",
       "authors": "Lee J, Jung HJ, Park H",
       "proceedings": "Academy of Management Best Paper Proceedings",
-      "year": "2020"
+      "year": "2020",
+      "link": "https://journals.aom.org/doi/abs/10.5465/AMBPP.2020.175"
+    },
+    {
+      "type": "conference",
+      "title": "Tua Culpa: When an Organization Blames its Partner for a Shared Failure",
+      "authors": "Park BS, Park H, Ramanujam R",
+      "proceedings": "Academy of Management Proceedings",
+      "year": "2017",
+      "link": "https://journals.aom.org/doi/abs/10.5465/ambpp.2017.11891abstract"
+    },
+    {
+      "type": "conference",
+      "title": "I'm Doing This For You (And Me!): Career Concern as Motivation in Online Collaboration Communities",
+      "authors": "Lee J, Park H, Zaggl M",
+      "proceedings": "Academy of Management Proceedings",
+      "year": "2017",
+      "link": "https://journals.aom.org/doi/abs/10.5465/ambpp.2017.11200abstract"
     },
     {
       "type": "conference",
       "title": "Product Innovation Contest on Service Network: Competitive Spillover from Exclusive Dealing",
       "authors": "Park H, Basole RC",
-      "proceedings": "Academy of Management Best Paper Proceedings",
-      "year": "2015"
+      "proceedings": "Academy of Management Proceedings",
+      "year": "2015",
+      "link": "https://journals.aom.org/doi/abs/10.5465/ambpp.2015.13284abstract"
     },
     {
       "type": "conference",
       "title": "An (Almost) Free Lunch? Social Recognition and Knowledge Sharing Behavior in a Virtual Community",
       "authors": "Park H, Lee J",
       "proceedings": "Academy of Management Best Paper Proceedings",
-      "year": "2015"
+      "year": "2015",
+      "link": "https://journals.aom.org/doi/abs/10.5465/ambpp.2015.184"
+    },
+    {
+      "type": "conference",
+      "title": "Bicentric Diagrams: Design of a Graph-based Relational Set Visualization Technique",
+      "authors": "Park H, Basole RC",
+      "proceedings": "Proceedings of the 33rd Annual ACM Conference Extended Abstracts on Human Factors in Computing Systems (CHI EA '15)",
+      "pages": "1815-1820",
+      "year": "2015",
+      "link": "https://dl.acm.org/doi/abs/10.1145/2702613.2732752"
     }
   ]
 }

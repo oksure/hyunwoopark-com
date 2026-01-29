@@ -27,18 +27,39 @@
       "volume": "272",
       "number": "126712",
       "year": "2025",
-      "link": "https://www.sciencedirect.com/science/article/pii/S0957417425003343"
+      "link": "https://www.sciencedirect.com/science/article/pii/S0957417425003343",
+      "top": ["abs"]
     },
     {
       "type": "journal",
-      "title": "Visualization system to identify structurally vulnerable links in OHT railway network in semiconductor FAB using betweenness centrality",
-      "authors": "Choi J, Park Y, Choi Y, Kim S, Lee H, Park H",
+      "title": "Theorizing Critical Locus of Supply: A Material Flow Perspective",
+      "authors": "Kim Y, Park H",
+      "journal": "Journal of Supply Chain Management",
+      "volume": "61",
+      "number": "4",
+      "pages": "134-164",
+      "year": "2025",
+      "link": "https://onlinelibrary.wiley.com/doi/abs/10.1111/jscm.70008",
+      "top": ["abs4"]
+    },
+    {
+      "type": "journal",
+      "title": "FURIOUS: Fully unified risk-assessment with interactive operational user system for vessels",
+      "authors": "Kim Y, Kim J, Lee W, Park H, Cho DJ",
       "journal": "PLoS ONE",
-      "volume": "19",
-      "number": "7",
-      "pages": "e0307059",
-      "year": "2024",
-      "link": "https://doi.org/10.1371/journal.pone.0307059"
+      "volume": "20",
+      "number": "5",
+      "pages": "e0323300",
+      "year": "2025",
+      "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0323300"
+    },
+    {
+      "type": "journal",
+      "title": "STGVAD: Spatio-Temporal Graph-based Vessel Behavior Anomaly Detection",
+      "authors": "Kim J, Kim M, Hwang Y, Bae S, Cho DJ, Lee W, Park H",
+      "journal": "IEEE Access",
+      "year": "2025",
+      "link": "https://ieeexplore.ieee.org/abstract/document/11165046"
     },
     {
       "type": "journal",
@@ -62,6 +83,25 @@
     },
     {
       "type": "journal",
+      "title": "Visualization system to identify structurally vulnerable links in OHT railway network in semiconductor FAB using betweenness centrality",
+      "authors": "Choi J, Park Y, Choi Y, Kim S, Lee H, Park H",
+      "journal": "PLoS ONE",
+      "volume": "19",
+      "number": "7",
+      "pages": "e0307059",
+      "year": "2024",
+      "link": "https://doi.org/10.1371/journal.pone.0307059"
+    },
+    {
+      "type": "journal",
+      "title": "Towards Generalized Visualization System for Various CNN Models: Module and Layer View",
+      "authors": "Kim Y, Chun J, Son S, Park H",
+      "journal": "IEEE Access",
+      "year": "2024",
+      "link": "https://ieeexplore.ieee.org/abstract/document/10716635"
+    },
+    {
+      "type": "journal",
       "title": "Rare is Beautiful? The Interplay Between Rareness, Technology Search, and Technology Value",
       "authors": "Lee J, Jung HJ, Park H",
       "journal": "Production and Operations Management",
@@ -71,30 +111,6 @@
       "year": "2023",
       "link": "https://onlinelibrary.wiley.com/doi/abs/10.1111/poms.13908",
       "top": ["utd24", "ft50", "abs4"]
-    },
-    {
-      "type": "journal",
-      "title": "[Book Review] A History of Data Visualization and Graphic Communication",
-      "authors": "Park H",
-      "journal": "Journal of the American Statistical Association",
-      "volume": "117",
-      "number": "539",
-      "pages": "1601-1603",
-      "year": "2022",
-      "link": "https://www.tandfonline.com/doi/abs/10.1080/01621459.2022.2098134",
-      "top": ["abs4"]
-    },
-    {
-      "type": "journal",
-      "title": "When to Signal? Contingencies for Career-Motivated Contributions in Online Collaboration Communities",
-      "authors": "Lee J, Park H, Zaggl M",
-      "journal": "Journal of the Association for Information Systems",
-      "volume": "23",
-      "number": "6",
-      "pages": "1386-1419",
-      "year": "2022",
-      "link": "https://aisel.aisnet.org/jais/vol23/iss6/8/",
-      "top": ["abs4*"]
     },
     {
       "type": "journal",
@@ -119,6 +135,30 @@
       "year": "2022",
       "link": "https://pubsonline.informs.org/doi/abs/10.1287/ijoc.2021.1148",
       "top": ["utd24", "abs3"]
+    },
+    {
+      "type": "journal",
+      "title": "When to Signal? Contingencies for Career-Motivated Contributions in Online Collaboration Communities",
+      "authors": "Lee J, Park H, Zaggl M",
+      "journal": "Journal of the Association for Information Systems",
+      "volume": "23",
+      "number": "6",
+      "pages": "1386-1419",
+      "year": "2022",
+      "link": "https://aisel.aisnet.org/jais/vol23/iss6/8/",
+      "top": ["abs4*"]
+    },
+    {
+      "type": "journal",
+      "title": "[Book Review] A History of Data Visualization and Graphic Communication",
+      "authors": "Park H",
+      "journal": "Journal of the American Statistical Association",
+      "volume": "117",
+      "number": "539",
+      "pages": "1601-1603",
+      "year": "2022",
+      "link": "https://www.tandfonline.com/doi/abs/10.1080/01621459.2022.2098134",
+      "top": ["abs4"]
     },
     {
       "type": "journal",
@@ -207,7 +247,8 @@
       "volume": "41",
       "pages": "36-53",
       "year": "2017",
-      "link": "http://www.sciencedirect.com/science/article/pii/S0167624516300907"
+      "link": "http://www.sciencedirect.com/science/article/pii/S0167624516300907",
+      "top": ["abs"]
     },
     {
       "type": "journal",
@@ -307,7 +348,8 @@
       "number": "7",
       "pages": "537-552",
       "year": "2015",
-      "link": "http://www.sciencedirect.com/science/article/pii/S0308596114000627"
+      "link": "http://www.sciencedirect.com/science/article/pii/S0308596114000627",
+      "top": ["abs"]
     },
     {
       "type": "journal",
@@ -339,7 +381,8 @@
       "number": "3",
       "pages": "253-268",
       "year": "2012",
-      "link": "http://pubsonline.informs.org/doi/abs/10.1287/serv.1120.0022"
+      "link": "http://pubsonline.informs.org/doi/abs/10.1287/serv.1120.0022",
+      "top": ["abs"]
     }
   ]
 }

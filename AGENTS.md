@@ -52,5 +52,34 @@ The `next.config.js` includes extensive rewrites for legacy versions (`/v1`, `/v
 1. **No testing framework** is currently set up - manual testing only
 2. **TypeScript strict mode is disabled** - type checking is lenient
 3. **Data updates** should be made in the JSON files under `/src/data/`
-4. **Publication filtering** includes journal ranking systems (UTD24, FT50, ABS)
+4. **Publication filtering** includes journal ranking systems (UTD24/FT50 combined, ABS)
 5. **Trailing slashes** are enforced on URLs (configured in next.config.js)
+
+## Data Conventions
+
+### Author Format
+Authors are formatted as: `LastName FirstInitial` (e.g., `Park H`, `Kim BC`, `Basole RC`)
+- The owner's name `Park H` is automatically bolded in the UI
+
+### Publication Numbering
+- Journal articles: `[J1]`, `[J2]`, etc. (numbered from oldest to newest)
+- Conference proceedings: `[C1]`, `[C2]`, etc.
+- Numbers are fixed based on full list, consistent across filters
+
+### Journal Rankings (`top` field in pubs.json)
+- `utd24` - UTD Top 24 Business Journals
+- `ft50` - Financial Times Top 50
+- `abs4*`, `abs4`, `abs3`, `abs` - ABS Academic Journal Guide ratings
+
+### Conference Proceedings (procs.json)
+- AOM entries with DOI ending in `abstract` → "Academy of Management Proceedings"
+- AOM entries without `abstract` in DOI → "Academy of Management Best Paper Proceedings"
+
+### Awards (awards.json)
+Types: `award`, `fellowship`, `grant`
+- `special: true` makes the entry bold
+- Section title: "Awards and Honors"
+
+### Links
+- Only create clickable links when URL is provided
+- If no `link` field, title displays as plain text

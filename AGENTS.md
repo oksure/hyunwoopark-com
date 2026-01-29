@@ -2,6 +2,17 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Self-Maintenance
+
+**Before ending a session**, proactively update this file and `README.md` with any new conventions, patterns, or learnings discovered during the session. This includes:
+- New data format conventions
+- UI rendering patterns
+- Bug fixes and their solutions
+- Conference locations or other reference data
+- Any corrections to existing documentation
+
+Do not wait to be asked—keep these files current.
+
 ## Commands
 
 ### Development
@@ -54,6 +65,7 @@ The `next.config.js` includes extensive rewrites for legacy versions (`/v1`, `/v
 3. **Data updates** should be made in the JSON files under `/src/data/`
 4. **Publication filtering** includes journal ranking systems (UTD24/FT50 combined, ABS)
 5. **Trailing slashes** are enforced on URLs (configured in next.config.js)
+6. **Dark mode images** - Avoid `useColorModeValue` for image sources (causes hydration mismatch). Instead, render both images and use CSS `_dark` pseudo-class to show/hide
 
 ## Data Conventions
 
@@ -79,7 +91,11 @@ Authors are formatted as: `LastName FirstInitial` (e.g., `Park H`, `Kim BC`, `Ba
 ### Conference Presentations (confs.json)
 - Each item has a `title` and `conferences` array (name, location, year)
 - Same paper can be presented at multiple conferences
-- Session chair roles can be noted with "(Session Chair)" in the title
+- Session chair roles or executive meetings can be noted in the title (e.g., "(Session Chair)", "(Regional Ambassador for Asia)")
+- Common conference locations:
+  - INFORMS Annual Meeting: rotates US cities (Seattle 2024, Atlanta 2025)
+  - POMS Annual Meeting: rotates US cities (Atlanta 2025)
+  - AOM Annual Meeting: international (Copenhagen 2025)
 
 ### Invited Talks (talks.json)
 - Each item has `institution` and `year`
@@ -90,10 +106,12 @@ Authors are formatted as: `LastName FirstInitial` (e.g., `Park H`, `Kim BC`, `Ba
 - Roles include: "Past Students", "Current Students", "Courses", "Instructor", "TA", etc.
 - URLs in details are auto-linked in the UI
 - Semester format: SP = Spring (1st semester), AU = Autumn/Fall (2nd semester)
+- Student degree format: "Ph.D.:" and "Master's:" (with apostrophe)
 
 ### Services (servs.json)
 - Types: `membership`, `conference`, `service`, `reviewer`
 - Each has `details` array with `category` and `subdetails`
+- Special UI rendering (one-liner with bullet): Korean memberships, Ad-hoc Reviewer journals/conferences
 
 ### Awards (awards.json)
 Types: `award`, `fellowship`, `grant`

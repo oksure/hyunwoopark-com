@@ -11,6 +11,9 @@ const system = createSystem(defaultConfig, {
     body: {
       colorPalette: '',
     },
+    a: {
+      textDecoration: 'underline',
+    },
   },
 })
 

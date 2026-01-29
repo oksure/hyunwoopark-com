@@ -106,7 +106,7 @@ export default function Page() {
 const Section = ({ data, stub }: { data: any; stub: string }) => {
   const [showConfsDetails, setShowConfsDetails] = useState(false);
   const [showOthersDetails, setShowOthersDetails] = useState(false);
-  const [pubFilter, setPubFilter] = useState("all");
+  const [pubFilter, setPubFilter] = useState("utd24ft50");
   const baseMx = 4;
   const badgeColor = {
     utd24: "blue",
@@ -180,18 +180,18 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                 flexDirection="row"
                 gap={1}
               >
-                {["all", "utd24", "ft50", "abs"].map((value, index) => (
-                  <ChakraRadioGroup.Item 
-                    key={value} 
-                    value={value} 
-                    display="flex" 
+                {["all", "utd24ft50", "abs"].map((value, index) => (
+                  <ChakraRadioGroup.Item
+                    key={value}
+                    value={value}
+                    display="flex"
                     alignItems="center"
                     mr={4}
                   >
                     <ChakraRadioGroup.ItemHiddenInput />
                     <ChakraRadioGroup.ItemIndicator />
                     <ChakraRadioGroup.ItemText ml={-1} fontSize="sm">
-                      {value === "all" ? "All" : value.toUpperCase()}
+                      {value === "all" ? "All" : value === "utd24ft50" ? "UTD24/FT50" : value.toUpperCase()}
                     </ChakraRadioGroup.ItemText>
                   </ChakraRadioGroup.Item>
                 ))}
@@ -229,18 +229,18 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
               flexDirection="row"
               gap={1}
             >
-              {["all", "utd24", "ft50", "abs"].map((value, index) => (
-                <ChakraRadioGroup.Item 
-                  key={value} 
-                  value={value} 
-                  display="flex" 
+              {["all", "utd24ft50", "abs"].map((value, index) => (
+                <ChakraRadioGroup.Item
+                  key={value}
+                  value={value}
+                  display="flex"
                   alignItems="center"
                   mr={4}
                 >
                   <ChakraRadioGroup.ItemHiddenInput />
                   <ChakraRadioGroup.ItemIndicator />
                   <ChakraRadioGroup.ItemText ml={-1} fontSize="sm">
-                    {value === "all" ? "All" : value.toUpperCase()}
+                    {value === "all" ? "All" : value === "utd24ft50" ? "UTD24/FT50" : value.toUpperCase()}
                   </ChakraRadioGroup.ItemText>
                 </ChakraRadioGroup.Item>
               ))}
@@ -268,6 +268,9 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
         <Box as="ul" listStyleType="none" pl={{ base: 0 * baseMx, md: 1 * baseMx }}>
           <For each={stub === "pubs" ? data.items.filter((item: any) => {
             if (pubFilter === "all") return true;
+            if (pubFilter === "utd24ft50") {
+              return item.top && (item.top.includes("utd24") || item.top.includes("ft50"));
+            }
             if (pubFilter === "abs") {
               return item.top && (item.top.includes("abs") || item.top.includes("abs4*") || item.top.includes("abs4") || item.top.includes("abs3"));
             }

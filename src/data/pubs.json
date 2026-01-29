@@ -3,9 +3,22 @@
   "items": [
     {
       "type": "journal",
+      "title": "STGVAD: Spatio-Temporal Graph-based Vessel Behavior Anomaly Detection",
+      "authors": "Kim J, Kim M, Hwang Y, Bae S, Cho DJ, Lee W, Park H",
+      "journal": "IEEE Access",
+      "volume": "14",
+      "pages": "2152-2165",
+      "year": "2026",
+      "link": "https://ieeexplore.ieee.org/abstract/document/11165046"
+    },
+    {
+      "type": "journal",
       "title": "Obligatory responses to FDA inspection outcomes and future drug shortages",
       "authors": "Wang Y, Ball G, Anand G, Park H",
       "journal": "Manufacturing & Service Operations Management",
+      "volume": "27",
+      "number": "3",
+      "pages": "679-992",
       "year": "2025",
       "link": "https://pubsonline.informs.org/doi/abs/10.1287/msom.2022.0322",
       "top": ["utd24", "ft50", "abs3"]
@@ -15,6 +28,9 @@
       "title": "Are All Generic Drugs Created Equal? An Empirical Analysis of Generic Drug Manufacturing Location and Serious Drug Adverse Events",
       "authors": "Noh IJ, Gray J, Ball GP, Wright Z, Park H",
       "journal": "Production and Operations Management",
+      "volume": "34",
+      "number": "9",
+      "pages": "2601-2617",
       "year": "2025",
       "link": "https://journals.sagepub.com/doi/abs/10.1177/10591478251319691",
       "top": ["utd24", "ft50", "abs4"]
@@ -55,17 +71,23 @@
     },
     {
       "type": "journal",
-      "title": "STGVAD: Spatio-Temporal Graph-based Vessel Behavior Anomaly Detection",
-      "authors": "Kim J, Kim M, Hwang Y, Bae S, Cho DJ, Lee W, Park H",
-      "journal": "IEEE Access",
+      "title": "Enhancing Multi-Output AIS Prediction with Indirect Sea Level Referencing: Feature Augmentation for Improved Accuracy in Korean Coastal Waters",
+      "authors": "Lee Y, Park H, Cho D, Lee W",
+      "journal": "Journal of Navigation and Port Research",
+      "volume": "49",
+      "number": "1",
+      "pages": "18-35",
       "year": "2025",
-      "link": "https://ieeexplore.ieee.org/abstract/document/11165046"
+      "link": "https://doi.org/10.5394/KINPR.2025.49.1.18"
     },
     {
       "type": "journal",
       "title": "Gender and Serious Drug Recalls: A Textual Sentiment Analysis of Drug Reviews on WebMD",
       "authors": "Ball GP, Bavafa H, Blanco C, Park H, Wowak KD",
       "journal": "Production and Operations Management",
+      "volume": "34",
+      "number": "4",
+      "pages": "698-710",
       "year": "2024",
       "link": "https://journals.sagepub.com/doi/abs/10.1177/10591478241256644",
       "top": ["utd24", "ft50", "abs4"]
@@ -97,6 +119,8 @@
       "title": "Towards Generalized Visualization System for Various CNN Models: Module and Layer View",
       "authors": "Kim Y, Chun J, Son S, Park H",
       "journal": "IEEE Access",
+      "volume": "12",
+      "pages": "158311-158321",
       "year": "2024",
       "link": "https://ieeexplore.ieee.org/abstract/document/10716635"
     },
@@ -159,6 +183,17 @@
       "year": "2022",
       "link": "https://www.tandfonline.com/doi/abs/10.1080/01621459.2022.2098134",
       "top": ["abs4"]
+    },
+    {
+      "type": "journal",
+      "title": "A Comparative Study of Vessel Trajectory Prediction Error based on AIS and LTE-Maritime Data",
+      "authors": "Min JH, Lee S, Cho DJ, Baek JH, Park H",
+      "journal": "Journal of Navigation and Port Research",
+      "volume": "46",
+      "number": "6",
+      "pages": "576-584",
+      "year": "2022",
+      "link": "https://doi.org/10.5394/KINPR.2022.46.6.576"
     },
     {
       "type": "journal",

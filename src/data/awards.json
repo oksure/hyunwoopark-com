@@ -1,11 +1,24 @@
 {
-  "title": "Awards and Honors",
+  "title": "Awards, Grants, and Honors",
   "items": [
+    {
+      "type": "award",
+      "title": "Distinguished Service Award",
+      "awarder": "INFORMS Technology, Innovation Management and Entrepreneurship Section (TIMES)",
+      "year": "2025",
+      "special": true
+    },
+    {
+      "type": "award",
+      "title": "Meritorious Reviewer Award",
+      "awarder": "INFORMS Journal on Computing",
+      "year": "2025"
+    },
     {
       "type": "award",
       "title": "Elected Member, Policy Studies Division",
       "awarder": "Young Korean Academy of Science and Technology (Y-KAST)",
-      "year": "2023–Present",
+      "year": "2024 – Present",
       "special": true
     },
     {

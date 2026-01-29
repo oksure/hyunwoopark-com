@@ -354,6 +354,21 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                               ))}
                             </Box>
                           )}
+                          {item.award && (
+                            <Box mt={1}>
+                              {item.award.map((awardItem: string, awardIdx: number) => (
+                                <Badge
+                                  key={awardIdx}
+                                  size="sm"
+                                  variant="subtle"
+                                  colorPalette="green"
+                                  mr={1}
+                                >
+                                  {awardItem}
+                                </Badge>
+                              ))}
+                            </Box>
+                          )}
                         </Box>
                       </Flex>
                     ))}
@@ -427,7 +442,7 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                 ml={{ base: baseMx, md: 2 * baseMx }}
               >
                 <Heading as="h3" size="lg" mb={2}>
-                  {sectionType.charAt(0).toUpperCase() + sectionType.slice(1)}s
+                  {sectionType === "award" ? "Awards and Honors" : sectionType.charAt(0).toUpperCase() + sectionType.slice(1) + "s"}
                 </Heading>
                 <Box
                   as="ul"
@@ -478,7 +493,24 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                           <For each={course.details}>
                             {(detail: string, dIdx: number) => (
                               <Box as="li" key={dIdx} mb={1}>
-                                {detail}
+                                {detail.includes("https://") ? (
+                                  (() => {
+                                    const urlMatch = detail.match(/(https:\/\/[^\s]+)/);
+                                    if (urlMatch) {
+                                      const url = urlMatch[1];
+                                      const textBefore = detail.substring(0, detail.indexOf(url));
+                                      const textAfter = detail.substring(detail.indexOf(url) + url.length);
+                                      return (
+                                        <>
+                                          {textBefore}
+                                          <Link href={url} target="_blank">{url}</Link>
+                                          {textAfter}
+                                        </>
+                                      );
+                                    }
+                                    return detail;
+                                  })()
+                                ) : detail}
                               </Box>
                             )}
                           </For>

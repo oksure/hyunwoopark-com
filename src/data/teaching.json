@@ -2,6 +2,33 @@
   "title": "Teaching Experience",
   "items": [
     {
+      "institution": "Seoul National University, Graduate School of Data Science",
+      "courses": [
+        {
+          "role": "Past Students",
+          "details": [
+            "Ph.D.: Yunsu Kim (Samsung Electronics)",
+            "M.S.: Byungwoo Kim (SK Hynix), Sejin Kim (National Police Agency), Ji Hong Min (Hanwha Ocean), Jeongjin Park (LG CNS), Sungwook Son (Intel), Seonggu Shin (IBM), Sojeong Yeon, Seungju Lee (Panirois), Chan Gyu Lee (ETRI), Changuk Lee (Hyundai Marine & Fire Insurance), Chansong Lim (Ph.D. Student @ UC Riverside), Yeeun Choi (Ernst & Young Global), Sangwoo Heo (Naver Future AI Center)"
+          ]
+        },
+        {
+          "role": "Current Students",
+          "details": [
+            "See https://dial.snu.ac.kr/members/"
+          ]
+        },
+        {
+          "role": "Courses",
+          "details": [
+            "Veritas Practice: Data Visualization and Self-Reflection; AU24, SP26",
+            "Data Visualization for Medical Applications; SP24, SP26",
+            "Data Analysis and Visualization; AU21, AU22, AU23",
+            "Computing Foundations for Data Science; AU22, SP23"
+          ]
+        }
+      ]
+    },
+    {
       "institution": "The Ohio State University, Fisher College of Business",
       "courses": [
         {

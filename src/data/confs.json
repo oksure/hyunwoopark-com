@@ -2,6 +2,121 @@
   "title": "Conference Presentations",
   "items": [
     {
+      "title": "Spatio-Temporal Graphs Beyond Grids: Benchmark for Maritime Anomaly Detection",
+      "conferences": [
+        {
+          "name": "NeurIPS Workshop on AI for Science",
+          "location": "San Diego, CA",
+          "year": "2025"
+        }
+      ]
+    },
+    {
+      "title": "From Paychecks to Well-Being: Unpacking Drivers of Employee Turnover at Scale",
+      "conferences": [
+        {
+          "name": "INFORMS MSOM Conference",
+          "location": "London, UK",
+          "year": "2025"
+        }
+      ]
+    },
+    {
+      "title": "Not All Doom and Gloom: ChatGPT, Knowledge Diversity, and Style Similarity",
+      "conferences": [
+        {
+          "name": "DRUID Conference",
+          "location": "Toronto, Canada",
+          "year": "2025"
+        },
+        {
+          "name": "AOM Annual Meeting",
+          "location": "Chicago, IL",
+          "year": "2024"
+        }
+      ]
+    },
+    {
+      "title": "MOE: Manga Organized with Edges",
+      "conferences": [
+        {
+          "name": "IEEE PacificVis",
+          "location": "Taipei, Taiwan",
+          "year": "2025"
+        }
+      ]
+    },
+    {
+      "title": "Adaptive Sparsified Graph Learning Framework for Vessel Behavior Anomalies",
+      "conferences": [
+        {
+          "name": "AAAI Workshop on Anomaly Detection in Scientific Domains",
+          "location": "Philadelphia, PA",
+          "year": "2025"
+        }
+      ]
+    },
+    {
+      "title": "A Long-term, Geospatial-based Approach for Location Suitability Evaluation of Flood Relief Camps Considering Climate Change",
+      "conferences": [
+        {
+          "name": "INFORMS MSOM Conference",
+          "location": "Minneapolis, MN",
+          "year": "2024"
+        }
+      ]
+    },
+    {
+      "title": "Revelio: A Lifelog Visualization System with Google My Activity",
+      "conferences": [
+        {
+          "name": "IEEE PacificVis",
+          "location": "Tokyo, Japan",
+          "year": "2024"
+        }
+      ]
+    },
+    {
+      "title": "String Nodes Visualization with a Simple Trick: The Hidden Virtual Nodes",
+      "conferences": [
+        {
+          "name": "IEEE PacificVis",
+          "location": "Tokyo, Japan",
+          "year": "2024"
+        }
+      ]
+    },
+    {
+      "title": "TIMES Best Dissertation Award (Session Chair)",
+      "conferences": [
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Phoenix, AZ",
+          "year": "2023"
+        }
+      ]
+    },
+    {
+      "title": "Innovation Research using Graph Neural Networks",
+      "conferences": [
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Indianapolis, IN",
+          "year": "2022"
+        }
+      ]
+    },
+    {
+      "title": "FDA Plant Inspections and Drug Shortages",
+      "conferences": [
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Indianapolis, IN",
+          "year": "2022"
+        }
+      ]
+    },
+    {
       "title": "Supply Network Reconfiguration in Industry Transition: A Study of Electric Vehicles in the Automotive Industry",
       "conferences": [
         {

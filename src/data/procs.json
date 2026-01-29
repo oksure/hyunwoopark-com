@@ -3,11 +3,87 @@
   "items": [
     {
       "type": "conference",
+      "title": "From Ballpark to Society: Understanding Stakeholders' Adaptation to Automated Judgment via ABS in Baseball",
+      "authors": "Lee D, Ju J, Song H, Park H",
+      "proceedings": "ACM CHI 2026",
+      "year": "2026"
+    },
+    {
+      "type": "conference",
+      "title": "Spatio-Temporal Graphs Beyond Grids: Benchmark for Maritime Anomaly Detection",
+      "authors": "Kim J, Hwang Y, Kim M, Bae S, Park H",
+      "proceedings": "NeurIPS 2025 Workshop on AI for Science",
+      "year": "2025",
+      "link": "https://arxiv.org/abs/2512.20086",
+      "award": ["Best Poster"]
+    },
+    {
+      "type": "conference",
+      "title": "From Paychecks to Well-Being: Unpacking Drivers of Employee Turnover at Scale",
+      "authors": "Deshmane A, Park H, Rahmani M",
+      "proceedings": "INFORMS MSOM 2025",
+      "year": "2025"
+    },
+    {
+      "type": "conference",
+      "title": "Not All Doom and Gloom: ChatGPT, Knowledge Diversity, and Style Similarity",
+      "authors": "Lee CG, Lee J, Park H",
+      "proceedings": "DRUID 2025",
+      "year": "2025"
+    },
+    {
+      "type": "conference",
+      "title": "MOE: Manga Organized with Edges",
+      "authors": "Kim Y, Park JJ, Shin S, Park H",
+      "proceedings": "IEEE PacificVis 2025",
+      "year": "2025"
+    },
+    {
+      "type": "conference",
+      "title": "Adaptive Sparsified Graph Learning Framework for Vessel Behavior Anomalies",
+      "authors": "Kim J, Kim M, Ju J, Hwang Y, Lee W, Park H",
+      "proceedings": "AAAI 2025 Workshop on Anomaly Detection in Scientific Domains",
+      "year": "2025",
+      "link": "https://www.nsfhdr.org/html/mlchallenge-y1/aaai-workshop2024.html"
+    },
+    {
+      "type": "conference",
+      "title": "Not All Doom and Gloom: ChatGPT, Knowledge Diversity, and Style Similarity in Online Communities",
+      "authors": "Lee CG, Lee J, Park H",
+      "proceedings": "Academy of Management Proceedings",
+      "year": "2024",
+      "link": "https://journals.aom.org/doi/abs/10.5465/AMPROC.2024.17587abstract"
+    },
+    {
+      "type": "conference",
+      "title": "A Long-term, Geospatial-based Approach for Location Suitability Evaluation of Flood Relief Camps Considering Climate Change",
+      "authors": "Choi Y, Park H",
+      "proceedings": "INFORMS MSOM 2024",
+      "year": "2024"
+    },
+    {
+      "type": "conference",
+      "title": "Revelio: A Lifelog Visualization System with Google My Activity",
+      "authors": "Choi Y, Kim Y, Lee CG, Park JJ, Park H",
+      "proceedings": "IEEE PacificVis 2024",
+      "year": "2024",
+      "award": ["Best Poster"]
+    },
+    {
+      "type": "conference",
+      "title": "String Nodes Visualization with a Simple Trick: The Hidden Virtual Nodes",
+      "authors": "Choi J, Park H",
+      "proceedings": "IEEE PacificVis 2024",
+      "year": "2024"
+    },
+    {
+      "type": "conference",
       "title": "Rare is Beautiful? Rare Technological Resources and Value Implications",
       "authors": "Lee J, Jung HJ, Park H",
       "proceedings": "Academy of Management Best Paper Proceedings",
       "year": "2020",
-      "link": "https://journals.aom.org/doi/abs/10.5465/AMBPP.2020.175"
+      "link": "https://journals.aom.org/doi/abs/10.5465/AMBPP.2020.175",
+      "award": ["Best Paper Finalist"]
     },
     {
       "type": "conference",
@@ -39,7 +115,8 @@
       "authors": "Park H, Lee J",
       "proceedings": "Academy of Management Best Paper Proceedings",
       "year": "2015",
-      "link": "https://journals.aom.org/doi/abs/10.5465/ambpp.2015.184"
+      "link": "https://journals.aom.org/doi/abs/10.5465/ambpp.2015.184",
+      "award": ["Best Student Paper"]
     },
     {
       "type": "conference",

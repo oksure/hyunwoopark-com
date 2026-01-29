@@ -2,6 +2,16 @@
   "title": "Conference Presentations",
   "items": [
     {
+      "title": "OSCM Division Executive Meeting (Regional Ambassador for Asia)",
+      "conferences": [
+        {
+          "name": "AOM Annual Meeting",
+          "location": "Copenhagen, Denmark",
+          "year": "2025"
+        }
+      ]
+    },
+    {
       "title": "Spatio-Temporal Graphs Beyond Grids: Benchmark for Maritime Anomaly Detection",
       "conferences": [
         {
@@ -22,6 +32,46 @@
       ]
     },
     {
+      "title": "Double-Edged Sword: Impact of AI on Production of Knowledge",
+      "conferences": [
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Atlanta, GA",
+          "year": "2025"
+        }
+      ]
+    },
+    {
+      "title": "An Empirical Analysis of Generic Drug Manufacturing Location and Serious Adverse Events",
+      "conferences": [
+        {
+          "name": "POMS Annual Meeting",
+          "location": "Atlanta, GA",
+          "year": "2025"
+        }
+      ]
+    },
+    {
+      "title": "The Impact of Artificial Intelligence on Scientific Collaboration",
+      "conferences": [
+        {
+          "name": "POMS Annual Meeting",
+          "location": "Atlanta, GA",
+          "year": "2025"
+        }
+      ]
+    },
+    {
+      "title": "Employee Turnover: The Interplay of Work-Life Balance and Compensation",
+      "conferences": [
+        {
+          "name": "POMS Annual Meeting",
+          "location": "Atlanta, GA",
+          "year": "2025"
+        }
+      ]
+    },
+    {
       "title": "Not All Doom and Gloom: ChatGPT, Knowledge Diversity, and Style Similarity",
       "conferences": [
         {
@@ -32,6 +82,11 @@
         {
           "name": "AOM Annual Meeting",
           "location": "Chicago, IL",
+          "year": "2024"
+        },
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Seattle, WA",
           "year": "2024"
         }
       ]
@@ -82,6 +137,61 @@
         {
           "name": "IEEE PacificVis",
           "location": "Tokyo, Japan",
+          "year": "2024"
+        }
+      ]
+    },
+    {
+      "title": "Mapping the Past to Build the Future: A Visualization System for Enhancing Humanitarian Aid Effectiveness Through Project Topic Modeling",
+      "conferences": [
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Seattle, WA",
+          "year": "2024"
+        }
+      ]
+    },
+    {
+      "title": "Work-Life Balance Satisfaction and Employee Turnover: A Large-Scale Analysis",
+      "conferences": [
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Seattle, WA",
+          "year": "2024"
+        }
+      ]
+    },
+    {
+      "title": "IVExplorer: Interactive Exploration of Causality within Causal Graphs",
+      "conferences": [
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Seattle, WA",
+          "year": "2024"
+        }
+      ]
+    },
+    {
+      "title": "Firm-Level Small-Worldliness: Exploring the Structural Characteristics and Performance Effects",
+      "conferences": [
+        {
+          "name": "POMS Annual Meeting",
+          "location": "Atlanta, GA",
+          "year": "2025"
+        },
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Seattle, WA",
+          "year": "2024"
+        }
+      ]
+    },
+    {
+      "title": "FURIOUS: Fully Unified Risk-Assessment with Interactive Operational User System for Vessels",
+      "conferences": [
+        {
+          "name": "INFORMS Annual Meeting",
+          "location": "Seattle, WA",
           "year": "2024"
         }
       ]

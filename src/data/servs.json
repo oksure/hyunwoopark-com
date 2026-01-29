@@ -9,12 +9,12 @@
           "category": "International",
           "subdetails": [
             "Institute of Operations Research and Management Science (INFORMS) - Senior Member",
-            "Production and Operations Management Society (POMS)",
-            "Academy of Management (AOM)",
             "Association for Computing Machinery (ACM)",
-            "Institute of Electrical and Electronics Engineers (IEEE)",
+            "Academy of Management (AOM)",
             "Decision Sciences Institute (DSI)",
-            "Industry Studies Association (ISA)"
+            "Institute of Electrical and Electronics Engineers (IEEE)",
+            "Industry Studies Association (ISA)",
+            "Production and Operations Management Society (POMS)"
           ]
         },
         {
@@ -39,6 +39,7 @@
         {
           "category": "Leadership",
           "subdetails": [
+            "AOM OSCM Regional Ambassador for Asia 2025-Present",
             "INFORMS TIMES Past President 2025",
             "INFORMS TIMES President 2024",
             "INFORMS TIMES President-Elect 2023",
@@ -63,7 +64,9 @@
         {
           "category": "Program Committee",
           "subdetails": [
-            "European Conference of Artifical Intelligence (ECAI) 2024-2025"
+            "European Conference of Artifical Intelligence (ECAI) 2024-2025",
+            "INFORMS MSOM Conference 2024",
+            "Pacific Asia Conference on Information Systems (PACIS) 2017"
           ]
         }
       ]

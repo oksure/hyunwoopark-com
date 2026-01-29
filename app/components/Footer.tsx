@@ -1,5 +1,4 @@
-import { Flex, Container, Text, Link, Stack, Spacer, Image } from "@chakra-ui/react";
-import { useColorModeValue } from "../../components/ui/color-mode";
+import { Flex, Container, Text, Link, Stack, Spacer, Image, Box } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
@@ -8,18 +7,31 @@ const Footer = () => {
         <Flex direction={{ base: "column", md: "row" }} alignItems="top">
           <Stack direction="column" gap={4} width={48}>
             <Link href="https://favicon.io/favicon-generator/" target="_blank">
-            <Image
-              src={useColorModeValue("/apple-touch-icon.png", "/apple-touch-icon-invert.png")}
-              alt="Hyunwoo Park"
-              width={12}
-              rounded="full"
-            />
+              <Box position="relative" width={12} height={12}>
+                <Image
+                  src="/apple-touch-icon.png"
+                  alt="Hyunwoo Park"
+                  width={12}
+                  rounded="full"
+                  position="absolute"
+                  _dark={{ display: "none" }}
+                />
+                <Image
+                  src="/apple-touch-icon-invert.png"
+                  alt="Hyunwoo Park"
+                  width={12}
+                  rounded="full"
+                  position="absolute"
+                  display="none"
+                  _dark={{ display: "block" }}
+                />
+              </Box>
             </Link>
             <Text>
               &copy; {new Date().getFullYear()} Hyunwoo Park
             </Text>
             <Text>
-              Built with <Link href="https://nextjs.org/" target="_blank">Next.js</Link>, <Link href="https://chakra-ui.com/" target="_blank">chakra-ui</Link>, <Link href="https://react-icons.github.io/react-icons/" target="_blank">react-icons</Link>, and <Link href="https://vercel.com/" target="_blank">Vercel</Link>.
+              Built with <Link href="https://nextjs.org/" target="_blank">Next.js</Link>, <Link href="https://chakra-ui.com/" target="_blank">chakra-ui</Link>, <Link href="https://react-icons.github.io/react-icons/" target="_blank">react-icons</Link>, <Link href="https://claude.ai/code" target="_blank">Claude Code</Link>, and <Link href="https://vercel.com/" target="_blank">Vercel</Link>.
             </Text>
           </Stack>
           <Spacer minH={6} />

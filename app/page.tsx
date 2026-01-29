@@ -553,18 +553,30 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                       );
                     } else {
                       if (
-                        serviceItem.title === "Ad-hoc Reviewer" &&
-                        (detail.category === "Journals" ||
-                          detail.category === "Conferences")
+                        (serviceItem.title === "Ad-hoc Reviewer" &&
+                          (detail.category === "Journals" ||
+                            detail.category === "Conferences")) ||
+                        (serviceItem.title === "Membership" &&
+                          detail.category === "Korean")
                       ) {
                         return (
                           <Box key={dIdx} mb={2}>
                             <Heading as="h4" size="md" mb={1} ml={{ base: 0, md: 1 * baseMx }}>
                               {detail.category}
                             </Heading>
-                            <Text ml={{ base: baseMx, md: 2 * baseMx }}>
-                              {detail.subdetails.join(", ")}
-                            </Text>
+                            <Box
+                              as="ul"
+                              listStyleType="disc"
+                              ml={{ base: baseMx, md: 2 * baseMx }}
+                            >
+                              <Box
+                                as="li"
+                                mb={1}
+                                ml={{ base: 0, md: 1 * baseMx }}
+                              >
+                                <Text>{detail.subdetails.join(", ")}</Text>
+                              </Box>
+                            </Box>
                           </Box>
                         );
                       } else {

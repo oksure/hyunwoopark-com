@@ -74,11 +74,31 @@ Authors are formatted as: `LastName FirstInitial` (e.g., `Park H`, `Kim BC`, `Ba
 ### Conference Proceedings (procs.json)
 - AOM entries with DOI ending in `abstract` → "Academy of Management Proceedings"
 - AOM entries without `abstract` in DOI → "Academy of Management Best Paper Proceedings"
+- `award` field (array) displays green badges: `["Best Paper"]`, `["Best Poster"]`, `["Best Paper Finalist"]`, `["Best Student Paper"]`
+
+### Conference Presentations (confs.json)
+- Each item has a `title` and `conferences` array (name, location, year)
+- Same paper can be presented at multiple conferences
+- Session chair roles can be noted with "(Session Chair)" in the title
+
+### Invited Talks (talks.json)
+- Each item has `institution` and `year`
+- Format: "Department/School, University, Location"
+
+### Teaching (teaching.json)
+- Each institution has `courses` array with `role` and `details`
+- Roles include: "Past Students", "Current Students", "Courses", "Instructor", "TA", etc.
+- URLs in details are auto-linked in the UI
+- Semester format: SP = Spring (1st semester), AU = Autumn/Fall (2nd semester)
+
+### Services (servs.json)
+- Types: `membership`, `conference`, `service`, `reviewer`
+- Each has `details` array with `category` and `subdetails`
 
 ### Awards (awards.json)
 Types: `award`, `fellowship`, `grant`
 - `special: true` makes the entry bold
-- Section title: "Awards and Honors"
+- Subheading for awards displays as "Awards and Honors"
 
 ### Links
 - Only create clickable links when URL is provided

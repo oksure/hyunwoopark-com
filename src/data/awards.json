@@ -1,6 +1,13 @@
 {
-  "title": "Awards, Grants, and Honors",
+  "title": "Awards and Honors",
   "items": [
+    {
+      "type": "award",
+      "title": "Elected Member, Policy Studies Division",
+      "awarder": "Young Korean Academy of Science and Technology (Y-KAST)",
+      "year": "2023–Present",
+      "special": true
+    },
     {
       "type": "award",
       "title": "Best Paper Award Finalist",
@@ -108,7 +115,8 @@
       "type": "fellowship",
       "title": "Overseas Study Scholarship",
       "awarder": "Samsung Foundation",
-      "year": "2008-2010"
+      "year": "2008-2010",
+      "special": true
     },
     {
       "type": "fellowship",

@@ -122,6 +122,11 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
     ft50: "https://www.ft.com/content/3405a512-5cbb-11e1-8f1f-00144feabdc0",
     abs: "https://charteredabs.org/academic-journal-guide",
   };
+  const pubCounts = stub === "pubs" ? {
+    all: data.items.length,
+    utd24ft50: data.items.filter((item: any) => item.top && (item.top.includes("utd24") || item.top.includes("ft50"))).length,
+    abs: data.items.filter((item: any) => item.top && (item.top.includes("abs") || item.top.includes("abs4*") || item.top.includes("abs4") || item.top.includes("abs3"))).length,
+  } : {};
 
   return (
     <Box py={8} fontSize={{ base: "sm", md: "md" }} lineHeight={1.2}>
@@ -191,7 +196,7 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                     <ChakraRadioGroup.ItemHiddenInput />
                     <ChakraRadioGroup.ItemIndicator />
                     <ChakraRadioGroup.ItemText ml={-1} fontSize="sm">
-                      {value === "all" ? "All" : value === "utd24ft50" ? "UTD24/FT50" : value.toUpperCase()}
+                      {value === "all" ? `All (${pubCounts.all})` : value === "utd24ft50" ? `UTD24/FT50 (${pubCounts.utd24ft50})` : `${value.toUpperCase()} (${pubCounts.abs})`}
                     </ChakraRadioGroup.ItemText>
                   </ChakraRadioGroup.Item>
                 ))}
@@ -214,9 +219,9 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
           )}
         </Heading>
         {stub === "pubs" && (
-          <Stack 
-            direction={{ base: "column", md: "row" }} 
-            gap={{ base: 4, md: 6 }} 
+          <Stack
+            direction={{ base: "column", md: "row" }}
+            gap={{ base: 4, md: 6 }}
             mt={{ base: 4, md: 0 }}
             ml={{ base: 0, md: baseMx }}
             align={{ base: "flex-start", md: "center" }}
@@ -240,7 +245,7 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                   <ChakraRadioGroup.ItemHiddenInput />
                   <ChakraRadioGroup.ItemIndicator />
                   <ChakraRadioGroup.ItemText ml={-1} fontSize="sm">
-                    {value === "all" ? "All" : value === "utd24ft50" ? "UTD24/FT50" : value.toUpperCase()}
+                    {value === "all" ? `All (${pubCounts.all})` : value === "utd24ft50" ? `UTD24/FT50 (${pubCounts.utd24ft50})` : `${value.toUpperCase()} (${pubCounts.abs})`}
                   </ChakraRadioGroup.ItemText>
                 </ChakraRadioGroup.Item>
               ))}
@@ -264,18 +269,103 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
       </Box>
       <Separator mb={4} mt={2} />
 
-      {stub === "pubs" || stub === "procs" || stub === "books" ? (
+      {stub === "pubs" || stub === "procs" ? (
+        <Box>
+          {(() => {
+            // Attach original index to each item for consistent numbering
+            const itemsWithIndex = data.items.map((item: any, idx: number) => ({
+              ...item,
+              _originalIndex: idx
+            }));
+            const filteredItems = stub === "pubs" ? itemsWithIndex.filter((item: any) => {
+              if (pubFilter === "all") return true;
+              if (pubFilter === "utd24ft50") {
+                return item.top && (item.top.includes("utd24") || item.top.includes("ft50"));
+              }
+              if (pubFilter === "abs") {
+                return item.top && (item.top.includes("abs") || item.top.includes("abs4*") || item.top.includes("abs4") || item.top.includes("abs3"));
+              }
+              return item.top && item.top.includes(pubFilter);
+            }) : itemsWithIndex;
+            const years = [...new Set(filteredItems.map((item: any) => item.year))].sort(
+              (a: string, b: string) => parseInt(b) - parseInt(a)
+            );
+            return years.map((year: string) => {
+              const yearItems = filteredItems.filter((item: any) => item.year === year);
+              return (
+                <Box key={year} mb={baseMx}>
+                  <Heading as="h4" size="md" mb={2} ml={{ base: 0, md: baseMx }}>
+                    {year}
+                  </Heading>
+                  <Box as="ul" listStyleType="none" pl={{ base: 0 * baseMx, md: 1 * baseMx }}>
+                    {yearItems.map((item: any, idx: number) => (
+                      <Flex as="li" key={idx} mb={4} alignItems="start">
+                        <Box
+                          minW="2.5em"
+                          textAlign="right"
+                          mr={2}
+                          ml={{ base: 0, md: 0.5 * baseMx }}
+                        >
+                          [{stub === "pubs" ? "J" : "C"}{data.items.length - item._originalIndex}]
+                        </Box>
+                        <Box>
+                          <Box>
+                            {item.link ? (
+                              <Link href={item.link} target="_blank">
+                                {item.title}
+                              </Link>
+                            ) : (
+                              item.title
+                            )}
+                          </Box>
+                          <Text mt={1}>
+                            {(() => {
+                              const authors = item.authors || "";
+                              if (!authors.includes("Park H")) {
+                                return authors;
+                              }
+                              const segments = authors.split("Park H");
+                              return segments.map((segment: string, i: number) => (
+                                <span key={i}>
+                                  {segment}
+                                  {i < segments.length - 1 && <strong>Park H</strong>}
+                                </span>
+                              ));
+                            })()} <em style={{ fontStyle: "italic" }}>{item.journal}</em>
+                            <em style={{ fontStyle: "italic" }}>{item.proceedings}</em>
+                            <em style={{ fontStyle: "italic" }}>{item.notes}</em>
+                            {item.volume ? `, ${item.volume}` : ""}
+                            {item.number ? `(${item.number})` : ""}
+                            {item.pages ? `: ${item.pages}` : ""}
+                            .
+                          </Text>
+                          {item.top && (
+                            <Box mt={1}>
+                              {item.top.map((topItem: string, topIdx: number) => (
+                                <Badge
+                                  key={topIdx}
+                                  size="sm"
+                                  variant="subtle"
+                                  colorPalette={badgeColor[topItem]}
+                                  mr={1}
+                                >
+                                  {topItem.toUpperCase()}
+                                </Badge>
+                              ))}
+                            </Box>
+                          )}
+                        </Box>
+                      </Flex>
+                    ))}
+                  </Box>
+                </Box>
+              );
+            });
+          })()}
+        </Box>
+      ) : stub === "books" ? (
         <Box as="ul" listStyleType="none" pl={{ base: 0 * baseMx, md: 1 * baseMx }}>
-          <For each={stub === "pubs" ? data.items.filter((item: any) => {
-            if (pubFilter === "all") return true;
-            if (pubFilter === "utd24ft50") {
-              return item.top && (item.top.includes("utd24") || item.top.includes("ft50"));
-            }
-            if (pubFilter === "abs") {
-              return item.top && (item.top.includes("abs") || item.top.includes("abs4*") || item.top.includes("abs4") || item.top.includes("abs3"));
-            }
-            return item.top && item.top.includes(pubFilter);
-          }) : data.items}>
+          <For each={data.items}>
             {(item: any, idx: number) => (
               <Flex as="li" key={idx} mb={4} alignItems="start">
                 <Box
@@ -288,9 +378,13 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                 </Box>
                 <Box>
                   <Box>
-                    <Link href={item.link} target="_blank">
-                      {item.title}
-                    </Link>
+                    {item.link ? (
+                      <Link href={item.link} target="_blank">
+                        {item.title}
+                      </Link>
+                    ) : (
+                      item.title
+                    )}
                   </Box>
                   <Text mt={1}>
                     {(() => {
@@ -313,21 +407,6 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                     {item.pages ? `: ${item.pages}` : ""}
                     .
                   </Text>
-                  {item.top && (
-                    <Box mt={1}>
-                      {item.top.map((topItem: string, topIdx: number) => (
-                        <Badge
-                          key={topIdx}
-                          size="sm"
-                          variant="subtle"
-                          colorPalette={badgeColor[topItem]}
-                          mr={1}
-                        >
-                          {topItem.toUpperCase()}
-                        </Badge>
-                      ))}
-                    </Box>
-                  )}
                 </Box>
               </Flex>
             )}

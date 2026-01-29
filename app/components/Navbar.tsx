@@ -84,15 +84,13 @@ const Navbar = () => {
               </DrawerTrigger>
               <DrawerContent>
                 <DrawerHeader>
-                  <DrawerTitle>
-                    <Heading as="h2">Menu</Heading>
-                  </DrawerTitle>
+                  <DrawerTitle>Menu</DrawerTitle>
                 </DrawerHeader>
                 <DrawerBody>
                   <VStack gap={8} mt={8}>
                     <For each={["v4", "v3", "v2", "v1"]}>
                       {(stub) => (
-                      <Heading as="h3"><Link href={"/"+stub}>Past Homepage {toCamelCase(stub)}</Link></Heading>
+                      <Heading key={stub} as="h3"><Link href={"/"+stub}>Past Homepage {toCamelCase(stub)}</Link></Heading>
                       )}
                     </For>
                   </VStack>
@@ -100,7 +98,7 @@ const Navbar = () => {
                   <VStack gap={8} mt={8}>
                     <For each={["netview"]}>
                       {(stub) => (
-                      <Heading as="h3">
+                      <Heading key={stub} as="h3">
                         <Link href={"/"+stub}>
                           <VStack gap={0}>
                           <Box>NetView</Box>

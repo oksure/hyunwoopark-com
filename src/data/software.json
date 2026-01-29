@@ -2,6 +2,10 @@
   "title": "Software",
   "items": [
     {
+      "name": "JSON-based Academic Homepage Template (This Website)",
+      "link": "https://github.com/oksure/hyunwoopark-com"
+    },
+    {
       "name": "Simple Network Viewer",
       "link": "https://hyunwoopark.com/netview/"
     },

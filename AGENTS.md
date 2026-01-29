@@ -28,10 +28,10 @@ This project uses `pnpm` as the package manager. Always use `pnpm` commands inst
 
 ## Architecture Overview
 
-This is an academic homepage built with Next.js 15 App Router, displaying professional information including publications, experience, education, and awards.
+This is an academic homepage built with Next.js 16 App Router, displaying professional information including publications, experience, education, and awards.
 
 ### Tech Stack
-- **Next.js 15.1.3** with App Router (`/app` directory)
+- **Next.js 16.1.1** with App Router (`/app` directory)
 - **React 18.3.1** with TypeScript
 - **Chakra UI v3.8.0** for UI components
 - **next-themes** for dark/light mode support

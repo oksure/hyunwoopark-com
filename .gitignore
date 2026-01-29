@@ -30,3 +30,6 @@ yarn-error.log*
 .env.production.local
 
 .now.claude/settings.local.json
+
+# Claude Code
+.claude/

@@ -66,6 +66,8 @@ The `next.config.js` includes extensive rewrites for legacy versions (`/v1`, `/v
 4. **Publication filtering** includes journal ranking systems (UTD24/FT50 combined, ABS)
 5. **Trailing slashes** are enforced on URLs (configured in next.config.js)
 6. **Dark mode images** - Avoid `useColorModeValue` for image sources (causes hydration mismatch). Instead, render both images and use CSS `_dark` pseudo-class to show/hide
+7. **Chakra UI Drawer** - `DrawerTitle` already renders an `<h2>`, so don't nest `<Heading as="h2">` inside it (causes hydration error)
+8. **For loops** - Always add `key` prop to elements rendered inside Chakra's `<For>` component
 
 ## Data Conventions
 

@@ -140,6 +140,34 @@
     },
     {
       "type": "grant",
+      "title": "Korea NRF Human-in-the-Loop AI Decision-Making Algorithm and Policy",
+      "awarder": "Co-PI",
+      "year": "2025-2028",
+      "special": true
+    },
+    {
+      "type": "grant",
+      "title": "Korea MSIT Generative AI Leading Talent Training R&D Program",
+      "awarder": "PI",
+      "year": "2024-2027",
+      "special": true
+    },
+    {
+      "type": "grant",
+      "title": "Korea MOF Vessel Trajectory Prediction and Anomaly Detection",
+      "awarder": "PI",
+      "year": "2022-2025",
+      "special": true
+    },
+    {
+      "type": "grant",
+      "title": "Korea NRF Large-scale AI Model and Platform Optimization Center",
+      "awarder": "Co-PI",
+      "year": "2023-2026",
+      "special": true
+    },
+    {
+      "type": "grant",
       "title": "Korea NRF Emerging Scholar Program (Equivalent to NSF Career)",
       "awarder": "PI",
       "year": "2022-2027",
@@ -147,21 +175,15 @@
     },
     {
       "type": "grant",
-      "title": "SNU New Faculty Startup Fund",
-      "awarder": "PI",
-      "year": "2021-2024"
-    },
-    {
-      "type": "grant",
-      "title": "FDA Broad Agency Announcement (BAA) “FDA Quality Management and Pharmaceutical Firm Learning to Reduce Drug Quality Risks” (Total: $1.7M)",
-      "awarder": "Co-investigator",
+      "title": "FDA Broad Agency Announcement (BAA): FDA Quality Management and Pharmaceutical Firm Learning to Reduce Drug Quality Risks",
+      "awarder": "Co-PI",
       "year": "2019-2021",
       "special": true
     },
     {
       "type": "grant",
-      "title": "U01 Grant from FDA to NIPTE “Manufacturing Sector Research Initiative” (Total: $2.5M)",
-      "awarder": "Co-investigator",
+      "title": "U01 Grant from FDA to NIPTE: Manufacturing Sector Research Initiative",
+      "awarder": "Co-PI",
       "year": "2018–2019",
       "special": true
     },

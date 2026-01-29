@@ -18,7 +18,7 @@
       "journal": "Manufacturing & Service Operations Management",
       "volume": "27",
       "number": "3",
-      "pages": "679-992",
+      "pages": "789-807",
       "year": "2025",
       "link": "https://pubsonline.informs.org/doi/abs/10.1287/msom.2022.0322",
       "top": ["utd24", "ft50", "abs3"]
@@ -138,6 +138,17 @@
     },
     {
       "type": "journal",
+      "title": "An Exact Solution Method for the Political Districting Problem",
+      "authors": "Chopra S, Park H, Shim S",
+      "journal": "Parallel Processing Letters",
+      "volume": "33",
+      "number": "01n02",
+      "pages": "2340001",
+      "year": "2023",
+      "link": "https://doi.org/10.1142/S0129626423400017"
+    },
+    {
+      "type": "journal",
       "title": "Vessel Sharing and its Impact on Maritime Operations and Carbon Emissions",
       "authors": "Park H, Blanco C, Bendoly E",
       "journal": "Production and Operations Management",
@@ -186,6 +197,17 @@
     },
     {
       "type": "journal",
+      "title": "Research on the Development of Distance Metrics for the Clustering of Vessel Trajectories in Korean Coastal Waters",
+      "authors": "Lee S, Lee W, Min JH, Cho DJ, Park H",
+      "journal": "Journal of Navigation and Port Research",
+      "volume": "47",
+      "number": "6",
+      "pages": "367-375",
+      "year": "2023",
+      "link": "https://doi.org/10.5394/KINPR.2023.47.6.367"
+    },
+    {
+      "type": "journal",
       "title": "A Comparative Study of Vessel Trajectory Prediction Error based on AIS and LTE-Maritime Data",
       "authors": "Min JH, Lee S, Cho DJ, Baek JH, Park H",
       "journal": "Journal of Navigation and Port Research",
@@ -201,8 +223,8 @@
       "authors": "Basole RC, Park H",
       "journal": "IEEE Transactions on Engineering Management",
       "volume": "66",
-      "number": "4",
-      "pages": "568-582",
+      "number": "3",
+      "pages": "368-380",
       "year": "2019",
       "link": "https://ieeexplore.ieee.org/document/8424065/",
       "top": ["abs3"]
@@ -213,8 +235,8 @@
       "authors": "Basole RC, Park H, Chao RO",
       "journal": "IEEE Transactions on Engineering Management",
       "volume": "66",
-      "number": "3",
-      "pages": "368-380",
+      "number": "4",
+      "pages": "568-582",
       "year": "2019",
       "link": "https://ieeexplore.ieee.org/document/8425782/",
       "top": ["abs3"]

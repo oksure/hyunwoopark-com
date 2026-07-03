@@ -35,5 +35,11 @@
     "@react-pdf/renderer": "^4.5.1",
     "pdf-lib": "^1.17.1",
     "tsx": "^4.22.5"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   }
 }

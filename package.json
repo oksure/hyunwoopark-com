@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "pnpm generate:cv && next build",
+    "build": "next build",
     "start": "next start",
-    "type-check": "tsc",
-    "generate:cv": "tsx scripts/generate-cv.tsx"
+    "type-check": "tsc"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.8.0",
@@ -30,16 +29,5 @@
   "bugs": {
     "url": "https://github.com/chakra-ui/chakra-ui/issues"
   },
-  "license": "MIT",
-  "devDependencies": {
-    "@react-pdf/renderer": "^4.5.1",
-    "pdf-lib": "^1.17.1",
-    "tsx": "^4.22.5"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "sharp"
-    ]
-  }
+  "license": "MIT"
 }

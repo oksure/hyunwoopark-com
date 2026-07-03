@@ -69,7 +69,7 @@ const Navbar = () => {
               <Box display={{ base: "inline", md: "none" }}>Bio</Box>
               <Box display={{ base: "none", md: "inline" }}>Bio and Photo</Box>
             </Link>
-            <Button asChild><Link href="/cv.pdf" target="_blank">CV<GrDocumentPdf /></Link></Button>
+            <Button asChild><Link href="https://zzz.sfo3.cdn.digitaloceanspaces.com/y/CV%20Hyunwoo%20Park.pdf" target="_blank">CV<GrDocumentPdf /></Link></Button>
             <Button asChild variant="outline" colorScheme="gray">
               <Link href="https://dial.snu.ac.kr" target="_blank">
                 <Box display={{ base: "flex", md: "none" }} alignItems="center" gap={1}>Lab<IoPeopleCircle /></Box>

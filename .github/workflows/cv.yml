@@ -56,9 +56,9 @@ jobs:
           retention-days: 30
 
       - name: Upload to DO Spaces (backup first)
-        # NOTE: dispatch-only until the first CI build is visually verified
-        # against the gpu reference; then flip to: push || inputs.upload
-        if: inputs.upload
+        # First CI build verified 0-pixel-identical to the gpu reference
+        # across all 8 pages (2026-07-03) — auto-upload enabled on push.
+        if: github.event_name == 'push' || inputs.upload
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.DO_SPACES_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DO_SPACES_SECRET }}

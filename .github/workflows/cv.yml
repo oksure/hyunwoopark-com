@@ -63,6 +63,10 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.DO_SPACES_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DO_SPACES_SECRET }}
           AWS_DEFAULT_REGION: sfo3
+          # aws cli v2.23+/boto 1.36+ send flexible-checksum headers by default,
+          # which third-party S3 (DO Spaces) rejects/crashes on — official mitigation:
+          AWS_REQUEST_CHECKSUM_CALCULATION: when_required
+          AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
           EP: https://sfo3.digitaloceanspaces.com
         run: |
           TS=$(date -u +%Y%m%d_%H%M)

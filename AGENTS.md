@@ -60,7 +60,7 @@ The `next.config.js` includes extensive rewrites for legacy versions (`/v1`, `/v
 
 ## Key Implementation Notes
 
-1. **No testing framework** is currently set up - manual testing only
+1. **No testing framework** is currently set up - manual testing only. CI (`.github/workflows/ci.yml`) runs `pnpm type-check && pnpm build` on push/PR.
 2. **TypeScript strict mode is disabled** - type checking is lenient
 3. **Data updates** should be made in the JSON files under `/src/data/`
 4. **Publication filtering** includes journal ranking systems (UTD24/FT50 combined, ABS)
@@ -68,6 +68,8 @@ The `next.config.js` includes extensive rewrites for legacy versions (`/v1`, `/v
 6. **Dark mode images** - Avoid `useColorModeValue` for image sources (causes hydration mismatch). Instead, render both images and use CSS `_dark` pseudo-class to show/hide
 7. **Chakra UI Drawer** - `DrawerTitle` already renders an `<h2>`, so don't nest `<Heading as="h2">` inside it (causes hydration error)
 8. **For loops** - Always add `key` prop to elements rendered inside Chakra's `<For>` component
+9. **Heading hierarchy** - Sidebar name is the only `<h1>`; section titles (Experience, Publications, ...) are `<h2>`; sub-groups (years, degree groups) are `<h3>`. Don't reintroduce h4-under-h2 skips.
+10. **OG image** - `/app/opengraph-image.tsx` generates the 1200x630 social preview at build time (next/og ImageResponse). Update it if title/affiliation changes.
 
 ## Data Conventions
 

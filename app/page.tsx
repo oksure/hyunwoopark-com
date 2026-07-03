@@ -132,7 +132,7 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
     <Box py={8} fontSize={{ base: "sm", md: "md" }} lineHeight={1.2}>
       <Box>
         <Heading
-          as="h3"
+          as="h2"
           size="xl"
           fontWeight="bold"
           ml={{ base: 0, md: baseMx }}
@@ -294,7 +294,7 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
               const yearItems = filteredItems.filter((item: any) => item.year === year);
               return (
                 <Box key={year} mb={baseMx}>
-                  <Heading as="h4" size="md" mb={2} ml={{ base: 0, md: baseMx }}>
+                  <Heading as="h3" size="md" mb={2} ml={{ base: 0, md: baseMx }}>
                     {year}
                   </Heading>
                   <Box as="ul" listStyleType="none" pl={{ base: 0 * baseMx, md: 1 * baseMx }}>
@@ -441,7 +441,7 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                 mb={2 * baseMx}
                 ml={{ base: baseMx, md: 2 * baseMx }}
               >
-                <Heading as="h3" size="lg" mb={2}>
+                <Heading as="h2" size="lg" mb={2}>
                   {sectionType === "award" ? "Awards and Honors" : sectionType.charAt(0).toUpperCase() + sectionType.slice(1) + "s"}
                 </Heading>
                 <Box
@@ -474,13 +474,13 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                 mb={2 * baseMx}
                 ml={{ base: baseMx, md: 2 * baseMx }}
               >
-                <Heading as="h3" size="lg" mb={2} lineHeight={1.05}>
+                <Heading as="h2" size="lg" mb={2} lineHeight={1.05}>
                   {instItem.institution}
                 </Heading>
                 <For each={instItem.courses}>
                   {(course: any, cIdx: number) => (
                     <Box key={cIdx} mb={2}>
-                      <Heading as="h4" size="md" mb={1} ml={{ base: 0, md: 1 * baseMx }}>
+                      <Heading as="h3" size="md" mb={1} ml={{ base: 0, md: 1 * baseMx }}>
                         {course.role}
                       </Heading>
                       {course.details && (
@@ -532,7 +532,7 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                 mb={2 * baseMx}
                 ml={{ base: baseMx, md: 2 * baseMx }}
               >
-                <Heading as="h3" size="lg" mb={2}>
+                <Heading as="h2" size="lg" mb={2}>
                   {serviceItem.title}
                 </Heading>
                 <For each={serviceItem.details}>
@@ -561,7 +561,7 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                       ) {
                         return (
                           <Box key={dIdx} mb={2}>
-                            <Heading as="h4" size="md" mb={1} ml={{ base: 0, md: 1 * baseMx }}>
+                            <Heading as="h3" size="md" mb={1} ml={{ base: 0, md: 1 * baseMx }}>
                               {detail.category}
                             </Heading>
                             <Box
@@ -582,7 +582,7 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                       } else {
                         return (
                           <Box key={dIdx} mb={2}>
-                            <Heading as="h4" size="md" mb={1} ml={{ base: 0, md: 1 * baseMx }}>
+                            <Heading as="h3" size="md" mb={1} ml={{ base: 0, md: 1 * baseMx }}>
                               {detail.category}
                             </Heading>
                             <Box
@@ -683,7 +683,7 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
               );
               return (
                 <Box key={year} mb={baseMx} ml={{ base: baseMx, md: 2 * baseMx }}>
-                  <Heading as="h4" size="md" mb={0}>
+                  <Heading as="h3" size="md" mb={0}>
                     {year}
                   </Heading>
                   <Box
@@ -750,7 +750,7 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
 
               return (
                 <Box key={year} mb={baseMx} ml={{ base: baseMx, md: 2 * baseMx }}>
-                  <Heading as="h4" size="md" mb={1}>
+                  <Heading as="h3" size="md" mb={1}>
                     {year}
                   </Heading>
                   <Box
@@ -801,7 +801,7 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
         <For each={data.items}>
           {(item: any, idx: number) => (
             <Box key={idx} mb={{ base: 4, md: baseMx }}>
-              <Heading as="h4" size="lg" mb={1} ml={{ base: 0, md: 2 * baseMx }}>
+              <Heading as="h3" size="lg" mb={1} ml={{ base: 0, md: 2 * baseMx }}>
                 <Box display={{ base: "inline", md: "none" }}>
                   {item.instshort ? item.instshort : item.institution}
                 </Box>

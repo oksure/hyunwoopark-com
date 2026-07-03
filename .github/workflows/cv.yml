@@ -70,10 +70,14 @@ jobs:
           EP: https://sfo3.digitaloceanspaces.com
         run: |
           TS=$(date -u +%Y%m%d_%H%M)
-          # keep a dated backup of the live object before overwriting
-          aws s3api copy-object --endpoint-url "$EP" --bucket zzz \
-            --copy-source "zzz/y/CV%20Hyunwoo%20Park.pdf" \
-            --key "y/cv-backups/CV_backup_${TS}.pdf" --acl private
+          # dated backup of the live object before overwriting. get+put, NOT
+          # copy-object: DO Spaces crashes aws cli's copy-object ("NoneType is
+          # not iterable") — verified 2026-07-03, put/get work fine.
+          aws s3api get-object --endpoint-url "$EP" --bucket zzz \
+            --key "y/CV Hyunwoo Park.pdf" /tmp/cv_live_backup.pdf
+          aws s3api put-object --endpoint-url "$EP" --bucket zzz \
+            --key "y/cv-backups/CV_backup_${TS}.pdf" --body /tmp/cv_live_backup.pdf \
+            --acl private --content-type application/pdf
           aws s3api put-object --endpoint-url "$EP" --bucket zzz \
             --key "y/CV Hyunwoo Park.pdf" --body cv/CV_Hyunwoo_Park.pdf \
             --acl public-read --content-type application/pdf \

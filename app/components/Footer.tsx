@@ -1,4 +1,5 @@
 import { Flex, Container, Text, Link, Stack, Spacer, Image, Box } from "@chakra-ui/react";
+import ExtArrow from "./ExtArrow";
 
 const Footer = () => {
   return (
@@ -44,16 +45,16 @@ const Footer = () => {
               </For>
             </Stack> */}
             <Stack direction="column" gap={4} width={48}>
-              <Link href="https://y-kast.or.kr/kr/person/member_search_view.php?idx=242" target="_blank">Y-KAST &#8599;</Link>
-              <Link href="https://connect.informs.org/times/home" target="_blank">INFORMS TIMES &#8599;</Link>
-              <Link href="https://www.linkedin.com/company/informs-times/" target="_blank">INFORMS TIMES LinkedIn &#8599;</Link>
-              <Link href="https://www.jom-hub.com/editorial-team" target="_blank">Journal of Operations Management Editorial Review Board &#8599;</Link>
-              <Link href="https://onlinelibrary.wiley.com/page/journal/15405915/homepage/editorialboard.html" target="_blank">Decision Sciences Editorial Review Board &#8599;</Link>
+              <Link href="https://y-kast.or.kr/kr/person/member_search_view.php?idx=242" target="_blank">Y-KAST <ExtArrow /></Link>
+              <Link href="https://connect.informs.org/times/home" target="_blank">INFORMS TIMES <ExtArrow /></Link>
+              <Link href="https://www.linkedin.com/company/informs-times/" target="_blank">INFORMS TIMES LinkedIn <ExtArrow /></Link>
+              <Link href="https://www.jom-hub.com/editorial-team" target="_blank">Journal of Operations Management Editorial Review Board <ExtArrow /></Link>
+              <Link href="https://onlinelibrary.wiley.com/page/journal/15405915/homepage/editorialboard.html" target="_blank">Decision Sciences Editorial Review Board <ExtArrow /></Link>
             </Stack>
             <Stack direction="column" gap={4} width={48}>
-              <Link href="https://snu.ac.kr" target="_blank">Seoul National University &#8599;</Link>
-              <Link href="https://gsds.snu.ac.kr" target="_blank">SNU Graduate School of Data Science (GSDS) &#8599;</Link>
-              <Link href="https://dial.snu.ac.kr" target="_blank">Data Intelligence and Learning Lab (DIAL) &#8599;</Link>
+              <Link href="https://snu.ac.kr" target="_blank">Seoul National University <ExtArrow /></Link>
+              <Link href="https://gsds.snu.ac.kr" target="_blank">SNU Graduate School of Data Science (GSDS) <ExtArrow /></Link>
+              <Link href="https://dial.snu.ac.kr" target="_blank">Data Intelligence and Learning Lab (DIAL) <ExtArrow /></Link>
             </Stack>
           </Stack>
         </Flex>

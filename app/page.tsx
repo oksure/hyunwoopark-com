@@ -1,5 +1,6 @@
 "use client";
 
+import ExtArrow from "./components/ExtArrow";
 import {
   For,
   Badge,
@@ -210,7 +211,7 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                     key={topItem}
                   >
                     <Link href={badgeSrc[topItem]} target="_blank">
-                      {topItem.toUpperCase()} &#8599;
+                      {topItem.toUpperCase()} <ExtArrow />
                     </Link>
                   </Badge>
                 ))}
@@ -259,7 +260,7 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                   key={topItem}
                 >
                   <Link href={badgeSrc[topItem]} target="_blank">
-                    {topItem.toUpperCase()} &#8599;
+                    {topItem.toUpperCase()} <ExtArrow />
                   </Link>
                 </Badge>
               ))}

@@ -1,0 +1,75 @@
+name: CV Build
+
+# Compiles the CV from cv/*.Rmd with the custom class/preamble (same pipeline
+# as gpu ~/cv-build), runs a style gate that fails on "generic pandoc article"
+# regressions, and uploads the PDF to the DigitalOcean Spaces object the site
+# links to. The site itself is untouched — only the linked PDF updates.
+on:
+  push:
+    branches: [master]
+    paths: ['cv/**']
+  workflow_dispatch:
+    inputs:
+      upload:
+        description: 'Upload to DO Spaces after gate passes'
+        type: boolean
+        default: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install toolchain (R, pandoc, TeX Live, poppler)
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q --no-install-recommends \
+            pandoc r-base r-cran-rmarkdown r-cran-knitr \
+            texlive-latex-base texlive-latex-extra \
+            texlive-fonts-recommended texlive-fonts-extra \
+            poppler-utils python3-pil
+          Rscript -e 'if (!requireNamespace("fontawesome", quietly=TRUE)) install.packages("fontawesome", repos="https://packagemanager.posit.co/cran/__linux__/noble/latest")'
+
+      - name: Build CV (newest Rmd in cv/)
+        run: |
+          FN=$(ls cv/CV_Hyunwoo_Park_*.Rmd | sort | tail -1 | xargs -n1 basename | sed 's/\.Rmd$//')
+          echo "building $FN"
+          bash cv/build.sh "$FN"
+
+      - name: Style gate (fail loudly on generic-article regressions)
+        run: python3 cv/check_style.py cv/CV_Hyunwoo_Park.pdf
+
+      - name: Render preview pages for the artifact
+        run: |
+          pdftoppm -png -f 1 -l 3 -r 100 cv/CV_Hyunwoo_Park.pdf cv/preview
+          pdfinfo cv/CV_Hyunwoo_Park.pdf
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cv-pdf-and-previews
+          path: |
+            cv/CV_Hyunwoo_Park.pdf
+            cv/preview*.png
+          retention-days: 30
+
+      - name: Upload to DO Spaces (backup first)
+        # NOTE: dispatch-only until the first CI build is visually verified
+        # against the gpu reference; then flip to: push || inputs.upload
+        if: inputs.upload
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.DO_SPACES_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.DO_SPACES_SECRET }}
+          EP: https://sfo3.digitaloceanspaces.com
+        run: |
+          TS=$(date -u +%Y%m%d_%H%M)
+          # keep a dated backup of the live object before overwriting
+          aws s3api copy-object --endpoint-url "$EP" --bucket zzz \
+            --copy-source "zzz/y/CV%20Hyunwoo%20Park.pdf" \
+            --key "y/cv-backups/CV_backup_${TS}.pdf" --acl private
+          aws s3api put-object --endpoint-url "$EP" --bucket zzz \
+            --key "y/CV Hyunwoo Park.pdf" --body cv/CV_Hyunwoo_Park.pdf \
+            --acl public-read --content-type application/pdf \
+            --cache-control "public, max-age=300"
+          echo "uploaded; note: the CDN edge may serve the previous version until its TTL expires"

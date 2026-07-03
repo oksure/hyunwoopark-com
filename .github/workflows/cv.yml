@@ -62,6 +62,7 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.DO_SPACES_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DO_SPACES_SECRET }}
+          AWS_DEFAULT_REGION: sfo3
           EP: https://sfo3.digitaloceanspaces.com
         run: |
           TS=$(date -u +%Y%m%d_%H%M)

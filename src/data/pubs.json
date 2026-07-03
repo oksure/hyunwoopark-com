@@ -21,7 +21,12 @@
       "pages": "789-807",
       "year": "2025",
       "link": "https://pubsonline.informs.org/doi/abs/10.1287/msom.2022.0322",
-      "top": ["utd24", "ft50", "abs3"]
+      "top": [
+        "utd24",
+        "ft50",
+        "abs3"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -33,7 +38,12 @@
       "pages": "2601-2617",
       "year": "2025",
       "link": "https://journals.sagepub.com/doi/abs/10.1177/10591478251319691",
-      "top": ["utd24", "ft50", "abs4"]
+      "top": [
+        "utd24",
+        "ft50",
+        "abs4"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -44,7 +54,10 @@
       "number": "126712",
       "year": "2025",
       "link": "https://www.sciencedirect.com/science/article/pii/S0957417425003343",
-      "top": ["abs"]
+      "top": [
+        "abs"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -56,7 +69,10 @@
       "pages": "134-164",
       "year": "2025",
       "link": "https://onlinelibrary.wiley.com/doi/abs/10.1111/jscm.70008",
-      "top": ["abs4"]
+      "top": [
+        "abs4"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -90,7 +106,12 @@
       "pages": "698-710",
       "year": "2024",
       "link": "https://journals.sagepub.com/doi/abs/10.1177/10591478241256644",
-      "top": ["utd24", "ft50", "abs4"]
+      "top": [
+        "utd24",
+        "ft50",
+        "abs4"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -101,7 +122,10 @@
       "pages": "114133",
       "year": "2024",
       "link": "https://www.sciencedirect.com/science/article/pii/S0167923623002087",
-      "top": ["abs3"]
+      "top": [
+        "abs3"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -134,7 +158,12 @@
       "pages": "1019-1040",
       "year": "2023",
       "link": "https://onlinelibrary.wiley.com/doi/abs/10.1111/poms.13908",
-      "top": ["utd24", "ft50", "abs4"]
+      "top": [
+        "utd24",
+        "ft50",
+        "abs4"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -157,7 +186,12 @@
       "pages": "2925-2942",
       "year": "2022",
       "link": "https://onlinelibrary.wiley.com/doi/abs/10.1111/poms.13730",
-      "top": ["utd24", "ft50", "abs4"]
+      "top": [
+        "utd24",
+        "ft50",
+        "abs4"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -169,7 +203,11 @@
       "pages": "1327-1344",
       "year": "2022",
       "link": "https://pubsonline.informs.org/doi/abs/10.1287/ijoc.2021.1148",
-      "top": ["utd24", "abs3"]
+      "top": [
+        "utd24",
+        "abs3"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -181,7 +219,10 @@
       "pages": "1386-1419",
       "year": "2022",
       "link": "https://aisel.aisnet.org/jais/vol23/iss6/8/",
-      "top": ["abs4*"]
+      "top": [
+        "abs4*"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -193,7 +234,10 @@
       "pages": "1601-1603",
       "year": "2022",
       "link": "https://www.tandfonline.com/doi/abs/10.1080/01621459.2022.2098134",
-      "top": ["abs4"]
+      "top": [
+        "abs4"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -227,7 +271,10 @@
       "pages": "368-380",
       "year": "2019",
       "link": "https://ieeexplore.ieee.org/document/8424065/",
-      "top": ["abs3"]
+      "top": [
+        "abs3"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -239,7 +286,10 @@
       "pages": "568-582",
       "year": "2019",
       "link": "https://ieeexplore.ieee.org/document/8425782/",
-      "top": ["abs3"]
+      "top": [
+        "abs3"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -250,7 +300,12 @@
       "pages": "79-96",
       "year": "2018",
       "link": "https://www.sciencedirect.com/science/article/pii/S0272696318300664",
-      "top": ["utd24", "ft50", "abs4*"]
+      "top": [
+        "utd24",
+        "ft50",
+        "abs4*"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -262,7 +317,13 @@
       "pages": "792-811",
       "year": "2018",
       "link": "https://journals.aom.org/doi/10.5465/amr.2016.0305",
-      "top": ["utd24", "ft50", "abs4*"]
+      "top": [
+        "utd24",
+        "ft50",
+        "abs4*"
+      ],
+      "cvSelected": true,
+      "cvTitleTex": "\\textit{Tua Culpa}: When an Organization Blames its Partner for Failure in a Shared Task"
     },
     {
       "type": "journal",
@@ -272,7 +333,9 @@
       "volume": "9",
       "number": "2",
       "year": "2018",
-      "link": "https://dl.acm.org/citation.cfm?id=3185047"
+      "link": "https://dl.acm.org/citation.cfm?id=3185047",
+      "cvSelected": true,
+      "articleNo": "6"
     },
     {
       "type": "journal",
@@ -294,7 +357,10 @@
       "pages": "226-235",
       "year": "2018",
       "link": "http://ieeexplore.ieee.org/document/8019835/",
-      "top": ["top cs"]
+      "top": [
+        "top cs"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -305,7 +371,10 @@
       "pages": "36-53",
       "year": "2017",
       "link": "http://www.sciencedirect.com/science/article/pii/S0167624516300907",
-      "top": ["abs"]
+      "top": [
+        "abs"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -317,7 +386,10 @@
       "pages": "288-306",
       "year": "2017",
       "link": "http://onlinelibrary.wiley.com/doi/10.1111/deci.12213/abstract",
-      "top": ["abs3"]
+      "top": [
+        "abs3"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -328,7 +400,11 @@
       "pages": "89-102",
       "year": "2016",
       "link": "http://www.sciencedirect.com/science/article/pii/S0167923616301397",
-      "top": ["abs3"]
+      "top": [
+        "abs3"
+      ],
+      "demo": "http://visualscm.herokuapp.com/",
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -339,7 +415,11 @@
       "pages": "64-77",
       "year": "2016",
       "link": "http://www.sciencedirect.com/science/article/pii/S016792361630001X",
-      "top": ["abs3"]
+      "top": [
+        "abs3"
+      ],
+      "demo": "http://bicentric.herokuapp.com/",
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -350,7 +430,8 @@
       "number": "3",
       "pages": "1206-1213",
       "year": "2016",
-      "link": "https://ieeexplore.ieee.org/document/7445240/"
+      "link": "https://ieeexplore.ieee.org/document/7445240/",
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -362,7 +443,11 @@
       "pages": "1145-1159",
       "year": "2015",
       "link": "http://www.sciencedirect.com/science/article/pii/S0048733315000396",
-      "top": ["ft50", "abs4*"]
+      "top": [
+        "ft50",
+        "abs4*"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -373,7 +458,8 @@
       "number": "2",
       "pages": "318-323",
       "year": "2015",
-      "link": "http://jamia.oxfordjournals.org/content/22/2/318.abstract"
+      "link": "http://jamia.oxfordjournals.org/content/22/2/318.abstract",
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -383,7 +469,9 @@
       "volume": "6",
       "number": "2",
       "year": "2015",
-      "link": "http://dl.acm.org/citation.cfm?id=2724730"
+      "link": "http://dl.acm.org/citation.cfm?id=2724730",
+      "cvSelected": true,
+      "articleNo": "6"
     },
     {
       "type": "journal",
@@ -394,7 +482,8 @@
       "number": "2",
       "pages": "41-51",
       "year": "2015",
-      "link": "https://ieeexplore.ieee.org/document/7006349/"
+      "link": "https://ieeexplore.ieee.org/document/7006349/",
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -406,7 +495,10 @@
       "pages": "537-552",
       "year": "2015",
       "link": "http://www.sciencedirect.com/science/article/pii/S0308596114000627",
-      "top": ["abs"]
+      "top": [
+        "abs"
+      ],
+      "cvSelected": true
     },
     {
       "type": "journal",
@@ -439,7 +531,10 @@
       "pages": "253-268",
       "year": "2012",
       "link": "http://pubsonline.informs.org/doi/abs/10.1287/serv.1120.0022",
-      "top": ["abs"]
+      "top": [
+        "abs"
+      ],
+      "cvSelected": true
     }
   ]
 }

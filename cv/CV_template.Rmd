@@ -76,82 +76,14 @@ webcolor <- "black"
 \begingroup\small ($^*$ denotes equal contribution among authors. For the full publication list, visit \url{https://hyunwoopark.com}.)\endgroup
 \vspace{.5em}
 
-\pubentry{[J38]}{Wang Y, Ball G, Anand G, \textbf{Park H}. 2025. Obligatory responses to FDA inspection outcomes and future drug shortages. \textit{Manufacturing \& Service Operations Management}, 27(3), pp.789-807 [\href{https://pubsonline.informs.org/doi/abs/10.1287/msom.2022.0322}{Link {\scriptsize\faExternalLink}}] \utd~\ft~\absthree}
-
-\pubentry{[J37]}{Noh IJ, Gray J, Ball GP, Wright Z, \textbf{Park H}. 2025. Are All Generic Drugs Created Equal? An Empirical Analysis of Generic Drug Manufacturing Location and Serious Drug Adverse Events. \textit{Production and Operations Management}, 34(9), pp.2601-2617 [\href{https://journals.sagepub.com/doi/abs/10.1177/10591478251319691}{Link {\scriptsize\faExternalLink}}] \utd~\ft~\absfour}
-
-\pubentry{[J36]}{Heo S, Son S, \textbf{Park H}. 2025. HaluCheck: Explainable and verifiable automation for detecting hallucinations in LLM responses. \textit{Expert Systems with Applications}, 272(126712) [\href{https://www.sciencedirect.com/science/article/pii/S0957417425003343}{Link {\scriptsize\faExternalLink}}] \absgen}
-
-\pubentry{[J35]}{Kim Y, \textbf{Park H}. 2025. Theorizing Critical Locus of Supply: A Material Flow Perspective. \textit{Journal of Supply Chain Management}, 61(4), pp.134-164 [\href{https://onlinelibrary.wiley.com/doi/abs/10.1111/jscm.70008}{Link {\scriptsize\faExternalLink}}] \absfour}
-
-\pubentry{[J32]}{Ball GP, Bavafa H, Blanco C, \textbf{Park H}, Wowak KD. 2024. Gender and Serious Drug Recalls: A Textual Sentiment Analysis of Drug Reviews on WebMD. \textit{Production and Operations Management}, 34(4), pp.698-710 [\href{https://journals.sagepub.com/doi/abs/10.1177/10591478241256644}{Link {\scriptsize\faExternalLink}}] \utd~\ft~\absfour}
-
-\pubentry{[J31]}{Basole RC, \textbf{Park H}, Seuss CD. 2024. Complex Business Ecosystem Intelligence Using AI-Powered Visual Analytics. \textit{Decision Support Systems}, 178, 114133 [\href{https://www.sciencedirect.com/science/article/pii/S0167923623002087}{Link {\scriptsize\faExternalLink}}] \absthree}
-
-\pubentry{[J28]}{Lee J, Jung HJ, \textbf{Park H}. 2023. Rare is Beautiful? The Interplay Between Rareness, Technology Search, and Technology Value. \textit{Production and Operations Management}, 32(4), pp.1019-1040 [\href{https://onlinelibrary.wiley.com/doi/abs/10.1111/poms.13908}{Link {\scriptsize\faExternalLink}}] \utd~\ft~\absfour}
-
-\pubentry{[J25]}{\textbf{Park H}, Blanco C, Bendoly E. 2022. Vessel Sharing and its Impact on Maritime Operations and Carbon Emissions. \textit{Production and Operations Management}, 31(7), pp.2925-2942 [\href{https://onlinelibrary.wiley.com/doi/abs/10.1111/poms.13730}{Link {\scriptsize\faExternalLink}}] \utd~\ft~\absfour}
-
-\pubentry{[J24]}{Chopra S, \textbf{Park H}, Shim S. 2022. Extended Graph Formulation for the Inequity Aversion Pricing Problem on Social Networks. \textit{INFORMS Journal on Computing}, 34(3), pp.1327-1344 [\href{https://pubsonline.informs.org/doi/abs/10.1287/ijoc.2021.1148}{Link {\scriptsize\faExternalLink}}] \utd~\absthree}
-
-\pubentry{[J23]}{Lee J, \textbf{Park H}, Zaggl M. 2022. When to Signal? Contingencies for Career-Motivated Contributions in Online Collaboration Communities. \textit{Journal of the Association for Information Systems}, 23(6), pp.1386-1419 [\href{https://aisel.aisnet.org/jais/vol23/iss6/8/}{Link {\scriptsize\faExternalLink}}] \absfourstar}
-
-\pubentry{[J22]}{\textbf{Park H}. 2022. [Book Review] A History of Data Visualization and Graphic Communication. \textit{Journal of the American Statistical Association}, 117(539), pp.1601-1603 [\href{https://www.tandfonline.com/doi/abs/10.1080/01621459.2022.2098134}{Link {\scriptsize\faExternalLink}}] \absfour}
-
-\pubentry{[J20]}{Basole RC, \textbf{Park H}. 2019. Interfirm Collaboration and Firm Value in Software Ecosystems: Evidence from Cloud Computing. \textit{IEEE Transactions on Engineering Management}, 66(3), pp.368-380 [\href{https://ieeexplore.ieee.org/document/8424065/}{Link {\scriptsize\faExternalLink}}] \absthree}
-
-\pubentry{[J19]}{Basole RC, \textbf{Park H}, Chao RO. 2019. Visual Analysis of Venture Similarity in Entrepreneurial Ecosystems. \textit{IEEE Transactions on Engineering Management}, 66(4), pp.568-582 [\href{https://ieeexplore.ieee.org/document/8425782/}{Link {\scriptsize\faExternalLink}}] \absthree}
-
-\pubentry{[J18]}{\textbf{Park H}, Bellamy MA, Basole RC. 2018. Structural Anatomy and Evolution of Supply Chain Alliance Networks: A Multi-Method Approach. \textit{Journal of Operations Management}, 63, pp.79-96 [\href{https://www.sciencedirect.com/science/article/pii/S0272696318300664}{Link {\scriptsize\faExternalLink}}] \utd~\ft~\absfourstar}
-
-\pubentry{[J17]}{Park BS, \textbf{Park H}, Ramanujam R. 2018. \textit{Tua Culpa}: When an Organization Blames its Partner for Failure in a Shared Task. \textit{Academy of Management Review}, 43(4), pp.792-811 [\href{https://journals.aom.org/doi/10.5465/amr.2016.0305}{Link {\scriptsize\faExternalLink}}] \utd~\ft~\absfourstar}
-
-\pubentry{[J16]}{Basole RC, Srinivasan A, \textbf{Park H}, Patel S. 2018. ecoxight: Discovery, Exploration and Analysis of Business Ecosystems using Interactive Visualization. \textit{ACM Transactions on Management Information Systems}, 9(2), no. 6 [\href{https://dl.acm.org/citation.cfm?id=3185047}{Link {\scriptsize\faExternalLink}}]}
-
-\pubentry{[J14]}{Srinivasan A, \textbf{Park H}, Endert A, Basole RC. 2018. Graphiti: Interactive Specification of Attribute-based Edges for Network Modeling and Visualization. \textit{IEEE Transactions on Visualization and Computer Graphics}, 24(1), pp.226-235 [\href{http://ieeexplore.ieee.org/document/8019835/}{Link {\scriptsize\faExternalLink}}] \topcs}
-
-\pubentry{[J13]}{Kim B-C, Lee J, \textbf{Park H}. 2017. Two-Sided Platform Competition with Multihoming Agents: An Empirical Study on the Daily Deals Market. \textit{Information Economics and Policy}, 41, pp.36-53 [\href{http://www.sciencedirect.com/science/article/pii/S0167624516300907}{Link {\scriptsize\faExternalLink}}] \absgen}
-
-\pubentry{[J12]}{Basole RC$^*$, Bellamy MA$^*$, \textbf{Park H}$^*$. 2017. Visualization of Innovation in Global Supply Chain Networks. \textit{Decision Sciences}, 48(2), pp.288-306 [\href{http://onlinelibrary.wiley.com/doi/10.1111/deci.12213/abstract}{Link {\scriptsize\faExternalLink}}] \absthree}
-
-\pubentry{[J11]}{\textbf{Park H}, Bellamy MA, Basole RC. 2016. Visual Analytics for Supply Network Management: System Design and Evaluation. \textit{Decision Support Systems}, 91, pp.89-102 [\href{http://www.sciencedirect.com/science/article/pii/S0167923616301397}{Link {\scriptsize\faExternalLink}}] [\href{http://visualscm.herokuapp.com/}{Live Demo {\scriptsize\faDesktop}}] \absthree}
-
-\pubentry{[J10]}{\textbf{Park H}$^*$, Basole RC$^*$. 2016. Bicentric Diagrams: Design and Applications of a Graph-Based Relational Set Visualization Technique. \textit{Decision Support Systems}, 84, pp.64-77 [\href{http://www.sciencedirect.com/science/article/pii/S016792361630001X}{Link {\scriptsize\faExternalLink}}] [\href{http://bicentric.herokuapp.com/}{Live Demo {\scriptsize\faDesktop}}] \absthree}
-
-\pubentry{[J9]}{Basole RC, Bellamy MA, \textbf{Park H}, Putrevu J. 2016. Computational Analysis and Visualization of Global Supply Network Risks. \textit{IEEE Transactions on Industrial Informatics}, 12(3), pp.1206-1213 [\href{https://ieeexplore.ieee.org/document/7445240/}{Link {\scriptsize\faExternalLink}}]}
-
-\pubentry{[J8]}{\textbf{Park H}, Lee J, Kim BC. 2015. Project Selection in NIH: A Natural Experiment from ARRA. \textit{Research Policy}, 44(6), pp.1145-1159 [\href{http://www.sciencedirect.com/science/article/pii/S0048733315000396}{Link {\scriptsize\faExternalLink}}] \ft~\absfourstar}
-
-\pubentry{[J7]}{Basole RC, Braunstein M, Kumar V, \textbf{Park H}, Kahng M, Chau DHP, Tamersoy A, Hirsh DA, Serban N, Bost J, Lesnick B, Schissel BL, Thompson M. 2015. Understanding Variations in Pediatric Asthma Care Processes in the Emergency Department using Visual Analytics. \textit{Journal of the American Medical Informatics Association (JAMIA)}, 22(2), pp.318-323 [\href{http://jamia.oxfordjournals.org/content/22/2/318.abstract}{Link {\scriptsize\faExternalLink}}]}
-
-\pubentry{[J6]}{Basole RC, Russell MG, Hutamaki J, Rubens N, Still K, \textbf{Park H}. 2015. Understanding Business Ecosystem Dynamics: A Data-Driven Approach. \textit{ACM Transactions on Management Information Systems}, 6(2), no. 6 [\href{http://dl.acm.org/citation.cfm?id=2724730}{Link {\scriptsize\faExternalLink}}]}
-
-\pubentry{[J5]}{Basole RC, Qamar A, \textbf{Park H}, Paredis C, McGinnis LF. 2015. Visual Analytics for Early-Phase Complex Engineered System Design Support. \textit{IEEE Computer Graphics and Applications}, 35(2), pp.41-51 [\href{https://ieeexplore.ieee.org/document/7006349/}{Link {\scriptsize\faExternalLink}}]}
-
-\pubentry{[J4]}{Basole RC, \textbf{Park H}, Barnett BC. 2015. Coopetition and Convergence in the ICT Ecosystem. \textit{Telecommunications Policy}, 39(7), pp.537-552 [\href{http://www.sciencedirect.com/science/article/pii/S0308596114000627}{Link {\scriptsize\faExternalLink}}] \absgen}
-
-\pubentry{[J1]}{\textbf{Park H}, Clear T, Rouse WB, Basole RC, Braunstein M, Brigham KL, Cunningham L. 2012. Multi-Level Simulations of Health Delivery Enterprises Flight Simulators for Policy, Strategy, Planning, and Management. \textit{Service Science}, 4(3), pp.253-268 [\href{http://pubsonline.informs.org/doi/abs/10.1287/serv.1120.0022}{Link {\scriptsize\faExternalLink}}] \absgen}
+<!--GEN:PUBS-->
 
 # Selected Referred Conference Proceedings
 \vspace{.2em}
 \begingroup\small (For the full list, visit \url{https://hyunwoopark.com}.)\endgroup
 \vspace{.5em}
 
-\pubentry{[C16]}{Lee D, Ju J, Song H, \textbf{Park H}. 2026. From Ballpark to Society: Understanding Stakeholders' Adaptation to Automated Judgment via ABS in Baseball. \textit{ACM CHI 2026} (Accepted)}
-
-\pubentry{[C15]}{Kim J, Hwang Y, Kim M, Bae S, \textbf{Park H}. 2025. Spatio-Temporal Graphs Beyond Grids: Benchmark for Maritime Anomaly Detection. \textit{NeurIPS 2025 Workshop on AI for Science} [\href{https://arxiv.org/abs/2512.20086}{Link {\scriptsize\faExternalLink}}] \bestposter}
-
-\pubentry{[C14]}{Deshmane A, \textbf{Park H}, Rahmani M. 2025. From Paychecks to Well-Being: Unpacking Drivers of Employee Turnover at Scale. \textit{INFORMS MSOM 2025}}
-
-\pubentry{[C11]}{Kim J, Kim M, Ju J, Hwang Y, Lee W, \textbf{Park H}. 2025. Adaptive Sparsified Graph Learning Framework for Vessel Behavior Anomalies. \textit{AAAI 2025 Workshop on Anomaly Detection in Scientific Domains} [\href{https://www.nsfhdr.org/html/mlchallenge-y1/aaai-workshop2024.html}{Link {\scriptsize\faExternalLink}}]}
-
-\pubentry{[C9]}{Choi Y, \textbf{Park H}. 2024. A Long-term, Geospatial-based Approach for Location Suitability Evaluation of Flood Relief Camps Considering Climate Change. \textit{INFORMS MSOM 2024}}
-
-\pubentry{[C8]}{Choi Y, Kim Y, Lee CG, Park JJ, \textbf{Park H}. 2024. Revelio: A Lifelog Visualization System with Google My Activity. \textit{IEEE PacificVis 2024} \bestposter}
-
-\pubentry{[C6]}{Lee J, Jung HJ, \textbf{Park H}. 2020. Rare is Beautiful? Rare Technological Resources and Value Implications. \textit{Academy of Management Best Paper Proceedings} [\href{https://journals.aom.org/doi/abs/10.5465/AMBPP.2020.175}{Link {\scriptsize\faExternalLink}}] \bestpaperfinalist}
-
-\pubentry{[C2]}{\textbf{Park H}, Lee J. 2015. An (Almost) Free Lunch? Social Recognition and Knowledge Sharing Behavior in a Virtual Community. \textit{Academy of Management Best Paper Proceedings} [\href{https://journals.aom.org/doi/abs/10.5465/ambpp.2015.184}{Link {\scriptsize\faExternalLink}}] \beststudentpaper}
+<!--GEN:PROCS-->
 
 # Book Chapters and Technical Reports
 \vspace{.5em}

@@ -33,11 +33,13 @@ jobs:
             poppler-utils python3-pil
           Rscript -e 'if (!requireNamespace("fontawesome", quietly=TRUE)) install.packages("fontawesome", repos="https://packagemanager.posit.co/cran/__linux__/noble/latest")'
 
-      - name: Build CV (newest Rmd in cv/)
+      - name: Generate sections from src/data + build CV
+        # Single source of truth: pubs/procs entries come from src/data/*.json
+        # (cvSelected: true), spliced into cv/CV_template.Rmd. Other sections
+        # are edited directly in the template.
         run: |
-          FN=$(ls cv/CV_Hyunwoo_Park_*.Rmd | sort | tail -1 | xargs -n1 basename | sed 's/\.Rmd$//')
-          echo "building $FN"
-          bash cv/build.sh "$FN"
+          python3 cv/generate_cv_sections.py
+          bash cv/build.sh CV_Hyunwoo_Park_gen
 
       - name: Style gate (fail loudly on generic-article regressions)
         run: python3 cv/check_style.py cv/CV_Hyunwoo_Park.pdf

@@ -6,7 +6,8 @@
       "title": "From Ballpark to Society: Understanding Stakeholders' Adaptation to Automated Judgment via ABS in Baseball",
       "authors": "Lee D, Ju J, Song H, Park H",
       "proceedings": "ACM CHI 2026 (Accepted)",
-      "year": "2026"
+      "year": "2026",
+      "cvSelected": true
     },
     {
       "type": "conference",
@@ -15,14 +16,18 @@
       "proceedings": "NeurIPS 2025 Workshop on AI for Science",
       "year": "2025",
       "link": "https://arxiv.org/abs/2512.20086",
-      "award": ["Best Poster"]
+      "award": [
+        "Best Poster"
+      ],
+      "cvSelected": true
     },
     {
       "type": "conference",
       "title": "From Paychecks to Well-Being: Unpacking Drivers of Employee Turnover at Scale",
       "authors": "Deshmane A, Park H, Rahmani M",
       "proceedings": "INFORMS MSOM 2025",
-      "year": "2025"
+      "year": "2025",
+      "cvSelected": true
     },
     {
       "type": "conference",
@@ -44,7 +49,8 @@
       "authors": "Kim J, Kim M, Ju J, Hwang Y, Lee W, Park H",
       "proceedings": "AAAI 2025 Workshop on Anomaly Detection in Scientific Domains",
       "year": "2025",
-      "link": "https://www.nsfhdr.org/html/mlchallenge-y1/aaai-workshop2024.html"
+      "link": "https://www.nsfhdr.org/html/mlchallenge-y1/aaai-workshop2024.html",
+      "cvSelected": true
     },
     {
       "type": "conference",
@@ -59,7 +65,8 @@
       "title": "A Long-term, Geospatial-based Approach for Location Suitability Evaluation of Flood Relief Camps Considering Climate Change",
       "authors": "Choi Y, Park H",
       "proceedings": "INFORMS MSOM 2024",
-      "year": "2024"
+      "year": "2024",
+      "cvSelected": true
     },
     {
       "type": "conference",
@@ -67,7 +74,10 @@
       "authors": "Choi Y, Kim Y, Lee CG, Park JJ, Park H",
       "proceedings": "IEEE PacificVis 2024",
       "year": "2024",
-      "award": ["Best Poster"]
+      "award": [
+        "Best Poster"
+      ],
+      "cvSelected": true
     },
     {
       "type": "conference",
@@ -83,7 +93,10 @@
       "proceedings": "Academy of Management Best Paper Proceedings",
       "year": "2020",
       "link": "https://journals.aom.org/doi/abs/10.5465/AMBPP.2020.175",
-      "award": ["Best Paper Finalist"]
+      "award": [
+        "Best Paper Finalist"
+      ],
+      "cvSelected": true
     },
     {
       "type": "conference",
@@ -116,7 +129,10 @@
       "proceedings": "Academy of Management Best Paper Proceedings",
       "year": "2015",
       "link": "https://journals.aom.org/doi/abs/10.5465/ambpp.2015.184",
-      "award": ["Best Student Paper"]
+      "award": [
+        "Best Student Paper"
+      ],
+      "cvSelected": true
     },
     {
       "type": "conference",

@@ -27,8 +27,9 @@ jobs:
           sudo apt-get update -q
           sudo apt-get install -y -q --no-install-recommends \
             pandoc r-base r-cran-rmarkdown r-cran-knitr \
-            texlive-latex-base texlive-latex-extra \
+            texlive-latex-base texlive-latex-recommended texlive-latex-extra \
             texlive-fonts-recommended texlive-fonts-extra \
+            texlive-pictures texlive-plain-generic lmodern \
             poppler-utils python3-pil
           Rscript -e 'if (!requireNamespace("fontawesome", quietly=TRUE)) install.packages("fontawesome", repos="https://packagemanager.posit.co/cran/__linux__/noble/latest")'
 

@@ -7,39 +7,69 @@ import {
   Image,
   Heading,
   Text,
-  Button,
   Link,
   Separator,
   HStack,
   IconButton,
 } from "@chakra-ui/react";
 import { FaArrowLeft, FaCopy } from "react-icons/fa6";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Tooltip } from "../../components/ui/tooltip";
 
 export default function BioPage() {
-  const [copiedEn, setCopiedEn] = useState(false);
-  const [copiedKo, setCopiedKo] = useState(false);
+  const [copyStatus, setCopyStatus] = useState<{ id: string; ok: boolean } | null>(null);
+  const copyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const bioEnglish = `Hyunwoo Park is an Associate Professor in the Graduate School of Data Science at Seoul National University. He served as the Vice Dean for Academic Affairs in 2023-2025. Before joining SNU, he was an Assistant Professor in Management Sciences at the Fisher College of Business and a Core Faculty for the Translational Data Analytics Institute (TDAI) at The Ohio State University. Prior to OSU, he was a postdoctoral fellow at the Tennenbaum Institute at Georgia Tech. He holds a Ph.D. in Industrial Engineering from Georgia Tech, a Master of Information Management and Systems from UC Berkeley, and a B.S. in Electrical Engineering from Seoul National University.
+  const bios = [
+    {
+      id: "en-short",
+      language: "English",
+      lang: "en",
+      length: "Short bio",
+      text: `Hyunwoo Park is an Associate Professor at the Graduate School of Data Science, Seoul National University. He studies how AI and data reshape human judgment, organizational work, and the design of products and services. His work also spans visual analytics, supply chain networks, and technology and innovation management.`,
+    },
+    {
+      id: "en-standard",
+      language: "English",
+      lang: "en",
+      length: "Standard bio",
+      text: `Hyunwoo Park is an Associate Professor at the Graduate School of Data Science, Seoul National University. He studies how AI and data reshape human judgment, organizational work, and the design of products and services, alongside research on visual analytics and supply chain networks. He previously served as Associate Dean for Academic Affairs at SNU's Graduate School of Data Science. Before joining SNU, he was an Assistant Professor at the Fisher College of Business, The Ohio State University, and a postdoctoral fellow at Georgia Tech. His research has appeared in Academy of Management Review, Journal of Operations Management, Production and Operations Management, Research Policy, and IEEE Transactions on Visualization and Computer Graphics. He was elected to the Young Korean Academy of Science and Technology in 2024 and served as President of INFORMS TIMES in 2024. He holds degrees from Seoul National University, UC Berkeley, and Georgia Tech.`,
+    },
+    {
+      id: "ko-short",
+      language: "한국어",
+      lang: "ko",
+      length: "짧은 약력",
+      text: `박현우는 서울대학교 데이터사이언스대학원 부교수다. AI와 데이터가 인간의 판단, 조직의 일, 제품과 서비스의 설계를 어떻게 바꾸는지 연구한다. 데이터 시각화, 공급망 네트워크, 기술혁신경영도 주요 연구 분야다.`,
+    },
+    {
+      id: "ko-standard",
+      language: "한국어",
+      lang: "ko",
+      length: "표준 약력",
+      text: `박현우는 서울대학교 데이터사이언스대학원 부교수다. AI와 데이터가 인간의 판단, 조직의 일, 제품과 서비스의 설계를 어떻게 바꾸는지 연구하며, 데이터 시각화와 공급망 네트워크도 다룬다. 서울대학교 데이터사이언스대학원 교무부원장을 지냈고, 서울대 부임 전에는 오하이오주립대학교 피셔경영대학 교수와 조지아공과대학 박사후연구원으로 근무했다. 연구 성과는 Academy of Management Review, Journal of Operations Management, Production and Operations Management, Research Policy, IEEE Transactions on Visualization and Computer Graphics 등에 게재됐다. 2024년 한국차세대과학기술한림원 회원으로 선출됐으며 같은 해 INFORMS TIMES 회장을 맡았다. 서울대학교 전기공학사, UC버클리 정보관리시스템 석사, 조지아공과대학 산업공학 박사 학위를 받았다.`,
+    },
+  ];
 
-His research interests include business and data analytics with an emphasis on visualization, supply chain management from the network perspective, and technology and innovation management in the presence of digital platforms.
+  useEffect(() => () => {
+    if (copyTimer.current) clearTimeout(copyTimer.current);
+  }, []);
 
-His research has been published in leading journals including Academy of Management Review, Decision Sciences, Decision Support Systems, IEEE Transactions on Engineering Management (TEM), IEEE Transactions on Visualization and Computer Graphics (TVCG), Journal of the Association of Information Systems, Journal of Operations Management, Production and Operations Management, and Research Policy.
+  const showCopyStatus = (id: string, ok: boolean) => {
+    if (copyTimer.current) clearTimeout(copyTimer.current);
+    setCopyStatus({ id, ok });
+    copyTimer.current = setTimeout(() => setCopyStatus(null), 2000);
+  };
 
-He won the TIM (Technology and Innovation Management) Division Best Student Paper Award at the Academy of Management in 2015 and the OCIS (Organizational Communication and Information Systems) Division Best Paper Award at the Academy of Management in 2017. His paper was a finalist for the Chan Hahn Best Paper Award in the OSCM (Operations and Supply Chain Management) Division at the Academy of Management in 2020. His dissertation was awarded a Runner-up for the INFORMS TIMES (Technology, Innovation Management and Entrepreneurship Section) Best Dissertation Award in 2017. He served the INFORMS TIMES community in leadership roles in 2021-2025 and he was the President of the INFORMS TIMES in 2024.`;
-
-  const bioKorean = `박현우 교수는 현재 서울대학교 데이터사이언스대학원의 교수로 재직 중이다. 서울대학교에 부임하기 전에는 오하이오 주립대학교 경영대학에서 교수로 근무했으며, 데이터 애널리틱스 인스티튜트 소속으로 활동했다. 전문 연구 분야로는 데이터 분석 및 시각화, AI 시대의 제품과 서비스 혁신, 기업 간 네트워크 분석, 데이터에 기반한 오퍼레이션 관리 등이 있다. 그의 연구는 공학과 경영학 분야의 최상위 저널 등에 다수 게재되었으며, 미국경영학회와 INFORMS와 같은 우수 학회에서 다수의 논문상을 수상한 경력이 있다. 2024년 미국산업공학회 혁신경영 분과장을 역임하였다. 서울대 전기공학사(2008), UC버클리 정보관리시스템 석사(2010), 조지아공과대학 산업공학 박사(2015).`;
-
-  const handleCopy = (text: string, lang: 'en' | 'ko') => {
-    navigator.clipboard.writeText(text);
-    if (lang === 'en') {
-      setCopiedEn(true);
-      setTimeout(() => setCopiedEn(false), 2000);
-    } else {
-      setCopiedKo(true);
-      setTimeout(() => setCopiedKo(false), 2000);
+  const handleCopy = async (text: string, id: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch {
+      showCopyStatus(id, false);
+      return;
     }
+
+    showCopyStatus(id, true);
   };
 
   return (
@@ -49,57 +79,64 @@ He won the TIM (Technology and Innovation Management) Division Best Student Pape
           <FaArrowLeft /> Back to Home
         </Link>
 
-        <Heading as="h1" size="3xl" textAlign="center">
-          Bio and Photo
-        </Heading>
+        <Box textAlign="center">
+          <Heading as="h1" size="3xl">
+            Speaker and Media Kit
+          </Heading>
+          <Text mt={3} color="gray.600" _dark={{ color: "gray.400" }}>
+            Hyunwoo Park, Associate Professor, Graduate School of Data Science, Seoul National University
+          </Text>
+        </Box>
 
         <Box display="flex" flexDirection={{ base: "column", md: "row" }} gap={8}>
           {/* Bio Section - 2/3 width on desktop */}
           <Box flex={{ base: "1", md: "2" }}>
             <VStack gap={8} align="stretch">
-              <Box>
-                <HStack justify="space-between" mb={4}>
-                  <Heading as="h2" size="xl">
-                    Bio (English)
-                  </Heading>
-                  <Tooltip content={copiedEn ? "Copied!" : "Copy to clipboard"}>
-                    <IconButton 
-                      variant="ghost" 
-                      size="sm"
-                      aria-label="Copy English bio"
-                      onClick={() => handleCopy(bioEnglish, 'en')}
-                    >
-                      <FaCopy />
-                    </IconButton>
-                  </Tooltip>
-                </HStack>
-                <Text fontSize="lg" lineHeight="tall" whiteSpace="pre-wrap">
-                  {bioEnglish}
-                </Text>
-              </Box>
-
-              <Separator />
-
-              <Box>
-                <HStack justify="space-between" mb={4}>
-                  <Heading as="h2" size="xl">
-                    약력 (한국어)
-                  </Heading>
-                  <Tooltip content={copiedKo ? "Copied!" : "Copy to clipboard"}>
-                    <IconButton 
-                      variant="ghost" 
-                      size="sm"
-                      aria-label="Copy Korean bio"
-                      onClick={() => handleCopy(bioKorean, 'ko')}
-                    >
-                      <FaCopy />
-                    </IconButton>
-                  </Tooltip>
-                </HStack>
-                <Text fontSize="lg" lineHeight="tall" whiteSpace="pre-wrap">
-                  {bioKorean}
-                </Text>
-              </Box>
+              {bios.map((bio, index) => (
+                <Box key={bio.id} lang={bio.lang}>
+                  {index > 0 && <Separator mb={8} />}
+                  <HStack justify="space-between" mb={4} align="center">
+                    <Box>
+                      <Heading as="h2" size="lg">
+                        {bio.length}
+                      </Heading>
+                      <Text fontSize="sm" color="gray.600" _dark={{ color: "gray.400" }} mt={1}>
+                        {bio.language}
+                      </Text>
+                    </Box>
+                    <HStack gap={2} minW="120px" justify="flex-end">
+                      <Text
+                        role="status"
+                        aria-live="polite"
+                        fontSize="sm"
+                        minW="72px"
+                        textAlign="right"
+                        color={copyStatus?.id === bio.id && !copyStatus.ok ? "red.700" : "green.700"}
+                        _dark={{ color: copyStatus?.id === bio.id && !copyStatus.ok ? "red.300" : "green.300" }}
+                      >
+                        {copyStatus?.id === bio.id
+                          ? copyStatus.ok
+                            ? bio.lang === "ko" ? "복사됨" : "Copied"
+                            : bio.lang === "ko" ? "복사 실패" : "Copy failed"
+                          : ""}
+                      </Text>
+                      <Tooltip content={bio.lang === "ko" ? "클립보드에 복사" : "Copy to clipboard"}>
+                        <IconButton
+                          variant="ghost"
+                          size="sm"
+                          aria-label={`Copy ${bio.language} ${bio.length}`}
+                          onClick={() => handleCopy(bio.text, bio.id)}
+                        >
+                          <FaCopy />
+                        </IconButton>
+                      </Tooltip>
+                    </HStack>
+                  </HStack>
+                  <Text fontSize="lg" lineHeight="tall">
+                    {bio.text}
+                  </Text>
+                </Box>
+              ))}
             </VStack>
           </Box>
 
@@ -107,32 +144,8 @@ He won the TIM (Technology and Innovation Management) Division Best Student Pape
           <Box flex={{ base: "1", md: "1" }} position={{ md: "sticky" }} top="100px" h="fit-content">
             <VStack gap={6}>
               <Heading as="h2" size="lg" mb={2}>
-                Profile Photos
+                Press Photos
               </Heading>
-              <Box w="100%">
-                <Image
-                  src="https://zzz.sfo3.cdn.digitaloceanspaces.com/y/Profile_HP_20231115_Standing_Square_sm.png"
-                  alt="Hyunwoo Park - Square"
-                  width="100%"
-                  maxW={{ base: "300px", md: "200px" }}
-                  mx="auto"
-                  rounded="lg"
-                  shadow="md"
-                />
-                <Link 
-                  href="https://zzz.sfo3.cdn.digitaloceanspaces.com/y/Profile_HP_20231115_Standing_Square.png" 
-                  download="Hyunwoo_Park_Square.png"
-                  target="_blank"
-                  display="block"
-                  mt={2}
-                  textAlign="center"
-                  fontSize="xs"
-                  color="blue.600"
-                  _hover={{ textDecoration: "underline" }}
-                >
-                  ↓ Download hi-res square (4.2MB)
-                </Link>
-              </Box>
               <Box w="100%">
                 <Image
                   src="https://zzz.sfo3.cdn.digitaloceanspaces.com/y/Profile_HP_20231115_Standing_Cropped_sm.png"
@@ -143,20 +156,53 @@ He won the TIM (Technology and Innovation Management) Division Best Student Pape
                   rounded="lg"
                   shadow="md"
                 />
-                <Link 
-                  href="https://zzz.sfo3.cdn.digitaloceanspaces.com/y/Profile_HP_20231115_Standing_Cropped.png" 
-                  download="Hyunwoo_Park_Portrait.png"
+                <Text mt={3} textAlign="center" fontWeight="semibold">
+                  Portrait
+                </Text>
+                <Link
+                  href="https://zzz.sfo3.cdn.digitaloceanspaces.com/y/Profile_HP_20231115_Standing_Cropped.png"
                   target="_blank"
+                  rel="noopener noreferrer"
                   display="block"
-                  mt={2}
+                  mt={1}
                   textAlign="center"
-                  fontSize="xs"
+                  fontSize="sm"
                   color="blue.600"
                   _hover={{ textDecoration: "underline" }}
                 >
-                  ↓ Download hi-res portrait (7.2MB)
+                  Open high resolution (1926 x 3424)
                 </Link>
               </Box>
+              <Box w="100%">
+                <Image
+                  src="https://zzz.sfo3.cdn.digitaloceanspaces.com/y/Profile_HP_20231115_Standing_Square_sm.png"
+                  alt="Hyunwoo Park - Square"
+                  width="100%"
+                  maxW={{ base: "300px", md: "200px" }}
+                  mx="auto"
+                  rounded="lg"
+                  shadow="md"
+                />
+                <Text mt={3} textAlign="center" fontWeight="semibold">
+                  Square
+                </Text>
+                <Link
+                  href="https://zzz.sfo3.cdn.digitaloceanspaces.com/y/Profile_HP_20231115_Standing_Square.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  display="block"
+                  mt={1}
+                  textAlign="center"
+                  fontSize="sm"
+                  color="blue.600"
+                  _hover={{ textDecoration: "underline" }}
+                >
+                  Open high resolution (1926 x 1926)
+                </Link>
+              </Box>
+              <Text fontSize="sm" color="gray.600" _dark={{ color: "gray.400" }} textAlign="center">
+                Photo credit: Hyunwoo Park
+              </Text>
             </VStack>
           </Box>
         </Box>

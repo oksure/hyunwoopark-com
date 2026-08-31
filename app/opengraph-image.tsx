@@ -24,7 +24,7 @@ export default function Image() {
           Hyunwoo Park
         </div>
         <div style={{ fontSize: 34, color: "#cbd5e1", marginBottom: 12 }}>
-          Associate Professor, Graduate School of Data Science
+          Professor, Graduate School of Data Science
         </div>
         <div style={{ fontSize: 34, color: "#cbd5e1" }}>
           Seoul National University

@@ -23,7 +23,7 @@ export default function Sidebar() {
           Hyunwoo Park
         </Heading>
         <Link href="https://gsds.snu.ac.kr/people-post/hyunwoo-park/" target="_blank">
-          Associate Professor
+          Professor
         </Link>
         <Link href="https://gsds.snu.ac.kr" target="_blank">
           Graduate School of Data Science

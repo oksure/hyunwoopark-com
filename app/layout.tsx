@@ -15,21 +15,21 @@ export const metadata: Metadata = {
     default: "Hyunwoo Park - Seoul National University",
     template: "%s | Hyunwoo Park",
   },
-  description: "Hyunwoo Park is an Associate Professor at the Graduate School of Data Science, Seoul National University. Research in enterprise AI adoption, AI transformation (AX), business analytics, supply chain networks, and technology management.",
+  description: "Hyunwoo Park is a Professor at the Graduate School of Data Science, Seoul National University. Research in enterprise AI adoption, AI transformation (AX), business analytics, supply chain networks, and technology management.",
   authors: [{ name: "Hyunwoo Park" }],
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "Hyunwoo Park",
     title: "Hyunwoo Park - Seoul National University",
-    description: "Associate Professor, Graduate School of Data Science, Seoul National University. Research in enterprise AI adoption, AI transformation (AX), business analytics, supply chain networks, and technology management.",
+    description: "Professor, Graduate School of Data Science, Seoul National University. Research in enterprise AI adoption, AI transformation (AX), business analytics, supply chain networks, and technology management.",
     url: "https://hyunwoopark.com",
     locale: "en_US",
   },
   twitter: {
     card: "summary",
     title: "Hyunwoo Park - Seoul National University",
-    description: "Associate Professor, Graduate School of Data Science, Seoul National University.",
+    description: "Professor, Graduate School of Data Science, Seoul National University.",
   },
   manifest: "/site.webmanifest",
   icons: {
@@ -66,7 +66,7 @@ export default function RootLayout({
               alternateName: ["박현우", "Hyun-Woo Park"],
               givenName: "Hyunwoo",
               familyName: "Park",
-              jobTitle: "Associate Professor",
+              jobTitle: "Professor",
               knowsAbout: [
                 "enterprise AI adoption",
                 "AI transformation (AX)",

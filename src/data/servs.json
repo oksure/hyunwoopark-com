@@ -73,6 +73,33 @@
     },
     {
       "type": "service",
+      "title": "Advisory and Policy",
+      "details": [
+        {
+          "category": "Government",
+          "subdetails": [
+            "External Expert, AI Advisory Panel, Ministry of Foreign Affairs of Korea 2025-Present",
+            "Co-Leader, Human Value Division (TC4), Physical AI National Research Lab (H-PAIR NRL 2.0) 2026-Present"
+          ]
+        },
+        {
+          "category": "Industry",
+          "subdetails": [
+            "Visiting Professor, SK hynix Value Programming Platform (VPP) 2026"
+          ]
+        },
+        {
+          "category": "Academic Leadership (Korea)",
+          "subdetails": [
+            "Board Member, Korean Operations Research and Management Science Society (KORMS) 2025-Present",
+            "Board Member, Korea Society for Innovation Management and Economics (KOSIME) 2025-Present",
+            "Auditor, Korea Data Mining Society (KDMS) 2025-Present"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "service",
       "title": "University Service",
       "details": [
         {

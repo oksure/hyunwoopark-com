@@ -16,6 +16,12 @@
     },
     {
       "type": "award",
+      "title": "SNU Grand Quest Competition Award",
+      "awarder": "Seoul National University",
+      "year": "2026"
+    },
+    {
+      "type": "award",
       "title": "Elected Member, Policy Studies Division",
       "awarder": "Young Korean Academy of Science and Technology (Y-KAST)",
       "year": "2024 – Present",
@@ -82,6 +88,12 @@
     },
     {
       "type": "award",
+      "title": "Outstanding Talent Award for the 21st Century",
+      "awarder": "President of the Republic of Korea",
+      "year": "2002"
+    },
+    {
+      "type": "award",
       "title": "Gold Medalist",
       "awarder": "33rd International Chemistry Olympiad",
       "year": "2001",
@@ -136,6 +148,34 @@
       "title": "Undergraduate Fellowship",
       "awarder": "Korea Foundation for Advanced Studies",
       "year": "2002-2008",
+      "special": true
+    },
+    {
+      "type": "grant",
+      "title": "Korea MSIT AI-Based Military Operations Decision Support System",
+      "awarder": "PI",
+      "year": "2026",
+      "special": true
+    },
+    {
+      "type": "grant",
+      "title": "Samsung Electronics Semiconductor FAB Supply Chain and Process Quality AI System",
+      "awarder": "PI",
+      "year": "2023-2026",
+      "special": true
+    },
+    {
+      "type": "grant",
+      "title": "Korea KRISO Maritime Data Anomaly Detection and Behavioral Analysis (Series)",
+      "awarder": "PI",
+      "year": "2021-2026",
+      "special": true
+    },
+    {
+      "type": "grant",
+      "title": "Seoul Metropolitan Government Foreign Remittance Fraud Detection System",
+      "awarder": "PI",
+      "year": "2021-2026",
       "special": true
     },
     {

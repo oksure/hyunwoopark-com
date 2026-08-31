@@ -219,7 +219,7 @@ export default function BioPage() {
           </Text>
           <HStack gap={4} flexWrap="wrap">
             <Link
-              href="/bio/kr-cv/"
+              href="/bio/resume-ko/"
               display="inline-flex"
               alignItems="center"
               gap={2}

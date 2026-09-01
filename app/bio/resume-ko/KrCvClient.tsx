@@ -163,7 +163,7 @@ export default function KrCvClient() {
 
               <CvSection eyebrow="Academic Leadership" title="학회 리더십">
                 <CvList items={[
-                  { text: "미국 경영과학회(INFORMS) 기술혁신경영 분과(TIMES) 임원 5년, 회장(2024)", year: "2021–2025" },
+                  { text: "미국경영과학회(INFORMS) 기술혁신경영 분과(TIMES) 임원 5년, 회장(2024)", year: "2021–2025" },
                   { text: "한국경영과학회 이사", year: "2025–" },
                   { text: "한국기술경영경제학회 이사", year: "2025–" },
                   { text: "한국데이터마이닝학회 감사", year: "2025–" },
@@ -176,7 +176,7 @@ export default function KrCvClient() {
           <Box bg="var(--wash)" borderLeft="2.5px solid var(--prussian)" p={3} mt={4} fontSize="sm" lineHeight="1.5">
             <Text fontWeight="700" color="var(--prussian)" mb={1}>수상</Text>
             <Text>미국경영학회(AOM): OCIS Best Paper (2017), TIM Best Student Paper (2015), OSCM Best Paper Finalist (2020)</Text>
-            <Text mt={1}>미국산업공학회(INFORMS): TIMES Best Dissertation Runner-up (2017), TIMES Distinguished Service Award (2025), IJOC Meritorious Reviewer (2025)</Text>
+            <Text mt={1}>미국경영과학회(INFORMS): TIMES Best Dissertation Runner-up (2017), TIMES Distinguished Service Award (2025), IJOC Meritorious Reviewer (2025)</Text>
             <Text mt={1}>SNU 그랜드퀘스트 공모전 수상 (2026), 21세기를 이끌 우수인재상 (2002), 국제화학올림피아드 금메달 (2001)</Text>
             <Text mt={2}><Text as="span" fontWeight="700" color="var(--prussian)">장학.</Text> 한국고등교육재단 학부 및 박사 해외유학 장학생 (2002–2015), 삼성장학회 해외유학 장학생 (2008–2010)</Text>
           </Box>

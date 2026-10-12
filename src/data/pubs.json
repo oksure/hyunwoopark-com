@@ -99,12 +99,12 @@
     {
       "type": "journal",
       "title": "Gender and Serious Drug Recalls: A Textual Sentiment Analysis of Drug Reviews on WebMD",
-      "authors": "Ball GP, Bavafa H, Blanco C, Park H, Wowak KD",
+      "authors": "Ball GP, Bavafa H, Blanco CC, Park H, Wowak KD",
       "journal": "Production and Operations Management",
       "volume": "34",
       "number": "4",
       "pages": "698-710",
-      "year": "2024",
+      "year": "2025",
       "link": "https://journals.sagepub.com/doi/abs/10.1177/10591478241256644",
       "top": [
         "utd24",
@@ -150,7 +150,7 @@
     },
     {
       "type": "journal",
-      "title": "Rare is Beautiful? The Interplay Between Rareness, Technology Search, and Technology Value",
+      "title": "Rare is Beautiful? Rareness, Technology Value, and the Moderating Role of Search Domain and Knowledge Maturity",
       "authors": "Lee J, Jung HJ, Park H",
       "journal": "Production and Operations Management",
       "volume": "32",
@@ -179,7 +179,7 @@
     {
       "type": "journal",
       "title": "Vessel Sharing and its Impact on Maritime Operations and Carbon Emissions",
-      "authors": "Park H, Blanco C, Bendoly E",
+      "authors": "Park H, Blanco CC, Bendoly E",
       "journal": "Production and Operations Management",
       "volume": "31",
       "number": "7",
@@ -452,7 +452,7 @@
     {
       "type": "journal",
       "title": "Understanding Variations in Pediatric Asthma Care Processes in the Emergency Department using Visual Analytics",
-      "authors": "Basole RC, Braunstein M, Kumar V, Park H, Kahng M, Chau DHP, Tamersoy A, Hirsh DA, Serban N, Bost J, Lesnick B, Schissel BL, Thompson M",
+      "authors": "Basole RC, Braunstein ML, Kumar V, Park H, Kahng M, Chau DHP, Tamersoy A, Hirsh DA, Serban N, Bost J, Lesnick B, Schissel BL, Thompson M",
       "journal": "Journal of the American Medical Informatics Association (JAMIA)",
       "volume": "22",
       "number": "2",
@@ -476,7 +476,7 @@
     {
       "type": "journal",
       "title": "Visual Analytics for Early-Phase Complex Engineered System Design Support",
-      "authors": "Basole RC, Qamar A, Park H, Paredis C, McGinnis LF",
+      "authors": "Basole RC, Qamar A, Park H, Paredis CJJ, McGinnis LF",
       "journal": "IEEE Computer Graphics and Applications",
       "volume": "35",
       "number": "2",
@@ -523,8 +523,8 @@
     },
     {
       "type": "journal",
-      "title": "Multi-Level Simulations of Health Delivery Enterprises Flight Simulators for Policy, Strategy, Planning, and Management",
-      "authors": "Park H, Clear T, Rouse WB, Basole RC, Braunstein M, Brigham KL, Cunningham L",
+      "title": "Multilevel Simulations of Health Delivery Systems: A Prospective Tool for Policy, Strategy, Planning, and Management",
+      "authors": "Park H, Clear T, Rouse WB, Basole RC, Braunstein ML, Brigham KL, Cunningham L",
       "journal": "Service Science",
       "volume": "4",
       "number": "3",

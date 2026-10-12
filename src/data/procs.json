@@ -3,6 +3,74 @@
   "items": [
     {
       "type": "conference",
+      "title": "What Gets Measured Gets Managed: Sign-aware Recommendation Needs Sign-aware Evaluation",
+      "authors": "Kim M, Hwang J, Park H",
+      "proceedings": "NeurIPS 2026 Evaluations & Datasets Track",
+      "year": "2026",
+      "link": "https://arxiv.org/abs/2609.33346",
+      "cvSelected": true
+    },
+    {
+      "type": "conference",
+      "title": "From Text to Structure: The PACKaGE Benchmark for Bidirectional Causal Reasoning in Paragraphs and Graphs",
+      "authors": "Kim J, Lee D, Jang J, Shim J, Park H",
+      "proceedings": "EMNLP 2026",
+      "year": "2026",
+      "cvSelected": true
+    },
+    {
+      "type": "conference",
+      "title": "Faithful yet Collusive: Why Chain-of-Thought Monitoring Cannot Detect Collusion in LLM Pricing Agents under Oligopolistic Competition",
+      "authors": "Lee D, Park H",
+      "proceedings": "Findings of EMNLP 2026",
+      "year": "2026",
+      "link": "https://arxiv.org/abs/2609.18346"
+    },
+    {
+      "type": "conference",
+      "title": "Event-Driven Causal Discovery for Root Cause Analysis in Semiconductor Fabrication Data Center",
+      "authors": "Kim J, Lee H, Jang J, Park Y, Park H",
+      "proceedings": "IEEE ICDM 2026",
+      "year": "2026",
+      "cvSelected": true
+    },
+    {
+      "type": "conference",
+      "title": "Great Grave: Modeling Versioned Context Units for Longitudinal LLM Interaction",
+      "authors": "Jang J, Seo J, Ju J, Park H",
+      "proceedings": "ACM UIST 2026",
+      "year": "2026",
+      "cvSelected": true
+    },
+    {
+      "type": "conference",
+      "title": "Redefining Maritime Anomaly Detection via Equation-Grounded Synthetic Anomalies",
+      "authors": "Hwang Y, Bae S, Lee D, Seo J, Kim J, Lee W, Park H",
+      "proceedings": "ACM KDD 2026 (Oral)",
+      "year": "2026",
+      "pages": "11131-11142",
+      "link": "https://doi.org/10.1145/3770855.3818984",
+      "cvSelected": true
+    },
+    {
+      "type": "conference",
+      "title": "Spillover-Robust Synthetic Control: Addressing Network Interference in Causal Inference",
+      "authors": "Lee D, Park H",
+      "proceedings": "Academy of Management Proceedings",
+      "year": "2026",
+      "link": "https://doi.org/10.5465/amproc.2026.10026abstract"
+    },
+    {
+      "type": "conference",
+      "title": "When Users Don't Specify: How LLMs Make Design Decisions in Underspecified Data Visualization Contexts",
+      "authors": "Ju J, Seo J, Jang J, Lee D, Park H",
+      "proceedings": "IEEE PacificVis 2026 (VisNote)",
+      "year": "2026",
+      "pages": "124-129",
+      "link": "https://doi.org/10.1109/PacificVis68791.2026.00019"
+    },
+    {
+      "type": "conference",
       "title": "From Ballpark to Society: Understanding Stakeholders' Adaptation to Automated Judgment via ABS in Baseball",
       "authors": "Lee D, Ju J, Song H, Park H",
       "proceedings": "ACM CHI 2026",

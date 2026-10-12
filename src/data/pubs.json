@@ -3,6 +3,43 @@
   "items": [
     {
       "type": "journal",
+      "title": "An (almost) free lunch? Symbolic recognition and knowledge-sharing behavior in online communities",
+      "authors": "Park H, Lee J",
+      "journal": "Research Policy",
+      "volume": "55",
+      "number": "10",
+      "articleNo": "105586",
+      "year": "2026",
+      "link": "https://doi.org/10.1016/j.respol.2026.105586",
+      "top": [
+        "ft50",
+        "abs4*"
+      ],
+      "cvSelected": true
+    },
+    {
+      "type": "journal",
+      "title": "InteractiveKG: Transparent and user-controllable knowledge graph reasoning",
+      "authors": "Kim M, Zhao Y, Ju J, Seo J, Park H",
+      "journal": "Information Visualization",
+      "volume": "25",
+      "number": "3",
+      "pages": "310-332",
+      "year": "2026",
+      "link": "https://doi.org/10.1177/14738716261435574"
+    },
+    {
+      "type": "journal",
+      "title": "Cutoff frequency determination algorithm for ferroelectric device pulse measurements with application to machine learning based prediction",
+      "authors": "Byun S, Choi J, Park H",
+      "journal": "Measurement",
+      "volume": "272",
+      "articleNo": "120959",
+      "year": "2026",
+      "link": "https://doi.org/10.1016/j.measurement.2026.120959"
+    },
+    {
+      "type": "journal",
       "title": "STGVAD: Spatio-Temporal Graph-based Vessel Behavior Anomaly Detection",
       "authors": "Kim J, Kim M, Hwang Y, Bae S, Cho DJ, Lee W, Park H",
       "journal": "IEEE Access",

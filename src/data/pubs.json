@@ -51,7 +51,7 @@
       "authors": "Heo S, Son S, Park H",
       "journal": "Expert Systems with Applications",
       "volume": "272",
-      "number": "126712",
+      "pages": "126712",
       "year": "2025",
       "link": "https://www.sciencedirect.com/science/article/pii/S0957417425003343",
       "top": [
@@ -140,7 +140,7 @@
     },
     {
       "type": "journal",
-      "title": "Towards Generalized Visualization System for Various CNN Models: Module and Layer View",
+      "title": "Toward Generalized Visualization System for Various CNN Models: Module and Layer View",
       "authors": "Kim Y, Chun J, Son S, Park H",
       "journal": "IEEE Access",
       "volume": "12",
@@ -327,7 +327,7 @@
     },
     {
       "type": "journal",
-      "title": "ecoxight: Discovery, Exploration and Analysis of Business Ecosystems using Interactive Visualization",
+      "title": "ecoxight: Discovery, Exploration, and Analysis of Business Ecosystems using Interactive Visualization",
       "authors": "Basole RC, Srinivasan A, Park H, Patel S",
       "journal": "ACM Transactions on Management Information Systems",
       "volume": "9",
@@ -464,7 +464,7 @@
     {
       "type": "journal",
       "title": "Understanding Business Ecosystem Dynamics: A Data-Driven Approach",
-      "authors": "Basole RC, Russell MG, Hutamaki J, Rubens N, Still K, Park H",
+      "authors": "Basole RC, Russell MG, Huhtamäki J, Rubens N, Still K, Park H",
       "journal": "ACM Transactions on Management Information Systems",
       "volume": "6",
       "number": "2",

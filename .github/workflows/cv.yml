@@ -7,7 +7,7 @@ name: CV Build
 on:
   push:
     branches: [master]
-    paths: ['cv/**']
+    paths: ['cv/**', 'src/data/pubs.json', 'src/data/procs.json']
   workflow_dispatch:
     inputs:
       upload:

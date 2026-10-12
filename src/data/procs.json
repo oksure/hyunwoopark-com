@@ -12,6 +12,14 @@
     },
     {
       "type": "conference",
+      "title": "Market Signal Injection: Adversarial Context Manipulation of LLM Pricing Agents",
+      "authors": "Lee D, Park H",
+      "proceedings": "EMNLP 2026 Workshop on FinNLP",
+      "year": "2026",
+      "link": "https://arxiv.org/abs/2609.18357"
+    },
+    {
+      "type": "conference",
       "title": "From Text to Structure: The PACKaGE Benchmark for Bidirectional Causal Reasoning in Paragraphs and Graphs",
       "authors": "Kim J, Lee D, Jang J, Shim J, Park H",
       "proceedings": "EMNLP 2026",
@@ -44,6 +52,30 @@
     },
     {
       "type": "conference",
+      "title": "Diagnosing Failure Modes in MCP Tool-Using Agents: A Stage-Aware Taxonomy and Evidence-Gap Interventions",
+      "authors": "Bae S, Park H",
+      "proceedings": "ICML 2026 Workshop on FAGEN",
+      "year": "2026",
+      "link": "https://icml.cc/virtual/2026/77938"
+    },
+    {
+      "type": "conference",
+      "title": "AISFlow: Boundary-Informed Flow Matching for Long-Term AIS Trajectory Imputation",
+      "authors": "Bae S, Hwang Y, Lee G, Seo J, Lee D, Park H",
+      "proceedings": "ICML 2026 Workshop on AI for Science",
+      "year": "2026",
+      "link": "https://icml.cc/virtual/2026/73576"
+    },
+    {
+      "type": "conference",
+      "title": "Domain-Prior-Regularized Graph Modeling for Anomaly Detection in Cyber-Physical Systems",
+      "authors": "Hwang Y, Kwon J, Lee G, Park H",
+      "proceedings": "ICML 2026 Workshop on AI for Science",
+      "year": "2026",
+      "link": "https://arxiv.org/abs/2607.23197"
+    },
+    {
+      "type": "conference",
       "title": "Redefining Maritime Anomaly Detection via Equation-Grounded Synthetic Anomalies",
       "authors": "Hwang Y, Bae S, Lee D, Seo J, Kim J, Lee W, Park H",
       "proceedings": "ACM KDD 2026 (Oral)",
@@ -54,11 +86,40 @@
     },
     {
       "type": "conference",
+      "title": "Who Wins from R&D Tax Credits? Treatment Effect Heterogeneity and Optimal Policy Design",
+      "authors": "Lee D, Park H",
+      "proceedings": "DRUID 2026",
+      "year": "2026"
+    },
+    {
+      "type": "conference",
+      "title": "To Stay or to Leave? Prolonged Pendency and Inventor Enthusiasm",
+      "authors": "Lee D, Park H",
+      "proceedings": "Academy of Management Proceedings (Poster)",
+      "year": "2026",
+      "link": "https://doi.org/10.5465/amproc.2026.10030poster"
+    },
+    {
+      "type": "conference",
       "title": "Spillover-Robust Synthetic Control: Addressing Network Interference in Causal Inference",
       "authors": "Lee D, Park H",
       "proceedings": "Academy of Management Proceedings",
       "year": "2026",
       "link": "https://doi.org/10.5465/amproc.2026.10026abstract"
+    },
+    {
+      "type": "conference",
+      "title": "Great Grave: Modeling Versioned Context Units for Longitudinal LLM Interaction",
+      "authors": "Jang J, Seo J, Park H",
+      "proceedings": "CHI 2026 Workshop on Human-Agent Collaboration",
+      "year": "2026"
+    },
+    {
+      "type": "conference",
+      "title": "Learning with AI, Not Just Using AI: A Human-in-the-Loop Curriculum for Critical Literacy",
+      "authors": "Jang J, Ju J, Lee D, Seo J, Park H",
+      "proceedings": "CHI 2026 Workshop on Understanding and Engaging Critical Resistance to AI in Education",
+      "year": "2026"
     },
     {
       "type": "conference",

@@ -40,7 +40,9 @@ def text_tex(s):
       end -= 1
     out.append(tex(s[start:match.start()]))
     if end:
-      out.append(r'\url{%s}' % url[:end])
+      # Short URLs stay on one line; xurl would otherwise split the host name.
+      wrap = r'\mbox{\url{%s}}' if end <= 48 else r'\url{%s}'
+      out.append(wrap % url[:end])
     out.append(tex(url[end:]))
     start = match.end()
   out.append(tex(s[start:]))
@@ -176,6 +178,23 @@ def teaching_block(data):
   return '\n\n'.join(sections)
 
 
+SERVICE_YEARS = re.compile(
+  r'\s+(\d{4}(?:\s*[-–]\s*(?:\d{4}|Present))?'
+  r'(?:\s*,\s*\d{4}(?:\s*[-–]\s*(?:\d{4}|Present))?)*)$')
+
+
+def service_text(value):
+  """Render a trailing year list as ', 2017, 2019' or ', 2025 – Present'."""
+  value = str(value)
+  match = SERVICE_YEARS.search(value)
+  if not match:
+    return text_tex(value)
+  years = sorted((y.strip() for y in match.group(1).split(',')),
+                 key=year_sort_key)
+  years = [re.sub(r'\s*[-–]\s*Present$', ' – Present', y) for y in years]
+  return f'{text_tex(value[:match.start()])}, {tex(", ".join(years))}'
+
+
 def category_details(item):
   for detail in item.get('details', []):
     if isinstance(detail, dict):
@@ -192,7 +211,7 @@ def service_block(items):
     if kind == 'membership':
       lines = ['## Professional Membership']
       for category, values in details:
-        values = [text_tex(value) for value in values]
+        values = [service_text(value) for value in values]
         if category == 'International':
           lines.append('- International')
           if values:
@@ -205,7 +224,7 @@ def service_block(items):
     elif kind == 'conference':
       for category, values in details:
         lines = [f'## {text_tex(category or title)}']
-        lines.extend(f'- {text_tex(value)}' for value in values)
+        lines.extend(f'- {service_text(value)}' for value in values)
         sections.append('\n'.join(lines))
     elif kind == 'service':
       heading = ('University and Department Service'
@@ -214,14 +233,14 @@ def service_block(items):
       for category, values in details:
         if category:
           lines.append(f'- {text_tex(category)}')
-          lines.extend(f'  - {text_tex(value)}' for value in values)
+          lines.extend(f'  - {service_text(value)}' for value in values)
         else:
-          lines.extend(f'- {text_tex(value)}' for value in values)
+          lines.extend(f'- {service_text(value)}' for value in values)
       sections.append('\n'.join(lines))
     elif kind == 'reviewer':
       lines = [f'## {text_tex(title)}']
       for category, values in details:
-        values = [text_tex(value) for value in values]
+        values = [service_text(value) for value in values]
         if title == 'Editorial Review Board' and category == 'Journals':
           lines.extend(f'- {value}' for value in values)
         elif title == 'Ad-hoc Reviewer':
@@ -238,9 +257,9 @@ def service_block(items):
       for category, values in details:
         if category:
           lines.append(f'- {text_tex(category)}')
-          lines.extend(f'  - {text_tex(value)}' for value in values)
+          lines.extend(f'  - {service_text(value)}' for value in values)
         else:
-          lines.extend(f'- {text_tex(value)}' for value in values)
+          lines.extend(f'- {service_text(value)}' for value in values)
       sections.append('\n'.join(lines))
   return '\n\n'.join(sections)
 

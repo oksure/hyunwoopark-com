@@ -2,46 +2,36 @@
   "title": "Conference Presentations",
   "items": [
     {
-      "title": "Diagnosing Failure Modes in MCP Tool-Using Agents: A Stage-Aware Taxonomy and Evidence-Gap Interventions (coauthored workshop poster, presented by Sungho Bae)",
+      "title": "Diagnosing Failure Modes in MCP Tool-Using Agents: A Stage-Aware Taxonomy and Evidence-Gap Interventions",
       "conferences": [{"name": "ICML Workshop on FAGEN", "location": "Seoul, Korea", "year": "2026"}]
     },
     {
-      "title": "AISFlow: Boundary-Informed Flow Matching for Long-Term AIS Trajectory Imputation (coauthored workshop contribution)",
+      "title": "AISFlow: Boundary-Informed Flow Matching for Long-Term AIS Trajectory Imputation",
       "conferences": [{"name": "ICML Workshop on AI for Science", "location": "Seoul, Korea", "year": "2026"}]
     },
     {
-      "title": "Domain-Prior-Regularized Graph Modeling for Anomaly Detection in Cyber-Physical Systems (coauthored workshop contribution)",
+      "title": "Domain-Prior-Regularized Graph Modeling for Anomaly Detection in Cyber-Physical Systems",
       "conferences": [{"name": "ICML Workshop on AI for Science", "location": "Seoul, Korea", "year": "2026"}]
     },
     {
-      "title": "R&D Tax Credits and Knowledge Spillovers: Causal Inference Under Network Interference (coauthored paper, presented by Dohun Lee; Research Methods Paper Prize)",
+      "title": "R&D Tax Credits and Knowledge Spillovers: Causal Inference Under Network Interference",
       "conferences": [{"name": "Strategic Management Society 46th Annual Conference", "location": "Berlin, Germany", "year": "2026"}]
     },
     {
-      "title": "Who Wins from R&D Tax Credits? Treatment Effect Heterogeneity and Optimal Policy Design (coauthored paper)",
+      "title": "Who Wins from R&D Tax Credits? Treatment Effect Heterogeneity and Optimal Policy Design",
       "conferences": [{"name": "DRUID", "location": "Copenhagen, Denmark", "year": "2026"}]
     },
     {
-      "title": "Spillover-Robust Synthetic Control: Addressing Network Interference in Causal Inference (coauthored paper)",
+      "title": "Spillover-Robust Synthetic Control: Addressing Network Interference in Causal Inference",
       "conferences": [{"name": "Academy of Management Annual Meeting", "location": "Philadelphia, PA, USA", "year": "2026"}]
     },
     {
-      "title": "To Stay or to Leave? Prolonged Pendency and Inventor Enthusiasm (coauthored poster)",
+      "title": "To Stay or to Leave? Prolonged Pendency and Inventor Enthusiasm",
       "conferences": [{"name": "Academy of Management Annual Meeting", "location": "Philadelphia, PA, USA", "year": "2026"}]
     },
     {
-      "title": "Redefining Maritime Anomaly Detection via Equation-Grounded Synthetic Anomalies (coauthored paper, presented by Youngseok Hwang)",
+      "title": "Redefining Maritime Anomaly Detection via Equation-Grounded Synthetic Anomalies",
       "conferences": [{"name": "ACM KDD", "location": "Jeju, Korea", "year": "2026"}]
-    },
-    {
-      "title": "OSCM Division Executive Meeting (Regional Ambassador for Asia)",
-      "conferences": [
-        {
-          "name": "AOM Annual Meeting",
-          "location": "Copenhagen, Denmark",
-          "year": "2025"
-        }
-      ]
     },
     {
       "title": "Spatio-Temporal Graphs Beyond Grids: Benchmark for Maritime Anomaly Detection",
@@ -225,16 +215,6 @@
           "name": "INFORMS Annual Meeting",
           "location": "Seattle, WA",
           "year": "2024"
-        }
-      ]
-    },
-    {
-      "title": "TIMES Best Dissertation Award (Session Chair)",
-      "conferences": [
-        {
-          "name": "INFORMS Annual Meeting",
-          "location": "Phoenix, AZ",
-          "year": "2023"
         }
       ]
     },

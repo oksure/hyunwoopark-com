@@ -309,7 +309,7 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                                   {i < segments.length - 1 && <strong>Park H</strong>}
                                 </span>
                               ));
-                            })()} <em style={{ fontStyle: "italic" }}>{item.journal}</em>
+                            })()}. <em style={{ fontStyle: "italic" }}>{item.journal}</em>
                             <em style={{ fontStyle: "italic" }}>{item.proceedings}</em>
                             <em style={{ fontStyle: "italic" }}>{item.notes}</em>
                             {item.volume ? `, ${item.volume}` : ""}

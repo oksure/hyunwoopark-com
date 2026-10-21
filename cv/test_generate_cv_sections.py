@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import json, shutil, subprocess, unittest
 
-from generate_cv_sections import DATA, render_template, tex, text_tex, conference_block
+from generate_cv_sections import (DATA, render_template, tex, text_tex,
+                                  conference_block, service_text)
 
 
 TEMPLATE = """# Publications
@@ -109,8 +110,19 @@ class CvGenerationTests(unittest.TestCase):
     )
     self.assertEqual(
       text_tex('Visit https://example.test/a_b?q=1&x=2.'),
-      r'Visit \url{https://example.test/a_b?q=1&x=2}.',
+      r'Visit \mbox{\url{https://example.test/a_b?q=1&x=2}}.',
     )
+    long_url = 'https://example.test/' + 'a' * 40
+    self.assertEqual(text_tex(long_url), r'\url{%s}' % long_url)
+
+  def test_service_year_suffix(self):
+    self.assertEqual(service_text('AOM Ambassador for Asia 2025-Present'),
+                     'AOM Ambassador for Asia, 2025 – Present')
+    self.assertEqual(service_text('INFORMS Annual Meeting 2023, 2020, 2017'),
+                     'INFORMS Annual Meeting, 2017, 2020, 2023')
+    self.assertEqual(service_text('ECAI 2024-2025'), 'ECAI, 2024-2025')
+    self.assertEqual(service_text('INFORMS – Senior Member'),
+                     'INFORMS – Senior Member')
 
   def test_shared_sections_selection_and_labels(self):
     output = render_template(TEMPLATE, sample_data())

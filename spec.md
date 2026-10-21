@@ -8,7 +8,7 @@ The October 21, 2026 revision implements the approved research inventory and web
 
 Use `src/data` as the public factual source. Keep journal papers, full conference papers, Findings, short papers, workshops, abstracts, posters and working papers distinguishable. Preserve current J/C labels when adding stable IDs. Acceptance is not publication. Proposed projects are not awarded grants. Student awards and talks are not personal awards or invited talks.
 
-Add the verified SMS Research Methods Paper Prize. Select InteractiveKG and Faithful yet Collusive for the PDF. Add 2026 teaching, research leadership, systems and resources. Working-paper entries require verified titles and authors. Keep unverified details in the private implementation record. Use a public topic-level description when the evidence supports it.
+Add the verified SMS Research Methods Paper Prize. Select InteractiveKG and Faithful yet Collusive for the PDF. Retain verified 2026 teaching and research leadership. Remove the standalone Research Systems and Resources block from the PDF and English homepage. Preserve the original Software list, publication entries and Korean site's education links. Working-paper entries require verified titles and authors. Keep unverified details in the private implementation record.
 
 ## 3. Pages
 
@@ -20,9 +20,9 @@ Keep the original single-page CV layout, original navigation and footer. Update 
 
 Audience boundary: hyunwoopark.com presents the scholarly career to international academic colleagues. Do not add a Korean media showcase. Remove the Bio YouTube block while retaining the existing biographies, press photos and CV downloads. hwpark.net is the planned Korean professor-identity site; its redesign is not part of this implementation.
 
-Existing data formats remain backward compatible. `working-papers.json` has `title` and `items`. Each item has `id`, `title`, `authors`, `year`, `status`, optional `link`, and `cvSelected`. `resources.json` has `title` and `items`. Each item has `id`, `name`, `description`, `year`, `kind`, optional `link`, and `cvSelected`. Records may have `cvNote` for supported short annotations. Public records contain no internal evidence paths.
+Existing data formats remain backward compatible. `working-papers.json` has `title` and `items`. Each item has `id`, `title`, `authors`, `year`, `status`, optional `link`, and `cvSelected`. Records may have `cvNote` for supported short annotations. Public records contain no internal evidence paths.
 
-The PDF generator expands shared awards, grants, teaching, services, software/resources and selected working papers into the existing template. Never change a selected source document into a new generic CV design. Preserve existing sections and content, including content not shown on Home.
+The PDF generator expands shared awards, grants, teaching, services, software and selected working papers into the existing template. Never change a selected source document into a new generic CV design. Preserve existing sections and content except explicitly requested removals.
 
 ## 5. Verification and Release
 

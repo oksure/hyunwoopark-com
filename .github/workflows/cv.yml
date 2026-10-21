@@ -15,7 +15,6 @@ on:
       - 'src/data/teaching.json'
       - 'src/data/servs.json'
       - 'src/data/software.json'
-      - 'src/data/resources.json'
       - 'src/data/working-papers.json'
       - 'src/data/research.json'
       - 'src/data/confs.json'

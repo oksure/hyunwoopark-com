@@ -245,28 +245,13 @@ def service_block(items):
   return '\n\n'.join(sections)
 
 
-def software_block(data, resources=None):
+def software_block(data):
   lines = []
   for item in data['items']:
     line = f'- **{text_tex(item["name"])}**'
     if item.get('link'):
       line += f': \\url{{{item["link"]}}}'
     lines.append(line)
-  selected = [item for item in (resources or {}).get('items', [])
-              if item.get('cvSelected')]
-  if selected:
-    title = text_tex((resources or {}).get('title', 'Research Resources'))
-    lines.extend(['', f'**{title}**', ''])
-    for item in selected:
-      line = f'- **{text_tex(item["name"])}**'
-      if item.get('description'):
-        line += f': {text_tex(item["description"])}'
-      meta = [text_tex(item[key]) for key in ('kind', 'year') if item.get(key)]
-      if meta:
-        line += ' (' + ', '.join(meta) + ')'
-      if item.get('link'):
-        line += f' \\url{{{item["link"]}}}'
-      lines.append(line)
   return '\n'.join(lines)
 
 
@@ -340,7 +325,7 @@ def render_template(template, data):
     'TEACHING': teaching_block(data['teaching']),
     'SERVICES': service_block(data['servs']['items']),
     'CONFS': conference_block(data['confs']['items']),
-    'SOFTWARE': software_block(data['software'], data.get('resources')),
+    'SOFTWARE': software_block(data['software']),
     'WORKING_PAPERS': working_papers_section(data.get('working-papers')),
   }
 
@@ -369,7 +354,6 @@ def main():
     'pubs', 'procs', 'awards', 'teaching', 'servs', 'software', 'research',
     'confs')}
   data['working-papers'] = load_data('working-papers', optional=True)
-  data['resources'] = load_data('resources', optional=True)
   template = (HERE / 'CV_template.Rmd').read_text(encoding='utf-8')
   output = render_template(template, data)
   (HERE / 'CV_Hyunwoo_Park_gen.Rmd').write_text(output, encoding='utf-8')
@@ -377,12 +361,10 @@ def main():
   n_procs = sum(bool(item.get('cvSelected')) for item in data['procs']['items'])
   n_working = sum(bool(item.get('cvSelected')) for item in
                   (data['working-papers'] or {}).get('items', []))
-  n_resources = sum(bool(item.get('cvSelected')) for item in
-                    (data['resources'] or {}).get('items', []))
   n_confs = sum(len(item.get('conferences', []))
                 for item in data['confs']['items'])
   print(f'generated CV_Hyunwoo_Park_gen.Rmd ({n_pubs} pubs, {n_procs} procs, '
-        f'{n_working} working papers, {n_resources} resources, '
+        f'{n_working} working papers, '
         f'{n_confs} conference events)')
 
 

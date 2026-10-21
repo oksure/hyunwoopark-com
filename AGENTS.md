@@ -34,7 +34,7 @@ This project uses `pnpm` as the package manager. Always use `pnpm` commands inst
 - This site serves international academic colleagues. Keep the focus on scholarly career and research. Korean public-facing education, talks and media belong in the separate hwpark.net plan. Do not add Korean YouTube showcases here.
 - Do not recreate Research, Publications, Teaching or About subpages without a new explicit request. Preserve `/bio/`, `/bio/resume-ko/` and static legacy URLs.
 - The research lab link must say exactly `Lab Homepage`, including on mobile. Do not replace it with DIAL, Lab or Research Lab.
-- `LegacySections.tsx` preserves the original data renderers. `CvResearchAdditions.tsx` adds working papers, selected ongoing topics and resources to Home. Do not restore the removed Patents section.
+- `LegacySections.tsx` preserves the original data renderers. `CvResearchAdditions.tsx` adds working papers and selected ongoing topics to Home. Do not restore the removed Patents or Research Systems and Resources sections. Keep the original Software list and publication records.
 - Bibliographic `id` and J/C `label` fields are stable. Never renumber existing records when filtering or inserting a new item.
 - `recordType` separates papers, Findings, short papers, workshops, abstracts, posters and presentations. Keep acceptance status distinct from publication status.
 - Read `spec.md` and `design.md` before page changes. Use the existing Chakra styles and components.

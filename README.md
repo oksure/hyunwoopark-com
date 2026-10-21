@@ -9,7 +9,7 @@ A modern, data-driven academic homepage built with Next.js 16 and Chakra UI. Des
 - **CV-style home**: The original profile sidebar and chronological CV remain the front page.
 - **Original page composition**: Content updates stay on the existing CV-style homepage. The original Bio, CV, Lab Homepage and historical-page menu remain.
 - **International academic audience**: Focus on research and scholarly career. Bio retains biographies, press photos and CV downloads, without the Korean YouTube showcase. Korean public-facing activities are reserved for the separate hwpark.net plan.
-- **Shared PDF data**: Publications, working papers, awards, selected research funding, teaching, services, conference presentations and resources feed the existing Rmd/LaTeX CV.
+- **Shared PDF data**: Publications, working papers, awards, selected research funding, teaching, services, conference presentations and the original software list feed the existing Rmd/LaTeX CV.
 - **Data-driven content**: All academic information (publications, experience, education, awards, etc.) stored in JSON files for easy updates
 - **Publication filtering**: Filter by journal rankings (UTD24, FT50, ABS) with year-based grouping
 - **Dark/light mode**: Automatic theme switching with next-themes
@@ -148,7 +148,7 @@ Use `src/data/pubs.json` and `procs.json` for bibliographic facts. Preserve each
 
 `recordType` distinguishes journals, conference papers, Findings, short papers, workshops, abstracts, posters and presentations. `status` records acceptance or publication state separately. `cvSelected` controls inclusion in the selected PDF sections.
 
-`working-papers.json` contains formal working-paper citations with verified authors. `research.json` retains topic-level research records for the website, not the PDF. `resources.json` records research systems and teaching resources. The Patents section and its public summary data have been removed.
+`working-papers.json` contains formal working-paper citations with verified authors. `research.json` retains topic-level research records for the website, not the PDF. The standalone Research Systems and Resources block and Patents section have been removed from the PDF and homepage. Existing software and publication entries are preserved.
 
 Public funding is deliberately limited to five approved NRF/FDA records under Selected Research Funding. Do not repopulate the website or PDF from a full internal project inventory. The generator tests pin this public selection.
 

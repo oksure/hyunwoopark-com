@@ -12,9 +12,8 @@ export default function Home() {
         <Sidebar />
         <Box w={{ base: "full", md: "3/4" }} minW={0}>
           <LegacySections sections={["exps", "edus", "pubs", "procs"]} />
-          <CvResearchAdditions mode="working" />
+          <CvResearchAdditions />
           <LegacySections sections={["books", "awards", "teaching", "servs", "talks", "confs", "others", "software"]} />
-          <CvResearchAdditions mode="resources" />
         </Box>
       </Flex>
     </Container>

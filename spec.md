@@ -12,6 +12,8 @@ Add the verified SMS Research Methods Paper Prize. Select InteractiveKG and Fait
 
 ## 3. Pages
 
+Public funding is limited to five representative NRF/FDA records and labeled Selected Research Funding. Confidential engagements and the broader internal project inventory must not be published. New public funding entries require explicit approval. Remove the entire Patents section from both the website and PDF, including its public summary data and generator path. Preserve source evidence privately.
+
 Keep the original single-page CV layout, original navigation and footer. Update the factual content in that layout. HP rejected the added subpages on October 21. Remove Research, Publications, Teaching and About pages and redirect their old addresses to Home. Do not recreate them without a new explicit request. Preserve `/bio/`, `/bio/resume-ko/`, all static legacy projects and the current CV URL. The lab link must say exactly `Lab Homepage` on every viewport.
 
 ## 4. Shared Records

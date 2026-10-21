@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json, shutil, subprocess, unittest
 
-from generate_cv_sections import render_template, tex, text_tex, conference_block
+from generate_cv_sections import DATA, render_template, tex, text_tex, conference_block
 
 
 TEMPLATE = """# Publications
@@ -21,7 +21,6 @@ TEMPLATE = """# Publications
 <!--GEN:SERVICES-->
 # Conference Presentations
 <!--GEN:CONFS-->
-<!--GEN:PATENTS-->
 # Software
 <!--GEN:SOFTWARE-->
 """
@@ -99,11 +98,6 @@ def sample_data():
         {'name': 'Conference Four', 'location': 'Seoul', 'year': '2025'},
       ]},
     ]},
-    'patents': {'items': [
-      {'id': 'application-a', 'year': '2026', 'status': 'Application filed',
-       'cvSelected': True},
-      {'id': 'application-b', 'year': '2027', 'cvSelected': False},
-    ]},
   }
 
 
@@ -155,10 +149,10 @@ class CvGenerationTests(unittest.TestCase):
     self.assertIn(r'Tool\_1', output)
     self.assertNotIn('<!--GEN:', output)
 
-  def test_conference_records_and_generic_patent_line(self):
+  def test_conference_records_and_no_patent_section(self):
     output = render_template(TEMPLATE, sample_data())
     conferences = output.split('# Conference Presentations\n', 1)[1].split(
-      '# Patents', 1)[0]
+      '# Software', 1)[0]
     self.assertIn('## 2026', conferences)
     self.assertIn('## 2025', conferences)
     self.assertIn('## 2024', conferences)
@@ -169,7 +163,8 @@ class CvGenerationTests(unittest.TestCase):
                   conferences)
     self.assertIn('Conference Three', conferences)
     self.assertIn('Conference Four, Seoul', conferences)
-    self.assertIn('- Co-inventor on a patent application, 2026.', output)
+    self.assertNotIn('Patents', output)
+    self.assertNotIn('Co-inventor', output)
     self.assertNotIn('Application filed', output)
     self.assertNotIn('2027', output)
 
@@ -182,6 +177,17 @@ class CvGenerationTests(unittest.TestCase):
     self.assertEqual([item['t'] for item in blocks],
                      ['Header', 'BulletList', 'Header', 'BulletList', 'Header', 'BulletList'])
     self.assertEqual(sum(len(item['c']) for item in blocks if item['t'] == 'BulletList'), 3)
+
+  def test_public_funding_is_explicitly_curated(self):
+    records = json.loads((DATA / 'awards.json').read_text())['items']
+    actual = {item['title'] for item in records if item['type'] == 'grant'}
+    self.assertEqual(actual, {
+      'Korea NRF Human-in-the-Loop AI Decision-Making Algorithm and Policy',
+      'Korea NRF Large-scale AI Model and Platform Optimization Center',
+      'Korea NRF Emerging Scholar Program',
+      'FDA Broad Agency Announcement (BAA): FDA Quality Management and Pharmaceutical Firm Learning to Reduce Drug Quality Risks',
+      'U01 Grant from FDA to NIPTE: Manufacturing Sector Research Initiative',
+    })
 
 
 if __name__ == '__main__':

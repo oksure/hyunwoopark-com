@@ -19,7 +19,6 @@ on:
       - 'src/data/working-papers.json'
       - 'src/data/research.json'
       - 'src/data/confs.json'
-      - 'src/data/patents.json'
   workflow_dispatch:
     inputs:
       upload:

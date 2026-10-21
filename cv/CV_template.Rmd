@@ -105,7 +105,7 @@ webcolor <- "black"
 ## Fellowships
 <!--GEN:AWARDS_FELLOWSHIP-->
 
-## Grants
+## Selected Research Funding
 <!--GEN:AWARDS_GRANT-->
 
 
@@ -149,7 +149,6 @@ webcolor <- "black"
 # Conference Presentations
 <!--GEN:CONFS-->
 
-<!--GEN:PATENTS-->
 
 
 # Other Research and Professional Experience

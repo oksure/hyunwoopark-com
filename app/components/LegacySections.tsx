@@ -422,7 +422,7 @@ const Section = ({ data, stub }: { data: any; stub: string }) => {
                 ml={{ base: baseMx, md: 2 * baseMx }}
               >
                 <Heading as="h2" size="lg" mb={2}>
-                  {sectionType === "award" ? "Awards and Honors" : sectionType.charAt(0).toUpperCase() + sectionType.slice(1) + "s"}
+                  {sectionType === "award" ? "Awards and Honors" : sectionType === "grant" ? "Selected Research Funding" : "Fellowships"}
                 </Heading>
                 <Box
                   as="ul"

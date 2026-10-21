@@ -304,19 +304,6 @@ def conference_block(items):
   return '\n\n'.join(sections)
 
 
-def patents_section(data):
-  selected = [item for item in data['items'] if item.get('cvSelected') is True]
-  if not selected:
-    return ''
-  years = sorted({str(item['year']) for item in selected if item.get('year')},
-                 key=year_sort_key)
-  noun = 'patent application' if len(selected) == 1 else 'patent applications'
-  line = f'- Co-inventor on a {noun}'
-  if years:
-    line += ', ' + ', '.join(text_tex(year) for year in years)
-  return '# Patents\n' + line + '.'
-
-
 def working_papers_section(data):
   items = (data or {}).get('items', [])
   selected = [item for item in items if item.get('cvSelected')]
@@ -353,7 +340,6 @@ def render_template(template, data):
     'TEACHING': teaching_block(data['teaching']),
     'SERVICES': service_block(data['servs']['items']),
     'CONFS': conference_block(data['confs']['items']),
-    'PATENTS': patents_section(data['patents']),
     'SOFTWARE': software_block(data['software'], data.get('resources')),
     'WORKING_PAPERS': working_papers_section(data.get('working-papers')),
   }
@@ -381,7 +367,7 @@ def load_data(name, optional=False):
 def main():
   data = {name: load_data(name) for name in (
     'pubs', 'procs', 'awards', 'teaching', 'servs', 'software', 'research',
-    'confs', 'patents')}
+    'confs')}
   data['working-papers'] = load_data('working-papers', optional=True)
   data['resources'] = load_data('resources', optional=True)
   template = (HERE / 'CV_template.Rmd').read_text(encoding='utf-8')
@@ -395,12 +381,9 @@ def main():
                     (data['resources'] or {}).get('items', []))
   n_confs = sum(len(item.get('conferences', []))
                 for item in data['confs']['items'])
-  n_patents = sum(item.get('cvSelected') is True
-                  for item in data['patents']['items'])
   print(f'generated CV_Hyunwoo_Park_gen.Rmd ({n_pubs} pubs, {n_procs} procs, '
         f'{n_working} working papers, {n_resources} resources, '
-        f'{n_confs} conference events, '
-        f'{n_patents} generic patent records)')
+        f'{n_confs} conference events)')
 
 
 if __name__ == '__main__':

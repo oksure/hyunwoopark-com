@@ -153,52 +153,9 @@
     },
     {
       "type": "grant",
-      "title": "Korea MND Military-Industry-Academia Cooperation Center (Seoul/Yongsan)",
-      "notes": "SNU team; IITP RS-2026-25551943",
-      "awarder": "PI",
-      "year": "2026",
-      "special": true
-    },
-    {
-      "type": "grant",
-      "title": "Samsung Electronics Semiconductor FAB Supply Chain and Process Quality AI System",
-      "awarder": "PI",
-      "year": "2023-2026",
-      "special": true
-    },
-    {
-      "type": "grant",
-      "title": "Korea KRISO Maritime Data Anomaly Detection and Behavioral Analysis (Series)",
-      "awarder": "PI",
-      "year": "2021-2026",
-      "special": true
-    },
-    {
-      "type": "grant",
-      "title": "Seoul Metropolitan Government Foreign Remittance Fraud Detection System",
-      "awarder": "PI",
-      "year": "2021-2026",
-      "special": true
-    },
-    {
-      "type": "grant",
       "title": "Korea NRF Human-in-the-Loop AI Decision-Making Algorithm and Policy",
       "awarder": "Co-PI",
       "year": "2025-2028",
-      "special": true
-    },
-    {
-      "type": "grant",
-      "title": "Korea MSIT Generative AI Leading Talent Training R&D Program",
-      "awarder": "PI",
-      "year": "2024-2027",
-      "special": true
-    },
-    {
-      "type": "grant",
-      "title": "Korea MOF Vessel Trajectory Prediction and Anomaly Detection",
-      "awarder": "PI",
-      "year": "2022-2025",
       "special": true
     },
     {
@@ -210,7 +167,7 @@
     },
     {
       "type": "grant",
-      "title": "Korea NRF Emerging Scholar Program (Equivalent to NSF Career)",
+      "title": "Korea NRF Emerging Scholar Program",
       "awarder": "PI",
       "year": "2022-2027",
       "special": true
@@ -228,22 +185,6 @@
       "awarder": "Co-PI",
       "year": "2018–2019",
       "special": true
-    },
-    {
-      "type": "grant",
-      "title": "Honorarium from Conference on Internet Search and Innovation",
-      "awarder": "Northwestern University",
-      "year": "2013"
-    },
-    {
-      "type": "grant",
-      "title": "NET Institute (Networks, Electronic Commerce, and Telecommunications) Grants for Summer 2012"
-    },
-    {
-      "type": "grant",
-      "title": "Research Promotion Grant",
-      "awarder": "Korea Science and Engineering Foundation",
-      "year": "2002-2008"
     }
   ]
 }

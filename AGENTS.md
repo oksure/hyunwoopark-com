@@ -34,7 +34,7 @@ This project uses `pnpm` as the package manager. Always use `pnpm` commands inst
 - This site serves international academic colleagues. Keep the focus on scholarly career and research. Korean public-facing education, talks and media belong in the separate hwpark.net plan. Do not add Korean YouTube showcases here.
 - Do not recreate Research, Publications, Teaching or About subpages without a new explicit request. Preserve `/bio/`, `/bio/resume-ko/` and static legacy URLs.
 - The research lab link must say exactly `Lab Homepage`, including on mobile. Do not replace it with DIAL, Lab or Research Lab.
-- `LegacySections.tsx` preserves the original data renderers. `CvResearchAdditions.tsx` adds working papers, selected ongoing topics, resources and the public patent summary to Home.
+- `LegacySections.tsx` preserves the original data renderers. `CvResearchAdditions.tsx` adds working papers, selected ongoing topics and resources to Home. Do not restore the removed Patents section.
 - Bibliographic `id` and J/C `label` fields are stable. Never renumber existing records when filtering or inserting a new item.
 - `recordType` separates papers, Findings, short papers, workshops, abstracts, posters and presentations. Keep acceptance status distinct from publication status.
 - Read `spec.md` and `design.md` before page changes. Use the existing Chakra styles and components.
@@ -146,6 +146,7 @@ Types: `award`, `fellowship`, `grant`
 ### Awards vs. grants (awards.json)
 - The 2002 presidential award (21세기를 이끌 우수인재상) is already listed as "Presidential Scholar". Do not add it again under a translated name.
 - Grants use `awarder` for the role ("PI" / "Co-PI") and `special: true` for PI grants.
+- Public research funding is a curated selection, not a full project inventory. Retain the approved NRF and FDA records only. Adding another funding record requires explicit approval. Never publish confidential engagements from private evidence.
 
 ### Services (servs.json), Advisory and Policy
 - `type: "service"` section "Advisory and Policy" holds government, industry, and Korean academic-society roles. SK hynix VPP = "Visiting Professor Collaboration Program" (not a platform).

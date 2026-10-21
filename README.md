@@ -7,8 +7,7 @@ A modern, data-driven academic homepage built with Next.js 16 and Chakra UI. Des
 ## Features
 
 - **CV-style home**: The original profile sidebar and chronological CV remain the front page.
-- **Research pages**: Research themes, actual paper figures, ongoing work and research systems live at `/research/`.
-- **Searchable bibliography**: `/publications/` supports text, year and contribution-type filters, plus plain-text and BibTeX citation copying.
+- **Original page composition**: Content updates stay on the existing CV-style homepage. The original Bio, CV, Lab Homepage and historical-page menu remain.
 - **Shared PDF data**: Publications, working papers, awards, grants, teaching, services, conference presentations, resources and patent summaries feed the existing Rmd/LaTeX CV.
 - **Data-driven content**: All academic information (publications, experience, education, awards, etc.) stored in JSON files for easy updates
 - **Publication filtering**: Filter by journal rankings (UTD24, FT50, ABS) with year-based grouping
@@ -148,9 +147,9 @@ Use `src/data/pubs.json` and `procs.json` for bibliographic facts. Preserve each
 
 `recordType` distinguishes journals, conference papers, Findings, short papers, workshops, abstracts, posters and presentations. `status` records acceptance or publication state separately. `cvSelected` controls inclusion in the selected PDF sections.
 
-`working-papers.json` contains formal working-paper citations with verified authors. `research.json` holds the separate research-page narrative and topic-level ongoing work. `resources.json` records research systems and teaching resources. `patents.json` contains only the approved public summary, without unpublished application details.
+`working-papers.json` contains formal working-paper citations with verified authors. `research.json` retains research records and supplies topic-level ongoing work for the CV. `resources.json` records research systems and teaching resources. `patents.json` contains only the approved public summary, without unpublished application details.
 
-Design rules are in `design.md`, shared colors and spacing in `tokens.css`, and requirements in `spec.md`. The CV-style homepage uses the existing Chakra presentation. Additional pages use `app/academic.css`. Image provenance is recorded in `docs/research-assets.md`.
+The homepage uses its original Chakra presentation. `design.md` and `spec.md` record the content-only update constraint. The briefly added Research, Publications, Teaching and About pages redirect to the homepage. Image provenance is recorded in `docs/research-assets.md`.
 
 The current CV content occupies 11 pages. Its Times typography, LaTeX class, ranking badges, J/C labels and page footers remain unchanged. Old presentation records and legacy routes are retained. Do not replace this build with a different CV renderer.
 

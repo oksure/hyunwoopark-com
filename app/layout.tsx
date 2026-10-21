@@ -1,5 +1,4 @@
 import Provider from "./provider"
-import "./academic.css"
 import Script from "next/script"
 import type { Metadata, Viewport } from "next"
 import { Roboto } from "next/font/google"

@@ -5,13 +5,13 @@ import { useTheme } from "next-themes"
 import { LuMoon, LuSun } from "react-icons/lu"
 
 export function ColorModeToggle() {
-  const { theme, setTheme } = useTheme()
+  const { resolvedTheme, setTheme } = useTheme()
   const toggleColorMode = () => {
-    setTheme(theme === "light" ? "dark" : "light")
+    setTheme(resolvedTheme === "light" ? "dark" : "light")
   }
   return (
     <IconButton variant="ghost" aria-label="toggle color mode" onClick={toggleColorMode}>
-      {theme === "light" ? <LuMoon /> : <LuSun />}
+      {resolvedTheme === "light" ? <LuMoon /> : <LuSun />}
     </IconButton>
   )
 }

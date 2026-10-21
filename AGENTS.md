@@ -30,12 +30,13 @@ This project uses `pnpm` as the package manager. Always use `pnpm` commands inst
 
 ### October 2026 research update
 
-- Home retains the original CV-style profile sidebar and sequential record. Put visual research highlights on `/research/`, not on Home.
-- Additional routes are `/research/`, `/publications/`, `/teaching/` and `/about/`. Preserve `/bio/`, `/bio/resume-ko/` and static legacy URLs.
+- Keep the original single-page CV composition, navigation and footer. HP rejected the added subpages on October 21. Update content only.
+- Do not recreate Research, Publications, Teaching or About subpages without a new explicit request. Preserve `/bio/`, `/bio/resume-ko/` and static legacy URLs.
+- The research lab link must say exactly `Lab Homepage`, including on mobile. Do not replace it with DIAL, Lab or Research Lab.
 - `LegacySections.tsx` preserves the original data renderers. `CvResearchAdditions.tsx` adds working papers, selected ongoing topics, resources and the public patent summary to Home.
 - Bibliographic `id` and J/C `label` fields are stable. Never renumber existing records when filtering or inserting a new item.
 - `recordType` separates papers, Findings, short papers, workshops, abstracts, posters and presentations. Keep acceptance status distinct from publication status.
-- Read `spec.md` and `design.md` before changing the new routes. `tokens.css` and `app/academic.css` supply their shared styles.
+- Read `spec.md` and `design.md` before page changes. Use the existing Chakra styles and components.
 - Run `node scripts/validate-data.mjs` and `python3 cv/test_generate_cv_sections.py` after shared-data changes. Run the existing Rmd build for CV changes.
 - The current CV is 11 pages after shared sections and full conference presentations were added. Preserve the existing class, fonts, badges, numbering and footers.
 - `working-papers.json` requires verified authors. Use `research.json` for topic-level work that does not yet have a complete public citation.

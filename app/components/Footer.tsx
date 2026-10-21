@@ -1,26 +1,64 @@
-import Link from "next/link";
+import { Flex, Container, Text, Link, Stack, Spacer, Image, Box } from "@chakra-ui/react";
+import ExtArrow from "./ExtArrow";
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className="site-footer">
-      <div className="footer-inner">
-        <div>
-          <p><strong>Hyunwoo Park</strong></p>
-          <p>Seoul National University</p>
-          <p><a href="mailto:hyunwoopark@snu.ac.kr">hyunwoopark@snu.ac.kr</a></p>
-          <p className="copyright">© {new Date().getFullYear()} Hyunwoo Park</p>
-        </div>
-        <div className="footer-links">
-          <a href="https://dial.snu.ac.kr/" target="_blank" rel="noreferrer">DIAL Lab</a>
-          <a href="https://gsds.snu.ac.kr/" target="_blank" rel="noreferrer">SNU Data Science</a>
-          <Link href="/bio/">Speaker & Media Kit</Link>
-          <a href="https://scholar.google.com/citations?user=AbopKDkAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
-          <a href="https://orcid.org/0000-0001-9818-217X" target="_blank" rel="noreferrer">ORCID</a>
-          <a href="https://github.com/oksure" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://connect.informs.org/times/home" target="_blank" rel="noreferrer">INFORMS TIMES</a>
-          <Link href="/netview/">NetView</Link>
-        </div>
-      </div>
-    </footer>
+    <Flex as="footer" fontSize="sm" bg="bg.muted" py={8} color="fg" direction="column">
+      <Container maxW="container.xl">
+        <Flex direction={{ base: "column", md: "row" }} alignItems="top">
+          <Stack direction="column" gap={4} width={48}>
+            <Link href="https://favicon.io/favicon-generator/" target="_blank">
+              <Box position="relative" width={12} height={12}>
+                <Image
+                  src="/apple-touch-icon.png"
+                  alt="Hyunwoo Park"
+                  width={12}
+                  rounded="full"
+                  position="absolute"
+                  _dark={{ display: "none" }}
+                />
+                <Image
+                  src="/apple-touch-icon-invert.png"
+                  alt="Hyunwoo Park"
+                  width={12}
+                  rounded="full"
+                  position="absolute"
+                  display="none"
+                  _dark={{ display: "block" }}
+                />
+              </Box>
+            </Link>
+            <Text>
+              &copy; {new Date().getFullYear()} Hyunwoo Park
+            </Text>
+          </Stack>
+          <Spacer minH={6} />
+          <Stack direction={{ base: "column", md: "row" }} gap={12}>
+            {/* <Stack direction="column" gap={4} minW={48}>
+              <For each={["bio", "photos", "places", "personal", "contacts", "maps"]}>
+                {(stub) => (
+                  <Link href={"/"+stub}>{toCamelCase(stub)}</Link>
+                )}
+              </For>
+            </Stack> */}
+            <Stack direction="column" gap={4} width={48}>
+              <Link href="https://y-kast.or.kr/kr/person/member_search_view.php?idx=242" target="_blank">Y-KAST <ExtArrow /></Link>
+              <Link href="https://connect.informs.org/times/home" target="_blank">INFORMS TIMES <ExtArrow /></Link>
+              <Link href="https://www.linkedin.com/company/informs-times/" target="_blank">INFORMS TIMES LinkedIn <ExtArrow /></Link>
+              <Link href="https://www.jom-hub.com/editorial-team" target="_blank">Journal of Operations Management Editorial Review Board <ExtArrow /></Link>
+              <Link href="https://onlinelibrary.wiley.com/page/journal/15405915/homepage/editorialboard.html" target="_blank">Decision Sciences Editorial Review Board <ExtArrow /></Link>
+            </Stack>
+            <Stack direction="column" gap={4} width={48}>
+              <Link href="https://snu.ac.kr" target="_blank">Seoul National University <ExtArrow /></Link>
+              <Link href="https://gsds.snu.ac.kr" target="_blank">SNU Graduate School of Data Science (GSDS) <ExtArrow /></Link>
+              <Link href="https://dial.snu.ac.kr" target="_blank">Lab Homepage <ExtArrow /></Link>
+            </Stack>
+          </Stack>
+        </Flex>
+      </Container>
+      <Spacer minH={4} />
+    </Flex>
   );
-}
+};
+
+export default Footer;

@@ -82,7 +82,7 @@ export default function LegacySections({ sections }: { sections: string[] }) {
 const Section = ({ data, stub }: { data: any; stub: string }) => {
   const [showConfsDetails, setShowConfsDetails] = useState(false);
   const [showOthersDetails, setShowOthersDetails] = useState(false);
-  const [pubFilter, setPubFilter] = useState("all");
+  const [pubFilter, setPubFilter] = useState("utd24ft50");
   const baseMx = 4;
   const badgeColor = {
     utd24: "blue",

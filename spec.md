@@ -12,7 +12,7 @@ Add the verified SMS Research Methods Paper Prize. Select InteractiveKG and Fait
 
 ## 3. Pages
 
-Home MUST retain the original CV-style layout: left profile sidebar, right sequential career, education, publications and other CV sections. HP explicitly corrected this on October 21 during implementation. New working-paper and resource sections extend that same style. Research is a separate page presenting themes, selected work with real assets, ongoing work and systems. Publications provides all records, text search, year/type filters and citation copying. Teaching provides teaching history and resources. About retains the complete existing career, education, award, service and other experience content. Preserve `/bio/`, `/bio/resume-ko/`, all static legacy projects and the current CV URL.
+Keep the original single-page CV layout, original navigation and footer. Update the factual content in that layout. HP rejected the added subpages on October 21. Remove Research, Publications, Teaching and About pages and redirect their old addresses to Home. Do not recreate them without a new explicit request. Preserve `/bio/`, `/bio/resume-ko/`, all static legacy projects and the current CV URL. The lab link must say exactly `Lab Homepage` on every viewport.
 
 ## 4. Shared Records
 
@@ -22,7 +22,7 @@ The PDF generator expands shared awards, grants, teaching, services, software/re
 
 ## 5. Verification and Release
 
-Run the TypeScript compiler, production build, record validator and browser tests at mobile and desktop widths. Verify search, filters, navigation, theme switching, clipboard fallback, absence of overflow and broken images, and legacy routes. Render the old and new CV. Inspect page layout, fonts, headers, labels, new text and the style gate results. Release through the existing publish workflow only when the gates pass. Keep all private evidence and QA logs outside public assets.
+Run the TypeScript compiler, production build, record validator and browser tests at mobile and desktop widths. Verify the original filters, menu, theme switching, exact lab link label, redirects and legacy routes. Verify that updated content remains present. Render the old and new CV when changing its content or generator. Inspect page layout, fonts, headers, labels and the style gate results. Release through the existing publish workflow only when the gates pass. Keep all private evidence and QA logs outside public assets.
 
 Keep CV category labels on the same page as their first entry. Use the existing typography and the minimum page-break control needed for this.
 
@@ -33,3 +33,4 @@ Reconcile the DIAL author, publication-year, publication-category and project-st
 ## Changelog
 
 - 2026-10-21: Implement the approved research update with a CV-style Home and separate research pages. Generate shared CV sections and keep teaching labels with their first entry.
+- 2026-10-21 correction: Restore the original page composition and navigation. Remove the added subpages and use the exact label `Lab Homepage`. Keep the updated factual content and PDF.

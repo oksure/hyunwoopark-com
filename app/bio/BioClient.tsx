@@ -253,44 +253,6 @@ export default function BioPage() {
           </HStack>
         </Box>
 
-        <Separator />
-
-        {/* Media Section */}
-        <Box>
-          <Heading as="h2" size="xl" mb={4}>
-            Media
-          </Heading>
-          <Box
-            maxW="560px"
-            w="100%"
-            position="relative"
-            pb="56.25%"
-            h={0}
-            overflow="hidden"
-            rounded="lg"
-          >
-            <iframe
-              src="https://www.youtube.com/embed/jHbNYb6Eg_s"
-              title="서울대학교 유튜브 「샤로잡다」: AI 기술의 이해와 산업 활용"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                border: "none",
-              }}
-            />
-          </Box>
-          <Text mt={3} fontWeight="semibold">
-            서울대학교 유튜브 「샤로잡다」
-          </Text>
-          <Text fontSize="sm" color="gray.600" _dark={{ color: "gray.400" }}>
-            AI 기술의 이해와 산업 활용 (2026)
-          </Text>
-        </Box>
       </VStack>
     </Container>
   );

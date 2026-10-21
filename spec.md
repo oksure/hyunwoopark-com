@@ -16,6 +16,8 @@ Keep the original single-page CV layout, original navigation and footer. Update 
 
 ## 4. Shared Records
 
+Audience boundary: hyunwoopark.com presents the scholarly career to international academic colleagues. Do not add a Korean media showcase. Remove the Bio YouTube block while retaining the existing biographies, press photos and CV downloads. hwpark.net is the planned Korean professor-identity site; its redesign is not part of this implementation.
+
 Existing data formats remain backward compatible. `working-papers.json` has `title` and `items`. Each item has `id`, `title`, `authors`, `year`, `status`, optional `link`, and `cvSelected`. `resources.json` has `title` and `items`. Each item has `id`, `name`, `description`, `year`, `kind`, optional `link`, and `cvSelected`. Records may have `cvNote` for supported short annotations. Public records contain no internal evidence paths.
 
 The PDF generator expands shared awards, grants, teaching, services, software/resources and selected working papers into the existing template. Never change a selected source document into a new generic CV design. Preserve existing sections and content, including content not shown on Home.

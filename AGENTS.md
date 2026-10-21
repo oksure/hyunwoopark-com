@@ -31,6 +31,7 @@ This project uses `pnpm` as the package manager. Always use `pnpm` commands inst
 ### October 2026 research update
 
 - Keep the original single-page CV composition, navigation and footer. HP rejected the added subpages on October 21. Update content only.
+- This site serves international academic colleagues. Keep the focus on scholarly career and research. Korean public-facing education, talks and media belong in the separate hwpark.net plan. Do not add Korean YouTube showcases here.
 - Do not recreate Research, Publications, Teaching or About subpages without a new explicit request. Preserve `/bio/`, `/bio/resume-ko/` and static legacy URLs.
 - The research lab link must say exactly `Lab Homepage`, including on mobile. Do not replace it with DIAL, Lab or Research Lab.
 - `LegacySections.tsx` preserves the original data renderers. `CvResearchAdditions.tsx` adds working papers, selected ongoing topics, resources and the public patent summary to Home.
@@ -147,9 +148,9 @@ Types: `award`, `fellowship`, `grant`
 ### Services (servs.json), Advisory and Policy
 - `type: "service"` section "Advisory and Policy" holds government, industry, and Korean academic-society roles. SK hynix VPP = "Visiting Professor Collaboration Program" (not a platform).
 
-## Bio, Korean CV, and Media (added 2026-09)
+## Bio and Korean CV
 
-- `/bio/` (`app/bio/BioClient.tsx`) is the Speaker and Media Kit: `bios` array (`en-short`, `en-standard`, `ko-short`, `ko-standard`) with copy-to-clipboard, press photos (DO Spaces CDN), a Korean CV section, and a Media section (YouTube embed in a 16:9 `pb="56.25%"` wrapper).
+- `/bio/` (`app/bio/BioClient.tsx`) is the Speaker and Media Kit. It includes copyable biographies, press photos (DO Spaces CDN), and a Korean CV section. The `bios` array uses `en-short`, `en-standard`, `ko-short`, and `ko-standard`. HP requested removal of the YouTube Media block on October 21, 2026. Keep the existing bios and downloads.
 - `/bio/resume-ko/` (`app/bio/resume-ko/KrCvClient.tsx`) renders the Korean CV inline and links `public/assets/cv_kr.pdf`. The route uses the language code `ko`, not the country code `kr`.
 - **Korean CV source of truth** is a maintained HTML document outside the repository. Resolve its local path from the CV build reference memory.
 - To update the Korean CV, edit that HTML and render it with Microsoft Edge to a one-page A4 PDF. Copy the PDF to `public/assets/cv_kr.pdf`. Mirror the text change in `KrCvClient.tsx`.

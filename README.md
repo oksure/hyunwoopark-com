@@ -8,6 +8,7 @@ A modern, data-driven academic homepage built with Next.js 16 and Chakra UI. Des
 
 - **CV-style home**: The original profile sidebar and chronological CV remain the front page.
 - **Original page composition**: Content updates stay on the existing CV-style homepage. The original Bio, CV, Lab Homepage and historical-page menu remain.
+- **International academic audience**: Focus on research and scholarly career. Bio retains biographies, press photos and CV downloads, without the Korean YouTube showcase. Korean public-facing activities are reserved for the separate hwpark.net plan.
 - **Shared PDF data**: Publications, working papers, awards, grants, teaching, services, conference presentations, resources and patent summaries feed the existing Rmd/LaTeX CV.
 - **Data-driven content**: All academic information (publications, experience, education, awards, etc.) stored in JSON files for easy updates
 - **Publication filtering**: Filter by journal rankings (UTD24, FT50, ABS) with year-based grouping

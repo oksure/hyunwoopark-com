@@ -2,6 +2,26 @@
   "title": "Conference Presentations",
   "items": [
     {
+      "title": "R&D Tax Credits and Knowledge Spillovers: Causal Inference Under Network Interference (coauthored paper, presented by Dohun Lee; Research Methods Paper Prize)",
+      "conferences": [{"name": "Strategic Management Society 46th Annual Conference", "location": "Berlin, Germany", "year": "2026"}]
+    },
+    {
+      "title": "Who Wins from R&D Tax Credits? Treatment Effect Heterogeneity and Optimal Policy Design (coauthored paper)",
+      "conferences": [{"name": "DRUID", "location": "Copenhagen, Denmark", "year": "2026"}]
+    },
+    {
+      "title": "Spillover-Robust Synthetic Control: Addressing Network Interference in Causal Inference (coauthored paper)",
+      "conferences": [{"name": "Academy of Management Annual Meeting", "location": "Philadelphia, PA, USA", "year": "2026"}]
+    },
+    {
+      "title": "To Stay or to Leave? Prolonged Pendency and Inventor Enthusiasm (coauthored poster)",
+      "conferences": [{"name": "Academy of Management Annual Meeting", "location": "Philadelphia, PA, USA", "year": "2026"}]
+    },
+    {
+      "title": "Redefining Maritime Anomaly Detection via Equation-Grounded Synthetic Anomalies (coauthored paper, presented by Youngseok Hwang)",
+      "conferences": [{"name": "ACM KDD", "location": "Jeju, Korea", "year": "2026"}]
+    },
+    {
       "title": "OSCM Division Executive Meeting (Regional Ambassador for Asia)",
       "conferences": [
         {

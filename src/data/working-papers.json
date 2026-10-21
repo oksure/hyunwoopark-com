@@ -1,0 +1,22 @@
+{
+  "title": "Working Papers",
+  "items": [
+    {
+      "id": "rd-tax-spillovers",
+      "title": "R&D Tax Credits and Knowledge Spillovers: Causal Inference Under Network Interference",
+      "authors": "Lee D, Park H",
+      "year": "2026",
+      "status": "Working paper",
+      "cvNote": "Winner, SMS Research Methods Paper Prize, 2026",
+      "cvSelected": true
+    },
+    {
+      "id": "industry-adjacency",
+      "title": "Revisiting Industry Adjacency",
+      "authors": "Kwon HY, Lee JM, Park H, Youn H",
+      "year": "2026",
+      "status": "Working paper",
+      "cvSelected": true
+    }
+  ]
+}

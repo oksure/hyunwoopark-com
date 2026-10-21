@@ -18,8 +18,16 @@
           ]
         },
         {
+          "role": "Selected Student Recognition",
+          "details": [
+            "Dohun Lee: PhD Paper Prize runner-up, Knowledge & Innovation Interest Group, Strategic Management Society, 2026",
+            "Youngseok Hwang: Best Paper Award, Korea Data Mining Society Summer Annual Conference, 2026"
+          ]
+        },
+        {
           "role": "Courses",
           "details": [
+            "Special Topics in Data Science: Vibe Coding; AU26 (collaborative living textbook: https://oksure.github.io/vibecoding/)",
             "Veritas Practice: Data Visualization and Self-Reflection; AU24, SP26",
             "Data Visualization for Medical Applications; SP24, SP26",
             "Data Analysis and Visualization; AU21, AU22, AU23",

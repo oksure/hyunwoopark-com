@@ -20,9 +20,9 @@ export default function RootLayout(props: { children: React.ReactNode }) {
   return (
     <ChakraProvider value={system}>
       <ThemeProvider attribute="class" disableTransitionOnChange>
-        <Flex direction="column" minH="100vh" letterSpacing="tight">
+        <Flex direction="column" minH="100vh" letterSpacing="0">
           <Navbar />
-          <Box as="main" flex="1">
+          <Box as="main" id="main-content" flex="1" tabIndex={-1}>
             {props.children}
           </Box>
           <Footer />

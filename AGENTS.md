@@ -28,6 +28,20 @@ This project uses `pnpm` as the package manager. Always use `pnpm` commands inst
 
 ## Architecture Overview
 
+### October 2026 research update
+
+- Home retains the original CV-style profile sidebar and sequential record. Put visual research highlights on `/research/`, not on Home.
+- Additional routes are `/research/`, `/publications/`, `/teaching/` and `/about/`. Preserve `/bio/`, `/bio/resume-ko/` and static legacy URLs.
+- `LegacySections.tsx` preserves the original data renderers. `CvResearchAdditions.tsx` adds working papers, selected ongoing topics, resources and the public patent summary to Home.
+- Bibliographic `id` and J/C `label` fields are stable. Never renumber existing records when filtering or inserting a new item.
+- `recordType` separates papers, Findings, short papers, workshops, abstracts, posters and presentations. Keep acceptance status distinct from publication status.
+- Read `spec.md` and `design.md` before changing the new routes. `tokens.css` and `app/academic.css` supply their shared styles.
+- Run `node scripts/validate-data.mjs` and `python3 cv/test_generate_cv_sections.py` after shared-data changes. Run the existing Rmd build for CV changes.
+- The current CV is 11 pages after shared sections and full conference presentations were added. Preserve the existing class, fonts, badges, numbering and footers.
+- `working-papers.json` requires verified authors. Use `research.json` for topic-level work that does not yet have a complete public citation.
+- Keep internal evidence, reviewer correspondence and unpublished patent details outside the public repository.
+- Use the Webpack dev and build scripts. Chakra documents a Turbopack/Emotion hydration issue, reproduced on production builds in this project.
+
 This is an academic homepage built with Next.js 16 App Router, displaying professional information including publications, experience, education, and awards.
 
 ### Tech Stack
@@ -78,9 +92,8 @@ Authors are formatted as: `LastName FirstInitial` (e.g., `Park H`, `Kim BC`, `Ba
 - The owner's name `Park H` is automatically bolded in the UI
 
 ### Publication Numbering
-- Journal articles: `[J1]`, `[J2]`, etc. (numbered from oldest to newest)
-- Conference proceedings: `[C1]`, `[C2]`, etc.
-- Numbers are fixed based on full list, consistent across filters
+- Journal articles use stable `label` values such as `J1`. Conference contributions use `C1` and the same convention.
+- Retain labels across filters and sorting. Allocate the next unused label for a new record.
 
 ### Journal Rankings (`top` field in pubs.json)
 - `utd24` - UTD Top 24 Business Journals
@@ -137,8 +150,9 @@ Types: `award`, `fellowship`, `grant`
 
 - `/bio/` (`app/bio/BioClient.tsx`) is the Speaker and Media Kit: `bios` array (`en-short`, `en-standard`, `ko-short`, `ko-standard`) with copy-to-clipboard, press photos (DO Spaces CDN), a Korean CV section, and a Media section (YouTube embed in a 16:9 `pb="56.25%"` wrapper).
 - `/bio/resume-ko/` (`app/bio/resume-ko/KrCvClient.tsx`) renders the Korean CV inline and links `public/assets/cv_kr.pdf`. The route uses the language code `ko`, not the country code `kr`.
-- **Korean CV source of truth** lives outside the repo: `~/Documents/Work/max-committee/이력서_박현우.html`. Update flow: edit the HTML, regenerate the PDF with `microsoft-edge --headless=new --disable-gpu --no-pdf-header-footer --print-to-pdf=<out> file:///.../이력서_박현우.html` (must stay 1 page, A4), copy it to `public/assets/cv_kr.pdf`, then mirror the text change in `KrCvClient.tsx`.
+- **Korean CV source of truth** is a maintained HTML document outside the repository. Resolve its local path from the CV build reference memory.
+- To update the Korean CV, edit that HTML and render it with Microsoft Edge to a one-page A4 PDF. Copy the PDF to `public/assets/cv_kr.pdf`. Mirror the text change in `KrCvClient.tsx`.
 - Chakra UI v3 has no `sx` prop. Pass CSS custom properties with `style={{ "--x": "#..." } as React.CSSProperties}` and consume them as `var(--x)`.
 - Title or affiliation changes touch: `app/layout.tsx` (metadata + JSON-LD `jobTitle`), `app/components/Sidebar.tsx`, `app/opengraph-image.tsx`, `app/bio/page.tsx`, `app/bio/BioClient.tsx`, `src/data/exps.json`, `cv/CV_template.Rmd`.
 - Naming: Y-KAST = 한국차세대과학기술한림원; Park belongs to the 정책학부 (Policy Studies Division), 2024 class (announced 2023-12). INFORMS is 미국경영과학회 in Korean.
-- `pnpm type-check` aborts in non-TTY shells (`ERR_PNPM_ABORTED_REMOVE_MODULES_DIR_NO_TTY`); run `npx tsc --noEmit` instead.
+- If `pnpm type-check` aborts in a non-TTY shell with `ERR_PNPM_ABORTED_REMOVE_MODULES_DIR_NO_TTY`, run `./node_modules/.bin/tsc --noEmit` instead.

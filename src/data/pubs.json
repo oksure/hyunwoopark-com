@@ -6,6 +6,7 @@
       "title": "An (almost) free lunch? Symbolic recognition and knowledge-sharing behavior in online communities",
       "authors": "Park H, Lee J",
       "journal": "Research Policy",
+      "status": "Forthcoming issue",
       "volume": "55",
       "number": "10",
       "articleNo": "105586",
@@ -15,18 +16,25 @@
         "ft50",
         "abs4*"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-c2b8d81ead90",
+      "label": "J42",
+      "recordType": "journal"
     },
     {
       "type": "journal",
       "title": "InteractiveKG: Transparent and user-controllable knowledge graph reasoning",
       "authors": "Kim M, Zhao Y, Ju J, Seo J, Park H",
       "journal": "Information Visualization",
+      "cvSelected": true,
       "volume": "25",
       "number": "3",
       "pages": "310-332",
       "year": "2026",
-      "link": "https://doi.org/10.1177/14738716261435574"
+      "link": "https://doi.org/10.1177/14738716261435574",
+      "id": "j-a24857719073",
+      "label": "J41",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -36,7 +44,10 @@
       "volume": "272",
       "articleNo": "120959",
       "year": "2026",
-      "link": "https://doi.org/10.1016/j.measurement.2026.120959"
+      "link": "https://doi.org/10.1016/j.measurement.2026.120959",
+      "id": "j-43a43d54b77d",
+      "label": "J40",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -46,7 +57,10 @@
       "volume": "14",
       "pages": "2152-2165",
       "year": "2026",
-      "link": "https://ieeexplore.ieee.org/abstract/document/11165046"
+      "link": "https://ieeexplore.ieee.org/abstract/document/11165046",
+      "id": "j-1eb525ad7635",
+      "label": "J39",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -63,7 +77,10 @@
         "ft50",
         "abs3"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-35fd77873c19",
+      "label": "J38",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -80,7 +97,10 @@
         "ft50",
         "abs4"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-ddbc914953c5",
+      "label": "J37",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -94,7 +114,10 @@
       "top": [
         "abs"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-36755facb728",
+      "label": "J36",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -109,7 +132,10 @@
       "top": [
         "abs4"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-864c7c8e1b39",
+      "label": "J35",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -120,7 +146,10 @@
       "number": "5",
       "pages": "e0323300",
       "year": "2025",
-      "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0323300"
+      "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0323300",
+      "id": "j-563fdd3cf80b",
+      "label": "J34",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -131,7 +160,10 @@
       "number": "1",
       "pages": "18-35",
       "year": "2025",
-      "link": "https://doi.org/10.5394/KINPR.2025.49.1.18"
+      "link": "https://doi.org/10.5394/KINPR.2025.49.1.18",
+      "id": "j-ba8b594149a2",
+      "label": "J33",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -148,7 +180,10 @@
         "ft50",
         "abs4"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-7bbcb7be7cbf",
+      "label": "J32",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -162,7 +197,10 @@
       "top": [
         "abs3"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-2c521d3b1716",
+      "label": "J31",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -173,7 +211,10 @@
       "number": "7",
       "pages": "e0307059",
       "year": "2024",
-      "link": "https://doi.org/10.1371/journal.pone.0307059"
+      "link": "https://doi.org/10.1371/journal.pone.0307059",
+      "id": "j-66faffc02bbc",
+      "label": "J30",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -183,7 +224,10 @@
       "volume": "12",
       "pages": "158311-158321",
       "year": "2024",
-      "link": "https://ieeexplore.ieee.org/abstract/document/10716635"
+      "link": "https://ieeexplore.ieee.org/abstract/document/10716635",
+      "id": "j-d7493a4da79b",
+      "label": "J29",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -200,7 +244,10 @@
         "ft50",
         "abs4"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-602c805e96c3",
+      "label": "J28",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -211,7 +258,10 @@
       "number": "01n02",
       "pages": "2340001",
       "year": "2023",
-      "link": "https://doi.org/10.1142/S0129626423400017"
+      "link": "https://doi.org/10.1142/S0129626423400017",
+      "id": "j-99842bd62168",
+      "label": "J27",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -228,7 +278,10 @@
         "ft50",
         "abs4"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-98c3d73bb674",
+      "label": "J26",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -244,7 +297,10 @@
         "utd24",
         "abs3"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-e0ba78889da1",
+      "label": "J25",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -259,7 +315,10 @@
       "top": [
         "abs4*"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-0a123488aa20",
+      "label": "J24",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -274,7 +333,10 @@
       "top": [
         "abs4"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-17a97eebab1a",
+      "label": "J23",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -285,7 +347,10 @@
       "number": "6",
       "pages": "367-375",
       "year": "2023",
-      "link": "https://doi.org/10.5394/KINPR.2023.47.6.367"
+      "link": "https://doi.org/10.5394/KINPR.2023.47.6.367",
+      "id": "j-daf0ac90b3e7",
+      "label": "J22",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -296,7 +361,10 @@
       "number": "6",
       "pages": "576-584",
       "year": "2022",
-      "link": "https://doi.org/10.5394/KINPR.2022.46.6.576"
+      "link": "https://doi.org/10.5394/KINPR.2022.46.6.576",
+      "id": "j-26e1d81c6b30",
+      "label": "J21",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -311,7 +379,10 @@
       "top": [
         "abs3"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-ad539cc8c986",
+      "label": "J20",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -326,7 +397,10 @@
       "top": [
         "abs3"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-788b5f4368da",
+      "label": "J19",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -342,7 +416,10 @@
         "ft50",
         "abs4*"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-6ac58d0242db",
+      "label": "J18",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -360,7 +437,10 @@
         "abs4*"
       ],
       "cvSelected": true,
-      "cvTitleTex": "\\textit{Tua Culpa}: When an Organization Blames its Partner for Failure in a Shared Task"
+      "cvTitleTex": "\\textit{Tua Culpa}: When an Organization Blames its Partner for Failure in a Shared Task",
+      "id": "j-c919a0fda8c2",
+      "label": "J17",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -372,7 +452,10 @@
       "year": "2018",
       "link": "https://dl.acm.org/citation.cfm?id=3185047",
       "cvSelected": true,
-      "articleNo": "6"
+      "articleNo": "6",
+      "id": "j-40218ecd4146",
+      "label": "J16",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -382,7 +465,10 @@
       "volume": "42",
       "pages": "24-36",
       "year": "2018",
-      "link": "http://www.sciencedirect.com/science/article/pii/S1566253517305535"
+      "link": "http://www.sciencedirect.com/science/article/pii/S1566253517305535",
+      "id": "j-9e821ed05214",
+      "label": "J15",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -397,7 +483,10 @@
       "top": [
         "top cs"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-1390b844e843",
+      "label": "J14",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -411,7 +500,10 @@
       "top": [
         "abs"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-3fe397509079",
+      "label": "J13",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -426,7 +518,10 @@
       "top": [
         "abs3"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-3dc78f7417fa",
+      "label": "J12",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -441,7 +536,10 @@
         "abs3"
       ],
       "demo": "http://visualscm.herokuapp.com/",
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-b5b2385cee12",
+      "label": "J11",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -456,7 +554,10 @@
         "abs3"
       ],
       "demo": "http://bicentric.herokuapp.com/",
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-78f3c7ed7ceb",
+      "label": "J10",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -468,7 +569,10 @@
       "pages": "1206-1213",
       "year": "2016",
       "link": "https://ieeexplore.ieee.org/document/7445240/",
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-77af67e48cfe",
+      "label": "J9",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -484,7 +588,10 @@
         "ft50",
         "abs4*"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-0d190257e9f9",
+      "label": "J8",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -496,7 +603,10 @@
       "pages": "318-323",
       "year": "2015",
       "link": "http://jamia.oxfordjournals.org/content/22/2/318.abstract",
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-c846e775f9c6",
+      "label": "J7",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -508,7 +618,10 @@
       "year": "2015",
       "link": "http://dl.acm.org/citation.cfm?id=2724730",
       "cvSelected": true,
-      "articleNo": "6"
+      "articleNo": "6",
+      "id": "j-4dbc36151b31",
+      "label": "J6",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -520,7 +633,10 @@
       "pages": "41-51",
       "year": "2015",
       "link": "https://ieeexplore.ieee.org/document/7006349/",
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-db8efb134a3c",
+      "label": "J5",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -535,7 +651,10 @@
       "top": [
         "abs"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-59294d886869",
+      "label": "J4",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -545,7 +664,10 @@
       "volume": "60",
       "pages": "58-72",
       "year": "2014",
-      "link": "http://www.sciencedirect.com/science/article/pii/S095070511400015X"
+      "link": "http://www.sciencedirect.com/science/article/pii/S095070511400015X",
+      "id": "j-29f728407ede",
+      "label": "J3",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -556,7 +678,10 @@
       "number": "4",
       "pages": "330-352",
       "year": "2013",
-      "link": "http://www.tandfonline.com/doi/abs/10.1080/19488289.2013.861704#.VAc4x2RN45w"
+      "link": "http://www.tandfonline.com/doi/abs/10.1080/19488289.2013.861704#.VAc4x2RN45w",
+      "id": "j-1b8cc57e7abb",
+      "label": "J2",
+      "recordType": "journal"
     },
     {
       "type": "journal",
@@ -571,7 +696,10 @@
       "top": [
         "abs"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "j-d71925d113e2",
+      "label": "J1",
+      "recordType": "journal"
     }
   ]
 }

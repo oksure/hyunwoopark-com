@@ -1,4 +1,5 @@
 import Provider from "./provider"
+import "./academic.css"
 import Script from "next/script"
 import type { Metadata, Viewport } from "next"
 import { Roboto } from "next/font/google"
@@ -15,14 +16,14 @@ export const metadata: Metadata = {
     default: "Hyunwoo Park - Seoul National University",
     template: "%s | Hyunwoo Park",
   },
-  description: "Hyunwoo Park is a Professor at the Graduate School of Data Science, Seoul National University. Research in enterprise AI adoption, AI transformation (AX), business analytics, supply chain networks, and technology management.",
+  description: "Hyunwoo Park is a Professor at Seoul National University. Research on AI and organizations, human–AI interaction, visual analytics, and causal and graph-based learning.",
   authors: [{ name: "Hyunwoo Park" }],
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "Hyunwoo Park",
     title: "Hyunwoo Park - Seoul National University",
-    description: "Professor, Graduate School of Data Science, Seoul National University. Research in enterprise AI adoption, AI transformation (AX), business analytics, supply chain networks, and technology management.",
+    description: "Professor, Seoul National University. Research on AI and organizations, human–AI interaction, and learning and evaluation in complex systems.",
     url: "https://hyunwoopark.com",
     locale: "en_US",
   },
@@ -68,6 +69,10 @@ export default function RootLayout({
               familyName: "Park",
               jobTitle: "Professor",
               knowsAbout: [
+                "human–AI interaction",
+                "causal inference",
+                "graph-based learning",
+                "visual analytics",
                 "enterprise AI adoption",
                 "AI transformation (AX)",
                 "AI-based knowledge management",

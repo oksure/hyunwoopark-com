@@ -3,6 +3,13 @@
   "items": [
     {
       "type": "award",
+      "title": "Research Methods Paper Prize (with Dohun Lee)",
+      "awarder": "Strategic Management Society 46th Annual Conference",
+      "year": "2026",
+      "special": true
+    },
+    {
+      "type": "award",
       "title": "Distinguished Service Award",
       "awarder": "INFORMS Technology, Innovation Management and Entrepreneurship Section (TIMES)",
       "year": "2025",
@@ -146,7 +153,8 @@
     },
     {
       "type": "grant",
-      "title": "Korea MSIT AI-Based Military Operations Decision Support System",
+      "title": "Korea MND Military-Industry-Academia Cooperation Center (Seoul/Yongsan)",
+      "notes": "SNU team; IITP RS-2026-25551943",
       "awarder": "PI",
       "year": "2026",
       "special": true

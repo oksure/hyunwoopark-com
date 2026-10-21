@@ -6,6 +6,10 @@ A modern, data-driven academic homepage built with Next.js 16 and Chakra UI. Des
 
 ## Features
 
+- **CV-style home**: The original profile sidebar and chronological CV remain the front page.
+- **Research pages**: Research themes, actual paper figures, ongoing work and research systems live at `/research/`.
+- **Searchable bibliography**: `/publications/` supports text, year and contribution-type filters, plus plain-text and BibTeX citation copying.
+- **Shared PDF data**: Publications, working papers, awards, grants, teaching, services, conference presentations, resources and patent summaries feed the existing Rmd/LaTeX CV.
 - **Data-driven content**: All academic information (publications, experience, education, awards, etc.) stored in JSON files for easy updates
 - **Publication filtering**: Filter by journal rankings (UTD24, FT50, ABS) with year-based grouping
 - **Dark/light mode**: Automatic theme switching with next-themes
@@ -131,7 +135,26 @@ pnpm dev        # Start development server
 pnpm build      # Create production build
 pnpm start      # Start production server
 pnpm type-check # Run TypeScript type checking
+node scripts/validate-data.mjs # Validate record IDs, categories, links and public asset references
+python3 cv/test_generate_cv_sections.py # Test shared CV rendering
+python3 cv/generate_cv_sections.py # Generate the Rmd from public records
+bash cv/build.sh CV_Hyunwoo_Park_gen # Build the established CV design
+python3 cv/check_style.py cv/CV_Hyunwoo_Park.pdf # Check fonts, labels and page count
 ```
+
+## Research Content
+
+Use `src/data/pubs.json` and `procs.json` for bibliographic facts. Preserve each existing `id` and `label` when editing a record. Add a new ID and the next J/C label for a new paper. Never recalculate old labels from the display order.
+
+`recordType` distinguishes journals, conference papers, Findings, short papers, workshops, abstracts, posters and presentations. `status` records acceptance or publication state separately. `cvSelected` controls inclusion in the selected PDF sections.
+
+`working-papers.json` contains formal working-paper citations with verified authors. `research.json` holds the separate research-page narrative and topic-level ongoing work. `resources.json` records research systems and teaching resources. `patents.json` contains only the approved public summary, without unpublished application details.
+
+Design rules are in `design.md`, shared colors and spacing in `tokens.css`, and requirements in `spec.md`. The CV-style homepage uses the existing Chakra presentation. Additional pages use `app/academic.css`. Image provenance is recorded in `docs/research-assets.md`.
+
+The current CV content occupies 11 pages. Its Times typography, LaTeX class, ranking badges, J/C labels and page footers remain unchanged. Old presentation records and legacy routes are retained. Do not replace this build with a different CV renderer.
+
+The dev and build scripts use Webpack. Production Turbopack builds reproduced a Chakra/Emotion hydration mismatch on the additional routes. This follows the [Chakra Next.js integration guidance](https://chakra-ui.com/docs/get-started/frameworks/next-app#hydration-errors-turbopack). Keep the browser console regression check when changing bundlers.
 
 ## Deployment
 

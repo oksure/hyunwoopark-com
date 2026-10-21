@@ -1,54 +1,82 @@
 {
-  "title": "Referred Conference Proceedings",
+  "title": "Conference Papers and Other Contributions",
   "items": [
     {
       "type": "conference",
       "title": "What Gets Measured Gets Managed: Sign-aware Recommendation Needs Sign-aware Evaluation",
       "authors": "Kim M, Hwang J, Park H",
       "proceedings": "NeurIPS 2026 Evaluations & Datasets Track",
+      "status": "Accepted",
+      "track": "Evaluations & Datasets",
       "year": "2026",
       "link": "https://arxiv.org/abs/2609.33346",
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "c-58ee67f2afa6",
+      "label": "C32",
+      "recordType": "conference"
     },
     {
       "type": "conference",
       "title": "Market Signal Injection: Adversarial Context Manipulation of LLM Pricing Agents",
       "authors": "Lee D, Park H",
       "proceedings": "EMNLP 2026 Workshop on FinNLP",
+      "status": "Accepted",
       "year": "2026",
-      "link": "https://arxiv.org/abs/2609.18357"
+      "link": "https://arxiv.org/abs/2609.18357",
+      "id": "c-02ecea659061",
+      "label": "C31",
+      "recordType": "workshop"
     },
     {
       "type": "conference",
       "title": "From Text to Structure: The PACKaGE Benchmark for Bidirectional Causal Reasoning in Paragraphs and Graphs",
       "authors": "Kim J, Lee D, Jang J, Shim J, Park H",
       "proceedings": "EMNLP 2026",
+      "status": "Accepted",
+      "track": "Main Conference",
       "year": "2026",
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "c-931671e32a10",
+      "label": "C30",
+      "recordType": "conference"
     },
     {
       "type": "conference",
       "title": "Faithful yet Collusive: Why Chain-of-Thought Monitoring Cannot Detect Collusion in LLM Pricing Agents under Oligopolistic Competition",
       "authors": "Lee D, Park H",
       "proceedings": "Findings of EMNLP 2026",
+      "status": "Accepted",
+      "cvSelected": true,
       "year": "2026",
-      "link": "https://arxiv.org/abs/2609.18346"
+      "link": "https://arxiv.org/abs/2609.18346",
+      "id": "c-75ee8ae12a6e",
+      "label": "C29",
+      "recordType": "findings"
     },
     {
       "type": "conference",
       "title": "Event-Driven Causal Discovery for Root Cause Analysis in Semiconductor Fabrication Data Center",
       "authors": "Kim J, Lee H, Jang J, Park Y, Park H",
       "proceedings": "IEEE ICDM 2026",
+      "status": "Accepted",
       "year": "2026",
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "c-07118c84b28c",
+      "label": "C28",
+      "recordType": "conference"
     },
     {
       "type": "conference",
       "title": "Great Grave: Modeling Versioned Context Units for Longitudinal LLM Interaction",
       "authors": "Jang J, Seo J, Ju J, Park H",
       "proceedings": "ACM UIST 2026",
+      "status": "Accepted",
+      "demo": "https://youtu.be/M5pFb_5NBPw",
       "year": "2026",
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "c-12d5f954e7be",
+      "label": "C27",
+      "recordType": "conference"
     },
     {
       "type": "conference",
@@ -56,7 +84,10 @@
       "authors": "Bae S, Park H",
       "proceedings": "ICML 2026 Workshop on FAGEN",
       "year": "2026",
-      "link": "https://icml.cc/virtual/2026/77938"
+      "link": "https://icml.cc/virtual/2026/77938",
+      "id": "c-0510a6b471cf",
+      "label": "C26",
+      "recordType": "workshop"
     },
     {
       "type": "conference",
@@ -64,7 +95,10 @@
       "authors": "Bae S, Hwang Y, Lee G, Seo J, Lee D, Park H",
       "proceedings": "ICML 2026 Workshop on AI for Science",
       "year": "2026",
-      "link": "https://icml.cc/virtual/2026/73576"
+      "link": "https://icml.cc/virtual/2026/73576",
+      "id": "c-4fdd8b1f097d",
+      "label": "C25",
+      "recordType": "workshop"
     },
     {
       "type": "conference",
@@ -72,7 +106,10 @@
       "authors": "Hwang Y, Kwon J, Lee G, Park H",
       "proceedings": "ICML 2026 Workshop on AI for Science",
       "year": "2026",
-      "link": "https://arxiv.org/abs/2607.23197"
+      "link": "https://arxiv.org/abs/2607.23197",
+      "id": "c-2d3dde66d182",
+      "label": "C24",
+      "recordType": "workshop"
     },
     {
       "type": "conference",
@@ -82,14 +119,20 @@
       "year": "2026",
       "pages": "11131-11142",
       "link": "https://doi.org/10.1145/3770855.3818984",
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "c-cb5d60f9ab7b",
+      "label": "C23",
+      "recordType": "conference"
     },
     {
       "type": "conference",
       "title": "Who Wins from R&D Tax Credits? Treatment Effect Heterogeneity and Optimal Policy Design",
       "authors": "Lee D, Park H",
       "proceedings": "DRUID 2026",
-      "year": "2026"
+      "year": "2026",
+      "id": "c-87cde83383b3",
+      "label": "C22",
+      "recordType": "presentation"
     },
     {
       "type": "conference",
@@ -97,7 +140,10 @@
       "authors": "Lee D, Park H",
       "proceedings": "Academy of Management Proceedings (Poster)",
       "year": "2026",
-      "link": "https://doi.org/10.5465/amproc.2026.10030poster"
+      "link": "https://doi.org/10.5465/amproc.2026.10030poster",
+      "id": "c-7c1c876b805a",
+      "label": "C21",
+      "recordType": "poster"
     },
     {
       "type": "conference",
@@ -105,21 +151,30 @@
       "authors": "Lee D, Park H",
       "proceedings": "Academy of Management Proceedings",
       "year": "2026",
-      "link": "https://doi.org/10.5465/amproc.2026.10026abstract"
+      "link": "https://doi.org/10.5465/amproc.2026.10026abstract",
+      "id": "c-0e77a8c6d815",
+      "label": "C20",
+      "recordType": "abstract"
     },
     {
       "type": "conference",
       "title": "Great Grave: Modeling Versioned Context Units for Longitudinal LLM Interaction",
       "authors": "Jang J, Seo J, Park H",
       "proceedings": "CHI 2026 Workshop on Human-Agent Collaboration",
-      "year": "2026"
+      "year": "2026",
+      "id": "c-3ab112c65f19",
+      "label": "C19",
+      "recordType": "workshop"
     },
     {
       "type": "conference",
       "title": "Learning with AI, Not Just Using AI: A Human-in-the-Loop Curriculum for Critical Literacy",
       "authors": "Jang J, Ju J, Lee D, Seo J, Park H",
       "proceedings": "CHI 2026 Workshop on Understanding and Engaging Critical Resistance to AI in Education",
-      "year": "2026"
+      "year": "2026",
+      "id": "c-9c364009d4e8",
+      "label": "C18",
+      "recordType": "workshop"
     },
     {
       "type": "conference",
@@ -128,7 +183,10 @@
       "proceedings": "IEEE PacificVis 2026 (VisNote)",
       "year": "2026",
       "pages": "124-129",
-      "link": "https://doi.org/10.1109/PacificVis68791.2026.00019"
+      "link": "https://doi.org/10.1109/PacificVis68791.2026.00019",
+      "id": "c-b2b46183f073",
+      "label": "C17",
+      "recordType": "short-paper"
     },
     {
       "type": "conference",
@@ -137,7 +195,10 @@
       "proceedings": "ACM CHI 2026",
       "year": "2026",
       "link": "https://doi.org/10.1145/3772318.3791249",
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "c-2bd53351c874",
+      "label": "C16",
+      "recordType": "conference"
     },
     {
       "type": "conference",
@@ -149,7 +210,10 @@
       "award": [
         "Best Poster"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "c-f97d18a2bb98",
+      "label": "C15",
+      "recordType": "workshop"
     },
     {
       "type": "conference",
@@ -157,21 +221,30 @@
       "authors": "Deshmane A, Park H, Rahmani M",
       "proceedings": "INFORMS MSOM 2025",
       "year": "2025",
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "c-e4e744c585fc",
+      "label": "C14",
+      "recordType": "conference"
     },
     {
       "type": "conference",
       "title": "Not All Doom and Gloom: ChatGPT, Knowledge Diversity, and Style Similarity",
       "authors": "Lee CG, Lee J, Park H",
       "proceedings": "DRUID 2025",
-      "year": "2025"
+      "year": "2025",
+      "id": "c-2b66bd91b5ce",
+      "label": "C13",
+      "recordType": "presentation"
     },
     {
       "type": "conference",
       "title": "MOE: Manga Organized with Edges",
       "authors": "Kim Y, Park JJ, Shin S, Park H",
       "proceedings": "IEEE PacificVis 2025",
-      "year": "2025"
+      "year": "2025",
+      "id": "c-75750478b7f4",
+      "label": "C12",
+      "recordType": "conference"
     },
     {
       "type": "conference",
@@ -180,7 +253,10 @@
       "proceedings": "AAAI 2025 Workshop on Anomaly Detection in Scientific Domains",
       "year": "2025",
       "link": "https://www.nsfhdr.org/html/mlchallenge-y1/aaai-workshop2024.html",
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "c-a8e1ec83b19b",
+      "label": "C11",
+      "recordType": "workshop"
     },
     {
       "type": "conference",
@@ -188,7 +264,10 @@
       "authors": "Lee CG, Lee J, Park H",
       "proceedings": "Academy of Management Proceedings",
       "year": "2024",
-      "link": "https://journals.aom.org/doi/abs/10.5465/AMPROC.2024.17587abstract"
+      "link": "https://journals.aom.org/doi/abs/10.5465/AMPROC.2024.17587abstract",
+      "id": "c-e793ff74e8af",
+      "label": "C10",
+      "recordType": "abstract"
     },
     {
       "type": "conference",
@@ -196,7 +275,10 @@
       "authors": "Choi Y, Park H",
       "proceedings": "INFORMS MSOM 2024",
       "year": "2024",
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "c-ab3a79136edf",
+      "label": "C9",
+      "recordType": "conference"
     },
     {
       "type": "conference",
@@ -207,14 +289,20 @@
       "award": [
         "Best Poster"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "c-c956580aa27f",
+      "label": "C8",
+      "recordType": "conference"
     },
     {
       "type": "conference",
       "title": "String Nodes Visualization with a Simple Trick: The Hidden Virtual Nodes",
       "authors": "Choi J, Park H",
       "proceedings": "IEEE PacificVis 2024",
-      "year": "2024"
+      "year": "2024",
+      "id": "c-aa71321beec2",
+      "label": "C7",
+      "recordType": "conference"
     },
     {
       "type": "conference",
@@ -226,7 +314,10 @@
       "award": [
         "Best Paper Finalist"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "c-53b360ed50ef",
+      "label": "C6",
+      "recordType": "conference"
     },
     {
       "type": "conference",
@@ -234,7 +325,10 @@
       "authors": "Park BS, Park H, Ramanujam R",
       "proceedings": "Academy of Management Proceedings",
       "year": "2017",
-      "link": "https://journals.aom.org/doi/abs/10.5465/ambpp.2017.11891abstract"
+      "link": "https://journals.aom.org/doi/abs/10.5465/ambpp.2017.11891abstract",
+      "id": "c-a7b34cccd72a",
+      "label": "C5",
+      "recordType": "abstract"
     },
     {
       "type": "conference",
@@ -242,7 +336,10 @@
       "authors": "Lee J, Park H, Zaggl M",
       "proceedings": "Academy of Management Proceedings",
       "year": "2017",
-      "link": "https://journals.aom.org/doi/abs/10.5465/ambpp.2017.11200abstract"
+      "link": "https://journals.aom.org/doi/abs/10.5465/ambpp.2017.11200abstract",
+      "id": "c-f6fcd521ac76",
+      "label": "C4",
+      "recordType": "abstract"
     },
     {
       "type": "conference",
@@ -250,7 +347,10 @@
       "authors": "Park H, Basole RC",
       "proceedings": "Academy of Management Proceedings",
       "year": "2015",
-      "link": "https://journals.aom.org/doi/abs/10.5465/ambpp.2015.13284abstract"
+      "link": "https://journals.aom.org/doi/abs/10.5465/ambpp.2015.13284abstract",
+      "id": "c-2a59c9286fa8",
+      "label": "C3",
+      "recordType": "abstract"
     },
     {
       "type": "conference",
@@ -262,7 +362,10 @@
       "award": [
         "Best Student Paper"
       ],
-      "cvSelected": true
+      "cvSelected": true,
+      "id": "c-0e396081acfb",
+      "label": "C2",
+      "recordType": "conference"
     },
     {
       "type": "conference",
@@ -271,7 +374,10 @@
       "proceedings": "Proceedings of the 33rd Annual ACM Conference Extended Abstracts on Human Factors in Computing Systems (CHI EA '15)",
       "pages": "1815-1820",
       "year": "2015",
-      "link": "https://dl.acm.org/doi/abs/10.1145/2702613.2732752"
+      "link": "https://dl.acm.org/doi/abs/10.1145/2702613.2732752",
+      "id": "c-9ed8e72283a4",
+      "label": "C1",
+      "recordType": "conference"
     }
   ]
 }

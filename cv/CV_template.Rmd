@@ -79,12 +79,14 @@ webcolor <- "black"
 
 <!--GEN:PUBS-->
 
-# Selected Referred Conference Proceedings
+# Selected Conference Contributions
 \vspace{.2em}
 \begingroup\small (For the full list, visit \url{https://hyunwoopark.com}.)\endgroup
 \vspace{.5em}
 
 <!--GEN:PROCS-->
+
+<!--GEN:WORKING_PAPERS-->
 
 # Book Chapters and Technical Reports
 \vspace{.5em}
@@ -98,142 +100,22 @@ webcolor <- "black"
 # Awards, Grants, and Honors
 
 ## Awards and Honors
-
-- **Distinguished Service Award**, _INFORMS Technology, Innovation Management and Entrepreneurship Section (TIMES)_, 2025
-- Meritorious Reviewer Award, _INFORMS Journal on Computing_, 2025
-- **Elected Member, Policy Studies Division**, _Young Korean Academy of Science and Technology (Y-KAST)_, 2024 -- Present
-- **Best Paper Award Finalist**, _Academy of Management Operations & Supply Chain Management (OSCM) Division_, 2020
-- **Best Dissertation Award Runner-up**, _INFORMS Technology, Innovation Management and Entrepreneurship Section (TIMES)_, 2017
-- **Best Paper Award Winner**, _Academy of Management Organizational Communication & Information Systems (OCIS) Division_, 2017
-- Honorable Mention, _13th Places & Spaces: Mapping Science_, 2017
-- **Best Student Paper Award Winner**, _Academy of Management Technology & Innovation Management (TIM) Division_, 2015
-- Dr. James R. Chen Award (Best Master’s project in one of three tracks), _School of Information, UC Berkeley_, 2010
-- Excellence Award (1st place), Idea Competition awarded by _CEO of Samsung Electronics_, 2005
-- Army Commendation Medal, _Department of the United States Army_, 2005
-- **Presidential Scholar**, awarded by _President of the Republic of Korea_, 2002
-- **Gold Medalist**, _33rd International Chemistry Olympiad_, 2001
-
+<!--GEN:AWARDS_AWARD-->
 
 ## Fellowships
-
-- Tennenbaum Institute Fellow, _Georgia Institute of Technology_, 2010-2017
-- McLean Fellowship, _Georgia Institute of Technology_, 2013-2015
-- Doctoral Fellow, _Systems Engineering Research Center_, 2014
-- George Fellowship, Health Systems Institute, _Georgia Institute of Technology_, 2012
-- John Morris Fellowship, _School of Industrial and Systems Engineering, Georgia Institute of Technology_, 2010-2012
-- Doctoral Fellowship, _Korea Foundation for Advanced Studies_, 2010-2015
-- Overseas Study Scholarship, _Samsung Foundation_, 2008-2010
-- Undergraduate Fellowship, _Korea Foundation for Advanced Studies_, 2002-2008
-
+<!--GEN:AWARDS_FELLOWSHIP-->
 
 ## Grants
-- **Co-PI**, _Korea NRF Human-in-the-Loop AI Decision-Making Algorithm and Policy_, 2025-2028
-- **PI**, _Korea MSIT Generative AI Leading Talent Training R&D Program_, 2024-2027
-- **PI**, _Korea MOF Vessel Trajectory Prediction and Anomaly Detection_, 2022-2025
-- **Co-PI**, _Korea NRF Large-scale AI Model and Platform Optimization Center_, 2023-2026
-- **PI**, _Korea NRF Emerging Scholar Program_ (Equivalent to NSF Career), 2022-2027
-- **Co-PI**, _FDA Broad Agency Announcement (BAA) "FDA Quality Management and Pharmaceutical Firm Learning to Reduce Drug Quality Risks"_, 2019-2021
-- **Co-PI**, _U01 Grant from FDA to NIPTE "Manufacturing Sector Research Initiative"_, 2018–2019
-- Honorarium from Conference on Internet Search and Innovation, _Northwestern University_, 2013
-- _NET Institute_ (Networks, Electronic Commerce, and Telecommunications) Grants for Summer 2012
-- Research Promotion Grant, _Korea Science and Engineering Foundation_, 2002-2008
-
+<!--GEN:AWARDS_GRANT-->
 
 
 # Teaching Experience
-
-## Seoul National University, Graduate School of Data Science
-- Past Students
-  - Ph.D.: Yunsu Kim (Samsung Electronics)
-  - Master's: Byungwoo Kim (SK Hynix), Sejin Kim (National Police Agency), Ji Hong Min (Hanwha Ocean), Jeongjin Park (LG CNS), Sungwook Son (Intel), Seonggu Shin (IBM), Sojeong Yeon, Seungju Lee (Panirois), Chan Gyu Lee (ETRI), Changuk Lee (Hyundai Marine & Fire Insurance), Chansong Lim (Ph.D. Student @ UC Riverside), Yeeun Choi (Ernst & Young), Sangwoo Heo (Naver Future AI Center)
-\vspace{.5em}
-- Current Students: See \url{https://dial.snu.ac.kr/members/}
-\vspace{.5em}
-- Instructor
-  - Veritas Practice: Data Visualization and Self-Reflection; AU24, SP26
-  - Data Visualization for Medical Applications; SP24, SP26
-  - Data Analysis and Visualization; AU21, AU22, AU23
-  - Computing Foundations for Data Science; AU22, SP23
-
-## The Ohio State University, Fisher College of Business
-- Advising & Committee
-  - In Joon Noh (Fisher), Committee Member, SP20 (Placement: Penn State University)
-  - Rahul Pandey (Fisher), Committee Member, SP20 (Placement: University of Memphis)
-  - Junpeng Wang (Computer Science), Committee Member, SP19 (Placement: VISA Research)
-  - Yingchao Lan (Fisher), Committee Member, SP18 (Placement: University of Nebraska--Lincoln)
-\vspace{.5em}
-- Instructor
-  - BM7331 Descriptive Analytics and Visualization; SP19, SP20
-  - BM2320 Business Statistics; SP18, SP19, SP20
-\vspace{.5em}
-- Course Development
-  - BM7331 Descriptive Analytics and Visualization; AU17–AU18
-
-## Georgia Institute of Technology, School of Industrial and Systems Engineering
-- Instructor, ISyE 3232 Stochastic Manufacturing and Service Systems (Undergraduate Core Stochastic Course), SU11, Average course evaluation rating: 4.4/5.0
-- TA for Prof. Jim Dai, ISyE 3232, SP11
-
-## UC Berkeley, School of Information
-- TA for Prof. Robert Glushko, INFO 290-1 Information and Service System Design, SP09
-- TA for Prof. John Chuang, INFO 206 Distributed Computing Applications and Infrastructure, AU09
-
+<!--GEN:TEACHING-->
 
 
 
 # Professional Services
-
-## Professional Membership
-- International
-  - Institute of Operations Research and Management Science (INFORMS) -- Senior Member
-  - Association for Computing Machinery (ACM), Academy of Management (AOM), Decision Sciences Institute (DSI), Institute of Electrical and Electronics Engineers (IEEE), Industry Studies Association (ISA), Production and Operations Management Society (POMS)
-- Korean: KASBA (Management), KDMS (Data Mining), KIIE (Industrial Engineering), KMIS (Information Systems), KOPOMS (Operations Management), KORMS (Operations Research and Management Science), KOSIME (Technology Management), KrAIS (Information Systems)
-
-## Leadership
-- AOM OSCM Regional Ambassador for Asia, 2025 -- Present
-- INFORMS TIMES Past President, 2025
-- INFORMS TIMES President, 2024
-- INFORMS TIMES President-Elect, 2023
-- INFORMS TIMES VP of Programs, 2022
-- INFORMS TIMES VP of Membership and Communications, 2021
-
-## Track Chair
-- TIME/NPD Track for INFORMS Annual Meeting 2022
-- NPD Track for INFORMS Annual Meeting 2021
-
-## Session Chair
-- INFORMS Annual Meeting 2017, 2019, 2020
-- POMS Annual Meeting 2016, 2019
-
-## Program Committee
-- European Conference of Artificial Intelligence (ECAI), 2024-2025
-- INFORMS MSOM Conference, 2024
-- Pacific Asia Conference on Information Systems (PACIS), 2017
-
-## University and Department Service
-- Seoul National University
-  - SNU College Curriculum Revision Subcommittee, 2026-2028
-  - University Academic Affairs Committee, 2023-2025
-  - University Research Committee, 2023-2024
-  - AI-X Curriculum Committee, 2021-2023
-  - Samsung Research-SNU Project Committee, 2022
-  - Various Graduate School of Data Science Committees, 2021-2025
-- The Ohio State University
-  - Analytics Curriculum Committee, 2020-2021
-  - Faculty Recruiting Committee, 2018
-
-## Editorial Review Board
-- Decision Sciences Journal (DSJ), 2022 -- Present
-- Journal of Operations Management (JOM), 2022 -- Present
-
-## Ad-hoc Reviewer
-- **Journals**
-
-  Decision Sciences Journal (DSJ), Decision Support Systems (DSS), European Journal of Operations Research (EJOR), IEEE Transactions on Engineering Management (TEM), IEEE Transactions on Visualization and Computer Graphics (TVCG), Industry and Innovation, Information & Management, INFORMS Journal on Computing (IJOC), International Journal on Human-Computer Interaction (IJHCI), International Journal of Production Research (IJPR), Journal of Business Logistics (JBL), Journal of International Business Studies (JIBS), Journal of Machine Learning Research (JMLR), Journal of Operations Management (JOM), Journal of Technology Transfer (JOTT), Journal of Supply Chain Management (JSCM), Production and Operations Management (POM), Research Policy (RP), Service Science, Strategic Management Journal (SMJ)
-
-- **Conferences**
-
-  Academy of Management Conference (AOM), ACM SIGCHI Conference (CHI), ACM SIGIR Conference (SIGIR), Decision Sciences Institute (DSI), Hawaii International Conference on System Sciences (HICSS), International Conference on Learning Representations (ICLR), IEEE Technology and Engineering Management Conference (TEMSCON), IEEE Visualization Conference (VIS), International Conference on Information Systems (ICIS)
-
+<!--GEN:SERVICES-->
 
 
 # Invited Talks
@@ -263,82 +145,9 @@ webcolor <- "black"
 
 
 # Conference Presentations
+<!--GEN:CONFS-->
 
-## 2025
-- AAAI Workshop on Anomaly Detection in Scientific Domains, Philadelphia, PA
-- AOM Annual Meeting, Copenhagen, Denmark
-- DRUID Conference, Toronto, Canada
-- IEEE PacificVis, Taipei, Taiwan
-- INFORMS Annual Meeting, Atlanta, GA
-- INFORMS MSOM Conference, London, UK
-- NeurIPS Workshop on AI for Science, San Diego, CA
-- POMS Annual Meeting, Atlanta, GA
-
-## 2024
-- AOM Annual Meeting, Chicago, IL
-- IEEE PacificVis, Tokyo, Japan
-- INFORMS Annual Meeting, Seattle, WA
-- INFORMS MSOM Conference, Minneapolis, MN
-
-## 2023
-- INFORMS Annual Meeting, Phoenix, AZ
-
-## 2022
-- INFORMS Annual Meeting, Indianapolis, IN
-
-## 2020
-- AOM Annual Meeting, Virtual
-- DSI Annual Meeting, Virtual
-- INFORMS Annual Meeting, Virtual
-
-## 2019
-- DSI Annual Meeting, New Orleans, LA
-- INFORMS Annual Meeting, Seattle, WA
-- PDA/FDA Joint Regulatory Conference, Washington, DC
-- POMS Annual Meeting, Washington, DC
-- Wharton People and Organizations Conference, Philadelphia, PA
-
-## 2018
-- INFORMS Annual Meeting, Phoenix, AZ
-- POMS Annual Meeting, Houston, TX
-
-## 2017
-- AOM Annual Meeting, Atlanta, GA
-- DRUID Conference, New York, NY
-- DSI Annual Meeting, Washington, DC
-- INFORMS Annual Meeting, Houston, TX
-- POMS Annual Meeting, Seattle, WA
-- Product and Service Innovation (PSI), Midway, UT
-
-## 2016
-- DSI Annual Meeting, Austin, TX
-- INFORMS Annual Meeting, Nashville, TN
-- Open and User Innovation (OUI) Conference, Boston, MA
-- POMS Annual Meeting, Orlando, FL
-
-## 2015
-- ACM SIGCHI Conference, Seoul, Korea
-- AOM Annual Meeting, Vancouver, BC, Canada
-- Atlanta Competitive Advantage Conference (ACAC), Atlanta, GA
-- DRUID Conference, Rome, Italy
-- IEEE VIS Workshop, Chicago, IL
-- Industry Studies Association (ISA), Kansas City, MO
-- INFORMS Annual Meeting, Philadelphia, PA
-
-## 2014
-- INFORMS Annual Meeting, San Francisco, CA
-- POMS Annual Meeting, Atlanta, GA
-- Systems Engineering Research Center (SERC), Washington, DC
-
-## 2013
-- Annual Conference on Internet Search and Innovation, Northwestern University, Chicago, IL
-- Atlanta Competitive Advantage Conference (ACAC), Atlanta, GA
-- Computational Social Science Workshop, Emory University, Atlanta, GA
-- Georgia Tech Research & Innovation Conference, Georgia Tech, Atlanta, GA
-- INFORMS Annual Meeting, Minneapolis, MN
-- NET Institute Conference, Berkeley, CA
-- Southern Economic Association Conference, Tampa, FL
-- Strategic Management Society Conference, Atlanta, GA
+<!--GEN:PATENTS-->
 
 
 # Other Research and Professional Experience
@@ -354,9 +163,5 @@ webcolor <- "black"
 
 # Software
 \vspace{.5em}
-- **JSON-based Academic Homepage Template**: https://github.com/oksure/hyunwoopark-com
-- **Simple Network Viewer**: https://hyunwoopark.com/netview/
-- **Bicentric Diagrams**: http://bicentric.herokuapp.com/
-- **Visual Supply Chain Management**: http://visualscm.herokuapp.com/
-- **ecoxight** (Business Ecosystem Intelligence System): https://ecoxight.com/
+<!--GEN:SOFTWARE-->
 

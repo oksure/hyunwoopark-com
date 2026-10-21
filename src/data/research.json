@@ -1,0 +1,312 @@
+{
+  "intro": "I study how AI and data change human judgment and organizational decisions. My research combines empirical analysis, causal and graph-based learning, and human–AI interaction.",
+  "themes": [
+    {
+      "id": "organizations",
+      "title": "AI, Organizations, and Innovation",
+      "shortTitle": "AI & organizations",
+      "question": "How do AI and information environments change knowledge creation, sharing, and resource allocation?",
+      "description": "I study incentives, technological change and the relationships through which knowledge travels. This work connects research on organizations and innovation with emerging questions about AI-mediated markets and scientific work."
+    },
+    {
+      "id": "interaction",
+      "title": "Human–AI Interaction and Visual Analytics",
+      "shortTitle": "Human–AI interaction",
+      "question": "How can people understand, revise, and take responsibility for AI-supported decisions?",
+      "description": "We develop and study interfaces that make complex data and AI behavior inspectable. Our work spans automated judgment, knowledge graph reasoning, longitudinal interaction and the design choices made by generative systems."
+    },
+    {
+      "id": "learning",
+      "title": "Learning and Evaluation in Complex Systems",
+      "shortTitle": "Learning & evaluation",
+      "question": "How should relationships, domain knowledge, and interaction shape the way we train and evaluate AI?",
+      "description": "We build methods and evaluation frameworks for relational and industrial data. Applications in maritime systems, semiconductor manufacturing and recommendation motivate questions about causal structure, robustness and what a useful metric measures."
+    }
+  ],
+  "works": [
+    {
+      "id": "tax-credit-spillovers",
+      "theme": "organizations",
+      "title": "R&D Tax Credits and Knowledge Spillovers",
+      "summary": "Causal inference for innovation policy when the effects of an intervention travel through a network.",
+      "publicationId": "rd-tax-spillovers",
+      "featured": true,
+      "image": "/research/sms-award.jpg",
+      "alt": "Dohun Lee holding the SMS Research Methods Paper Prize certificate naming Dohun Lee and Hyunwoo Park.",
+      "credit": "SMS 2026 · Photo shared by Dohun Lee",
+      "imageType": "photo"
+    },
+    {
+      "id": "great-grave",
+      "theme": "interaction",
+      "title": "Great Grave",
+      "summary": "Versioned context units make the history of a long-running conversation with a language model available for inspection and reuse.",
+      "publicationId": "c-12d5f954e7be",
+      "featured": true,
+      "image": "/research/great-grave.jpg",
+      "alt": "Great Grave interface showing a conversation alongside versioned context units.",
+      "credit": "Jang, Seo, Ju & Park · System demonstration",
+      "video": "https://youtu.be/M5pFb_5NBPw"
+    },
+    {
+      "id": "maritime-anomalies",
+      "theme": "learning",
+      "title": "Domain-grounded Maritime Anomaly Detection",
+      "summary": "An equation-grounded taxonomy distinguishes operationally meaningful anomalies from movements that are merely unusual.",
+      "publicationId": "c-cb5d60f9ab7b",
+      "featured": true,
+      "image": "/research/maritime.png",
+      "alt": "Published diagram comparing conventional unusual trajectories with equation-grounded near-collision anomalies.",
+      "credit": "Hwang et al. · KDD 2026, Figure 1"
+    },
+    {
+      "id": "sign-aware-evaluation",
+      "theme": "learning",
+      "title": "What Gets Measured Gets Managed",
+      "summary": "Recommendation metrics should distinguish content a user dislikes from content they have never encountered.",
+      "publicationId": "c-58ee67f2afa6",
+      "featured": true,
+      "image": "/research/sign-aware.png",
+      "alt": "Published score distributions showing overlap between predictions for liked and disliked items.",
+      "credit": "Kim, Hwang & Park · Figure 1, arXiv:2609.33346"
+    },
+    {
+      "id": "symbolic-recognition",
+      "theme": "organizations",
+      "title": "An (almost) Free Lunch?",
+      "summary": "Symbolic recognition and knowledge-sharing behavior in online communities.",
+      "publicationId": "j-c2b8d81ead90",
+      "featured": true
+    },
+    {
+      "id": "ballpark-society",
+      "theme": "interaction",
+      "title": "From Ballpark to Society",
+      "summary": "How stakeholders adapt to automated judgment, studied through the introduction of automated ball-strike decisions in baseball.",
+      "publicationId": "c-2bd53351c874",
+      "featured": true
+    },
+    {
+      "id": "interactivekg",
+      "theme": "interaction",
+      "title": "InteractiveKG",
+      "summary": "Transparent and user-controllable knowledge graph reasoning.",
+      "publicationId": "j-a24857719073"
+    },
+    {
+      "id": "package",
+      "theme": "learning",
+      "title": "PACKaGE",
+      "summary": "A benchmark for bidirectional causal reasoning between paragraphs and graphs.",
+      "publicationId": "c-931671e32a10"
+    },
+    {
+      "id": "faithful-collusive",
+      "theme": "organizations",
+      "title": "Faithful yet Collusive",
+      "summary": "The limits of chain-of-thought monitoring for detecting collusion among language-model pricing agents.",
+      "publicationId": "c-75ee8ae12a6e"
+    },
+    {
+      "id": "fabrication-causal-discovery",
+      "theme": "learning",
+      "title": "Causal Discovery in Semiconductor Fabrication",
+      "summary": "Event-driven causal discovery for root-cause analysis in an industrial data center.",
+      "publicationId": "c-07118c84b28c"
+    },
+    {
+      "id": "market-signal-injection",
+      "theme": "organizations",
+      "title": "Market Signal Injection",
+      "summary": "Adversarial context manipulation of language-model pricing agents.",
+      "publicationId": "c-02ecea659061"
+    },
+    {
+      "id": "aisflow",
+      "theme": "learning",
+      "title": "AISFlow",
+      "summary": "Boundary-informed flow matching for long-term vessel trajectory imputation.",
+      "publicationId": "c-4fdd8b1f097d"
+    },
+    {
+      "id": "agent-failure-modes",
+      "theme": "learning",
+      "title": "Diagnosing Tool-Using Agents",
+      "summary": "A stage-aware taxonomy of agent failures and interventions for gaps in evidence.",
+      "publicationId": "c-0510a6b471cf"
+    }
+  ],
+  "ongoing": [
+    {
+      "title": "AI and scientific work",
+      "theme": "organizations",
+      "description": "How scientific AI changes research direction and the role of complementary expertise, with evidence from AlphaFold.",
+      "status": "Research in progress",
+      "cvSelected": true
+    },
+    {
+      "title": "AI adoption and workforce structure",
+      "theme": "organizations",
+      "description": "How firms combine workforce capabilities, strategic intent and new products when adopting AI.",
+      "status": "Research in progress",
+      "cvSelected": true
+    },
+    {
+      "title": "Retaining knowledge workers",
+      "theme": "organizations",
+      "description": "Compensation, work-life balance and the design of sustainable work.",
+      "status": "Research in progress"
+    },
+    {
+      "title": "Food banks and redistribution networks",
+      "theme": "organizations",
+      "description": "Local economic inequality, donations and the movement of resources through food-bank networks.",
+      "status": "Research in progress"
+    },
+    {
+      "title": "Industry adjacency",
+      "theme": "organizations",
+      "description": "Empirical measures of relatedness between industries and the opportunities they reveal for firms.",
+      "status": "Working paper"
+    },
+    {
+      "title": "AI-mediated markets",
+      "theme": "organizations",
+      "description": "Reasoning, market interaction and the attribution of an agent's effects on other participants.",
+      "status": "Research in progress"
+    },
+    {
+      "title": "Earnings-call communication and resource allocation",
+      "theme": "organizations",
+      "description": "Textual and vocal signals in corporate communication about research and capital investment.",
+      "status": "Research in progress"
+    },
+    {
+      "title": "Judgment in generative interfaces",
+      "theme": "interaction",
+      "description": "How task precision and element-level decisions affect people's evaluation of generated slide decks.",
+      "status": "Research in progress",
+      "cvSelected": true
+    },
+    {
+      "title": "Human–AI scientific collaboration",
+      "theme": "interaction",
+      "description": "Interfaces and workflows that support researchers working with AI systems.",
+      "status": "Research in progress"
+    },
+    {
+      "title": "Game-operation decision support",
+      "theme": "interaction",
+      "description": "Using streaming data to support interpretation and decisions in game operations.",
+      "status": "Research in progress"
+    },
+    {
+      "title": "Causal-grounded retrieval and reasoning",
+      "theme": "learning",
+      "description": "Using structural uncertainty diagnostics to guide retrieval-augmented question answering.",
+      "status": "Research in progress",
+      "cvSelected": true
+    },
+    {
+      "title": "Relational injection attacks",
+      "theme": "learning",
+      "description": "Robustness of relational learning when valid database insertions alter predictions.",
+      "status": "Research in progress",
+      "cvSelected": true
+    },
+    {
+      "title": "Curricula for multi-step agents",
+      "theme": "learning",
+      "description": "How starting points and progression affect learning from sparse rewards.",
+      "status": "Research in progress"
+    },
+    {
+      "title": "Agentic CAD reconstruction",
+      "theme": "learning",
+      "description": "Agent-based approaches to reconstructing structured CAD models.",
+      "status": "Research in progress"
+    },
+    {
+      "title": "Graph learning for bot detection",
+      "theme": "learning",
+      "description": "Contrastive learning and minority-aware representations for social-network classification.",
+      "status": "Research in progress"
+    },
+    {
+      "title": "Time-varying causal graphs",
+      "theme": "learning",
+      "description": "Learning changing directed relationships and identifying regime changes in sequential data.",
+      "status": "Research in progress"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Human Value in Physical AI",
+      "partner": "H-PAIR NRL 2.0 · TC4",
+      "description": "Human values and choice in the design and evaluation of physical AI.",
+      "status": "Research collaboration"
+    },
+    {
+      "title": "Cohort Data Exploration",
+      "partner": "K-PREDICT research collaboration",
+      "description": "Visual analytics and conversational interfaces for understanding complex cohort data.",
+      "status": "Research system"
+    },
+    {
+      "title": "Maritime Intelligence",
+      "partner": "KRISO",
+      "description": "Vessel behavior, trajectory reconstruction and domain-grounded anomaly detection.",
+      "status": "Research collaboration"
+    },
+    {
+      "title": "Semiconductor Manufacturing",
+      "partner": "Samsung Electronics",
+      "description": "Network analysis, causal discovery and tools for industrial decision support.",
+      "status": "Research collaboration"
+    },
+    {
+      "title": "Financial Transaction Monitoring",
+      "partner": "MOIN",
+      "description": "Model development for foreign-remittance fraud detection, including a patent application with Hyunwoo Park as a co-inventor in 2026.",
+      "status": "Research translation"
+    },
+    {
+      "title": "AI Use in Universities",
+      "partner": "Seoul National University",
+      "description": "Research on patterns of AI use and their implications for educational and administrative work.",
+      "status": "Policy research"
+    },
+    {
+      "title": "Data and Organizational Management",
+      "partner": "Ministry of the Interior and Safety, Korea",
+      "description": "Collaborative policy research on data management and AI-enabled organizational work.",
+      "status": "Policy research"
+    },
+    {
+      "title": "Ontology and GraphRAG",
+      "partner": "Hanwha Ocean",
+      "description": "Exploring ontology automation and graph-based retrieval for industrial documents.",
+      "status": "Collaboration in development"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-10",
+      "title": "SMS Research Methods Paper Prize",
+      "description": "Awarded to our paper with Dohun Lee on R&D tax credits and knowledge spillovers.",
+      "href": "/research/#tax-credit-spillovers"
+    },
+    {
+      "date": "2026-09",
+      "title": "NeurIPS 2026 E&D acceptance",
+      "description": "Sign-aware recommendation needs sign-aware evaluation.",
+      "href": "/publications/#c-58ee67f2afa6"
+    },
+    {
+      "date": "2026-09",
+      "title": "Vibe Coding at SNU",
+      "description": "A new course and a collaborative living textbook.",
+      "href": "/teaching/"
+    }
+  ]
+}

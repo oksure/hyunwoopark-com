@@ -1,6 +1,9 @@
 % \usepackage{palatino} % Palatino
 % \usepackage{mathpazo} % Palatino
 \usepackage{mathptmx} % Times
+\usepackage{needspace}
+\usepackage{etoolbox}
+\pretocmd{\subsection}{\Needspace{4\baselineskip}}{}{}
 % \renewcommand{\ttdefault}{lmtt}
 
 % For badges

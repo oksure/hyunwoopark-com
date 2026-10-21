@@ -161,6 +161,7 @@ def teaching_block(data):
       elif role == 'Instructor' and len(details) == 1 and institution['institution'].startswith('Georgia Institute of Technology'):
         lines.append(f'- {text_tex(role)}, {text_tex(details[0])}')
       elif role in {'Past Students', 'Courses', 'Advising & Committee', 'Course Development'} or len(details) > 1:
+        lines.extend(['', r'\Needspace{5\baselineskip}', ''])
         lines.append(f'- {text_tex(role)}')
         lines.extend(f'  - {text_tex(detail)}' for detail in details)
       elif details:

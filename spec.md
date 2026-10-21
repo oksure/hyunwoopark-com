@@ -24,6 +24,12 @@ The PDF generator expands shared awards, grants, teaching, services, software/re
 
 Run the TypeScript compiler, production build, record validator and browser tests at mobile and desktop widths. Verify search, filters, navigation, theme switching, clipboard fallback, absence of overflow and broken images, and legacy routes. Render the old and new CV. Inspect page layout, fonts, headers, labels, new text and the style gate results. Release through the existing publish workflow only when the gates pass. Keep all private evidence and QA logs outside public assets.
 
+Keep CV category labels on the same page as their first entry. Use the existing typography and the minimum page-break control needed for this.
+
 ## 6. Research Lab Website
 
 Reconcile the DIAL author, publication-year, publication-category and project-status differences identified in the approved plan. Use authorized access only. If direct editing is unavailable, retain exact page-specific corrections and an importable draft without claiming the live lab site changed.
+
+## Changelog
+
+- 2026-10-21: Implement the approved research update with a CV-style Home and separate research pages. Generate shared CV sections and keep teaching labels with their first entry.

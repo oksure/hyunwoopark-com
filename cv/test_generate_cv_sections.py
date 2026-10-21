@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-import unittest
+import json, shutil, subprocess, unittest
 
-from generate_cv_sections import render_template, tex, text_tex
+from generate_cv_sections import render_template, tex, text_tex, conference_block
 
 
 TEMPLATE = """# Publications
@@ -137,8 +137,8 @@ class CvGenerationTests(unittest.TestCase):
     self.assertIn('University and Department Service', output)
     self.assertIn('Ad-hoc Reviewer', output)
     self.assertIn('Selected Resource', output)
-    self.assertIn('## Selected Research in Progress', output)
-    self.assertIn(r'**Progress \& Topic**: Short \_description\_.', output)
+    self.assertNotIn('Selected Research in Progress', output)
+    self.assertNotIn(r'Progress \& Topic', output)
     self.assertNotIn('Do not cite', output)
     self.assertNotIn('Do not claim', output)
     self.assertNotIn('Unselected Resource', output)
@@ -162,7 +162,7 @@ class CvGenerationTests(unittest.TestCase):
     self.assertIn('## 2026', conferences)
     self.assertIn('## 2025', conferences)
     self.assertIn('## 2024', conferences)
-    self.assertIn(r'\nopagebreak[4]', conferences)
+    self.assertIn('## 2026\n\n- **Paper A**', conferences)
     self.assertLess(conferences.index('## 2026'), conferences.index('## 2025'))
     self.assertLess(conferences.index('## 2025'), conferences.index('## 2024'))
     self.assertIn(r'**Paper A**: Conference One, Berlin; Conference Two, Online',
@@ -172,6 +172,16 @@ class CvGenerationTests(unittest.TestCase):
     self.assertIn('- Co-inventor on a patent application, 2026.', output)
     self.assertNotIn('Application filed', output)
     self.assertNotIn('2027', output)
+
+  @unittest.skipUnless(shutil.which('pandoc'), 'Pandoc required for rendering regression')
+  def test_conferences_are_parsed_as_bullet_lists(self):
+    markdown = conference_block(sample_data()['confs']['items'])
+    result = subprocess.run(['pandoc', '-f', 'markdown', '-t', 'json'],
+                            input=markdown, capture_output=True, text=True, check=True)
+    blocks = json.loads(result.stdout)['blocks']
+    self.assertEqual([item['t'] for item in blocks],
+                     ['Header', 'BulletList', 'Header', 'BulletList', 'Header', 'BulletList'])
+    self.assertEqual(sum(len(item['c']) for item in blocks if item['t'] == 'BulletList'), 3)
 
 
 if __name__ == '__main__':

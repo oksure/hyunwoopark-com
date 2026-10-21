@@ -287,7 +287,8 @@ def conference_block(items):
 
   sections = []
   for year in sorted(grouped, key=year_sort_key, reverse=True):
-    lines = [f'## {text_tex(year)}', r'\nopagebreak[4]']
+    # A blank line is required here: raw TeX joined to '-' becomes prose in Pandoc.
+    lines = [f'## {text_tex(year)}', '']
     for title, conferences in grouped[year]:
       venues = []
       for conference in conferences:
@@ -316,7 +317,7 @@ def patents_section(data):
   return '# Patents\n' + line + '.'
 
 
-def working_papers_section(data, research):
+def working_papers_section(data):
   items = (data or {}).get('items', [])
   selected = [item for item in items if item.get('cvSelected')]
   entries = []
@@ -338,17 +339,6 @@ def working_papers_section(data, research):
       title = 'Selected ' + title
     sections.append(f'# {text_tex(title)}\n\\vspace{{.5em}}\n\n' +
                     '\n\n'.join(entries))
-  ongoing = [item for item in research.get('ongoing', [])
-             if item.get('cvSelected') is True]
-  if ongoing:
-    heading = '## Selected Research in Progress' if entries else '# Selected Research in Progress'
-    bullets = []
-    for item in ongoing:
-      if not item.get('title') or not item.get('description'):
-        raise ValueError('selected research-in-progress entries need title and description')
-      bullets.append(f'- **{text_tex(item["title"])}**: '
-                     f'{text_tex(item["description"])}')
-    sections.append(heading + '\n' + '\n'.join(bullets))
   return '\n\n'.join(sections)
 
 
@@ -365,8 +355,7 @@ def render_template(template, data):
     'CONFS': conference_block(data['confs']['items']),
     'PATENTS': patents_section(data['patents']),
     'SOFTWARE': software_block(data['software'], data.get('resources')),
-    'WORKING_PAPERS': working_papers_section(
-      data.get('working-papers'), data['research']),
+    'WORKING_PAPERS': working_papers_section(data.get('working-papers')),
   }
 
   def replace(match):
@@ -404,15 +393,13 @@ def main():
                   (data['working-papers'] or {}).get('items', []))
   n_resources = sum(bool(item.get('cvSelected')) for item in
                     (data['resources'] or {}).get('items', []))
-  n_research = sum(item.get('cvSelected') is True for item in
-                   data['research'].get('ongoing', []))
   n_confs = sum(len(item.get('conferences', []))
                 for item in data['confs']['items'])
   n_patents = sum(item.get('cvSelected') is True
                   for item in data['patents']['items'])
   print(f'generated CV_Hyunwoo_Park_gen.Rmd ({n_pubs} pubs, {n_procs} procs, '
         f'{n_working} working papers, {n_resources} resources, '
-        f'{n_research} research-in-progress items, {n_confs} conference events, '
+        f'{n_confs} conference events, '
         f'{n_patents} generic patent records)')
 
 

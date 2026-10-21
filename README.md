@@ -152,7 +152,9 @@ Use `src/data/pubs.json` and `procs.json` for bibliographic facts. Preserve each
 
 The homepage uses its original Chakra presentation. `design.md` and `spec.md` record the content-only update constraint. The briefly added Research, Publications, Teaching and About pages redirect to the homepage. Image provenance is recorded in `docs/research-assets.md`.
 
-The current CV content occupies 11 pages. Its Times typography, LaTeX class, ranking badges, J/C labels and page footers remain unchanged. Old presentation records and legacy routes are retained. Do not replace this build with a different CV renderer.
+The corrected CV occupies 12 pages. It includes 22 selected conference contributions, with workshops and posters explicitly identified. The PDF excludes Selected Research in Progress and the KDMS student award at the owner's request. Formal working papers remain. Times typography, the LaTeX class, ranking badges, J/C labels and page footers remain unchanged. Old presentation records and legacy routes are retained. Do not replace this build with a different CV renderer.
+
+Run `python3 cv/render_review.py cv/CV_Hyunwoo_Park.pdf --out-dir cv/review` after compilation. Inspect `all-pages.png` and every enlarged page, including page boundaries. CI retains every page preview, not just the first three. A passing build or text-presence check does not prove that lists render correctly.
 
 The dev and build scripts use Webpack. Production Turbopack builds reproduced a Chakra/Emotion hydration mismatch on the additional routes. This follows the [Chakra Next.js integration guidance](https://chakra-ui.com/docs/get-started/frameworks/next-app#hydration-errors-turbopack). Keep the browser console regression check when changing bundlers.
 

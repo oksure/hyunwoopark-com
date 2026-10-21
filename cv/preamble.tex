@@ -3,7 +3,8 @@
 \usepackage{mathptmx} % Times
 \usepackage{needspace}
 \usepackage{etoolbox}
-\pretocmd{\subsection}{\Needspace{4\baselineskip}}{}{}
+\pretocmd{\subsection}{\Needspace{7\baselineskip}}{}{}
+\AtBeginEnvironment{itemize}{\interlinepenalty=10000}
 % \renewcommand{\ttdefault}{lmtt}
 
 % For badges
@@ -48,8 +49,11 @@
 % Publication entry with hanging indentation
 % Usage: \pubentry{[J39]}{Content here...}
 \newcommand{\pubentry}[2]{%
-  \noindent\hangindent=2.8em\hangafter=1%
-  \makebox[2.5em][r]{\textbf{#1}}~#2\par\vspace{0.5em}%
+  \begingroup\parfillskip=0pt plus 1fil\relax%
+  \noindent\begin{minipage}{\linewidth}%
+  \hangindent=2.8em\hangafter=1%
+  \makebox[2.5em][r]{\textbf{#1}}~#2\par%
+  \end{minipage}\par\vspace{0.5em}\endgroup%
 }
 
 \usepackage{lastpage}
@@ -86,6 +90,7 @@
 {\sectionprelude\origsection*{#1}\sectionpostlude}
 
 \newcommand\sectionprelude{%
+  \Needspace{10\baselineskip}%
   \vspace{1em}
 }
 

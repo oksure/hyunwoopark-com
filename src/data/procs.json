@@ -25,7 +25,8 @@
       "link": "https://arxiv.org/abs/2609.18357",
       "id": "c-02ecea659061",
       "label": "C31",
-      "recordType": "workshop"
+      "recordType": "workshop",
+      "cvSelected": true
     },
     {
       "type": "conference",
@@ -82,12 +83,13 @@
       "type": "conference",
       "title": "Diagnosing Failure Modes in MCP Tool-Using Agents: A Stage-Aware Taxonomy and Evidence-Gap Interventions",
       "authors": "Bae S, Park H",
-      "proceedings": "ICML 2026 Workshop on FAGEN",
+      "proceedings": "ICML 2026 Workshop on FAGEN (Poster)",
       "year": "2026",
       "link": "https://icml.cc/virtual/2026/77938",
       "id": "c-0510a6b471cf",
       "label": "C26",
-      "recordType": "workshop"
+      "recordType": "workshop",
+      "cvSelected": true
     },
     {
       "type": "conference",
@@ -98,7 +100,8 @@
       "link": "https://icml.cc/virtual/2026/73576",
       "id": "c-4fdd8b1f097d",
       "label": "C25",
-      "recordType": "workshop"
+      "recordType": "workshop",
+      "cvSelected": true
     },
     {
       "type": "conference",
@@ -109,7 +112,8 @@
       "link": "https://arxiv.org/abs/2607.23197",
       "id": "c-2d3dde66d182",
       "label": "C24",
-      "recordType": "workshop"
+      "recordType": "workshop",
+      "cvSelected": true
     },
     {
       "type": "conference",
@@ -143,7 +147,8 @@
       "link": "https://doi.org/10.5465/amproc.2026.10030poster",
       "id": "c-7c1c876b805a",
       "label": "C21",
-      "recordType": "poster"
+      "recordType": "poster",
+      "cvSelected": true
     },
     {
       "type": "conference",
@@ -164,7 +169,8 @@
       "year": "2026",
       "id": "c-3ab112c65f19",
       "label": "C19",
-      "recordType": "workshop"
+      "recordType": "workshop",
+      "cvSelected": true
     },
     {
       "type": "conference",
@@ -174,7 +180,8 @@
       "year": "2026",
       "id": "c-9c364009d4e8",
       "label": "C18",
-      "recordType": "workshop"
+      "recordType": "workshop",
+      "cvSelected": true
     },
     {
       "type": "conference",
@@ -186,7 +193,8 @@
       "link": "https://doi.org/10.1109/PacificVis68791.2026.00019",
       "id": "c-b2b46183f073",
       "label": "C17",
-      "recordType": "short-paper"
+      "recordType": "short-paper",
+      "cvSelected": true
     },
     {
       "type": "conference",

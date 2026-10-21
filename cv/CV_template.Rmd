@@ -81,7 +81,7 @@ webcolor <- "black"
 
 # Selected Conference Contributions
 \vspace{.2em}
-\begingroup\small (For the full list, visit \url{https://hyunwoopark.com}.)\endgroup
+\begingroup\small (Includes conference papers, Findings, workshops, short papers, and posters. Formats are identified in each entry.)\endgroup
 \vspace{.5em}
 
 <!--GEN:PROCS-->
@@ -108,6 +108,8 @@ webcolor <- "black"
 ## Grants
 <!--GEN:AWARDS_GRANT-->
 
+
+\Needspace{12\baselineskip}
 
 # Teaching Experience
 <!--GEN:TEACHING-->

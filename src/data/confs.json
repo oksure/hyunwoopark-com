@@ -2,6 +2,18 @@
   "title": "Conference Presentations",
   "items": [
     {
+      "title": "Diagnosing Failure Modes in MCP Tool-Using Agents: A Stage-Aware Taxonomy and Evidence-Gap Interventions (coauthored workshop poster, presented by Sungho Bae)",
+      "conferences": [{"name": "ICML Workshop on FAGEN", "location": "Seoul, Korea", "year": "2026"}]
+    },
+    {
+      "title": "AISFlow: Boundary-Informed Flow Matching for Long-Term AIS Trajectory Imputation (coauthored workshop contribution)",
+      "conferences": [{"name": "ICML Workshop on AI for Science", "location": "Seoul, Korea", "year": "2026"}]
+    },
+    {
+      "title": "Domain-Prior-Regularized Graph Modeling for Anomaly Detection in Cyber-Physical Systems (coauthored workshop contribution)",
+      "conferences": [{"name": "ICML Workshop on AI for Science", "location": "Seoul, Korea", "year": "2026"}]
+    },
+    {
       "title": "R&D Tax Credits and Knowledge Spillovers: Causal Inference Under Network Interference (coauthored paper, presented by Dohun Lee; Research Methods Paper Prize)",
       "conferences": [{"name": "Strategic Management Society 46th Annual Conference", "location": "Berlin, Germany", "year": "2026"}]
     },

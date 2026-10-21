@@ -56,9 +56,9 @@ jobs:
       - name: Style gate (fail loudly on generic-article regressions)
         run: python3 cv/check_style.py cv/CV_Hyunwoo_Park.pdf
 
-      - name: Render preview pages for the artifact
+      - name: Render every page and assemble review sheet
         run: |
-          pdftoppm -png -f 1 -l 3 -r 100 cv/CV_Hyunwoo_Park.pdf cv/preview
+          python3 cv/render_review.py cv/CV_Hyunwoo_Park.pdf --out-dir cv/review
           pdfinfo cv/CV_Hyunwoo_Park.pdf
 
       - uses: actions/upload-artifact@v4
@@ -66,7 +66,7 @@ jobs:
           name: cv-pdf-and-previews
           path: |
             cv/CV_Hyunwoo_Park.pdf
-            cv/preview*.png
+            cv/review/*.png
           retention-days: 30
 
       - name: Upload to DO Spaces (backup first)

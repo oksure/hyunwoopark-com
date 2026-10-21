@@ -10,12 +10,12 @@ fails = []
 def run(*cmd):
   return sp.run(cmd, capture_output=True, text=True).stdout
 
-# 1. page count bound. On 2026-10-21 the CV added full titles for 55
-#    conference presentations (89 venue records) and a generic patent line;
-#    the 2026-10-12 public CV was 9 pages. The reviewed content bound is 11.
+# 1. The reviewed October 21 correction has 22 selected contributions and
+#    58 presentation titles (92 venue records), rendered as real lists.
+#    Removing the in-progress section and keeping entries intact yields 12 pages.
 pages = int(re.search(r'Pages:\s+(\d+)', run('pdfinfo', pdf)).group(1))
-if not 6 <= pages <= 11:
-  fails.append(f'page count {pages} outside 6-11')
+if not 6 <= pages <= 12:
+  fails.append(f'page count {pages} outside 6-12')
 
 # 2. fonts: Times family required, FontAwesome required (Link icons),
 #    Computer/Latin Modern forbidden (= pandoc default article, preamble skipped)

@@ -28,6 +28,8 @@ Run the TypeScript compiler, production build, record validator and browser test
 
 Keep CV category labels on the same page as their first entry. Use the existing typography and the minimum page-break control needed for this.
 
+The October 21 correction removes Selected Research in Progress from the PDF and the KDMS student award from shared teaching data. Include the eight previously omitted 2026 workshop, poster and VisNote records, preserving C labels and explicit formats. Add the verified ICML coauthored contributions to presentation records without claiming HP personally presented them. The resulting PDF has 12 pages. Conference lists must parse as Pandoc BulletList nodes. Keep individual citation entries and list paragraphs intact. Render every page and assemble a complete contact sheet for visual review before replacing the public PDF.
+
 ## 6. Research Lab Website
 
 Reconcile the DIAL author, publication-year, publication-category and project-status differences identified in the approved plan. Use authorized access only. If direct editing is unavailable, retain exact page-specific corrections and an importable draft without claiming the live lab site changed.

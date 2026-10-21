@@ -39,7 +39,9 @@ This project uses `pnpm` as the package manager. Always use `pnpm` commands inst
 - `recordType` separates papers, Findings, short papers, workshops, abstracts, posters and presentations. Keep acceptance status distinct from publication status.
 - Read `spec.md` and `design.md` before page changes. Use the existing Chakra styles and components.
 - Run `node scripts/validate-data.mjs` and `python3 cv/test_generate_cv_sections.py` after shared-data changes. Run the existing Rmd build for CV changes.
-- The current CV is 11 pages after shared sections and full conference presentations were added. Preserve the existing class, fonts, badges, numbering and footers.
+- The corrected CV is 12 pages with 22 selected conference contributions. Preserve the existing class, fonts, badges, numbering and footers. Render every page and inspect the full review sheet and enlarged pages before publication.
+- Do not restore Selected Research in Progress to the PDF or Youngseok Hwang's KDMS award. Keep formal working papers. Workshop and poster records must retain their explicit venue/format labels.
+- Conference Markdown needs a blank line after each year heading. Test its parsed Pandoc list structure. Keep citation entries and list paragraphs intact across page breaks.
 - `working-papers.json` requires verified authors. Use `research.json` for topic-level work that does not yet have a complete public citation.
 - Keep internal evidence, reviewer correspondence and unpublished patent details outside the public repository.
 - Use the Webpack dev and build scripts. Chakra documents a Turbopack/Emotion hydration issue, reproduced on production builds in this project.

@@ -7,7 +7,19 @@ name: CV Build
 on:
   push:
     branches: [master]
-    paths: ['cv/**', 'src/data/pubs.json', 'src/data/procs.json']
+    paths:
+      - 'cv/**'
+      - 'src/data/pubs.json'
+      - 'src/data/procs.json'
+      - 'src/data/awards.json'
+      - 'src/data/teaching.json'
+      - 'src/data/servs.json'
+      - 'src/data/software.json'
+      - 'src/data/resources.json'
+      - 'src/data/working-papers.json'
+      - 'src/data/research.json'
+      - 'src/data/confs.json'
+      - 'src/data/patents.json'
   workflow_dispatch:
     inputs:
       upload:
@@ -34,10 +46,10 @@ jobs:
           Rscript -e 'if (!requireNamespace("fontawesome", quietly=TRUE)) install.packages("fontawesome", repos="https://packagemanager.posit.co/cran/__linux__/noble/latest")'
 
       - name: Generate sections from src/data + build CV
-        # Single source of truth: pubs/procs entries come from src/data/*.json
-        # (cvSelected: true), spliced into cv/CV_template.Rmd. Other sections
-        # are edited directly in the template.
+        # Shared CV sections are generated from src/data/*.json. Optional
+        # resources/working-papers files are used when present.
         run: |
+          python3 cv/test_generate_cv_sections.py
           python3 cv/generate_cv_sections.py
           bash cv/build.sh CV_Hyunwoo_Park_gen
 

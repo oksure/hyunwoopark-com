@@ -1,8 +1,12 @@
+import { fileURLToPath } from 'node:url'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
+  outputFileTracingRoot: fileURLToPath(new URL('.', import.meta.url)),
   experimental: {
+    cpus: 4,
     optimizePackageImports: ["@chakra-ui/react"],
   },
   async headers() {

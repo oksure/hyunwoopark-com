@@ -21,6 +21,11 @@ const nextConfig = {
       },
     ]
   },
+  async redirects() {
+    return ['research', 'publications', 'teaching', 'about'].map(page => ({
+      source: `/${page}/`, destination: '/', permanent: false,
+    }))
+  },
   async rewrites() {
     return [
       { source: '/v1', destination: '/v1/index.html' },
